@@ -1,0 +1,7 @@
+mapbox.configure:
+  path: '/admin/structure/mapbox'
+  defaults:
+    _form: '\Drupal\easy_booking_map\Form\MapboxSettingsForm'
+    _title: MapBox
+  requirements:
+    _permission: 'administer site configuration'

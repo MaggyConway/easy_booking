@@ -1,0 +1,10 @@
+uuid: 39bf7478-db0b-41f0-bd06-8b24f3f30a59
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: N2R0YbTtwLZzkHdPNngKtdkP0FIZ19TWVdFJDDxinYg
+id: privacy
+label: Privacy
+description: 'Privacy menu.'
+locked: false

@@ -1,0 +1,57 @@
+uuid: caee6eb9-70b0-464d-b80c-874b5ac8d7d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_safety_items
+    - paragraphs.paragraphs_type.safety
+    - paragraphs.paragraphs_type.safety_item
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: V6JjkNJFKbWwmx6Yx1HQgLBT6C9J_r-81DAizJ_23yw
+id: paragraph.safety.field_safety_items
+field_name: field_safety_items
+entity_type: paragraph
+bundle: safety
+label: 'Safety Items'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      safety_item: safety_item
+    target_bundles_drag_drop:
+      album:
+        weight: 10
+        enabled: false
+      article:
+        weight: 11
+        enabled: false
+      info_block:
+        weight: 12
+        enabled: false
+      info_blocks:
+        weight: 13
+        enabled: false
+      rule:
+        weight: 14
+        enabled: false
+      rules:
+        weight: 15
+        enabled: false
+      safety:
+        weight: 16
+        enabled: false
+      safety_item:
+        enabled: true
+        weight: 17
+      service:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

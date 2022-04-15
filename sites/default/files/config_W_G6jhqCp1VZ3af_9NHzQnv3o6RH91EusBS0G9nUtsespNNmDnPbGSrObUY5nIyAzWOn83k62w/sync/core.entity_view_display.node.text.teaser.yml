@@ -1,0 +1,36 @@
+uuid: 75c098e5-f5a1-4ca8-973a-63c6e4e878c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.text.field_lean_more
+    - field.field.node.text.field_text_first_section
+    - field.field.node.text.field_text_second_section
+    - field.field.node.text.field_text_third_section
+    - node.type.text
+  module:
+    - user
+_core:
+  default_config_hash: WFdZQDBkX3TMJ6dVH9MHAwpx_ElD86vk7SB11ipYJjQ
+id: node.text.teaser
+targetEntityType: node
+bundle: text
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_lean_more: true
+  field_text_first_section: true
+  field_text_second_section: true
+  field_text_third_section: true
+  search_api_excerpt: true

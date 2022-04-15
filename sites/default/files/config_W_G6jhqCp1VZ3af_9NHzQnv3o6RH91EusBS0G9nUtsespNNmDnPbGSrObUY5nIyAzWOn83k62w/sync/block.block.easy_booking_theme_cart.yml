@@ -1,0 +1,23 @@
+uuid: eb9478d6-f444-4436-979f-7a9a2fb83101
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - easy_booking_theme
+_core:
+  default_config_hash: qp1FA55W12tsap9CFcKqOdhD0wPb8zSParL6_l7eGgE
+id: easy_booking_theme_cart
+theme: easy_booking_theme
+region: header
+weight: -10
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: false
+visibility: {  }

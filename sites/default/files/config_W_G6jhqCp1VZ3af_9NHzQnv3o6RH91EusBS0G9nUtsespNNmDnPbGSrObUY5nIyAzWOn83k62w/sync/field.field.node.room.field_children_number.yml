@@ -1,0 +1,27 @@
+uuid: a8f239ac-c3db-41fc-b629-68a67b9e5316
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_children_number
+    - node.type.room
+_core:
+  default_config_hash: 9lna9t1ozw6R1rkaaFRJqPOv2xWiXmIB6evvGUIFxP4
+id: node.room.field_children_number
+field_name: field_children_number
+entity_type: node
+bundle: room
+label: 'Children Number'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 0
+  max: 4
+  prefix: ''
+  suffix: ''
+field_type: integer

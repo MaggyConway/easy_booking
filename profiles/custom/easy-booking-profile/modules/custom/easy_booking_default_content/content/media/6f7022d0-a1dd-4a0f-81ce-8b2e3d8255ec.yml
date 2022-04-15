@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6f7022d0-a1dd-4a0f-81ce-8b2e3d8255ec
+  bundle: image
+  default_langcode: en
+  depends:
+    3ea66c71-da7b-4097-91a4-518e86f2464e: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: singapur_kazino_otel_59558_1280x720.jpg
+  created:
+    -
+      value: 1603445260
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 3ea66c71-da7b-4097-91a4-518e86f2464e
+      alt: Attraction
+      title: ''
+      width: 1280
+      height: 720

@@ -1,0 +1,24 @@
+uuid: 3d06181e-ce6f-4942-9843-8f860f67d040
+langcode: en
+status: false
+dependencies:
+  module:
+    - easy_booking_custom
+  theme:
+    - bartik
+_core:
+  default_config_hash: MiXimQxsfRcYSPItLkCHYHz0gbPHUxo3ka2mxV5kWGw
+id: reservation_form_block
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: reservation_form_block
+settings:
+  id: reservation_form_block
+  label: 'Reservation form block'
+  provider: easy_booking_custom
+  label_display: '0'
+  context_mapping:
+    node: '@node.node_route_context:node'
+visibility: {  }

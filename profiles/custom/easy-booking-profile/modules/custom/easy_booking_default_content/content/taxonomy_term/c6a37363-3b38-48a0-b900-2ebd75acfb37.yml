@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: c6a37363-3b38-48a0-b900-2ebd75acfb37
+  bundle: amenities
+  default_langcode: en
+  depends:
+    244d90a6-f132-4c13-884c-e471c836fe00: media
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Safety Box'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /amenities/safety-box
+      langcode: en
+      pathauto: 1
+  field_icon:
+    -
+      entity: 244d90a6-f132-4c13-884c-e471c836fe00

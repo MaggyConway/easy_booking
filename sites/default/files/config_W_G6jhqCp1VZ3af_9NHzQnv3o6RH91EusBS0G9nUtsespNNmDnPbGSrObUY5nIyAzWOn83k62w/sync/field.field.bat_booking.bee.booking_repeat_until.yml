@@ -1,0 +1,23 @@
+uuid: e4bc7861-508d-4008-a511-585d33f33eda
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_booking.booking_bundle.bee
+    - field.storage.bat_booking.booking_repeat_until
+  module:
+    - datetime
+_core:
+  default_config_hash: 9KtF6lFcNjUQGIR65RsWLxpu_Bv8hB-UHQjjoNMLCzM
+id: bat_booking.bee.booking_repeat_until
+field_name: booking_repeat_until
+entity_type: bat_booking
+bundle: bee
+label: 'Repeat until'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,22 @@
+uuid: fbfade55-70e5-43c8-9f4b-c0cbe37258f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_event_series
+    - datetime_range
+_core:
+  default_config_hash: xIq3-Onn2PyX3RtltJWjPCtuUU_4y6oLpeptx0Og4IQ
+id: bat_event_series.event_dates
+field_name: event_dates
+entity_type: bat_event_series
+type: daterange
+settings:
+  datetime_type: datetime
+module: datetime_range
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

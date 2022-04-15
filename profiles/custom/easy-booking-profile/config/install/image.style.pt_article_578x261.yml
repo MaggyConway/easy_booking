@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: pt_article_578x261
+label: 'PT Article (578x261)'
+effects:
+  e9c150b7-5296-4589-8301-3c6e3815e14d:
+    uuid: e9c150b7-5296-4589-8301-3c6e3815e14d
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 578
+      height: 261
+      anchor: center-center

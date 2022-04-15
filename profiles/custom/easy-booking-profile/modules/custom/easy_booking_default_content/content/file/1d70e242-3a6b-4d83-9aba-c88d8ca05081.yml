@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1d70e242-3a6b-4d83-9aba-c88d8ca05081
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: telephone.png
+  uri:
+    -
+      value: 'public://2020-10/telephone_0_1_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1388
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310139
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

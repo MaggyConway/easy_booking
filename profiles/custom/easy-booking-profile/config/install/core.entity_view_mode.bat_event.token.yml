@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_event
+id: bat_event.token
+label: Token
+targetEntityType: bat_event
+cache: true

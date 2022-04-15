@@ -1,0 +1,36 @@
+uuid: 6b3382b0-357e-40f3-90f4-41a2337c2dd5
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.other_rooms
+  module:
+    - ctools
+    - views
+  theme:
+    - easy_booking_theme
+_core:
+  default_config_hash: xWQTAOqK0srmbyOKzy2V8J3zsV_GEnF9ze0t183MPqU
+id: easy_booking_theme_views_block__other_rooms
+theme: easy_booking_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:other_rooms-other_rooms'
+settings:
+  id: 'views_block:other_rooms-other_rooms'
+  label: 'Select Other Rooms'
+  provider: views
+  label_display: visible
+  views_label: 'Select Other Rooms'
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      daily_room: daily_room
+      room: room
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

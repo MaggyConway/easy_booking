@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5ce7b716-4655-4740-92cf-75a4c8c588f1
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: shield.png
+  uri:
+    -
+      value: 'public://2020-11/shield_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1017
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1605861421
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

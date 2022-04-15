@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: de16d66d-9e7b-466b-85c4-fd6e236bda1d
+  bundle: bee
+  default_langcode: en
+  depends:
+    d6d1f177-dc31-47e4-a7f0-9313b6c8d227: commerce_product
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  product_id:
+    -
+      entity: d6d1f177-dc31-47e4-a7f0-9313b6c8d227
+  sku:
+    -
+      value: bee_room_10
+  title:
+    -
+      value: 'Regular Family Room'
+  price:
+    -
+      number: '0.000000'
+      currency_code: USD
+      formatted: $0.00
+  created:
+    -
+      value: 1603425794

@@ -1,0 +1,58 @@
+uuid: aa4779fe-de0e-4da2-97f8-ae2c211f357d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.page_not_found
+    - field.field.block_content.page_not_found.field_images
+    - field.field.block_content.page_not_found.field_link
+    - field.field.block_content.page_not_found.field_text
+    - field.field.block_content.page_not_found.field_title
+  module:
+    - link
+    - text
+_core:
+  default_config_hash: wKrGguJ86kBYKeBwgMtUmUtuLKmLT_mheKM_SffD004
+id: block_content.page_not_found.default
+targetEntityType: block_content
+bundle: page_not_found
+mode: default
+content:
+  field_images:
+    type: entity_reference_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_text:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

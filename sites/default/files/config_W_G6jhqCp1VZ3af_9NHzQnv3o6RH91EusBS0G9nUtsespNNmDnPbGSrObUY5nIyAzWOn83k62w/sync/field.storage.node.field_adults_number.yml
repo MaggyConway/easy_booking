@@ -1,0 +1,22 @@
+uuid: 8d5417ba-1088-4657-89e7-1fd90c52a12e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: gjYEDMi1yhbSuQVojWdfCEtHdtK5VO0cThZAnA6smNo
+id: node.field_adults_number
+field_name: field_adults_number
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

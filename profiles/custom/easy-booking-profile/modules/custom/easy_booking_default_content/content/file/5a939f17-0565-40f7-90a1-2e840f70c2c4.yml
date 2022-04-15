@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5a939f17-0565-40f7-90a1-2e840f70c2c4
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: dumbbell.png
+  uri:
+    -
+      value: 'public://2020-10/dumbbell_0_1_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 946
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310139
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

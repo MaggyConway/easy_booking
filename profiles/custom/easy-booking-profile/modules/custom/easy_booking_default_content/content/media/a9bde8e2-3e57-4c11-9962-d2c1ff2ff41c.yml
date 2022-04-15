@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: a9bde8e2-3e57-4c11-9962-d2c1ff2ff41c
+  bundle: image
+  default_langcode: en
+  depends:
+    1423e0d1-cd45-4da2-b996-12c544948fe4: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: mirror.png
+  created:
+    -
+      value: 1603310739
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 1423e0d1-cd45-4da2-b996-12c544948fe4
+      alt: Mirror
+      title: ''
+      width: 40
+      height: 40

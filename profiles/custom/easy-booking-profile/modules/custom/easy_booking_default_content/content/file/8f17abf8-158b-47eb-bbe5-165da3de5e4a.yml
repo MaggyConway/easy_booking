@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8f17abf8-158b-47eb-bbe5-165da3de5e4a
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: interer_spalnya_pomeschenie_75524_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/interer_spalnya_pomeschenie_75524_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 160385
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603423225
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

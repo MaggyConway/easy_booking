@@ -1,0 +1,223 @@
+.path--contact {
+    #block-easy-booking-theme-main-page-content {
+        padding: 34px 32px 150px !important;
+        @include container;
+
+        @include breakpoint(sll) {
+            padding: 40px 32px 80px !important;
+        }
+
+        .webform-submission-contact-form {
+            background: $secondary-bg;
+
+            #edit-form-map-fields-container {
+                #edit-form-map-container {
+                    #webform-computed-map-wrapper {
+                        .form-item-map {
+                            #map {
+                                @include breakpoint(sl-tablet) {
+                                    height: 508px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.webform-submission-contact-form {
+
+    #edit-title-map-container {
+        padding-top: 16px;
+        padding: 16px 24px 0 24px;
+        margin-bottom: 24px;
+        @include width-map-form;
+
+        @include breakpoint(sl-tablet) {
+            padding: 24px 16px 0 16px;
+        }
+
+        label {
+            @include main-title-page;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .form-type-processed-text {
+            @include subtitle-text-page;
+            margin: 0;
+        }
+    }
+
+    #edit-form-map-fields-container {
+        display: flex;
+        padding-right: 24px;
+
+        @include breakpoint(sl-tablet) {
+            display: block;
+            padding: 0;
+
+        }
+
+        #edit-form-map-container {
+            @include width-map-form;
+            margin-right: 24px;
+            position: relative;
+
+            @include breakpoint(sl-tablet) {
+                margin-right: 0;
+                margin-bottom: 32px;
+            }
+
+            #webform-computed-map-wrapper {
+                .form-item-map {
+                    margin: 0;
+
+                    #map {
+                        height: 320px;
+                    }
+                }
+            }
+
+            #edit-form-map-info-wrapper {
+                position: absolute;
+                top: 16px;
+                left: 24px;
+                background: $secondary-bg;
+                max-width: 331px;
+                width: 100%;
+
+                @include breakpoint(sll) {
+                    top: 24px;
+                    max-width: 264px;
+                }
+
+                @include breakpoint(s) {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                #edit-form-map-info-fields-wrapper {
+                    padding: 16px 40px 32px 24px;
+
+                    @include breakpoint(sll) {
+                        padding: 24px 22px 32px 16px;
+                    }
+
+
+                    .form-map-info-fields-title {
+                        display: block;
+                        font-weight: bold;
+                        font-size: $main-font-size;
+                        line-height: $main-line-height-second;
+                        margin-bottom: 7px;
+                    }
+
+                    .form-map-info-field-contacts {
+                        display: flex;
+                        overflow: hidden;
+                        align-items: flex-start;
+                        margin-bottom: 7px;
+                        font-size: $font-size-card-text;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .form-map-info-field-contacts-title {
+                            display: block;
+                            width: calc(26% - 16px);
+                            font-weight: bold;
+                            line-height: $line-height-card-text-second;
+                            margin-right: 16px;
+
+                            @include breakpoint(sll) {
+                                width: calc(29% - 16px);
+                            }
+                        }
+
+                        .form-map-info-field-contacts-item {
+                            width: 74%;
+                            display: block;
+                            font-weight: 300;
+                            line-height: 18px;
+
+                            @include breakpoint(sll) {
+                                width: 71%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        #edit-form-fields-container {
+            width: 31%;
+
+            @include breakpoint(sl-tablet) {
+                width: 100%;
+                padding: 0 16px 40px 16px;
+            }
+
+            label {
+                display: block;
+                font-weight: bold;
+                font-size: $secondary-font-size-title;
+                line-height: $secondary-line-height-title;
+                margin-bottom: 16px;
+
+                @include breakpoint(sl-tablet) {
+                    font-size: $secondary-font-size-title-mobile;
+                    line-height: $secondary-line-height-title-mobile;
+                }
+            }
+
+            .form-item {
+                margin-top: 0;
+                margin-bottom: 8px;
+                width: 100%;
+
+                label {
+                    color: $primary-color-text;
+                    font-weight: 300;
+                    font-size: $main-font-size;
+                    line-height: $main-line-height-second;
+                    padding: 0;
+                }
+
+                input, textarea {
+                    z-index: 10;
+                    width: 100%;
+                }
+
+                input {
+                    @include form-style-input;
+                }
+
+                textarea {
+                    @include form-style-input;
+                    height: 98px;
+                    resize: none;
+                }
+            }
+
+            .form-actions {
+                margin: 0;
+
+                .webform-button--submit {
+                    @include btn-style-form;
+                }
+            }
+        }
+
+    }
+}
+
+.path-attractions {
+    .mapboxgl-marker {
+        top: -9px !important;
+    }
+}

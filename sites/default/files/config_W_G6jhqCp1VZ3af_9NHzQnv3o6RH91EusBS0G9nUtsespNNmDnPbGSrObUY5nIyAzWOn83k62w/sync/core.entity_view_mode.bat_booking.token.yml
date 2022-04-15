@@ -1,0 +1,12 @@
+uuid: 34d262f0-ec5c-4830-89a7-6f34b27a97d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_booking
+_core:
+  default_config_hash: whL3upPuUFwdL9ckiwV0Icu12b2JGzI5lSBYG_MSEsc
+id: bat_booking.token
+label: Token
+targetEntityType: bat_booking
+cache: true

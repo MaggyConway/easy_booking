@@ -1,0 +1,57 @@
+/* Normalize css */
+@import '~normalize.css/normalize.css';
+
+/* Fonts */
+// @import '../assets/fonts/main.css';
+
+/* Setup */
+@import './settings/variables';
+
+/* Mixins */
+@import './settings/mixins';
+
+/* Base styles */
+@import './base/elements';
+@import './base/typography';
+@import './base/fonts.scss';
+// @import './base/buttons';
+// @import './base/forms';
+
+/* Components */
+@import './header/header';
+@import './header/main-menu.scss';
+@import './header/header-form.scss';
+@import './header/header-details';
+
+@import './footer/footer';
+
+@import './cards/cards';
+@import './cookies/cookies';
+@import './pagination/pagination';
+@import './filter/filter';
+
+@import './frontpage/frontpage';
+
+@import './page-rooms/page-rooms';
+@import './page-rooms/page-single-room';
+@import './page-rooms/colorbox.scss';
+
+@import './page-book-rooms/page-enter-details';
+@import './page-book-rooms/page-finish-details';
+@import './page-book-rooms/page-received';
+
+@import './page-attractions/page-attractions';
+@import './page-about/page-about';
+
+@import './page-news/page-news';
+@import './page-news/page-single-news';
+
+@import './page-photos/page-photos';
+@import './page-contact/page-contact';
+
+@import './page-basket/page-basket';
+@import './page-results/page-results';
+
+@import './page-404/page-404';
+
+@import './page-login/path--user-login'

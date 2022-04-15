@@ -1,0 +1,25 @@
+uuid: 50e2b7b7-7a87-4af7-89fe-595051cafb88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.rule.field_rule_text
+    - paragraphs.paragraphs_type.rule
+  module:
+    - text
+_core:
+  default_config_hash: 4AWxwCjN4s7fd9J1ACTjuWMs6vZDVX7a_JE20N4dCM4
+id: paragraph.rule.default
+targetEntityType: paragraph
+bundle: rule
+mode: default
+content:
+  field_rule_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  search_api_excerpt: true

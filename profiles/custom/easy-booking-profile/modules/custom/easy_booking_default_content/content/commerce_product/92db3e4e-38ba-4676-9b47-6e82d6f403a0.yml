@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 92db3e4e-38ba-4676-9b47-6e82d6f403a0
+  bundle: bee_room
+  default_langcode: en
+  depends:
+    9b090114-4549-4310-a125-fa159e0e144c: commerce_store
+    c2e5bd43-48a4-4c54-a328-ef280718d6f7: commerce_product_variation
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: 9b090114-4549-4310-a125-fa159e0e144c
+  title:
+    -
+      value: 'Junior Double Room'
+  variations:
+    -
+      entity: c2e5bd43-48a4-4c54-a328-ef280718d6f7
+  default_variation:
+    -
+      entity: c2e5bd43-48a4-4c54-a328-ef280718d6f7
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1603425242

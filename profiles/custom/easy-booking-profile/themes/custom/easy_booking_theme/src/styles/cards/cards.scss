@@ -1,0 +1,134 @@
+.views-col {
+    position: relative;
+
+    .field__item {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.textfields-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $primary-color-text;
+    opacity: 0.9;
+    text-align: left;
+    color: $secondary-color-text;
+    padding: 24px 16px 36px 16px;
+
+    .textfields-container-title {
+        display: block;
+        font-size: $extra-font-size;
+        line-height: $extra-line-height;
+        font-weight: bold;
+        margin-bottom: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @include breakpoint(s) {
+            line-height: 23px;
+        }
+
+        p{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .textfields-container-description {
+        display: block;
+        font-size: $main-font-size;
+        line-height: $main-line-height;
+        font-weight: normal;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @include breakpoint(s) {
+            line-height: 17px;
+        }
+
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+/* Rooms cards */
+.room-fields-wrapper {
+    @include breakpoint(sl) {
+        padding: 24px 19px 24px 16px;
+    }
+
+    .room-field-title {
+        @include breakpoint(s) {
+            line-height: $extra-line-height;
+        }
+    }
+
+    .room-fields-price {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+
+        .room-field-night-hour {
+            margin-left: 4px;
+            font-weight: normal;
+            color: $color-grey-text;
+            letter-spacing: normal;
+        }
+    }
+
+    a {
+        @include btn-black;
+    }
+}
+/* News cards */
+.news-fields-wrapper {
+    padding: 16px 38px 32px 24px;
+
+    @include breakpoint(sl) {
+        padding: 8px 16px 16px 16px;
+    }
+
+    .news-field-title {
+        a {
+            display: block;
+            color: $secondary-color-text;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: all $default-transition-time;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+/* Attractions cards */
+.attractions-fields-wrapper {
+    padding: 16px 32px 24px 16px;
+
+    @include breakpoint(sl) {
+        padding: 8px 11px 16px 8px;
+    }
+
+    .attractions-field-title {
+        font-size: $secondary-font-size;
+        line-height: $secondary-line-height-card;
+    }
+
+    .attractions-field-destination {
+        font-size: $font-size-card-text;
+        line-height: $line-height-card-text;
+    }
+}

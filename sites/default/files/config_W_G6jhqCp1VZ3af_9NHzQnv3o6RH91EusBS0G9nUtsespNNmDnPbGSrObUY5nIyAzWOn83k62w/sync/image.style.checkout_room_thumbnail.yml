@@ -1,0 +1,15 @@
+uuid: 4f57b798-9ccf-42eb-a23f-4c728eac4af0
+langcode: en
+status: true
+dependencies: {  }
+name: checkout_room_thumbnail
+label: 'Checkout room thumbnail (88x119)'
+effects:
+  8ff44847-b97b-4b00-b407-e68e989f9a0a:
+    uuid: 8ff44847-b97b-4b00-b407-e68e989f9a0a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 88
+      height: 119
+      anchor: center-center

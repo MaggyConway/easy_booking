@@ -1,0 +1,31 @@
+uuid: bac01d45-3fcb-40ba-9491-86e4ffdfae4b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:about_us:308c804b-d01d-4346-a377-e964f4dd56e7'
+  module:
+    - block_content
+    - system
+  theme:
+    - easy_booking_theme
+id: homepageaboutusblock
+theme: easy_booking_theme
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:308c804b-d01d-4346-a377-e964f4dd56e7'
+settings:
+  id: 'block_content:308c804b-d01d-4346-a377-e964f4dd56e7'
+  label: 'About us'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

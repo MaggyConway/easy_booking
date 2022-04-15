@@ -1,0 +1,23 @@
+uuid: 604438fd-b57f-4623-9009-38d8c61f1335
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.info_blocks
+  module:
+    - text
+_core:
+  default_config_hash: B6SDW7S9aOYZvJMmA1thuEzQF0UjHrBiUW63T7MB1ms
+id: paragraph.info_blocks.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: info_blocks
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

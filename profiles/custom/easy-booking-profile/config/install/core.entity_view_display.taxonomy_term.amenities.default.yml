@@ -1,0 +1,82 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.amenities.field_icon
+    - taxonomy.vocabulary.amenities
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Main section'
+          column_widths: 50-50
+        components:
+          541ddf77-4176-4dde-b9f7-b853ba03236a:
+            uuid: 541ddf77-4176-4dde-b9f7-b853ba03236a
+            region: first
+            configuration:
+              id: 'field_block:taxonomy_term:amenities:field_icon'
+              label: Icon
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          d9d682a2-0958-4d71-8da2-52e55d13b80a:
+            uuid: d9d682a2-0958-4d71-8da2-52e55d13b80a
+            region: second
+            configuration:
+              id: 'field_block:taxonomy_term:amenities:name'
+              label: Name
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: taxonomy_term.amenities.default
+targetEntityType: taxonomy_term
+bundle: amenities
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_icon:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

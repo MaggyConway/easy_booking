@@ -1,0 +1,12 @@
+uuid: b544e0d8-eee8-47ef-8884-8b0a0b9f0d63
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_event
+_core:
+  default_config_hash: C8dV3bTscN_7150Bzb19xt0vF255fNCL-uj4785f7AM
+id: state.token
+label: Token
+targetEntityType: state
+cache: true

@@ -1,0 +1,22 @@
+uuid: 7e0ac230-ab87-4bf0-9bac-011858f1ff89
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_event
+    - bat_event_series
+_core:
+  default_config_hash: w1gNW2H_yFDHMGvpGvPIZZNADYcMKZzUy9URnLCjObU
+id: bat_event_series.event_state_reference
+field_name: event_state_reference
+entity_type: bat_event_series
+type: entity_reference
+settings:
+  target_type: state
+module: core
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,12 @@
+uuid: b1b3301f-882a-4eb2-81be-e7af24c9b33a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: zgofac1ndSYzkozHLk0gLYdZ64qsbSg2YaWsINibkYY
+id: media.ct_room_details_preview
+label: 'CT Room Details Preview'
+targetEntityType: media
+cache: true

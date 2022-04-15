@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6557ef70-c7a6-4edf-b838-6334ee2d8850
+  bundle: image
+  default_langcode: en
+  depends:
+    6230bb3c-c3ab-495c-a813-e1c4aa614520: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: camera.png
+  created:
+    -
+      value: 1603310739
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 6230bb3c-c3ab-495c-a813-e1c4aa614520
+      alt: Camera
+      title: ''
+      width: 40
+      height: 40

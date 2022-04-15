@@ -1,0 +1,643 @@
+uuid: f7bf6dd0-c990-4609-ac80-3369e3317c7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.custom_link
+    - field.field.node.room.field_adults_number
+    - field.field.node.room.field_amenities
+    - field.field.node.room.field_area
+    - field.field.node.room.field_availability_hourly
+    - field.field.node.room.field_check_in_time
+    - field.field.node.room.field_check_out_time
+    - field.field.node.room.field_children_number
+    - field.field.node.room.field_description
+    - field.field.node.room.field_double_beds_number
+    - field.field.node.room.field_night_hour
+    - field.field.node.room.field_open_hours
+    - field.field.node.room.field_photos
+    - field.field.node.room.field_price
+    - field.field.node.room.field_price_frequency
+    - field.field.node.room.field_product
+    - field.field.node.room.field_properties
+    - field.field.node.room.field_room_details
+    - field.field.node.room.field_single_beds_number
+    - field.field.node.room.field_type
+    - field.field.node.room.field_use_open_hours
+    - node.type.room
+    - views.view.other_rooms
+  module:
+    - commerce_price
+    - easy_booking_custom
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - office_hours
+    - slick
+    - system
+    - text
+    - time_field
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Main layout'
+          column_widths: 50-50
+        components:
+          1be5b808-5a81-4794-ba7c-5b5606e9f9d1:
+            uuid: 1be5b808-5a81-4794-ba7c-5b5606e9f9d1
+            region: second
+            configuration:
+              id: 'field_block:node:room:field_photos'
+              label: Photos
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: slick_media
+                settings:
+                  vanilla: 0
+                  optionset: room_slider_main
+                  style: ''
+                  skin: ''
+                  background: 0
+                  layout: ''
+                  caption:
+                    field_type: 0
+                    title: 0
+                    alt: 0
+                  view_mode: ct_room_details_preview
+                  optionset_thumbnail: room_slider_thumbnail
+                  skin_thumbnail: ''
+                  thumbnail_position: ''
+                  image_style: ct_room_details_preview_562x496
+                  thumbnail_style: ct_room_177x232_
+                  thumbnail_effect: ''
+                  media_switch: rendered
+                  ratio: ''
+                  box_style: lightbox_image_style_948x600_
+                  box_media_style: ''
+                  box_caption: ''
+                  box_caption_custom: ''
+                  grid: '1'
+                  grid_medium: '1'
+                  grid_small: '1'
+                  visible_items: ''
+                  preserve_keys: 0
+                  image: field_media_image
+                  title: ''
+                  link: false
+                  class: ''
+                  override: 0
+                  overridables:
+                    arrows: 0
+                    autoplay: 0
+                    dots: 0
+                    draggable: 0
+                    infinite: 0
+                    mouseWheel: 0
+                    randomize: 0
+                    variableWidth: 0
+                  cache: '0'
+                  current_view_mode: _custom
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          4069b007-a1e7-4412-8d66-141cb62a1d76:
+            uuid: 4069b007-a1e7-4412-8d66-141cb62a1d76
+            region: first
+            configuration:
+              id: 'field_block:node:room:field_adults_number'
+              label: 'Max guests'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: number_integer
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: -5
+          b94433dd-9202-4f8a-b8f6-d9efd9ada209:
+            uuid: b94433dd-9202-4f8a-b8f6-d9efd9ada209
+            region: first
+            configuration:
+              id: 'field_block:node:room:field_children_number'
+              label: 'Children Number'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: number_integer
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: -2
+          e85ddca9-9756-4a9b-b0ad-9ffdf9cd6e54:
+            uuid: e85ddca9-9756-4a9b-b0ad-9ffdf9cd6e54
+            region: first
+            configuration:
+              id: 'field_block:node:room:field_double_beds_number'
+              label: 'Double Beds Number'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: number_integer
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: -3
+          e961bacd-b1e1-46b9-ac26-3ebfb7d66977:
+            uuid: e961bacd-b1e1-46b9-ac26-3ebfb7d66977
+            region: first
+            configuration:
+              id: 'field_block:node:room:field_single_beds_number'
+              label: 'Bed type(s)'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: number_integer
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: -4
+          76a0cd15-98b4-4d90-85e4-b85ff4315e4a:
+            uuid: 76a0cd15-98b4-4d90-85e4-b85ff4315e4a
+            region: first
+            configuration:
+              id: 'field_block:node:room:field_amenities'
+              label: Amenities
+              provider: layout_builder
+              label_display: visible
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          ba035691-d6ad-495e-bb02-4daf4855682e:
+            uuid: ba035691-d6ad-495e-bb02-4daf4855682e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:room:field_availability_hourly'
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: hourly_calendar
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          d4a9be26-4ff2-41d5-b2da-20ece94104d5:
+            uuid: d4a9be26-4ff2-41d5-b2da-20ece94104d5
+            region: first
+            configuration:
+              id: 'field_block:node:room:field_price'
+              label: Price
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: commerce_price_default
+                settings:
+                  strip_trailing_zeroes: true
+                  currency_display: symbol
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: -8
+          ea8e350c-ada2-4df4-bf7a-684b99dfd4c4:
+            uuid: ea8e350c-ada2-4df4-bf7a-684b99dfd4c4
+            region: first
+            configuration:
+              id: 'field_block:node:room:field_night_hour'
+              label: Night/hour
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: -7
+          ae641d55-b198-4fc2-8057-03393a468c84:
+            uuid: ae641d55-b198-4fc2-8057-03393a468c84
+            region: first
+            configuration:
+              id: 'field_block:node:room:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: -10
+          9916c603-065b-4d93-9808-667e04f54874:
+            uuid: 9916c603-065b-4d93-9808-667e04f54874
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:room:field_room_details'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: basic_string
+            additional: {  }
+            weight: 0
+          d528e6eb-a40e-4bb3-bee2-a8f95392de1a:
+            uuid: d528e6eb-a40e-4bb3-bee2-a8f95392de1a
+            region: first
+            configuration:
+              id: 'field_block:node:room:field_area'
+              label: Area
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: number_decimal
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                  decimal_separator: .
+                  scale: '0'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: -1
+          97f0ebb7-1a30-4391-ac54-9f147c1d0906:
+            uuid: 97f0ebb7-1a30-4391-ac54-9f147c1d0906
+            region: second
+            configuration:
+              id: 'inline_block:custom_link'
+              label: 'Show all photos'
+              provider: layout_builder
+              label_display: '0'
+              view_mode: full
+              block_revision_id: '7'
+              block_serialized: null
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
+          d4b4d546-e303-4dd2-8762-40d94ce89641:
+            uuid: d4b4d546-e303-4dd2-8762-40d94ce89641
+            region: first
+            configuration:
+              id: system_messages_block
+              label: Messages
+              provider: system
+              label_display: '0'
+              context_mapping: {  }
+            additional: {  }
+            weight: -9
+          0efa0dd2-0979-4c5d-a09b-c2d529daf3bd:
+            uuid: 0efa0dd2-0979-4c5d-a09b-c2d529daf3bd
+            region: first
+            configuration:
+              id: reservation_form_block
+              label: 'Reservation form block'
+              provider: easy_booking_custom
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: -6
+          b4a90141-9c5f-41fa-b66c-d6a1b28bbafe:
+            uuid: b4a90141-9c5f-41fa-b66c-d6a1b28bbafe
+            region: first
+            configuration:
+              id: 'field_block:node:room:field_properties'
+              label: 'Things to know'
+              provider: layout_builder
+              label_display: visible
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Select Other Rooms'
+        components:
+          b62a674c-f5b9-4293-a466-a0c9825a5df6:
+            uuid: b62a674c-f5b9-4293-a466-a0c9825a5df6
+            region: content
+            configuration:
+              id: 'views_block:other_rooms-other_rooms'
+              label: 'Select Other Rooms'
+              provider: views
+              label_display: visible
+              views_label: 'Select Other Rooms'
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+_core:
+  default_config_hash: hyBIJWctiQ_xnMVrYQ_DXSF0hdJxZaVotAvJpueb2QY
+id: node.room.default
+targetEntityType: node
+bundle: room
+mode: default
+content:
+  field_adults_number:
+    weight: 6
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_amenities:
+    weight: 5
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_area:
+    weight: 7
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_availability_hourly:
+    type: entity_reference_entity_view
+    region: content
+    label: above
+    settings:
+      view_mode: hourly_calendar
+      link: false
+    weight: 17
+    third_party_settings: {  }
+  field_check_in_time:
+    weight: 16
+    label: above
+    settings:
+      time_format: 'h:i a'
+      timerange_format: 'start ~ end'
+    third_party_settings: {  }
+    type: time_range_formatter
+    region: content
+  field_check_out_time:
+    weight: 9
+    label: hidden
+    settings:
+      time_format: 'h:i a'
+    third_party_settings: {  }
+    type: time_formatter
+    region: content
+  field_children_number:
+    weight: 10
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_description:
+    weight: 11
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_double_beds_number:
+    weight: 12
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_night_hour:
+    weight: 20
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: first
+  field_open_hours:
+    type: office_hours_table
+    region: content
+    label: hidden
+    settings:
+      day_format: long
+      time_format: G
+      compress: false
+      grouped: false
+      show_closed: all
+      closed_format: Closed
+      separator:
+        days: '<br />'
+        grouped_days: ' - '
+        day_hours: ': '
+        hours_hours: '-'
+        more_hours: ', '
+      current_status:
+        position: ''
+        open_text: 'Currently open!'
+        closed_text: 'Currently closed'
+      schema:
+        enabled: false
+      timezone_field: ''
+      office_hours_first_day: ''
+    weight: 2
+    third_party_settings: {  }
+  field_photos:
+    type: slick_media
+    weight: 14
+    label: hidden
+    settings:
+      style: ''
+      vanilla: true
+      optionset: default
+      optionset_thumbnail: ''
+      skin: fullwidth
+      skin_thumbnail: ''
+      image_style: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      media_switch: ''
+      thumbnail_style: ''
+      ratio: ''
+      view_mode: default
+      grid: null
+      grid_medium: null
+      grid_small: null
+      visible_items: null
+      image: ''
+      title: ''
+      link: ''
+      layout: ''
+      class: ''
+      cache: 0
+      current_view_mode: default
+      background: false
+      caption:
+        title: '0'
+        alt: '0'
+      preserve_keys: false
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      thumbnail: ''
+      thumbnail_caption: ''
+      skin_arrows: ''
+      skin_dots: ''
+      fx: ''
+      icon: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      responsive_image_style: ''
+      box_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      id: ''
+      overlay: ''
+    third_party_settings: {  }
+    region: content
+  field_price:
+    type: commerce_price_default
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+  field_properties:
+    type: entity_reference_revisions_entity_view
+    weight: 18
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: first
+  field_room_details:
+    weight: 19
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: first
+  field_single_beds_number:
+    weight: 13
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_type:
+    weight: 15
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_price_frequency: true
+  field_product: true
+  field_use_open_hours: true
+  published_at: true
+  search_api_excerpt: true

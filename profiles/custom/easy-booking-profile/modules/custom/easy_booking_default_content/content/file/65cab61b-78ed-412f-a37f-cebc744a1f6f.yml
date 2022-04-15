@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 65cab61b-78ed-412f-a37f-cebc744a1f6f
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: iconfinder__Maestro_1156735.png
+  uri:
+    -
+      value: 'public://2020-12/iconfinder__Maestro_1156735_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 30984
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1607502960
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

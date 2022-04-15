@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 6fdb600c-48b8-41e7-bea0-a6b64c30a0ea
+  bundle: phone
+  default_langcode: en
+  depends:
+    8e0be8e6-2776-41b9-9d0f-665255c88c55: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Contact Block'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_icon:
+    -
+      entity: 8e0be8e6-2776-41b9-9d0f-665255c88c55
+  field_number:
+    -
+      value: '88000000000'

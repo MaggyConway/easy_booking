@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Default newsletter'
+id: default
+description: 'This is an example newsletter. Change it.'
+format: plain
+priority: 0
+receipt: true
+from_name: 'Easy Booking Profile by ADCI Solutions'
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: ''
+hyperlinks: false
+allowed_handlers: {  }
+new_account: none
+opt_inout: double
+weight: 0

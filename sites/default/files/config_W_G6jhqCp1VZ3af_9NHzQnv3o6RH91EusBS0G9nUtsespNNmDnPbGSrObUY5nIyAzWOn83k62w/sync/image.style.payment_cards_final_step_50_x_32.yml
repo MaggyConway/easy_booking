@@ -1,0 +1,15 @@
+uuid: a0712ab0-beca-45cb-a455-102fdb460c24
+langcode: en
+status: true
+dependencies: {  }
+name: payment_cards_final_step_50_x_32
+label: 'Payment cards final step(50 x 32)'
+effects:
+  0d43b4bd-29b3-4967-8b1a-4821699fb2e3:
+    uuid: 0d43b4bd-29b3-4967-8b1a-4821699fb2e3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 32
+      anchor: center-center

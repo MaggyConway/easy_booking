@@ -1,0 +1,22 @@
+uuid: af2804d8-2aff-44ef-9957-8b75c5981cb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_booking
+    - commerce_order
+_core:
+  default_config_hash: CWQm6V8D51U8hOK6WVc-uRdey4ccSE-0pDdauCNexK8
+id: commerce_order_item.field_booking
+field_name: field_booking
+entity_type: commerce_order_item
+type: entity_reference
+settings:
+  target_type: bat_booking
+module: core
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

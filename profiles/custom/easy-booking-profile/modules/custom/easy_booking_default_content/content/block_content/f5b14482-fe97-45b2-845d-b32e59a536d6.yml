@@ -1,0 +1,235 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: f5b14482-fe97-45b2-845d-b32e59a536d6
+  bundle: about
+  default_langcode: en
+  depends:
+    13fac762-468b-4ce1-988d-748b1ad527dd: media
+    d13562b2-61f8-42e2-aa5f-fbc17bfa282f: media
+    a8368568-53d6-499c-94f6-d026dbe69fb7: media
+    e1f36c56-cfa7-4da9-88c3-1b28cfbe2670: media
+    244d90a6-f132-4c13-884c-e471c836fe00: media
+    044d08b4-9c8d-4468-b1b5-27e2aadde4e2: media
+    d99a5f70-ee2f-4fd8-b488-ae55ff74e83f: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Homepage About Block'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_image:
+    -
+      entity: 13fac762-468b-4ce1-988d-748b1ad527dd
+  field_link:
+    -
+      uri: 'internal:/about'
+      title: 'Explore it'
+      options: {  }
+  field_services:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3617b667-e8b2-4322-ad67-907c66716145
+          bundle: service
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1605085689
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada in dignissim luctus quam. Et pellentesque vitae lobortis in vitae volutpat. '
+              format: plain_text
+          field_icon:
+            -
+              entity: d13562b2-61f8-42e2-aa5f-fbc17bfa282f
+          field_title:
+            -
+              value: Beachfront
+              format: plain_text
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 997e6860-b187-45f7-aa53-8e1c799a09f3
+          bundle: service
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1605085878
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada in dignissim luctus quam. Et pellentesque vitae lobortis in vitae volutpat. '
+              format: plain_text
+          field_icon:
+            -
+              entity: a8368568-53d6-499c-94f6-d026dbe69fb7
+          field_title:
+            -
+              value: 'Free WiFi'
+              format: plain_text
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7143b2b1-5abd-4f6a-8e12-c74950e02e45
+          bundle: service
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1605085942
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada in dignissim luctus quam. Et pellentesque vitae lobortis in vitae volutpat. '
+              format: plain_text
+          field_icon:
+            -
+              entity: e1f36c56-cfa7-4da9-88c3-1b28cfbe2670
+          field_title:
+            -
+              value: 'Outdoor pool'
+              format: plain_text
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 78b32f87-b620-4461-adc9-cbb091053077
+          bundle: service
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1605085978
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada in dignissim luctus quam. Et pellentesque vitae lobortis in vitae volutpat. '
+              format: plain_text
+          field_icon:
+            -
+              entity: 244d90a6-f132-4c13-884c-e471c836fe00
+          field_title:
+            -
+              value: Services
+              format: plain_text
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5cc81e7d-ac54-4017-a390-2b46f7d4fb10
+          bundle: service
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1605086017
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada in dignissim luctus quam. Et pellentesque vitae lobortis in vitae volutpat. '
+              format: plain_text
+          field_icon:
+            -
+              entity: 044d08b4-9c8d-4468-b1b5-27e2aadde4e2
+          field_title:
+            -
+              value: 'Relax centre'
+              format: plain_text
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a6e4fe0b-affc-46ab-9d1a-57d2c4337138
+          bundle: service
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1605086038
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada in dignissim luctus quam. Et pellentesque vitae lobortis in vitae volutpat. '
+              format: plain_text
+          field_icon:
+            -
+              entity: d99a5f70-ee2f-4fd8-b488-ae55ff74e83f
+          field_title:
+            -
+              value: 'Free parking'
+              format: plain_text
+  field_text:
+    -
+      value: 'Situated in Kao Prao, 31 km from Patong Beach, Easy Book Resort boasts a sun terrace and spa centre. Guests can enjoy the on-site bar.'
+      format: plain_text
+  field_title:
+    -
+      value: 'A brand new hotel beyond ordinary'

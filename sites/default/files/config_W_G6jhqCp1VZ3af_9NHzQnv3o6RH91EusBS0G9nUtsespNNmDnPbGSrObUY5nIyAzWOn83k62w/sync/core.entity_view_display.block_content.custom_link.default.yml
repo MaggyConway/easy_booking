@@ -1,0 +1,31 @@
+uuid: be2db462-838b-422f-bf7a-7e6b6754575a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.custom_link
+    - field.field.block_content.custom_link.field_custom_link
+  module:
+    - ds
+    - link
+id: block_content.custom_link.default
+targetEntityType: block_content
+bundle: custom_link
+mode: default
+content:
+  field_custom_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: link
+    region: content
+hidden:
+  search_api_excerpt: true

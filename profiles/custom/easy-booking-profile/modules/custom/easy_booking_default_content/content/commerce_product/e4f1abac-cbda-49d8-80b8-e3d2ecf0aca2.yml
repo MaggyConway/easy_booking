@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: e4f1abac-cbda-49d8-80b8-e3d2ecf0aca2
+  bundle: bee_room
+  default_langcode: en
+  depends:
+    9b090114-4549-4310-a125-fa159e0e144c: commerce_store
+    4bf5daff-d277-4c9a-a226-87a9f1186b72: commerce_product_variation
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: 9b090114-4549-4310-a125-fa159e0e144c
+  title:
+    -
+      value: 'Basic Deluxe Room'
+  variations:
+    -
+      entity: 4bf5daff-d277-4c9a-a226-87a9f1186b72
+  default_variation:
+    -
+      entity: 4bf5daff-d277-4c9a-a226-87a9f1186b72
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1603426332

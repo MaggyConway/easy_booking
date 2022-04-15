@@ -1,0 +1,22 @@
+uuid: 7b924504-b705-421a-a150-7f9b26532c35
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_booking
+_core:
+  default_config_hash: Ct4tHpt7yHFPQ3hzWhtCbuw1Gk5N4igK4BCpEP2JOBs
+id: bat_booking.field_adults_number
+field_name: field_adults_number
+entity_type: bat_booking
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

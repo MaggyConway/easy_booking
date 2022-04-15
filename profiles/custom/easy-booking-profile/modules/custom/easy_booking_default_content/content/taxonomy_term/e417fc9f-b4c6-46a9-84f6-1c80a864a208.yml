@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: e417fc9f-b4c6-46a9-84f6-1c80a864a208
+  bundle: amenities
+  default_langcode: en
+  depends:
+    f35a6246-3cce-47db-a27a-82ed71ef8849: media
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'No Smoking'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /amenities/no-smoking
+      langcode: en
+      pathauto: 1
+  field_icon:
+    -
+      entity: f35a6246-3cce-47db-a27a-82ed71ef8849

@@ -1,0 +1,21 @@
+langcode: en
+status: false
+dependencies:
+  module:
+    - easy_booking_custom
+  theme:
+    - bartik
+id: reservation_form_block
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: reservation_form_block
+settings:
+  id: reservation_form_block
+  label: 'Reservation form block'
+  provider: easy_booking_custom
+  label_display: '0'
+  context_mapping:
+    node: '@node.node_route_context:node'
+visibility: {  }

@@ -1,0 +1,25 @@
+/**
+ * @file
+ * Custom theme implementation for the easy booking checkout progress component.
+ */
+
+body {
+  counter-reset: checkout-progress;
+}
+
+.checkout-progress--step {
+  display: inline;
+  padding-right: 1em;
+}
+
+/**
+ * display: inline removes the list numbers, so they're added back via CSS3
+ * counters to avoid using float: left, which gives uneven spacing.
+ */
+.checkout-progress--step:before {
+  display: none;
+}
+
+.checkout-progress--step__current {
+  font-weight: bold;
+}

@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e311fa31-b6ad-4819-9b22-815850cef430
+  bundle: image
+  default_langcode: en
+  depends:
+    5a939f17-0565-40f7-90a1-2e840f70c2c4: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: dumbbell.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 5a939f17-0565-40f7-90a1-2e840f70c2c4
+      alt: Dumbbell
+      title: ''
+      width: 40
+      height: 40

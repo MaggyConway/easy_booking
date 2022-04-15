@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: bat_unit
+  uuid: 7968a0d2-69a1-4055-a3f3-615dec737765
+  bundle: default
+  default_langcode: en
+  depends:
+    aa260132-cf1f-4366-9f0c-2ad0c773ece3: bat_unit_type
+default:
+  uid:
+    -
+      target_id: 1
+  unit_type_id:
+    -
+      entity: aa260132-cf1f-4366-9f0c-2ad0c773ece3
+  name:
+    -
+      value: 'Basic Deluxe Room 1'
+  created:
+    -
+      value: 1603426332
+  status:
+    -
+      value: true

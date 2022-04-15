@@ -1,0 +1,27 @@
+uuid: 3748d867-38fa-40bc-b81d-b4d4120c83ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_double_beds_number
+    - node.type.room
+_core:
+  default_config_hash: Q4giI_AgZAN8Y6FG8FRLfbfPyOC4UAp-HJTVzCRDeLI
+id: node.room.field_double_beds_number
+field_name: field_double_beds_number
+entity_type: node
+bundle: room
+label: 'Double Beds Number'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 0
+  max: 4
+  prefix: ''
+  suffix: ''
+field_type: integer

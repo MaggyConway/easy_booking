@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news.field_image
+    - field.field.node.news.field_news_articles
+    - field.field.node.news.field_text
+    - field.field.node.news.field_title
+    - field.field.node.news.field_type
+    - node.type.news
+  module:
+    - user
+id: node.news.teaser
+targetEntityType: node
+bundle: news
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image: true
+  field_news_articles: true
+  field_text: true
+  field_title: true
+  field_type: true
+  published_at: true
+  search_api_excerpt: true

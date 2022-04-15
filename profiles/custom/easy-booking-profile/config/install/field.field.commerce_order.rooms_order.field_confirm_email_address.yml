@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.rooms_order
+    - field.storage.commerce_order.field_confirm_email_address
+id: commerce_order.rooms_order.field_confirm_email_address
+field_name: field_confirm_email_address
+entity_type: commerce_order
+bundle: rooms_order
+label: 'Confirm email address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

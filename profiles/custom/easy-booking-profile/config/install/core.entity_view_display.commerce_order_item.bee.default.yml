@@ -1,0 +1,67 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.bee
+    - field.field.commerce_order_item.bee.field_booking
+    - field.field.commerce_order_item.bee.field_node
+  module:
+    - commerce_price
+id: commerce_order_item.bee.default
+targetEntityType: commerce_order_item
+bundle: bee
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  purchased_entity:
+    type: entity_reference_entity_view
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    weight: 2
+    third_party_settings: {  }
+  quantity:
+    type: number_decimal
+    region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    weight: 3
+    third_party_settings: {  }
+  total_price:
+    type: commerce_price_default
+    region: content
+    label: above
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    weight: 1
+    third_party_settings: {  }
+  unit_price:
+    type: commerce_price_default
+    region: content
+    label: above
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    weight: 4
+    third_party_settings: {  }
+hidden:
+  adjustments: true
+  field_booking: true
+  field_node: true
+  search_api_excerpt: true

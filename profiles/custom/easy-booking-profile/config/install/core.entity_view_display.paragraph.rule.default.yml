@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.rule.field_rule_text
+    - paragraphs.paragraphs_type.rule
+  module:
+    - text
+id: paragraph.rule.default
+targetEntityType: paragraph
+bundle: rule
+mode: default
+content:
+  field_rule_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  search_api_excerpt: true

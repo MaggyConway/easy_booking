@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0a373483-f7e8-4531-b61a-2a7aeb0d1552
+  bundle: attraction
+  default_langcode: en
+  depends:
+    93aee43e-eff2-4435-8698-a7d25d428213: media
+    9f8cd9ee-b27b-4542-a895-50d58303d9dd: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Fruits & Berries'
+  created:
+    -
+      value: 1603445835
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/fruits-berries
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1617093698
+  field_address:
+    -
+      value: 'Unnamed Rd, Thailand, ตำบล เกาะยาวใหญ่ อำเภอ เกาะยาว พังงา'
+  field_attraction_name:
+    -
+      value: 'Fresh Thai berries'
+  field_coordinates:
+    -
+      value: 'POINT (-122.3884356 37.7843591)'
+      geo_type: Point
+      lat: 37.7843591
+      lon: -122.3884356
+      left: -122.3884356
+      top: 37.7843591
+      right: -122.3884356
+      bottom: 37.7843591
+      geohash: 9q8yyyrmyg012
+      latlon: '37.7843591,-122.3884356'
+  field_country:
+    -
+      value: TH
+  field_destination:
+    -
+      value: '1.00'
+  field_image:
+    -
+      entity: 93aee43e-eff2-4435-8698-a7d25d428213
+  field_type:
+    -
+      entity: 9f8cd9ee-b27b-4542-a895-50d58303d9dd

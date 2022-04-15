@@ -1,0 +1,22 @@
+uuid: 995c4a35-726e-4873-b1cd-d3f056fe6bbb
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_booking
+    - datetime
+_core:
+  default_config_hash: v5ENkNkc0htYv4-32MI1-IZPupTl5GT2JIeEdukUMZo
+id: bat_booking.booking_repeat_until
+field_name: booking_repeat_until
+entity_type: bat_booking
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

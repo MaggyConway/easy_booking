@@ -1,0 +1,21 @@
+uuid: e3952962-8fb7-40f0-a901-5299f147e405
+langcode: en
+status: false
+dependencies:
+  module:
+    - commerce_payment_example
+_core:
+  default_config_hash: qXTMRxbL8Ph6LWBdUsz1-RNM5P5u8Nguw4PeyfFlts4
+id: rooms_payment_gateway
+label: 'Rooms Payment Gateway'
+weight: null
+plugin: example_onsite
+configuration:
+  api_key: EDgKApkqW0H-PdoaOwOXzcHh13LxqjeqJDzvGoJsClm0xokqzOFVW0P6vJ3Bvbo-8OjpKZGoN9FAVKqQ
+  display_label: Example
+  mode: test
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

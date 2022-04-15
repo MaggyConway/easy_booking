@@ -1,0 +1,29 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.reason.field_image
+    - field.field.node.reason.field_text
+    - node.type.reason
+  module:
+    - user
+id: node.reason.teaser
+targetEntityType: node
+bundle: reason
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image: true
+  field_text: true
+  search_api_excerpt: true

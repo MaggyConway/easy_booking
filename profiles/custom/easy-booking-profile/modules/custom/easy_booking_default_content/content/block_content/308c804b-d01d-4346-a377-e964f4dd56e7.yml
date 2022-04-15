@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 308c804b-d01d-4346-a377-e964f4dd56e7
+  bundle: about_us
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Homepage About us block'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_about_us:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: acd4a1a7-b275-4b1e-a07c-dbdc46e278aa
+          bundle: homepage_about_us
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1616657473
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_first_item:
+            -
+              value: "<p>All rooms include a flat-screen TV with satellite channels. Certain rooms feature &nbsp;feature a seating area for your convenience. Certain units have views. Of the sea or pool. Each room is fitted with a private bathroom.&nbsp;</p>\r\n"
+              format: basic_html
+          field_second_item:
+            -
+              value: "<p>Easy Booking Resort features free WiFi throughout \Lthe property. <span>You will find a 24-hour front desk at \Lthe property.</span> You can play billiards at this at the property. You can play billiards at this resort, and the area&nbsp;</p>\r\n"
+              format: basic_html
+          field_third_item:
+            -
+              value: "<p>Easy Booking Resort features free WiFi throughout \Lthe property. You will find a 24-hour front desk at \Lthe property. You can play billiards at this at the property.</p><a href=\"/about\">Lean More</a>\r\n"
+              format: basic_html

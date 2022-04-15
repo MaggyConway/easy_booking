@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 076926e5-692e-4192-92fa-b47e50fb1bb3
+  bundle: attraction
+  default_langcode: en
+  depends:
+    dd94bc57-1559-4047-ad72-595e6b2ecd26: media
+    9f8cd9ee-b27b-4542-a895-50d58303d9dd: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Restaurant
+  created:
+    -
+      value: 1603445891
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/restaurant
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1617093674
+  field_address:
+    -
+      value: 'Unnamed Rd, Thailand, ตำบล เกาะยาวใหญ่ อำเภอ เกาะยาว พังงา'
+  field_attraction_name:
+    -
+      value: 'Thai uncle`s bistro'
+  field_coordinates:
+    -
+      value: 'POINT (-122.438255 37.7762016)'
+      geo_type: Point
+      lat: 37.7762016
+      lon: -122.438255
+      left: -122.438255
+      top: 37.7762016
+      right: -122.438255
+      bottom: 37.7762016
+      geohash: 9q8yvugnmf7un
+      latlon: '37.7762016,-122.438255'
+  field_country:
+    -
+      value: TH
+  field_destination:
+    -
+      value: '0.10'
+  field_image:
+    -
+      entity: dd94bc57-1559-4047-ad72-595e6b2ecd26
+  field_type:
+    -
+      entity: 9f8cd9ee-b27b-4542-a895-50d58303d9dd

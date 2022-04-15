@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c1110f7e-01b2-4d8f-902e-52e3782940e5
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: location-pin_0.png
+  uri:
+    -
+      value: 'public://2021-03/location-pin_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1167
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1616995509
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

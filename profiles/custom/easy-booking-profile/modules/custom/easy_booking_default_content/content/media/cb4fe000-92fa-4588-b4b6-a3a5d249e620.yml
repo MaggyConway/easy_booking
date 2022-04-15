@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: cb4fe000-92fa-4588-b4b6-a3a5d249e620
+  bundle: image
+  default_langcode: en
+  depends:
+    8f17abf8-158b-47eb-bbe5-165da3de5e4a: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: interer_spalnya_pomeschenie_75524_1280x720.jpg
+  created:
+    -
+      value: 1603423225
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 8f17abf8-158b-47eb-bbe5-165da3de5e4a
+      alt: Room
+      title: ''
+      width: 1280
+      height: 720

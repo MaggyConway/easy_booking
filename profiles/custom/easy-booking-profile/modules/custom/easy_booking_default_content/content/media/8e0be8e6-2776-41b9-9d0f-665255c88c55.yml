@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 8e0be8e6-2776-41b9-9d0f-665255c88c55
+  bundle: image
+  default_langcode: en
+  depends:
+    27a74bdf-0638-4f06-b6ed-fd276bfe8def: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: Vector.png
+  created:
+    -
+      value: 1605080362
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 27a74bdf-0638-4f06-b6ed-fd276bfe8def
+      alt: 'Phone Icon'
+      title: ''
+      width: 14
+      height: 14

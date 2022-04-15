@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bartik
+id: contactblock
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:6fdb600c-48b8-41e7-bea0-a6b64c30a0ea'
+settings:
+  id: 'block_content:6fdb600c-48b8-41e7-bea0-a6b64c30a0ea'
+  label: 'Contact Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

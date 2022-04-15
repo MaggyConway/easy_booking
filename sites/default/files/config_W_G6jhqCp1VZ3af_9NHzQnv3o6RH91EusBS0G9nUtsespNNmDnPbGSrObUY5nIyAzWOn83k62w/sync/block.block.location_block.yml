@@ -1,0 +1,30 @@
+uuid: eaee88d7-c3c1-4cb2-b7b9-5aeace64a6ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - easy_booking_custom
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: tHzSgRKlkplOL6XGBEwATtZYC3_veeZ66ZEjm_TQwGE
+id: location_block
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: location_block
+settings:
+  id: location_block
+  label: Location
+  provider: easy_booking_custom
+  label_display: visible
+  phone: "8‒800‒000‒000\L0"
+  address: "80/8-12 Moo 7, Ban Lopareh, Pru Naai 82160, Thailand\L"
+visibility:
+  request_path:
+    id: request_path
+    pages: /rooms
+    negate: false
+    context_mapping: {  }

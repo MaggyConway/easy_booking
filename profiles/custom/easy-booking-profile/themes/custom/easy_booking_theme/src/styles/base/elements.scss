@@ -1,0 +1,135 @@
+/* ==========================================================================
+  Base styles
+========================================================================== */
+
+/* stylelint-disable-next-line */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.dialog-off-canvas-main-canvas {
+  height: 100%;
+}
+
+html {
+  height: 100%;
+  font-family: $nunito-fonts;
+  font-size: $secondary-font-size;
+  line-height: $secondary-line-height;
+  word-wrap: break-word;
+  color: $main-text-color;
+  overflow-wrap: break-word;
+}
+
+body {
+  height: 100%;
+  font-family: $nunito-fonts;
+  background-color: $primary-bg;
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.layout-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  flex: 1;
+  margin: 0 auto;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+object,
+input,
+textarea {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+img {
+  display: block;
+  max-width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+button,
+input[type='submit'] {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  transition: color $default-transition-time ease;
+
+  &:hover {
+    color: $link-color-hover;
+  }
+
+  &:focus {
+    color: $link-color-hover;
+  }
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+h2 {
+  @include main-title-page;
+}
+
+.site-logo {
+  display: block;
+  max-width: 82px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+
+  &:hover,
+  &:focus {
+      -moz-appearance: number-input;
+  }
+}
+
+.container {
+  max-width: 1204px;
+  width: 100%;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+.more-link {
+  a {
+    @include btn-white;
+  }
+}

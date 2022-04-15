@@ -1,0 +1,20 @@
+uuid: 69b0f342-8225-4b4e-a1da-b6b1a4ad438b
+langcode: en
+status: true
+dependencies:
+  module:
+    - easy_booking_commerce
+_core:
+  default_config_hash: 2r_peaZrGue6QeTdf52mq0xTLW1Qm6cjNoOHBmP7Ono
+id: easy_booking_gateway
+label: 'Easy Booking Gateway'
+weight: null
+plugin: easy_booking_gateway
+configuration:
+  display_label: 'Easy Booking Gateway'
+  mode: test
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

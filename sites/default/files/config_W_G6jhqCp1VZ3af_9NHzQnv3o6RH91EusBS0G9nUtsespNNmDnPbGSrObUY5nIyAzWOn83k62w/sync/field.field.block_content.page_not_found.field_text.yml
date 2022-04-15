@@ -1,0 +1,26 @@
+uuid: 1be939fd-12d7-49b4-a7eb-722fe3e7587c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.page_not_found
+    - field.storage.block_content.field_text
+  module:
+    - text
+_core:
+  default_config_hash: cbiXmTQ6-_mKfMFb8yQcHHaYmHAqGwQa1t0yqvqnElU
+id: block_content.page_not_found.field_text
+field_name: field_text
+entity_type: block_content
+bundle: page_not_found
+label: Text
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: "Sorry, we couldn’t find the page you’re looking for. \r\nPerhaps you’ve mistyped the URL? Be sure to check\r\nyour spelling."
+    format: plain_text
+default_value_callback: ''
+settings: {  }
+field_type: text_long

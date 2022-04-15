@@ -1,0 +1,12 @@
+uuid: d3a9e0cc-9875-4110-868a-25405ef7fe06
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Yye5OQEsCBmmIQIsyjN71aKRBnXvoTmGeqit36PQpO0
+id: bee
+label: BEE
+orderItemType: bee
+generateTitle: true
+traits: {  }
+locked: false

@@ -1,0 +1,43 @@
+uuid: d50ab597-b279-471c-a811-f9b133e7b1dc
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.attraction.field_address
+    - field.field.node.attraction.field_attraction_name
+    - field.field.node.attraction.field_coordinates
+    - field.field.node.attraction.field_country
+    - field.field.node.attraction.field_destination
+    - field.field.node.attraction.field_image
+    - field.field.node.attraction.field_type
+    - node.type.attraction
+  module:
+    - user
+_core:
+  default_config_hash: aVFQQSFIhmxm8WPKk37Ya1Jye4YN46cbZKi8QiOmAZA
+id: node.attraction.teaser
+targetEntityType: node
+bundle: attraction
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address: true
+  field_attraction_name: true
+  field_coordinates: true
+  field_country: true
+  field_destination: true
+  field_image: true
+  field_type: true
+  published_at: true
+  search_api_excerpt: true

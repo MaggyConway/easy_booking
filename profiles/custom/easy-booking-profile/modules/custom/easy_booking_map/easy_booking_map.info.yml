@@ -1,0 +1,13 @@
+name: Easy Booking MapBox
+type: module
+package: Mapbox
+core_version_requirement: ^8 || ^9
+description: Custom mapbox code for Easy Booking Profile
+configure: mapbox.configure
+
+dependencies:
+  - drupal:block
+  - token
+  - media
+  - media_library
+  - geofield

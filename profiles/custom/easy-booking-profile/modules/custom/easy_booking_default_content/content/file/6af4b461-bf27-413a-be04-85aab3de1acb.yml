@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6af4b461-bf27-413a-be04-85aab3de1acb
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: symbols.png
+  uri:
+    -
+      value: 'public://2020-12/symbols_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 11687
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1607502960
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

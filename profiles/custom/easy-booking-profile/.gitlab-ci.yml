@@ -1,0 +1,76 @@
+image: php:7.2-apache
+
+services:
+  - mysql:5.7
+
+before_script:
+  # Install dependencies
+  - bash ci/docker_install.sh > /dev/null
+
+# Cache libraries in between jobs
+cache:
+  paths:
+    - drupal/vendor/
+    - drupal/web/core
+    - drupal/web/sites
+    - drupal/web/.csslintrc
+    - drupal/web/.editorconfig
+    - drupal/web/.eslintignore
+    - drupal/web/.eslintrc.json
+    - drupal/web/.gitattributes
+    - drupal/web/.ht.router.php
+    - drupal/web/.htaccess
+    - drupal/web/autoload.php
+    - drupal/web/index.php
+    - drupal/web/robots.txt
+    - drupal/web/update.php
+    - drupal/web/web.config
+
+variables:
+  # Configure mysql environment variables (https://hub.docker.com/_/mysql/)
+  MYSQL_DATABASE: "testdb"
+  MYSQL_ROOT_PASSWORD: "pass"
+
+# Aliases
+.mv-drupal-vendor: &mv-drupal-vendor |
+  if [ -d "drupal/vendor" ]; then
+    mv drupal/vendor .
+  fi
+
+.mv-vendor: &mv-vendor |
+  if [ -d "vendor" ]; then
+    mv vendor drupal/vendor
+  fi
+
+.mv-drupal-core: &mv-drupal-core |
+  if [ -d "drupal/web" ]; then
+    mv drupal/web .
+  fi
+
+.mv-core: &mv-core |
+  if [ -d "web" ]; then
+    mv web drupal/web
+  fi
+
+booking test:
+  script:
+    # Move cache and core if they exists
+    - *mv-drupal-vendor
+    - *mv-drupal-core
+    # Install composer and dependencies
+    - composer create-project drupal-composer/drupal-project:8.x-dev drupal --no-interaction --no-install
+    - *mv-vendor
+    - *mv-core
+    # Install profiles dependencies
+    - cd drupal
+    - composer require --no-update drush/drush:^10.0 wikimedia/composer-merge-plugin
+    - cd .. && php ci/install.php
+    # Move profile files
+    - mkdir -p drupal/web/profiles/easy_booking && rsync -avzq --exclude drupal . drupal/web/profiles/easy_booking
+    - cd drupal && COMPOSER_MEMORY_LIMIT=-1 /usr/local/bin/composer install
+    # Start server
+    - (php -S localhost:80 -t $(pwd)/web/ &) >> /dev/null 2>&1
+    # Build profile
+    - php -d memory_limit=-1 vendor/bin/drush si easy_booking --db-url=mysql://root:pass@mysql/testdb
+    # Phpunit test
+    - vendor/bin/phpunit --debug --configuration web/profiles/easy_booking/phpunit.xml --bootstrap web/core/tests/bootstrap.php --printer=\\Drupal\\Tests\\Listeners\\HtmlOutputPrinter

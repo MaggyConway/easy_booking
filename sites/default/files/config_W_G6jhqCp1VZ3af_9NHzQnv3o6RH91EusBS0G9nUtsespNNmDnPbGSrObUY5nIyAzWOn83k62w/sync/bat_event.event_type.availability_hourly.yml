@@ -1,0 +1,16 @@
+uuid: 0d4146a0-5f6c-451f-acbd-5c5789ee70e7
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - bee
+_core:
+  default_config_hash: MVguYGPVk-Dk87LRY7gnJvRoOLVzCM-gCUxCQFhe8VM
+name: 'Availability Hourly'
+type: availability_hourly
+event_granularity: bat_hourly
+fixed_event_states: 1
+default_event_value_field_ids: null
+default_event_label_field_name: null
+target_entity_type: bat_unit

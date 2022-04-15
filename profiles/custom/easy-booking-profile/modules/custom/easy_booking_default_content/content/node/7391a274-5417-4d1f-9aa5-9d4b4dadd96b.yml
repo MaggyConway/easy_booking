@@ -1,0 +1,126 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7391a274-5417-4d1f-9aa5-9d4b4dadd96b
+  bundle: room
+  default_langcode: en
+  depends:
+    f47d1103-280d-4da1-9e22-0b439333b60f: taxonomy_term
+    bc8681f1-a3bd-487c-b568-2208e7352094: taxonomy_term
+    967b4719-5efc-4545-b7ae-4595fc93dcdd: taxonomy_term
+    792b7145-5ced-4c1b-9f60-d27a0e8073c3: taxonomy_term
+    27998a35-f6de-4249-a412-02f81e2906db: taxonomy_term
+    5cb8e4b7-2cba-4135-b94c-2ab1147e4695: taxonomy_term
+    e417fc9f-b4c6-46a9-84f6-1c80a864a208: taxonomy_term
+    a307da23-462f-4fdb-9685-70fe1924618e: taxonomy_term
+    11f92e4b-f01e-475e-9124-7d289e31175e: taxonomy_term
+    f23dbdc9-e4b4-4715-a886-6546d970e951: taxonomy_term
+    b317c68c-b3ae-4c0a-9a3b-3383a37a7434: bat_unit
+    0f21b9e4-0584-4584-8390-d78b3b7f82f9: media
+    5b3dce8a-f2bf-41d4-ad98-669d9afe2d7d: media
+    f759c358-9432-448c-8b10-6c21b62ddc8e: media
+    4d249bde-71f7-40c1-9623-0cd5ae2ecc52: media
+    4157454d-6333-4e69-9ccd-3a223c1d9b19: commerce_product
+    491635bb-7d93-474b-95dd-6106e8ae6439: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Family room'
+  created:
+    -
+      value: 1603424875
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  path:
+    -
+      alias: /rooms/family-room
+      langcode: en
+      pathauto: 1
+  field_adults_number:
+    -
+      value: 2
+  field_amenities:
+    -
+      entity: f47d1103-280d-4da1-9e22-0b439333b60f
+    -
+      entity: bc8681f1-a3bd-487c-b568-2208e7352094
+    -
+      entity: 967b4719-5efc-4545-b7ae-4595fc93dcdd
+    -
+      entity: 792b7145-5ced-4c1b-9f60-d27a0e8073c3
+    -
+      entity: 27998a35-f6de-4249-a412-02f81e2906db
+    -
+      entity: 5cb8e4b7-2cba-4135-b94c-2ab1147e4695
+    -
+      entity: e417fc9f-b4c6-46a9-84f6-1c80a864a208
+    -
+      entity: a307da23-462f-4fdb-9685-70fe1924618e
+    -
+      entity: 11f92e4b-f01e-475e-9124-7d289e31175e
+    -
+      entity: f23dbdc9-e4b4-4715-a886-6546d970e951
+  field_area:
+    -
+      value: '34.00'
+  field_availability_hourly:
+    -
+      entity: b317c68c-b3ae-4c0a-9a3b-3383a37a7434
+  field_check_in_time:
+    -
+      from: 57600
+      to: 7200
+  field_check_out_time:
+    -
+      value: 79200
+  field_children_number:
+    -
+      value: 1
+  field_double_beds_number:
+    -
+      value: 0
+  field_night_hour:
+    -
+      value: '| per hour'
+  field_photos:
+    -
+      entity: 0f21b9e4-0584-4584-8390-d78b3b7f82f9
+    -
+      entity: 5b3dce8a-f2bf-41d4-ad98-669d9afe2d7d
+    -
+      entity: f759c358-9432-448c-8b10-6c21b62ddc8e
+    -
+      entity: 4d249bde-71f7-40c1-9623-0cd5ae2ecc52
+  field_price:
+    -
+      number: '18.000000'
+      currency_code: USD
+      formatted: $18.00
+  field_price_frequency:
+    -
+      value: hour
+  field_product:
+    -
+      entity: 4157454d-6333-4e69-9ccd-3a223c1d9b19
+  field_single_beds_number:
+    -
+      value: 2
+  field_type:
+    -
+      entity: 491635bb-7d93-474b-95dd-6106e8ae6439
+  field_use_open_hours:
+    -
+      value: false

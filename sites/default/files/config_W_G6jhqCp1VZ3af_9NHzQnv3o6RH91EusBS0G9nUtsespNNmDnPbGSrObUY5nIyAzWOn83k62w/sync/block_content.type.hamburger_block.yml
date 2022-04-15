@@ -1,0 +1,8 @@
+uuid: 4ae3ab90-8713-45a0-acdd-d28ff6114fdd
+langcode: en
+status: true
+dependencies: {  }
+id: hamburger_block
+label: 'Hamburger block'
+revision: 0
+description: ''

@@ -1,0 +1,39 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 23636b4c-19dc-42a0-998d-7c29f2e2259d
+  bundle: page_not_found
+  default_langcode: en
+  depends:
+    fba54f09-5298-460b-b122-dbb75dee45bd: media
+    6efdc838-203a-44a6-a32f-bf054701f9f2: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Page not found'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_images:
+    -
+      entity: fba54f09-5298-460b-b122-dbb75dee45bd
+    -
+      entity: 6efdc838-203a-44a6-a32f-bf054701f9f2
+  field_link:
+    -
+      uri: 'internal:/rooms'
+      title: 'Find rooms'
+      options: {  }
+  field_text:
+    -
+      value: 'Sorry, we couldn’t find the page you’re looking for. Perhaps you’ve mistyped the URL? Be sure to check your spelling.'
+      format: plain_text
+  field_title:
+    -
+      value: 'Page not found'

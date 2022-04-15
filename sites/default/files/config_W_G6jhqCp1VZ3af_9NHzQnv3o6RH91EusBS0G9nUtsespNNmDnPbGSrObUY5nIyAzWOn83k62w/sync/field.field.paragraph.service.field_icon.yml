@@ -1,0 +1,30 @@
+uuid: a2bda1ca-cbb4-436e-9d38-e9190bd469e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon
+    - media.type.image
+    - paragraphs.paragraphs_type.service
+_core:
+  default_config_hash: yQPsFDtenTl49ttF8o6oTk-vbHk8AWqNB4laadiJShI
+id: paragraph.service.field_icon
+field_name: field_icon
+entity_type: paragraph
+bundle: service
+label: Icon
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

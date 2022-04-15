@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: ct_news_562x254
+label: 'CT News (562x254)'
+effects:
+  181e88b5-fe9d-41e7-befd-e4e37356320a:
+    uuid: 181e88b5-fe9d-41e7-befd-e4e37356320a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 562
+      height: 254
+      crop_type: focal_point

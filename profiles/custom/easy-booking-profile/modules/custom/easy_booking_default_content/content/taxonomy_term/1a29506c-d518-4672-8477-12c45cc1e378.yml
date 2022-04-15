@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 1a29506c-d518-4672-8477-12c45cc1e378
+  bundle: amenities
+  default_langcode: en
+  depends:
+    6560b127-5515-48b1-bc23-46e2a5f0ea8c: media
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Door Hanger'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /amenities/door-hanger
+      langcode: en
+      pathauto: 1
+  field_icon:
+    -
+      entity: 6560b127-5515-48b1-bc23-46e2a5f0ea8c

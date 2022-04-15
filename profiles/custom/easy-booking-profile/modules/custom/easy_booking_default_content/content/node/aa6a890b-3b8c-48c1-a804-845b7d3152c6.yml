@@ -1,0 +1,330 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: aa6a890b-3b8c-48c1-a804-845b7d3152c6
+  bundle: room
+  default_langcode: en
+  depends:
+    f47d1103-280d-4da1-9e22-0b439333b60f: taxonomy_term
+    967b4719-5efc-4545-b7ae-4595fc93dcdd: taxonomy_term
+    792b7145-5ced-4c1b-9f60-d27a0e8073c3: taxonomy_term
+    7242d0c5-b70a-40ee-b0e9-9d0221d4b2f7: taxonomy_term
+    e417fc9f-b4c6-46a9-84f6-1c80a864a208: taxonomy_term
+    a307da23-462f-4fdb-9685-70fe1924618e: taxonomy_term
+    e852a821-4005-4271-986f-31fdbb749782: taxonomy_term
+    11f92e4b-f01e-475e-9124-7d289e31175e: taxonomy_term
+    f23dbdc9-e4b4-4715-a886-6546d970e951: taxonomy_term
+    e10788a6-a811-46ce-8ff8-583743ce5144: bat_unit
+    751b12e6-c787-4ff3-9837-d33daadc1b51: media
+    de3c9a29-7d92-47ba-ad73-9060d5284965: media
+    891dcdc8-6e64-462c-accb-042af775a33d: media
+    90b2cda9-c043-4a46-b9c7-d898e8f6f615: commerce_product
+    ebaa7b2b-d148-43d7-a6b0-4f814bb3c3e1: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Pacific room'
+  created:
+    -
+      value: 1603424684
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  path:
+    -
+      alias: /rooms/pacific-room
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1616576750
+  field_adults_number:
+    -
+      value: 1
+  field_amenities:
+    -
+      entity: f47d1103-280d-4da1-9e22-0b439333b60f
+    -
+      entity: 967b4719-5efc-4545-b7ae-4595fc93dcdd
+    -
+      entity: 792b7145-5ced-4c1b-9f60-d27a0e8073c3
+    -
+      entity: 7242d0c5-b70a-40ee-b0e9-9d0221d4b2f7
+    -
+      entity: e417fc9f-b4c6-46a9-84f6-1c80a864a208
+    -
+      entity: a307da23-462f-4fdb-9685-70fe1924618e
+    -
+      entity: e852a821-4005-4271-986f-31fdbb749782
+    -
+      entity: 11f92e4b-f01e-475e-9124-7d289e31175e
+    -
+      entity: f23dbdc9-e4b4-4715-a886-6546d970e951
+  field_area:
+    -
+      value: '25.00'
+  field_availability_hourly:
+    -
+      entity: e10788a6-a811-46ce-8ff8-583743ce5144
+  field_check_in_time:
+    -
+      from: 57600
+      to: 7200
+  field_check_out_time:
+    -
+      value: 79200
+  field_children_number:
+    -
+      value: 0
+  field_double_beds_number:
+    -
+      value: 0
+  field_night_hour:
+    -
+      value: '| per hour'
+  field_photos:
+    -
+      entity: 751b12e6-c787-4ff3-9837-d33daadc1b51
+    -
+      entity: de3c9a29-7d92-47ba-ad73-9060d5284965
+    -
+      entity: 891dcdc8-6e64-462c-accb-042af775a33d
+  field_price:
+    -
+      number: '15.000000'
+      currency_code: USD
+      formatted: $15.00
+  field_price_frequency:
+    -
+      value: hour
+  field_product:
+    -
+      entity: 90b2cda9-c043-4a46-b9c7-d898e8f6f615
+  field_properties:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3a74cf94-4a93-4b8f-8c74-8ea8e28f9696
+          bundle: properties
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1605694014
+          behavior_settings:
+            -
+              value: {  }
+          field_rules:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: abb024c1-5b89-42c1-bbb4-008f6b25eff0
+                  bundle: rules
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1605694014
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_rule_items:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: ff755e4a-1fae-4b7f-a8ea-20f04bd1b09b
+                          bundle: rule
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1605694076
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_rule_text:
+                            -
+                              value: 'Not suitable for children and infants'
+                              format: plain_text
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 55aff936-ad29-4a87-80b4-e58ec7149287
+                          bundle: rule
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1605694091
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_rule_text:
+                            -
+                              value: 'No smoking'
+                              format: plain_text
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: c52e57ac-5d57-4d4f-bce5-b859b8e1aa46
+                          bundle: rule
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1605694101
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_rule_text:
+                            -
+                              value: 'No pets'
+                              format: plain_text
+                  field_title:
+                    -
+                      value: 'House rules'
+                      format: plain_text
+          field_safety:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3334f02a-7b86-4f8e-be77-158d40cae8ea
+                  bundle: safety
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1605694014
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_safety_items:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: fa12dca9-49c0-4cad-95c0-655a3d513252
+                          bundle: safety_item
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1605694014
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_safety_text:
+                            -
+                              value: 'No carbon monoxide alarm'
+                              format: plain_text
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 61fd31df-3a9d-40b4-8d31-760c602f9db3
+                          bundle: safety_item
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1605694158
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_more_link:
+                            -
+                              uri: 'internal:/'
+                              title: 'Learn more'
+                              options: {  }
+                          field_safety_text:
+                            -
+                              value: 'Security camera/recording device '
+                              format: plain_text
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 05b07c4d-a796-4a7e-911f-dd61d5ab0dce
+                          bundle: safety_item
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1605694188
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_safety_text:
+                            -
+                              value: 'Smoke alarm'
+                              format: plain_text
+                  field_title:
+                    -
+                      value: 'Safety & Property'
+                      format: plain_text
+  field_room_details:
+    -
+      value: 'All rooms include a flat-screen TV with satellite channels. Certain rooms feature feature a seating area for your convenience. Certain units have views. Of the sea or pool. Each room is fitted with a private bathroom.'
+  field_single_beds_number:
+    -
+      value: 1
+  field_type:
+    -
+      entity: ebaa7b2b-d148-43d7-a6b0-4f814bb3c3e1
+  field_use_open_hours:
+    -
+      value: false

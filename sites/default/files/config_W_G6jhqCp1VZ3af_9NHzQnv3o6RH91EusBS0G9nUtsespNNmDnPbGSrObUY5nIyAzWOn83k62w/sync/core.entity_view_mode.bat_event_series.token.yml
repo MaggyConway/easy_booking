@@ -1,0 +1,12 @@
+uuid: c7cab7ed-f975-496d-b3d7-05b730ecec8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_event_series
+_core:
+  default_config_hash: tX6xibd13ATVIA4TQE6fuAa12XX95QlakmULa_DOQ_s
+id: bat_event_series.token
+label: Token
+targetEntityType: bat_event_series
+cache: true

@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3252743e-cff0-4ed7-9985-24c4d06e07aa
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: kamni_svechi_aromaterapiya_spa_voda_bambuk_massazh_67321_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/kamni_svechi_aromaterapiya_spa_voda_bambuk_massazh_67321_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 128788
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603445260
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

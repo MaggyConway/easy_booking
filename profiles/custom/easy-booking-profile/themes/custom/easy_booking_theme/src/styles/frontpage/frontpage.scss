@@ -1,0 +1,506 @@
+.path-frontpage {
+    #block-easy-booking-theme-page-title {
+        display: none;
+    }
+    /* About block */
+    .container-homepage-about-block {
+        background: $primary-bg;
+        padding-bottom: $padding-container;
+
+        @include breakpoint(l) {
+            padding-top: $padding-container;
+            padding-bottom: 24px;
+        }
+
+        #block-easy-booking-theme-homepage-about-block {
+            position: relative;
+
+            .container {
+                @include breakpoint(l) {
+                    padding: 0;
+                }
+            }
+
+            .homepage-about-block-text-image-wrapper {
+                display: flex;
+                align-items: center;
+                margin-bottom: 32px;
+                min-height: 500px;
+
+                @include breakpoint(l) {
+                    display: block;
+                    min-height: auto;
+                }
+
+                .homepage-about-block-text-wrapper {
+                    margin-right: 20px;
+                    max-width: 365px;
+                    width: 100%;
+
+                    @include breakpoint(l) {
+                        max-width: inherit;
+                        margin-bottom: 24px;
+                        padding: 0 32px;
+                    }
+
+                    .field--name-field-title {
+                        @include main-title-page;
+
+                        margin-bottom: 16px;
+                    }
+
+                    .field--name-field-text {
+                        @include subtitle-text-page;
+
+                        margin-bottom: 16px;
+                    }
+
+                    .field--name-field-link {
+                        max-width: 103px;
+                        width: 100%;
+
+                        a {
+                            @include btn-white;
+                            display: inline-block;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .homepage-about-block-image-wrapper {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 55vw;
+                    min-height: 500px;
+                    overflow: hidden;
+
+                    @include breakpoint(xxxlg) {
+                        width: 58vw;
+                    }
+
+                    @include breakpoint(xxlg) {
+                        width: 60vw;
+                    }
+
+                    @include breakpoint(xllg) {
+                        width: 63vw;
+                    }
+
+                    @include breakpoint(ll) {
+                        width: 60vw;
+                    }
+
+                    @include breakpoint(l) {
+                        width: 100%;
+                        position: relative;
+                        top: auto;
+                        right: auto;
+                        min-height: auto;
+                    }
+
+                    @include breakpoint(s) {
+                        height: 150px;
+                    }
+
+                    .field--name-field-image {
+
+                        img {
+                            display: block;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 100%;
+                            min-height: 500px;
+                            height: auto;
+
+                            @include breakpoint(l) {
+                                position: relative;
+                                top: auto;
+                                left: auto;
+                                transform: translate(0, 0);
+                                min-height: auto;
+                                height: 480px;
+                            }
+
+                            @include breakpoint(sl) {
+                                height: 300px;
+                            }
+
+                            @include breakpoint(s) {
+                                height: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .homepage-about-block-services-wrapper {
+                margin-left: -15px;
+                margin-right: -15px;
+
+                @include breakpoint(l) {
+                    padding: 0 32px;
+                    margin: 0;
+                }
+
+                .field--name-field-services {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    > .field__item {
+                        width: calc(100% / 6);
+                        padding-right: 15px;
+                        padding-left: 15px;
+
+                        .field--name-field-media-image {
+                            max-width: 40px;
+                            margin-bottom: 16px;
+                        }
+
+                        .field--name-field-title {
+                            font-weight: 300;
+                            font-size: $secondary-font-size;
+                            line-height: $secondary-line-height;
+                            letter-spacing: 0.02em;
+                        }
+
+                        @include breakpoint(l) {
+                            width: calc(100% / 3);
+                            margin-bottom: 40px;
+                            padding: 0;
+                        }
+
+                        @include breakpoint(sl) {
+                            width: calc(100% / 2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Rooms block */
+    .rooms_block_wrapper {
+        background: $secondary-bg;
+
+        .container {
+            padding-top: $padding-container;
+            padding-bottom: $padding-container;
+        }
+
+        .block-views-blockrooms-rooms-block {
+            h2 {
+                margin-bottom: 4px;
+            }
+
+            .view-display-id-rooms_block {
+                position: relative;
+
+                .view-content {
+                    @include breakpoint(l) {
+                        margin-bottom: 16px;
+                    }
+                }
+
+                .view-header {
+                    @include subtitle-text-page;
+
+                    margin-bottom: 24px;
+                }
+
+                .view-content {
+                    .views-row {
+                        display: flex;
+
+                        .views-col {
+                            width: calc(100% / 4 - 16px) !important;
+
+                            img {
+                                @include breakpoint(l) {
+                                    width: 100%;
+                                    height: 600px;
+                                }
+
+                                @include breakpoint(sll) {
+                                    height: 500px;
+                                }
+
+                                @include breakpoint(sl-tablet) {
+                                    height: 450px;
+                                }
+
+                                @include breakpoint(sl) {
+                                    height: 350px;
+                                }
+
+                                @include breakpoint(s) {
+                                    height: 277px;
+                                }
+                            }
+
+                            @include breakpoint(l) {
+                                width: calc(100% / 2 - 16px) !important;
+                                margin-bottom: 16px;
+                            }
+                        }
+
+                        @include breakpoint(l) {
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+
+                .more-link {
+                    position: absolute;
+                    top: -45px;
+                    right: 0;
+
+                    @include breakpoint(l) {
+                        position: relative;
+                        top: auto;
+                        right: auto;
+                    }
+                }
+            }
+        }
+    }
+    /* About us block */
+    .about-us-block-wrapper {
+        .container {
+            padding-top: $padding-container;
+            padding-bottom: $padding-container;
+        }
+
+        #block-homepageaboutusblock {
+            h2 {
+                margin-bottom: 24px;
+            }
+
+            .field--name-field-about-us {
+                margin: 0 -8px;
+
+                .paragraph--type--homepage-about-us {
+                    display: flex;
+
+                    @include breakpoint(sll) {
+                        display: block;
+                    }
+
+                    .about-us--third-item-wrapper {
+                        .field__item {
+                            p {
+                                margin-bottom: 1px;
+
+                                @include breakpoint(sll) {
+                                    margin-bottom: 24px;
+                                }
+                            }
+                        }
+                    }
+
+                    .about-us--first-item-wrapper,
+                    .about-us--second-item-wrapper,
+                    .about-us--third-item-wrapper {
+                        width: calc(100% / 3);
+                        padding: 0 8px;
+
+                        @include breakpoint(sll) {
+                            width: 100%;
+                            margin-bottom: 24px;
+
+                            &:last-of-type {
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        .field__item {
+                            font-size: $main-font-size;
+                            line-height: $main-line-height-second;
+                            font-weight: 300;
+
+                            p {
+                                span {
+                                    color: $secondary-color-text;
+                                    background: $extra-bg;
+                                }
+                            }
+
+                            a{
+
+                                font-size: $main-font-size;
+                                line-height: $main-line-height-second;
+                                font-weight: 300;
+                                color: $link-color;
+                                text-decoration-line: underline;
+                                transition: all $default-transition-time;
+
+                                &:hover {
+                                    text-decoration-line: none;
+                                }
+
+                                @include breakpoint(sll) {
+                                    @include btn-white;
+                                    line-height: 18px;
+                                    padding: 10px 15px;
+                                    width: 97px;
+                                    color: $primary-color-text;
+                                    text-decoration-line: none;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    /* News block */
+    .news-block-wrapper {
+        .container {
+            padding-bottom: $padding-container;
+        }
+
+        .view-display-id-news_block {
+            .view-content {
+                margin-bottom: 8px;
+            }
+
+            .views-row {
+                .views-col {
+                    width: calc(100% / 2 - 16px) !important;
+
+                    img {
+                        @include breakpoint(sll) {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        @include breakpoint(s) {
+                            height: 148px;
+                        }
+                    }
+
+                    @include breakpoint(sll) {
+                        width: 100% !important;
+                        margin-bottom: 16px;
+                    }
+                }
+
+                @include breakpoint(sll) {
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+    /* Attractions block*/
+    .attractions-block-wrapper {
+        .container {
+            padding-bottom: $padding-container;
+        }
+        .view-display-id-attractions_block {
+            .view-content {
+                margin-bottom: 8px;
+            }
+
+            .views-row {
+                .views-col {
+                    width: calc(100% / 6 - 16px) !important;
+
+                    @include breakpoint(l) {
+                        width: calc(100% / 4 - 16px) !important;
+                        margin-bottom: 16px;
+                    }
+
+                    img {
+                        @include breakpoint(sl-tablet) {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        @include breakpoint(s) {
+                            height: 140px;
+                        }
+                    }
+
+                    @include breakpoint(sl-tablet) {
+                        width: calc(100% / 3 - 16px) !important;
+                        margin-bottom: 16px;
+                    }
+
+                    @include breakpoint(sl) {
+                        width: calc(100% / 2 - 16px) !important;
+                        margin-bottom: 16px;
+                    }
+                }
+
+                @include breakpoint(l) {
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+    /* Contact block */
+    .contact_block_wrapper {
+        .container {
+            padding-bottom: 64px;
+        }
+
+        #block-easy-booking-theme-contact {
+            background: $secondary-bg;
+
+            .webform-submission-contact-form {
+                #edit-form-map-fields-container {
+                    .form-wrapper {
+                        #edit-form-map-info-wrapper {
+                            display: none;
+                        }
+
+                        label {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*Base styles block cards*/
+    .view-display-id-rooms_block,
+    .view-display-id-news_block,
+    .view-display-id-about_us_block,
+    .view-display-id-attractions_block {
+        position: relative;
+
+        .view-content {
+            margin: 0 -8px;
+        }
+
+        .views-row {
+            display: flex;
+
+            .views-col {
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .view-display-id-attractions_block,
+    .view-display-id-news_block {
+        position: relative;
+        .more-link {
+            position: absolute;
+            top: -65px;
+            right: 0;
+
+            @include breakpoint(sll) {
+                position: relative;
+                top: auto;
+                right: auto;
+            }
+        }
+    }
+}

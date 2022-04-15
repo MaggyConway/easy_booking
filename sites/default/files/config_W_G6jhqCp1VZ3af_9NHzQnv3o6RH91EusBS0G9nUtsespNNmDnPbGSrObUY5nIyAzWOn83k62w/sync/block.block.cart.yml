@@ -1,0 +1,23 @@
+uuid: 25cce788-88ed-4b64-9569-e92cb8a5e3e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - bartik
+_core:
+  default_config_hash: qp1FA55W12tsap9CFcKqOdhD0wPb8zSParL6_l7eGgE
+id: cart
+theme: bartik
+region: header
+weight: -6
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: false
+visibility: {  }

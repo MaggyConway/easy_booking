@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6560b127-5515-48b1-bc23-46e2a5f0ea8c
+  bundle: image
+  default_langcode: en
+  depends:
+    62e67afe-33e3-43e0-a1a0-c2116bd86477: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: door-hanger.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 62e67afe-33e3-43e0-a1a0-c2116bd86477
+      alt: 'Door hanger'
+      title: ''
+      width: 40
+      height: 40

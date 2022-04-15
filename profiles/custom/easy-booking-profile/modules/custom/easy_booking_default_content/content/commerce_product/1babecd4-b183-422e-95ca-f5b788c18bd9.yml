@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 1babecd4-b183-422e-95ca-f5b788c18bd9
+  bundle: bee_room
+  default_langcode: en
+  depends:
+    9b090114-4549-4310-a125-fa159e0e144c: commerce_store
+    44294bad-9054-45db-8ea7-7ca19de2e7a7: commerce_product_variation
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: 9b090114-4549-4310-a125-fa159e0e144c
+  title:
+    -
+      value: 'Regular Luxury Room'
+  variations:
+    -
+      entity: 44294bad-9054-45db-8ea7-7ca19de2e7a7
+  default_variation:
+    -
+      entity: 44294bad-9054-45db-8ea7-7ca19de2e7a7
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1603426064

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.pt_info_block_wide_image
+label: 'PT Info Block: Wide Image'
+targetEntityType: paragraph
+cache: true

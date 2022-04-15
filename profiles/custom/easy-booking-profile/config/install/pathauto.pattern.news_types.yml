@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: news_types
+label: 'News Types'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/news/types/[term:name]'
+selection_criteria:
+  5c3cfcdf-8c1f-4520-844b-ed824d5c5a20:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 5c3cfcdf-8c1f-4520-844b-ed824d5c5a20
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,28 @@
+uuid: 97695ba3-7af5-4c9f-b00b-08ed27817434
+langcode: en
+status: true
+dependencies:
+  module:
+    - easy_booking_commerce
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: IZ2OYevImILF9_plOqWyOOiI7Y6RAAnw27Exefrf0FU
+id: easy_booking_checkout_progress
+theme: bartik
+region: featured_top
+weight: 0
+provider: null
+plugin: easy_booking_commerce_checkout_progress
+settings:
+  id: easy_booking_commerce_checkout_progress
+  label: 'Easy Booking checkout progress'
+  provider: easy_booking_commerce
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/checkout/*'
+    negate: false
+    context_mapping: {  }

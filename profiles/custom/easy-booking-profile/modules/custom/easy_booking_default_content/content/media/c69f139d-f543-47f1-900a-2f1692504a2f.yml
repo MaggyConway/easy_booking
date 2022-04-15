@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c69f139d-f543-47f1-900a-2f1692504a2f
+  bundle: image
+  default_langcode: en
+  depends:
+    b58246e2-6afb-4698-8dd8-6d97b810fd63: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: pirog_malina_shokolad_desert_pribory_101045_1280x720.jpg
+  created:
+    -
+      value: 1604652066
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: b58246e2-6afb-4698-8dd8-6d97b810fd63
+      alt: pirog_malina_shokolad_desert_pribory_101045_1280x720
+      title: ''
+      width: 1280
+      height: 720

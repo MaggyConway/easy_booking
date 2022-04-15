@@ -1,0 +1,41 @@
+uuid: 05aacaf9-6b44-4163-9bed-3aec4b6c7a6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.bee
+    - core.entity_view_mode.commerce_product_variation.cart
+  module:
+    - commerce_order
+    - commerce_price
+_core:
+  default_config_hash: iSFcGbh6A-rT-s7og9NeaIp2BQ91T1Gzf3mbg04gANU
+id: commerce_product_variation.bee.cart
+targetEntityType: commerce_product_variation
+bundle: bee
+mode: cart
+content:
+  list_price:
+    label: above
+    type: commerce_price_default
+    weight: -1
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+  price:
+    type: commerce_price_calculated
+    weight: 1
+    label: above
+    settings:
+      adjustment_types: {  }
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    region: content
+hidden:
+  product_id: true
+  search_api_excerpt: true
+  sku: true
+  title: true

@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b94b57b9-1884-47f1-a304-2797a41e1db2
+  bundle: image
+  default_langcode: en
+  depends:
+    94fac7f8-a8c6-4c9b-a462-e57635067cbe: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: key-card.png
+  created:
+    -
+      value: 1603310739
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 94fac7f8-a8c6-4c9b-a462-e57635067cbe
+      alt: 'Key Card'
+      title: ''
+      width: 40
+      height: 40

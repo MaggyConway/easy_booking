@@ -1,0 +1,15 @@
+uuid: 6815ec50-90d9-494c-8a53-09e87327a373
+langcode: en
+status: true
+dependencies: {  }
+name: about_us_page_about_block_image_905_x_502_
+label: 'About us page: about block image(1140 x 502)'
+effects:
+  e60012ae-ee56-4079-8110-b00f9ffc5485:
+    uuid: e60012ae-ee56-4079-8110-b00f9ffc5485
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1140
+      height: 502
+      anchor: center-center

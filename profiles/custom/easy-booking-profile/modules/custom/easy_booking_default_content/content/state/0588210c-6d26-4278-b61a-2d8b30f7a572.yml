@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: state
+  uuid: 0588210c-6d26-4278-b61a-2d8b30f7a572
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: Booked
+  created:
+    -
+      value: 1614652901
+  color:
+    -
+      value: '#4b3cea'
+  calendar_label:
+    -
+      value: BOOK
+  blocking:
+    -
+      value: 1
+  locked:
+    -
+      value: 0
+  machine_name:
+    -
+      value: bee_daily_booked
+  event_type:
+    -
+      target_id: availability_daily

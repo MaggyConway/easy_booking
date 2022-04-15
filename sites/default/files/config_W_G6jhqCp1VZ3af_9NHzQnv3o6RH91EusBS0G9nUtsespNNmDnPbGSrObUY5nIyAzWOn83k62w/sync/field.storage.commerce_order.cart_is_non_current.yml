@@ -1,0 +1,18 @@
+uuid: c2e78629-0ca8-4f8a-922d-716082c82a13
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+id: commerce_order.cart_is_non_current
+field_name: cart_is_non_current
+entity_type: commerce_order
+type: boolean
+settings: {  }
+module: core
+locked: true
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

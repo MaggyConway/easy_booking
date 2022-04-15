@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: ct_room_273x496
+label: 'CT Room (273x496)'
+effects:
+  8728710d-3aa6-45f0-bcf9-a02e4860c287:
+    uuid: 8728710d-3aa6-45f0-bcf9-a02e4860c287
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 273
+      height: 496
+      crop_type: focal_point

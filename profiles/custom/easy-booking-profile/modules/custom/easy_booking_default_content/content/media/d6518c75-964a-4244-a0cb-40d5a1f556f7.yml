@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: d6518c75-964a-4244-a0cb-40d5a1f556f7
+  bundle: image
+  default_langcode: en
+  depends:
+    ab7418ff-bf80-4f22-9d6e-bfe981414c90: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: koster_ogon_kemping_121785_1280x720.jpg
+  created:
+    -
+      value: 1604652030
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: ab7418ff-bf80-4f22-9d6e-bfe981414c90
+      alt: koster_ogon_kemping_121785_1280x720
+      title: ''
+      width: 1280
+      height: 720

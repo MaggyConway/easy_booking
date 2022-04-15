@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 9d4ef1d2-1de7-44ee-99f1-b3ec94fff165
+  bundle: bee
+  default_langcode: en
+  depends:
+    275c48ab-cfe3-4187-90dc-2ed6d1a9e3f5: commerce_product
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  product_id:
+    -
+      entity: 275c48ab-cfe3-4187-90dc-2ed6d1a9e3f5
+  sku:
+    -
+      value: bee_room_6
+  title:
+    -
+      value: 'Regular Double Room'
+  price:
+    -
+      number: '0.000000'
+      currency_code: USD
+      formatted: $0.00
+  created:
+    -
+      value: 1603425077

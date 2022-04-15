@@ -1,0 +1,22 @@
+name: 'Easy booking default content'
+type: module
+description: 'Imports default content when module is enabled'
+package: Easy Booking
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - default_content
+  - paragraphs
+  - taxonomy
+  - config
+  - media
+  - file_entity
+  - node
+  - menu_link_content
+  - system
+  - bat
+  - bat_unit
+  - commerce
+  - commerce_product
+  - block
+  - block_content

@@ -1,0 +1,22 @@
+uuid: a27246b4-e210-4901-94b2-4162bb6acc78
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - easy_booking_theme
+_core:
+  default_config_hash: UNypkN6HhaHlOaXO4veTCQdKvj3FGGfv3VyRqW2cUIM
+id: easy_booking_theme_main_page_content
+theme: easy_booking_theme
+region: content
+weight: -9
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

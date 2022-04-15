@@ -1,0 +1,27 @@
+uuid: 7e8b3b43-4d08-4035-b66c-a238f8d20315
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_single_beds_number
+    - node.type.room
+_core:
+  default_config_hash: S4OpsMUTauN0zOV5e-0dziSKB0OO1JbqwbK2P5MS-qc
+id: node.room.field_single_beds_number
+field_name: field_single_beds_number
+entity_type: node
+bundle: room
+label: 'Single Beds Number'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 1
+  max: 8
+  prefix: ''
+  suffix: ''
+field_type: integer

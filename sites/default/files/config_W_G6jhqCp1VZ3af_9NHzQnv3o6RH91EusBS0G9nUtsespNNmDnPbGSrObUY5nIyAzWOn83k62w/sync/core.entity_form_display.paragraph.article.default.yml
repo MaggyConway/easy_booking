@@ -1,0 +1,45 @@
+uuid: 78629675-06fb-4edc-938f-e6de735f3c61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.article.field_article_images
+    - field.field.paragraph.article.field_article_text
+    - field.field.paragraph.article.field_article_title
+    - paragraphs.paragraphs_type.article
+  module:
+    - media_library
+    - text
+_core:
+  default_config_hash: DjA52Ox6MZ6FTNOyVDQFGp5sGZk7i-fRr9gP45uxEj4
+id: paragraph.article.default
+targetEntityType: paragraph
+bundle: article
+mode: default
+content:
+  field_article_images:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_article_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_article_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,27 @@
+uuid: bf77e5ca-9c9d-42ab-a91e-9c50b2aa844d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adults_number
+    - node.type.room
+_core:
+  default_config_hash: qPXsGwmeibVcPl7mmVVri1djFPznY9ukJxKO2hkMKn0
+id: node.room.field_adults_number
+field_name: field_adults_number
+entity_type: node
+bundle: room
+label: 'Adults Number'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 1
+  max: 8
+  prefix: ''
+  suffix: ''
+field_type: integer

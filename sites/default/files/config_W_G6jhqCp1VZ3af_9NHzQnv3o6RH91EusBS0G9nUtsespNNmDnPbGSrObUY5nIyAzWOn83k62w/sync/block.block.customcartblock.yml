@@ -1,0 +1,28 @@
+uuid: 7839fd2a-c523-479d-a875-a0eee60bbd6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - easy_booking_commerce
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: '-iIF-wui1ypdny_SoFfYP6pMyoy3Z_AA3hVAH0nulm4'
+id: customcartblock
+theme: bartik
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: custom_cart_block
+settings:
+  id: custom_cart_block
+  label: 'Custom Cart Block'
+  provider: easy_booking_commerce
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /rooms
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,12 @@
+uuid: c14f6453-e272-48cd-b936-8ceb4df2e198
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sEU5MwxjviQ9MLT_2uVQ-WSV-bp3gx9PLnKNDqFrRD4
+id: rules
+label: Rules
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

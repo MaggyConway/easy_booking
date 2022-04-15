@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: eddeae87-a12b-4381-ae99-f42b74930913
+  bundle: image
+  default_langcode: en
+  depends:
+    7edc0f9e-f444-48d4-a9ce-6401386063aa: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: tea.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 7edc0f9e-f444-48d4-a9ce-6401386063aa
+      alt: Tea
+      title: ''
+      width: 40
+      height: 40

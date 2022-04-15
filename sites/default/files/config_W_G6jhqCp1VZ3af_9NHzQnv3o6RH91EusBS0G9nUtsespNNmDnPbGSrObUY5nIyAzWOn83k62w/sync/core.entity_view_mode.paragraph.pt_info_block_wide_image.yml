@@ -1,0 +1,12 @@
+uuid: 6422fe01-64be-4593-8133-9c317fffecfc
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: fcYCvJRP03elN9ssfvF_NkO6oiSPsNx_lnPRkc2GOEQ
+id: paragraph.pt_info_block_wide_image
+label: 'PT Info Block: Wide Image'
+targetEntityType: paragraph
+cache: true

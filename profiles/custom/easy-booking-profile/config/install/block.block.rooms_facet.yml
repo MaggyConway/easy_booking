@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.rooms_facet
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: rooms_facet
+theme: bartik
+region: highlighted
+weight: 0
+provider: null
+plugin: 'facet_block:rooms_facet'
+settings:
+  id: 'facet_block:rooms_facet'
+  label: 'Rooms Facet'
+  provider: facets
+  label_display: '0'
+  block_id: rooms_facet
+visibility:
+  request_path:
+    id: request_path
+    pages: "/rooms\r\n/about\r\n/contact\r\n/attractions\r\n/photos\r\n/news\r\n/news/*\r\n<front>"
+    negate: false
+    context_mapping: {  }

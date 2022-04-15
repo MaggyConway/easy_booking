@@ -1,0 +1,15 @@
+uuid: d4c6e561-13e7-405f-b259-f649799112fe
+langcode: en
+status: true
+dependencies: {  }
+name: lightbox_image_style_948x600_
+label: 'Lightbox image style (948x600)'
+effects:
+  9f6a9733-3207-4227-8004-bae802e95bfa:
+    uuid: 9f6a9733-3207-4227-8004-bae802e95bfa
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 948
+      height: 600
+      anchor: center-center

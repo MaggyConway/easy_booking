@@ -1,0 +1,22 @@
+uuid: 1ea80949-fc80-42ee-8f01-75a16c0ce47d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Vy-cEe9MHiaWbHIGz7bTG_38tUnIs8uuu0cv4NS3VUs
+id: node.field_single_beds_number
+field_name: field_single_beds_number
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

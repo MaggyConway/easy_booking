@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_booking
+    - options
+id: bat_booking.booking_repeat_frequency
+field_name: booking_repeat_frequency
+entity_type: bat_booking
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: daily
+      label: Daily
+    -
+      value: weekly
+      label: Weekly
+    -
+      value: monthly
+      label: Monthly
+  allowed_values_function: ''
+module: options
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 1014d472-f895-496a-a577-2e58e5cad753
+  bundle: amenities
+  default_langcode: en
+  depends:
+    e1f36c56-cfa7-4da9-88c3-1b28cfbe2670: media
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Swimming Pool'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /amenities/swimming-pool
+      langcode: en
+      pathauto: 1
+  field_icon:
+    -
+      entity: e1f36c56-cfa7-4da9-88c3-1b28cfbe2670

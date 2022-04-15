@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9d25f280-258b-4908-8926-01243756ec1a
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: elevator.png
+  uri:
+    -
+      value: 'public://2020-10/elevator_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 814
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310739
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 837e0540-118c-431a-a145-3d4afea043e7
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: postel_spalnaya_sovremennyy_kreslo_39656_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/postel_spalnaya_sovremennyy_kreslo_39656_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 139733
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603423225
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

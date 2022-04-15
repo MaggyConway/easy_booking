@@ -1,0 +1,66 @@
+uuid: 1f9e4ea3-cd74-48b7-8770-10481d8eece8
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.rooms_index
+    - views.view.rooms
+  module:
+    - search_api
+_core:
+  default_config_hash: RC-2-vsjoDrOnS4syHXx777-42e4TNAQ5QBd6gCmLOA
+id: rooms_facet
+name: 'Rooms Facet'
+url_alias: q
+weight: 0
+min_count: 1
+show_only_one_result: false
+field_identifier: unit_type_id
+facet_source_id: 'search_api:views_page__rooms__rooms_page'
+widget:
+  type: easy_booking_state
+  config:
+    event_type: availability_hourly
+    state:
+      4: '4'
+      7: '7'
+      8: '8'
+      9: '9'
+      10: '10'
+query_operator: or
+use_hierarchy: false
+expand_hierarchy: false
+enable_parent_when_child_gets_disabled: true
+hard_limit: 0
+exclude: false
+only_visible_when_facet_source_is_visible: false
+processor_configs:
+  active_widget_order:
+    processor_id: active_widget_order
+    weights:
+      sort: 20
+    settings:
+      sort: DESC
+  count_widget_order:
+    processor_id: count_widget_order
+    weights:
+      sort: 30
+    settings:
+      sort: DESC
+  display_value_widget_order:
+    processor_id: display_value_widget_order
+    weights:
+      sort: 40
+    settings:
+      sort: ASC
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: 50
+      build: 15
+    settings: {  }
+empty_behavior:
+  behavior: text
+  text_format: plain_text
+  text: ''
+show_title: false

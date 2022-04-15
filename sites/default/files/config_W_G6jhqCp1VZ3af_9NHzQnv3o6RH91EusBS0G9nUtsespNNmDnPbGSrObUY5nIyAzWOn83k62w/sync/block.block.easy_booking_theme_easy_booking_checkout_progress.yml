@@ -1,0 +1,28 @@
+uuid: 0a3c4fab-ae03-4e2f-9f86-a3c5792d33bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - easy_booking_commerce
+    - system
+  theme:
+    - easy_booking_theme
+_core:
+  default_config_hash: IZ2OYevImILF9_plOqWyOOiI7Y6RAAnw27Exefrf0FU
+id: easy_booking_theme_easy_booking_checkout_progress
+theme: easy_booking_theme
+region: header
+weight: -4
+provider: null
+plugin: easy_booking_commerce_checkout_progress
+settings:
+  id: easy_booking_commerce_checkout_progress
+  label: 'Easy Booking checkout progress'
+  provider: easy_booking_commerce
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/checkout/*'
+    negate: false
+    context_mapping: {  }

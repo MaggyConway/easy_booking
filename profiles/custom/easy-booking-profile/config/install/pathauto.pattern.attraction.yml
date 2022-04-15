@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: attraction
+label: Attraction
+type: 'canonical_entities:node'
+pattern: '/attractions/[node:title]'
+selection_criteria:
+  4068ada3-02a7-48ca-b134-8ed8044ad43f:
+    id: node_type
+    bundles:
+      attraction: attraction
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4068ada3-02a7-48ca-b134-8ed8044ad43f
+selection_logic: and
+weight: -5
+relationships: {  }

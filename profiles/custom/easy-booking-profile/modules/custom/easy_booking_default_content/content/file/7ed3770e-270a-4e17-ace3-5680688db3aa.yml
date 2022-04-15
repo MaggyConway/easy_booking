@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7ed3770e-270a-4e17-ace3-5680688db3aa
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: cocktail.png
+  uri:
+    -
+      value: 'public://2020-10/cocktail_0_1_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1248
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310139
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

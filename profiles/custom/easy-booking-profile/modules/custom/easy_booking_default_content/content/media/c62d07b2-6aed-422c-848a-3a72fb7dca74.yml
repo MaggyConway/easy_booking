@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c62d07b2-6aed-422c-848a-3a72fb7dca74
+  bundle: image
+  default_langcode: en
+  depends:
+    7ed3770e-270a-4e17-ace3-5680688db3aa: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: cocktail.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 7ed3770e-270a-4e17-ace3-5680688db3aa
+      alt: Cocktail
+      title: ''
+      width: 40
+      height: 40

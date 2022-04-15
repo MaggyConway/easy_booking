@@ -1,0 +1,12 @@
+uuid: bbd18106-92bb-41db-b472-1c4af779cd74
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: fAMcmESdQCfPxMqx3pEGvT9w6QAUvvYTLdHBFSjkAP8
+id: media.ct_room
+label: 'CT Room'
+targetEntityType: media
+cache: true

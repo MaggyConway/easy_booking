@@ -1,0 +1,8 @@
+<div class="checkout-room-amenities">
+    {% for amenity in amenities %}
+      <div class="amenity">
+        <img src="{{ file_url(amenity.icon_url) }}">
+        <p>{{ amenity.name }}</p>
+      </div>
+    {% endfor %}
+</div>

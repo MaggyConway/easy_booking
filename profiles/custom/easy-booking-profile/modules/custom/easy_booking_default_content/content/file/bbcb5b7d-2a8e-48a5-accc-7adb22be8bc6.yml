@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bbcb5b7d-2a8e-48a5-accc-7adb22be8bc6
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: stol_restoran_bokaly_tarelki_cvety_rozy_80713_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/stol_restoran_bokaly_tarelki_cvety_rozy_80713_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 91573
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603445260
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

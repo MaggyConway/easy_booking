@@ -1,0 +1,32 @@
+uuid: d0bc9968-8392-4c88-ad42-42be872fbc9c
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.field_block
+    - field.field.node.page.field_paragraphs
+    - node.type.page
+  module:
+    - user
+_core:
+  default_config_hash: XANkM6UWA2B3gJ5ST4WfWcVKc6o3X-KDpQcAL6Conu8
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_block: true
+  field_paragraphs: true
+  search_api_excerpt: true

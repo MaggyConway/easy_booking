@@ -1,0 +1,13 @@
+facet.widget.config.easy_booking_state:
+  type: mapping
+  label: 'Easy Booking State widget configuration'
+  mapping:
+    event_type:
+      type: string
+      label: 'Bat event type'
+    state:
+      type: mapping
+      mapping:
+        1:
+          type: string
+          label: 'Bat event state'

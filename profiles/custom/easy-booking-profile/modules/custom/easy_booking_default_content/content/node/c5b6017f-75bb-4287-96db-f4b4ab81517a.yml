@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c5b6017f-75bb-4287-96db-f4b4ab81517a
+  bundle: text
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Text3
+  created:
+    -
+      value: 1605090359
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_lean_more:
+    -
+      uri: 'internal:/about'
+      title: 'Lean More'
+      options: {  }
+  field_text_first_section:
+    -
+      value: "Easy Booking Resort features free WiFi throughout \Lthe property. You will find a 24-hour front desk at \Lthe property. You can play billiards at this at the property."
+      format: plain_text

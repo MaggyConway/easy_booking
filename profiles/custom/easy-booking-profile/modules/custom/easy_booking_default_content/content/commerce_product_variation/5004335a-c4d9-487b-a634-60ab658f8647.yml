@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 5004335a-c4d9-487b-a634-60ab658f8647
+  bundle: bee
+  default_langcode: en
+  depends:
+    509fbf7f-c022-46ec-9745-a60973e66eed: commerce_product
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  product_id:
+    -
+      entity: 509fbf7f-c022-46ec-9745-a60973e66eed
+  sku:
+    -
+      value: bee_room_3
+  title:
+    -
+      value: 'Luxury Hall Of Fame'
+  price:
+    -
+      number: '0.000000'
+      currency_code: USD
+      formatted: $0.00
+  created:
+    -
+      value: 1603424606

@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Custom theme implementation for the easy booking checkout progress.
+ *
+ * Available variables:
+ * - steps: An array of steps, where each step has the following keys:
+ *   - id: The step ID.
+ *   - label: The step label.
+ *   - position: 'previous', 'current' or 'next'.
+ *
+ * @ingroup themeable
+ */
+#}
+<ol class="checkout-progress clearfix">
+  <li class="checkout-progress--step checkout-progress--step__previous"><span>Choose your rooms</span></li>
+  {% for step in steps %}
+    {# Hide last step title #}
+    {% if loop.revindex0 == 1 and step.position == 'previous' %}
+      <li class="checkout-progress--step checkout-progress--step__current"><span>{{ step.label }}</span></li>
+    {% elseif step.id != 'complete' %}
+      <li class="checkout-progress--step checkout-progress--step__{{ step.position }}"><span>{{ step.label }}</span></li>
+    {% endif %}
+  {% endfor %}
+</ol>

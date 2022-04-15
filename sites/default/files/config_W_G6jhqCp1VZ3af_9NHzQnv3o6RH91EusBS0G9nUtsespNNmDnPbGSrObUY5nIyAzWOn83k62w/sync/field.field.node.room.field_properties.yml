@@ -1,0 +1,60 @@
+uuid: a12fc8a1-a54d-4964-9156-f5f7c5690aa7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_properties
+    - node.type.room
+    - paragraphs.paragraphs_type.properties
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: pQnp2zS6VwVr0k0-HmNJ33axz1rDOsJmNlRBevJNgJg
+id: node.room.field_properties
+field_name: field_properties
+entity_type: node
+bundle: room
+label: Properties
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      properties: properties
+    target_bundles_drag_drop:
+      album:
+        weight: 11
+        enabled: false
+      article:
+        weight: 12
+        enabled: false
+      info_block:
+        weight: 13
+        enabled: false
+      info_blocks:
+        weight: 14
+        enabled: false
+      properties:
+        enabled: true
+        weight: 15
+      rule:
+        weight: 16
+        enabled: false
+      rules:
+        weight: 17
+        enabled: false
+      safety:
+        weight: 18
+        enabled: false
+      safety_item:
+        weight: 19
+        enabled: false
+      service:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,13 @@
+uuid: d4a06d29-4769-4646-ad12-595dd22f25db
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_unit
+_core:
+  default_config_hash: jdWg4QGt7wtQ6r8NnwEo_c_WlqB5KaxaZB8i37fnr8M
+id: unit_delete_action
+label: 'Delete unit'
+type: bat_unit
+plugin: unit_delete_action
+configuration: {  }

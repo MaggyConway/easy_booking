@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 93aee43e-eff2-4435-8698-a7d25d428213
+  bundle: image
+  default_langcode: en
+  depends:
+    de071477-6d55-4cf8-a06d-ee5794c0ad0c: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: malina_chernika_smorodina_krasnaya_yagody_limon_lajm_tsitrusy_frukty_varene_dzhem_banochka_lozhka_94014_1280x720.jpg
+  created:
+    -
+      value: 1603445260
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: de071477-6d55-4cf8-a06d-ee5794c0ad0c
+      alt: Attraction
+      title: ''
+      width: 1280
+      height: 720

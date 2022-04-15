@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: aab4cf3a-7d44-4ced-b8c1-c75639a11587
+  bundle: image
+  default_langcode: en
+  depends:
+    9d25f280-258b-4908-8926-01243756ec1a: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: elevator.png
+  created:
+    -
+      value: 1603310739
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 9d25f280-258b-4908-8926-01243756ec1a
+      alt: Elevator
+      title: ''
+      width: 40
+      height: 40

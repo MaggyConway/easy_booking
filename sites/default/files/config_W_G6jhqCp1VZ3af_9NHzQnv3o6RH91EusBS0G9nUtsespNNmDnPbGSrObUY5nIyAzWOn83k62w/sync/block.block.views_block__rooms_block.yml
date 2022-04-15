@@ -1,0 +1,32 @@
+uuid: 8f9cc421-694f-4271-b856-2b826d31de48
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.rooms
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+_core:
+  default_config_hash: 0lMwFmU02N6D-5uadp_HUvASdxkhtr1ZvlgTThS3mdU
+id: views_block__rooms_block
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:rooms-rooms_block'
+settings:
+  id: 'views_block:rooms-rooms_block'
+  label: 'Welcome To Hotel'
+  provider: views
+  label_display: visible
+  views_label: 'Welcome To Hotel'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

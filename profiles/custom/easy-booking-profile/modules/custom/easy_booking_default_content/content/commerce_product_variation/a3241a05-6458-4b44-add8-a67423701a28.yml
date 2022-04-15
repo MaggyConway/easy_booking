@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: a3241a05-6458-4b44-add8-a67423701a28
+  bundle: bee
+  default_langcode: en
+  depends:
+    21fc6bee-eb86-4794-af8d-9b87bcacf77f: commerce_product
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  product_id:
+    -
+      entity: 21fc6bee-eb86-4794-af8d-9b87bcacf77f
+  sku:
+    -
+      value: bee_room_15
+  title:
+    -
+      value: 'Basic Luxury Room'
+  price:
+    -
+      number: '0.000000'
+      currency_code: USD
+      formatted: $0.00
+  created:
+    -
+      value: 1603427118

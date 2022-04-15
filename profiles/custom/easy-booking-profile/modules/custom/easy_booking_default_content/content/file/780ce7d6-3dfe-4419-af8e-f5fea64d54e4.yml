@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 780ce7d6-3dfe-4419-af8e-f5fea64d54e4
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: postel_spalnaya_komnata_stil_39673_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/postel_spalnaya_komnata_stil_39673_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 90049
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603423225
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Amenities
+vid: amenities
+description: 'Room amenities.'
+weight: 0

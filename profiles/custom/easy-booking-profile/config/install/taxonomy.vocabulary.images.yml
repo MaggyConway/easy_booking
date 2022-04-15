@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Images
+vid: images
+description: 'Image categories.'
+weight: 0

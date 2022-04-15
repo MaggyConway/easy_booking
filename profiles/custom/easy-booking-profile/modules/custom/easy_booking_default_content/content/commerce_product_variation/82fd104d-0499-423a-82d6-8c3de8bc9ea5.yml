@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 82fd104d-0499-423a-82d6-8c3de8bc9ea5
+  bundle: bee
+  default_langcode: en
+  depends:
+    1f8708d7-c861-46af-97a7-b8ad2b6aa53b: commerce_product
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  product_id:
+    -
+      entity: 1f8708d7-c861-46af-97a7-b8ad2b6aa53b
+  sku:
+    -
+      value: bee_room_2
+  title:
+    -
+      value: 'Junior Suite'
+  price:
+    -
+      number: '0.000000'
+      currency_code: USD
+      formatted: $0.00
+  created:
+    -
+      value: 1603423496

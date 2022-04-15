@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 792b7145-5ced-4c1b-9f60-d27a0e8073c3
+  bundle: amenities
+  default_langcode: en
+  depends:
+    412e0c2a-65eb-4c62-8e3b-98904571e1f4: media
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Fridge
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /amenities/fridge
+      langcode: en
+      pathauto: 1
+  field_icon:
+    -
+      entity: 412e0c2a-65eb-4c62-8e3b-98904571e1f4

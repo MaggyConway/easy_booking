@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.page
+    - paragraphs.paragraphs_type.album
+    - paragraphs.paragraphs_type.info_blocks
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: page
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      album: album
+      info_blocks: info_blocks
+    target_bundles_drag_drop:
+      album:
+        enabled: true
+        weight: 5
+      article:
+        weight: 4
+        enabled: false
+      info_block:
+        weight: 5
+        enabled: false
+      info_blocks:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

@@ -1,0 +1,54 @@
+.path--news {
+    .title-content-block--wrapper {
+        .container {
+            padding-top: 32px;
+            padding-bottom: 72px;
+        }
+        /* Title page */
+        #block-easy-booking-theme-page-title{
+            margin-bottom: 4px;
+
+            h1 {
+                @include main-title-page;
+                margin: 0;
+            }
+        }
+        /* Content page */
+        .view-display-id-news_page {
+            .view-content {
+                margin: 0 -8px 8px -8px;
+
+                .views-row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    overflow: hidden;
+
+                    .views-col {
+                        width: calc(100% / 2 - 16px) !important;
+                        margin: 0 8px 16px 8px;
+
+                        img {
+                            @include breakpoint(sll) {
+                                width: 100%;
+                                height: 300px;
+                            }
+
+                            @include breakpoint(sl) {
+                                width: 100%;
+                                height: 200px;
+                            }
+
+                            @include breakpoint(s) {
+                                height: 148px;
+                            }
+                        }
+
+                        @include breakpoint(sll) {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

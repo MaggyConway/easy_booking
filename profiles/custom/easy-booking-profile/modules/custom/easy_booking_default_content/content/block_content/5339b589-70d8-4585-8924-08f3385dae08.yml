@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 5339b589-70d8-4585-8924-08f3385dae08
+  bundle: custom_link
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Show all photos'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_custom_link:
+    -
+      uri: 'internal:/show_all_photos'
+      title: 'Show all photos'
+      options: {  }

@@ -1,0 +1,140 @@
+<?php
+
+/**
+ * @file
+ *   Implements custom code for easy booking profile.
+ */
+
+use Drupal\block\Entity\Block;
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+use Drupal\views\ViewExecutable;
+use Drupal\Core\Render\Markup;
+
+/**
+ * Implements hook_views_query_alter().
+ */
+function easy_booking_custom_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
+  if ($view->id() == 'other_rooms' && $view->current_display == 'other_rooms') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    $query->addWhere(0, 'node_field_data.nid', [(int)$node->id()], 'NOT IN');
+  }
+
+  if ($view->id() == 'rooms' && $view->current_display == 'rooms_page') {
+    $parameters = \Drupal::request()->getQueryString();
+
+    if (!$parameters) {
+      unset($view->header['result']);
+    }
+    else {
+      $view->setTitle(t('Choose your rooms'));
+    }
+  }
+  
+}
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function easy_booking_custom_theme_registry_alter(&$theme_registry) {
+  /** @var \Drupal\Core\Extension\ModuleHandler $module_handler */
+  $module_handler = \Drupal::service('module_handler');
+  $module_path = $module_handler->getModule('easy_booking_custom')
+    ->getPath();
+
+  $theme_registry['taxonomy_term']['path'] = $module_path . '/templates/taxonomy';
+  $theme_registry['node']['path'] = $module_path . '/templates/node';
+}
+
+/**
+ * Implements hook_theme().
+ */
+function easy_booking_custom_theme($existing, $type, $theme, $path) {
+
+  return [
+    'paragraph__rules__default' => [
+      'base hook' => 'paragraph',
+      'variables' => [
+        'check_in' => NULL,
+        'check_out' => NULL,
+      ],
+      'path' => $path . '/templates/paragraph',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function easy_booking_custom_preprocess_paragraph__rules(&$variables) {
+  $node = \Drupal::routeMatch()
+      ->getParameter('node') ?? NULL;
+
+  /** @var \Drupal\Core\Datetime\DateFormatter $date_formatter */
+  $date_formatter = \Drupal::service('date.formatter');
+
+  if ($node) {
+    $check_in_from = $date_formatter
+      ->format($node->field_check_in_time->from, 'html_time');
+    $check_in_to = $date_formatter
+      ->format($node->field_check_in_time->to, 'html_time');
+    $check_out = $date_formatter
+      ->format($node->field_check_out_time->value, 'html_time');
+
+    $check_in_string = t('Check-in:@from - @to', [
+      '@from' => $check_in_from,
+      '@to' => $check_in_to,
+    ]);
+    $check_out_string = t('Check out: @checkout', [
+      '@checkout' => $check_out,
+    ]);
+  }
+  $variables['content']['check_in'] = $check_in_string ?? NULL;
+  $variables['content']['check_out'] = $check_out_string ?? NULL;
+}
+
+/**
+ * Imlements hook_block_access().
+ */
+function easy_booking_custom_block_access(Block $block, $operation, AccountInterface $account) {
+  if ($operation == 'view' && $block
+      ->getPluginId() == 'location_block') {
+    $parameters = \Drupal::request()->getQueryString();
+
+    if ($parameters) {
+      return AccessResult::allowed();
+    }
+    return AccessResult::forbidden();
+  }
+}
+
+
+/**
+ * Imlements hook_preprocess_HOOK().
+ */
+function easy_booking_commerce_preprocess_block(&$variables) {
+
+  // Changing default cart icon to custom. 
+  if ($variables["elements"]["#configuration"]["id"] == "commerce_cart") {
+    $variables['content']['#icon']['#uri'] = 'profiles/custom/easy-booking-profile/modules/custom/easy_booking_custom/icons/ffffff/icon-cart.svg';
+  }
+}
+
+/**
+ * Imlements hook_colorbox_settings_alter($data, $context)().
+ */
+function easy_booking_custom_colorbox_settings_alter(&$data, $context){
+  $data['current'] = "{current}/{total}";
+  $data['title'] = "";
+  $data['previous'] = "<svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <path d='M6 8L8.0461 5.83109C8.66714 5.17278 9.7735 5.61228 9.7735 6.5173L9.7735 9.4827C9.7735 10.3877 8.66714 10.8272 8.0461 10.1689L6 8Z'/>
+    </svg>";
+  $data['next'] = "<svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <path d='M10 8L7.9539 10.1689C7.33287 10.8272 6.2265 10.3877 6.2265 9.4827L6.2265 6.5173C6.2265 5.61228 7.33286 5.17277 7.9539 5.83109L10 8Z'/>
+    </svg>";
+  $data['close'] = "<svg width='6' height='6' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'>
+  <path d='M5.77847 0.221528C5.70885 0.151333 5.62602 0.0956183 5.53476 0.057597C5.4435 0.0195756 5.34561 0 5.24674 0C5.14788 0 5.04999 0.0195756 4.95873 0.057597C4.86747 0.0956183 4.78464 0.151333 4.71501 0.221528L3 1.94403L1.28499 0.221528C1.14396 0.0805044 0.952694 0.00127819 0.753257 0.0012782C0.55382 0.0012782 0.362551 0.0805044 0.221528 0.221528C0.0805044 0.362551 0.0012782 0.55382 0.0012782 0.753257C0.00127819 0.952694 0.0805044 1.14396 0.221528 1.28499L1.94403 3L0.221528 4.71501C0.151333 4.78464 0.0956183 4.86747 0.057597 4.95873C0.0195756 5.04999 0 5.14788 0 5.24674C0 5.34561 0.0195756 5.4435 0.057597 5.53476C0.0956183 5.62602 0.151333 5.70885 0.221528 5.77847C0.291149 5.84867 0.37398 5.90438 0.465242 5.9424C0.556504 5.98043 0.654392 6 0.753257 6C0.852123 6 0.95001 5.98043 1.04127 5.9424C1.13253 5.90438 1.21536 5.84867 1.28499 5.77847L3 4.05597L4.71501 5.77847C4.78464 5.84867 4.86747 5.90438 4.95873 5.9424C5.04999 5.98043 5.14788 6 5.24674 6C5.34561 6 5.4435 5.98043 5.53476 5.9424C5.62602 5.90438 5.70885 5.84867 5.77847 5.77847C5.84867 5.70885 5.90438 5.62602 5.9424 5.53476C5.98043 5.4435 6 5.34561 6 5.24674C6 5.14788 5.98043 5.04999 5.9424 4.95873C5.90438 4.86747 5.84867 4.78464 5.77847 4.71501L4.05597 3L5.77847 1.28499C5.84867 1.21536 5.90438 1.13253 5.9424 1.04127C5.98043 0.95001 6 0.852123 6 0.753257C6 0.654392 5.98043 0.556504 5.9424 0.465242C5.90438 0.37398 5.84867 0.291149 5.77847 0.221528Z' fill='#12171D'/>
+  </svg><span>Close</span>";
+}
+

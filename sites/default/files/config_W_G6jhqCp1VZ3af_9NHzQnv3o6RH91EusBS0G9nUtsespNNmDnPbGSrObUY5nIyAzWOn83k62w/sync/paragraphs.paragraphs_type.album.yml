@@ -1,0 +1,12 @@
+uuid: 50d1e8f1-1eda-4e8d-aa80-7d59600459a0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Rd2_HHP7wFx_T0K9MS7JX8SLY1juY3neZeimN1x2H8M
+id: album
+label: Album
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

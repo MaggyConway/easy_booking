@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 3dd763ab-a5e6-4d8a-bcda-d5a823c2d5b9
+  bundle: image
+  default_langcode: en
+  depends:
+    cbad83e4-6f25-446a-a289-0cd3c67552e0: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: door.png
+  created:
+    -
+      value: 1603310739
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: cbad83e4-6f25-446a-a289-0cd3c67552e0
+      alt: Door
+      title: ''
+      width: 40
+      height: 40

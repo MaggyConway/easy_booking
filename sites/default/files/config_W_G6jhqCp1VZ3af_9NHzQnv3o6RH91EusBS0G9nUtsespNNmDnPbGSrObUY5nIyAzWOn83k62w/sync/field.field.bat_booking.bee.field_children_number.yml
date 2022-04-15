@@ -1,0 +1,25 @@
+uuid: 5aeb94f5-1c54-4335-ae52-bd7a4fce6357
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_booking.booking_bundle.bee
+    - field.storage.bat_booking.field_children_number
+_core:
+  default_config_hash: e-cm_5MANsMZ_aOyj89knaU8FUPkdd3tDC4NPjHmWX8
+id: bat_booking.bee.field_children_number
+field_name: field_children_number
+entity_type: bat_booking
+bundle: bee
+label: 'Children number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

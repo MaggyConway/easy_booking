@@ -1,0 +1,17 @@
+uuid: edcb18c2-106a-4fc0-9fe2-9d1566f46424
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_tax
+third_party_settings:
+  commerce_tax:
+    taxable_type: services
+_core:
+  default_config_hash: '-MrQrn1JI5ZJVMJ7vs6gUpctj6jc4nNg0L9NO9LadC8'
+label: Service
+id: service
+purchasableEntityType: commerce_product_variation
+orderType: rooms_order
+traits: {  }
+locked: false

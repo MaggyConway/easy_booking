@@ -1,0 +1,5 @@
+custom_checkout_progress:
+  version: VERSION
+  css:
+    theme:
+      css/easy_booking_commerce_checkout.progress.css: {}

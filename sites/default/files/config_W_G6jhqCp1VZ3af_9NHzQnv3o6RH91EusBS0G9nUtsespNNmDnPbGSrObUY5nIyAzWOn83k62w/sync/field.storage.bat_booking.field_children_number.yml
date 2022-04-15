@@ -1,0 +1,22 @@
+uuid: 76c96aa0-bda1-4d74-a223-9010e68d3668
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_booking
+_core:
+  default_config_hash: 1ng1HpLRaGolh0HYnKsmJSZu0oDcM02OiDXbH0ZCoM8
+id: bat_booking.field_children_number
+field_name: field_children_number
+entity_type: bat_booking
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

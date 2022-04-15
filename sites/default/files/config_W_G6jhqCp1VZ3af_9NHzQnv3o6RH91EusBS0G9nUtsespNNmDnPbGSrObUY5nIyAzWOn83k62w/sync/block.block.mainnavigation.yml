@@ -1,0 +1,25 @@
+uuid: 97a34d2f-5d89-491d-89e8-27514045b29b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - easy_booking_theme
+id: mainnavigation
+theme: easy_booking_theme
+region: footer
+weight: -10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

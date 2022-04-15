@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.room
+  module:
+    - commerce_price
+id: node.room.field_price
+field_name: field_price
+entity_type: node
+bundle: room
+label: Price
+description: ''
+required: true
+translatable: true
+default_value:
+  number: 0
+  currency_code: USD
+default_value_callback: ''
+settings:
+  available_currencies: {  }
+field_type: commerce_price

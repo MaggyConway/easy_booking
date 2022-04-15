@@ -1,0 +1,106 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: cba2ac04-3659-47b4-a5af-226f3a4c8f75
+  bundle: room
+  default_langcode: en
+  depends:
+    11f92e4b-f01e-475e-9124-7d289e31175e: taxonomy_term
+    1ac2e20a-54ff-421f-8d8b-93e567fa9267: bat_unit
+    ff1381fc-4b58-46fa-a0e8-c9f18176a873: media
+    33e0a2c7-8995-41a4-9b79-5b2781092846: media
+    cd1da23b-d2b7-43bf-9323-e5fd7879a63a: media
+    71d1974d-41a4-418d-b58f-538e6cdc7298: commerce_product
+    b912d9f6-429d-4e97-8a9d-41dbe33244a2: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Pendora fame'
+  created:
+    -
+      value: 1603302812
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /rooms/pendora-fame
+      langcode: en
+      pathauto: 1
+  field_adults_number:
+    -
+      value: 1
+  field_amenities:
+    -
+      entity: 11f92e4b-f01e-475e-9124-7d289e31175e
+  field_area:
+    -
+      value: '15.00'
+  field_availability_hourly:
+    -
+      entity: 1ac2e20a-54ff-421f-8d8b-93e567fa9267
+  field_check_in_time:
+    -
+      from: 57600
+      to: 7200
+  field_check_out_time:
+    -
+      value: 79200
+  field_children_number:
+    -
+      value: 1
+  field_description:
+    -
+      value: "Relax in our cosy and comfortable double rooms, equipped with a double bed, air-conditioning, soundproof windows, blackout curtains and a flat screen TV. You will also enjoy the work area with a phone, wireless internet and a safe. For your comfort, \r\nthe bathroom is equipped with a towel dryer and a hair dryer."
+      format: plain_text
+  field_double_beds_number:
+    -
+      value: 1
+  field_night_hour:
+    -
+      value: '| per hour'
+  field_photos:
+    -
+      entity: ff1381fc-4b58-46fa-a0e8-c9f18176a873
+    -
+      entity: 33e0a2c7-8995-41a4-9b79-5b2781092846
+    -
+      entity: cd1da23b-d2b7-43bf-9323-e5fd7879a63a
+  field_price:
+    -
+      number: '35.000000'
+      currency_code: USD
+      formatted: $35.00
+  field_price_frequency:
+    -
+      value: hour
+  field_product:
+    -
+      entity: 71d1974d-41a4-418d-b58f-538e6cdc7298
+  field_room_details:
+    -
+      value: 'All rooms include a flat-screen TV with satellite channels. Certain rooms feature feature a seating area for your convenience. Certain units have views. Of the sea or pool. Each room is fitted with a private bathroom.'
+  field_single_beds_number:
+    -
+      value: 1
+  field_type:
+    -
+      entity: b912d9f6-429d-4e97-8a9d-41dbe33244a2
+  field_use_open_hours:
+    -
+      value: false

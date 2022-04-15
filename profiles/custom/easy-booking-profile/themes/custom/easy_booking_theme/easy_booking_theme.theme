@@ -1,0 +1,931 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the easy booking theme.
+ */
+
+use Drupal\commerce_product\Entity\Product;
+use Drupal\devel\Plugin\Devel\Dumper\Kint;
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function easy_booking_theme_preprocess_html(array &$variables) {
+  $variables['page']['header']['top_wrapper'] = [
+    '#type' => 'container',
+    '#attributes' => ['class' => 'header--top-container'],
+    '#weight' => -1,
+    '#sorted' => true,
+  ];
+  $variables['page']['header']['bottom_wrapper'] = [
+    '#type' => 'container',
+    '#attributes' => ['class' => 'header--bottom-container'],
+    '#weight' => 0,
+    '#sorted' => true,
+  ];
+
+  if (isset($variables['page']['header']['easy_booking_theme_easy_booking_checkout_progress'])) {
+    $variables['page']['header']['bottom_wrapper']['easy_booking_theme_easy_booking_checkout_progress'] = $variables['page']['header']['easy_booking_theme_easy_booking_checkout_progress'];
+    $variables['page']['header']['bottom_wrapper']['easy_booking_theme_easy_booking_checkout_progress']['#weight'] = 1;
+    unset($variables['page']['header']['easy_booking_theme_easy_booking_checkout_progress']);
+  }
+  
+  if (isset($variables['page']['header']['easy_booking_theme_site_branding'])) {
+    $variables['page']['header']['top_wrapper']['easy_booking_theme_site_branding'] = $variables['page']['header']['easy_booking_theme_site_branding'];
+    $variables['page']['header']['top_wrapper']['easy_booking_theme_site_branding']['#weight'] = 1;
+    unset($variables['page']['header']['easy_booking_theme_site_branding']);
+  }
+
+  // Add 'menu-cart-wrapper' in 'header--top-container'
+  $variables['page']['header']['top_wrapper']['menu_cart_wrapper'] = [
+    '#type' => 'container',
+    '#attributes' => ['class' => 'menu-cart-wrapper'],
+    '#weight' => 3,
+  ];
+
+  if (isset($variables['page']['header']['easy_booking_theme_main_navigation'])) {
+    $variables['page']['header']['top_wrapper']['menu_cart_wrapper']['easy_booking_theme_main_navigation'] = $variables['page']['header']['easy_booking_theme_main_navigation'];
+    $variables['page']['header']['top_wrapper']['menu_cart_wrapper']['easy_booking_theme_main_navigation']['#weight'] = 2;
+    unset($variables['page']['header']['easy_booking_theme_main_navigation']);
+  }
+  
+  $variables['page']['header']['top_wrapper']['menu_cart_wrapper']['right_wrapper'] = [
+    '#type' => 'container',
+    '#attributes' => ['class' => 'header--top-right-container'],
+    '#weight' => 3,
+  ];
+
+  // Add wrapper 'mobile-cart-hamburger-wrapper' in 'header--top-container'
+  $variables['page']['header']['top_wrapper']['mobile_cart_hamburger_wrapper'] = [
+    '#type' => 'container',
+    '#attributes' => ['class' => 'mobile-cart-hamburger-wrapper'],
+    '#weight' => 4,
+  ];
+  $variables['page']['header']['top_wrapper']['mobile_cart_hamburger_wrapper']['mobile_hamburger_wrapper'] = [
+    '#type' => 'container',
+    '#attributes' => ['class' => 'mobile-hamburger-wrapper'],
+    '#weight' => 1,
+  ];
+
+  // Add 'Mobile cart' in 'mobile-cart-hamburger-wrapper'
+  if (isset($variables['page']['header']['easy_booking_theme_mobile_cart'])) {
+    $variables['page']['header']['top_wrapper']['mobile_cart_hamburger_wrapper']['easy_booking_theme_mobile_cart'] = $variables['page']['header']['easy_booking_theme_mobile_cart'];
+    $variables['page']['header']['top_wrapper']['mobile_cart_hamburger_wrapper']['hamburgerbleasy_booking_theme_mobile_cartock']['#weight'] = 0;
+    unset($variables['page']['header']['easy_booking_theme_mobile_cart']);
+  }
+
+  // Add 'Hamburger block' in 'mobile-cart-hamburger-wrapper'
+  if (isset($variables['page']['header']['hamburgerblock'])) {
+    $variables['page']['header']['top_wrapper']['mobile_cart_hamburger_wrapper']['mobile_hamburger_wrapper']['hamburgerblock'] = $variables['page']['header']['hamburgerblock'];
+    $variables['page']['header']['top_wrapper']['mobile_cart_hamburger_wrapper']['mobile_hamburger_wrapper']['hamburgerblock']['#weight'] = 1;
+    unset($variables['page']['header']['hamburgerblock']);
+  }
+
+  $variables['page']['header']['top_wrapper']['menu_cart_wrapper']['right_wrapper']['cart_user_wrapper'] = [
+    '#type' => 'container',
+    '#attributes' => ['class' => 'header--cart-user-container'],
+    '#weight' => 0,
+  ];
+  if (isset($variables['page']['header']['easy_booking_theme_cart'])) {
+    $variables['page']['header']['top_wrapper']['menu_cart_wrapper']['right_wrapper']['cart_user_wrapper']['easy_booking_theme_cart'] = $variables['page']['header']['easy_booking_theme_cart'];
+    $variables['page']['header']['top_wrapper']['menu_cart_wrapper']['right_wrapper']['cart_user_wrapper']['easy_booking_theme_cart']['#weight'] = 0;
+    unset($variables['page']['header']['easy_booking_theme_cart']);
+  }
+  if (isset($variables['page']['header']['easy_booking_theme_useraccountmenu'])) {
+    $variables['page']['header']['top_wrapper']['menu_cart_wrapper']['right_wrapper']['cart_user_wrapper']['easy_booking_theme_useraccountmenu'] = $variables['page']['header']['easy_booking_theme_useraccountmenu'];
+    $variables['page']['header']['top_wrapper']['menu_cart_wrapper']['right_wrapper']['cart_user_wrapper']['easy_booking_theme_useraccountmenu']['#weight'] = 1;
+    unset($variables['page']['header']['easy_booking_theme_useraccountmenu']);
+  }
+  if (isset($variables['page']['header']['easy_booking_theme_contactblock'])) {
+    $variables['page']['header']['top_wrapper']['menu_cart_wrapper']['right_wrapper']['easy_booking_theme_contactblock'] = $variables['page']['header']['easy_booking_theme_contactblock'];
+    $variables['page']['header']['top_wrapper']['menu_cart_wrapper']['right_wrapper']['easy_booking_theme_contactblock']['#weight'] = 1;
+    unset($variables['page']['header']['easy_booking_theme_contactblock']);
+  }
+  if (isset($variables['page']['header']['easy_booking_theme_rooms_facet'])) {
+    $variables['page']['header']['facet_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'header--facet-container'],
+      '#weight' => 1,
+    ];
+    $variables['page']['header']['facet_wrapper']['easy_booking_theme_contactblock'] = $variables['page']['header']['easy_booking_theme_rooms_facet'];
+    unset($variables['page']['header']['easy_booking_theme_rooms_facet']);
+  }
+
+  $variables['page']['footer']['logo_menu_wrapper'] = [
+    '#type' => 'container',
+    '#attributes' => ['class' => 'footer--logo-menu-container'],
+    '#weight' => 0,
+  ];
+  if (isset($variables['page']['footer']['sitebranding'])) {
+    $variables['page']['footer']['logo_menu_wrapper']['sitebranding'] = $variables['page']['footer']['sitebranding'];
+    $variables['page']['footer']['logo_menu_wrapper']['sitebranding']['#weight'] = 0;
+    unset($variables['page']['footer']['sitebranding']);
+  }
+  if (isset($variables['page']['footer']['mainnavigation'])) {
+    $variables['page']['footer']['logo_menu_wrapper']['mainnavigation'] = $variables['page']['footer']['mainnavigation'];
+    $variables['page']['footer']['logo_menu_wrapper']['mainnavigation']['#weight'] = 1;
+    unset($variables['page']['footer']['mainnavigation']);
+  }
+  $variables['page']['footer']['privacy_social_wrapper'] = [
+    '#type' => 'container',
+    '#attributes' => ['class' => 'footer--privacy-social-container'],
+    '#weight' => 1,
+  ];
+  if (isset($variables['page']['footer']['easy_booking_theme_privacy'])) {
+    $variables['page']['footer']['privacy_social_wrapper']['easy_booking_theme_privacy'] = $variables['page']['footer']['easy_booking_theme_privacy'];
+    $variables['page']['footer']['privacy_social_wrapper']['easy_booking_theme_privacy']['#weight'] = 0;
+    unset($variables['page']['footer']['easy_booking_theme_privacy']);
+  }
+  if (isset($variables['page']['footer']['easy_booking_theme_socialmedialinks'])) {
+    $variables['page']['footer']['privacy_social_wrapper']['easy_booking_theme_socialmedialinks'] = $variables['page']['footer']['easy_booking_theme_socialmedialinks'];
+    $variables['page']['footer']['privacy_social_wrapper']['easy_booking_theme_socialmedialinks']['#weight'] = 1;
+    unset($variables['page']['footer']['easy_booking_theme_socialmedialinks']);
+  }
+  $current_path = \Drupal::service('path.current')->getPath();
+  $alias = \Drupal::service('path.alias_manager')->getAliasByPath($current_path);
+  $alias = str_replace('_', '-', str_replace('/', '-' , $alias));
+  $variables['attributes']['class'][] = 'path-' . $alias;
+
+  $exception = Drupal::requestStack()->getCurrentRequest()->attributes->get('exception');
+  if (isset($exception)) {
+    $status_code = $exception->getStatusCode();
+    $variables['attributes']['class'][] = 'path-' . (string) $status_code;
+  };
+
+  // Add class to <body>.
+  $content_type = $variables['node_type'];
+  if ($content_type === 'daily_room') {
+    $content_type = 'room';
+  };
+  $path_prefix = 'path--node-';
+  $variables['attributes']['class'][] = $path_prefix . str_replace('_', '-', str_replace('/', '-' , $content_type));
+  //dd($variables);
+  // Add wrapper to block 'Homepage about block' on homepage.
+  if (isset($variables['page']['content']['easy_booking_theme_homepage_about_block'])) {
+    $item = $variables['page']['content']['easy_booking_theme_homepage_about_block'];
+    unset($variables['page']['content']['easy_booking_theme_homepage_about_block']);
+    $variables['page']['content']['homepage_about_block_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'container-homepage-about-block'],
+      '#weight' => -8,
+      'easy_booking_theme_homepage_about_block' => $item,
+    ];
+  };
+  
+  // Add wrapper to block 'Rooms' on homepage.
+  if (isset($variables['page']['content']['easy_booking_theme_views_block__rooms_block'])) {
+    $variables['page']['content']['rooms_block_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'rooms_block_wrapper'],
+      '#weight' => -5,
+    ];
+    $variables['page']['content']['rooms_block_wrapper']['rooms_block_container'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'container'],
+      '#weight' => 0,
+    ];
+    $variables['page']['content']['rooms_block_wrapper']['rooms_block_container']['easy_booking_theme_views_block__rooms_block'] = $variables['page']['content']['easy_booking_theme_views_block__rooms_block'];
+    $variables['page']['content']['rooms_block_wrapper']['rooms_block_container']['easy_booking_theme_views_block__rooms_block']['#weight'] = 0;
+    unset($variables['page']['content']['easy_booking_theme_views_block__rooms_block']);
+  }
+
+  // Add wrapper to block 'About us' on homepage.
+  if (isset($variables['page']['content']['homepageaboutusblock'])) {
+    $item = $variables['page']['content']['homepageaboutusblock'];
+    unset($variables['page']['content']['homepageaboutusblock']);
+    $variables['page']['content']['about_us_block_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'about-us-block-wrapper'],
+      '#weight' => -4,
+    ];
+    $variables['page']['content']['about_us_block_wrapper']['about_us_block_container'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'container'],
+      '#weight' => 0,
+      'homepageaboutusblock' => $item,
+    ];
+  };
+
+  // Add wrapper to block 'News' on homepage.
+  if (isset($variables['page']['content']['easy_booking_theme_views_block__news_block'])) {
+    $item = $variables['page']['content']['easy_booking_theme_views_block__news_block'];
+    unset($variables['page']['content']['easy_booking_theme_views_block__news_block']);
+    $variables['page']['content']['news_block_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'news-block-wrapper'],
+      '#weight' => -3,
+    ];
+    $variables['page']['content']['news_block_wrapper']['news_block_container'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'container'],
+      '#weight' => 0,
+      'easy_booking_theme_views_block__news_block' => $item,
+    ];
+  };
+
+  // Add wrapper to block 'Attractions' on homepage.
+  if (isset($variables['page']['content']['easy_booking_theme_views_block__attractions_block'])) {
+    $item = $variables['page']['content']['easy_booking_theme_views_block__attractions_block'];
+    unset($variables['page']['content']['easy_booking_theme_views_block__attractions_block']);
+    $variables['page']['content']['attractions_block_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'attractions-block-wrapper'],
+      '#weight' => -3,
+    ];
+    $variables['page']['content']['attractions_block_wrapper']['attractions_block_container'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'container'],
+      '#weight' => 0,
+      'easy_booking_theme_views_block__attractions_block' => $item,
+    ];
+  };
+
+  // Add wrapper to block 'Contact' on homepage.
+  if (isset($variables['page']['content']['easy_booking_theme_contact'])) {
+    $item = $variables['page']['content']['easy_booking_theme_contact'];
+    unset($variables['page']['content']['easy_booking_theme_contact']);
+    $variables['page']['content']['contact_block_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'contact_block_wrapper'],
+      '#weight' => -1,
+    ];
+    $variables['page']['content']['contact_block_wrapper']['contact_block_container'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'container'],
+      '#weight' => 0,
+      'easy_booking_theme_contact' => $item,
+    ];
+  };
+
+  // Add wrapper to blocks 'Content' and 'Title' on pages.
+  if (isset($variables['page']['content']['easy_booking_theme_page_title']) &&
+   isset($variables['page']['content']['easy_booking_theme_main_page_content'])) {
+    $title_item = $variables['page']['content']['easy_booking_theme_page_title'];
+    $content_item = $variables['page']['content']['easy_booking_theme_main_page_content'];
+    unset($variables['page']['content']['easy_booking_theme_page_title']);
+    unset($variables['page']['content']['easy_booking_theme_main_page_content']);
+    $variables['page']['content']['title_content_block_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'title-content-block--wrapper'],
+      '#weight' => -9,
+    ];
+    $variables['page']['content']['title_content_block_wrapper']['title_content_block_container'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'container'],
+      '#weight' => 0,
+      'easy_booking_theme_page_title' => $title_item,
+      'easy_booking_theme_main_page_content' => $content_item,
+    ];
+  };
+
+  // Remove block 'system messages' from top of page 'Room'.
+  if (isset($variables['page']['content']['messages'], 
+    $variables['page']['content']['easy_booking_theme_main_page_content'],
+    $content_type) && $content_type === 'room') {
+    unset($variables['page']['content']['messages']);
+  };
+
+  // Add class to checkout flow.
+  if (preg_match("/\/checkout\/\d+\/order_information/", $current_path)) {
+    $custom_class = 'path--order_information';
+    $variables['attributes']['class'][] = $custom_class;
+  }
+  if (preg_match("/\/checkout\/\d+\/payment/", $current_path)) {
+    $custom_class = 'path--payment';
+    $variables['attributes']['class'][] = $custom_class;
+  }
+  if (preg_match("/\/checkout\/\d+\/complete/", $current_path)) {
+    $custom_class = 'path--complete';
+    $variables['attributes']['class'][] = $custom_class;
+  }
+
+   // Add wrapper to block 'Location' on search page.
+   if (isset($variables['page']['content']['easy_booking_theme_location_block'])) {
+    $item = $variables['page']['content']['easy_booking_theme_location_block'];
+    unset($variables['page']['content']['easy_booking_theme_location_block']);
+    $variables['page']['content']["title_content_block_wrapper"]['location_block_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'location-block--wrapper'],
+      '#weight' => 2,
+      'easy_booking_theme_location_block' => $item,
+    ];
+  };
+
+   // Add custom cart block to container on search page.
+   if (isset($variables['page']['content']['easy_booking_theme_customcartblock']) &&
+    isset($variables['page']['content']['title_content_block_wrapper'])) {
+    $item = $variables['page']['content']['easy_booking_theme_customcartblock'];
+    unset($variables['page']['content']['easy_booking_theme_customcartblock']);
+    $variables['page']['content']["title_content_block_wrapper"]['easy_booking_theme_customcartblock'] = $item;
+    $variables['page']['content']["title_content_block_wrapper"]['easy_booking_theme_customcartblock']['#weight'] = 3; 
+  };   
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function easy_booking_theme_preprocess_node(&$variables) {
+  // Add class to nodes.
+  /** @var \Drupal\node\Entity\Node $node */
+  $node = $variables['node'];
+  $alias = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$node->id());
+  //$variables['attributes']['class'][] = 'node-' . str_replace('_', '-', str_replace('/', '-' , $alias));
+  
+
+  // Add wrapper to title and price 'Room' content type in FIRST layout column.
+  if ($node->bundle() === 'room'
+    && isset($variables['content']['_layout_builder'][0]['first'])) {
+    $first_section = $variables['content']['_layout_builder'][0]['first'];
+    foreach ($first_section as $key_item => $item) {
+      if ($item['#plugin_id'] === 'field_block:node:room:title') {
+        $first_field_key = $key_item;
+        $first_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:room:field_price') {
+        $second_field_key = $key_item;
+        $second_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:room:field_night_hour') {
+        $third_field_key = $key_item;
+        $third_field = $item;
+      }
+      else {
+        continue;
+      }
+    };
+    if ($first_field['#plugin_id'] === 'field_block:node:room:title'
+      && $second_field['#plugin_id'] === 'field_block:node:room:field_price'
+      && $third_field['#plugin_id'] === 'field_block:node:room:field_night_hour') {
+      $variables['content']['_layout_builder'][0]['first']['title_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => -10,
+        '#attributes' => [
+          'class' => 'title--container',
+        ],
+      ];
+      $variables['content']['_layout_builder'][0]['first']['title_wrapper']['price_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => 0,
+        '#attributes' => [
+          'class' => 'price--container',
+        ],
+      ];
+      $variables['content']['_layout_builder'][0]['first']['title_wrapper'][$first_field_key] = $first_field;
+      $variables['content']['_layout_builder'][0]['first']['title_wrapper']['price_wrapper'][$second_field_key] = $second_field;
+      $variables['content']['_layout_builder'][0]['first']['title_wrapper']['price_wrapper'][$third_field_key] = $third_field;
+      unset($variables['content']['_layout_builder'][0]['first'][$first_field_key]);
+      unset($variables['content']['_layout_builder'][0]['first'][$second_field_key]);
+      unset($variables['content']['_layout_builder'][0]['first'][$third_field_key]);
+    }
+  }
+
+  // Add wrapper to title and price 'Room' content type in SECOND layout column.
+  if ($node->bundle() === 'room'
+    && isset($variables['content']['_layout_builder'][0]['second'])) {
+    $first_section = $variables['content']['_layout_builder'][0]['second'];
+    foreach ($first_section as $key_item => $item) {
+      if ($item['#plugin_id'] === 'field_block:node:room:title') {
+        $first_field_key = $key_item;
+        $first_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:room:field_price') {
+        $second_field_key = $key_item;
+        $second_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:room:field_night_hour') {
+        $third_field_key = $key_item;
+        $third_field = $item;
+      }
+      else {
+        continue;
+      }
+    };
+    if ($first_field['#plugin_id'] === 'field_block:node:room:title'
+      && $second_field['#plugin_id'] === 'field_block:node:room:field_price'
+      && $third_field['#plugin_id'] === 'field_block:node:room:field_night_hour') {
+      $variables['content']['_layout_builder'][0]['second']['title_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => -10,
+        '#attributes' => [
+          'class' => 'title--container',
+        ],
+      ];
+      $variables['content']['_layout_builder'][0]['second']['title_wrapper']['price_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => 0,
+        '#attributes' => [
+          'class' => 'price--container',
+        ],
+      ];
+      $variables['content']['_layout_builder'][0]['second']['title_wrapper'][$first_field_key] = $first_field;
+      $variables['content']['_layout_builder'][0]['second']['title_wrapper']['price_wrapper'][$second_field_key] = $second_field;
+      $variables['content']['_layout_builder'][0]['second']['title_wrapper']['price_wrapper'][$third_field_key] = $third_field;
+      unset($variables['content']['_layout_builder'][0]['second'][$first_field_key]);
+      unset($variables['content']['_layout_builder'][0]['second'][$second_field_key]);
+      unset($variables['content']['_layout_builder'][0]['second'][$third_field_key]);
+    }
+  }
+
+  // Add wrapper to number of guests in 'Room' content type.
+  if ($node->bundle() === 'room'
+    && isset($variables['content']['_layout_builder'][0]['first'])) {
+    $first_section = $variables['content']['_layout_builder'][0]['first'];
+    foreach ($first_section as $key_item => $item) {
+      if ($item['#plugin_id'] === 'field_block:node:room:field_adults_number') {
+        $first_field_key = $key_item;
+        $first_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:room:field_children_number') {
+        $second_field_key = $key_item;
+        $second_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:room:field_single_beds_number') {
+        $third_field_key = $key_item;
+        $third_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:room:field_double_beds_number') {
+        $fourth_field_key = $key_item;
+        $fourth_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:room:field_area') {
+        $fifth_field_key = $key_item;
+        $fifth_field = $item;
+      }
+      else {
+        continue;
+      }
+    };
+    if ($first_field['#plugin_id'] === 'field_block:node:room:field_adults_number'
+      && $second_field['#plugin_id'] === 'field_block:node:room:field_children_number'
+      && $third_field['#plugin_id'] === 'field_block:node:room:field_single_beds_number'
+      && $fourth_field['#plugin_id'] === 'field_block:node:room:field_double_beds_number'
+      && $fifth_field['#plugin_id'] === 'field_block:node:room:field_area') {
+
+      $first_field_content = $first_field['content'][0]['#markup'];
+      $second_field_content = $second_field['content'][0]['#markup'];
+      $third_field_content = $third_field['content'][0]['#markup'];
+      $fourth_field_content = $fourth_field['content'][0]['#markup'];
+      $fifth_field_content = $fifth_field['content'][0]['#markup'];
+
+      $variables['content']['_layout_builder'][0]['first']['guests_beds_area_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => -6,
+        '#attributes' => [
+          'class' => 'guests-beds-area--wrapper',
+        ],
+      ];
+      $variables['content']['_layout_builder'][0]['first']['guests_beds_area_wrapper']['guests_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => -2,
+        '#attributes' => [
+          'class' => 'guests--wrapper',
+        ],
+        'guests_items_wrapper' => [
+          '#type' => 'container',
+          '#weight' => -1,
+          '#attributes' => [
+            'class' => 'guests-items--wrapper',
+          ],
+          "$first_field_key" => [
+            '#type' => 'html_tag',
+            '#tag' => 'p',
+            '#weight' => -2,
+            '#value' => "<span>$first_field_content</span>" . " adults",
+            '#attributes' => [
+              'class' => [
+                'guests--item',
+              ],
+            ],
+          ],
+          "$second_field_key" => [
+            '#type' => 'html_tag',
+            '#tag' => 'p',
+            '#weight' => -1,
+            '#value' => "<span>$second_field_content</span>" . " children",
+            '#attributes' => [
+              'class' => [
+                'guests--item',
+              ],
+            ],
+          ],
+        ],
+        'item-title' => [
+          '#type' => 'html_tag',
+          '#tag' => 'h2',
+          '#weight' => 0,
+          '#value' => 'Max guests',
+          '#attributes' => [
+            'class' => [
+              'guests--title',
+            ],
+          ],
+        ],
+      ];
+      $variables['content']['_layout_builder'][0]['first']['guests_beds_area_wrapper']['beds_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => -1,
+        '#attributes' => [
+          'class' => 'beds--wrapper',
+        ],
+        'beds_items_wrapper' => [
+          '#type' => 'container',
+          '#weight' => -1,
+          '#attributes' => [
+            'class' => 'beds-items--wrapper',
+          ],
+          "$third_field_key" => [
+            '#type' => 'html_tag',
+            '#tag' => 'p',
+            '#weight' => -2,
+            '#value' => "<span>$third_field_content</span>" . " small single bed",
+            '#attributes' => [
+              'class' => [
+                'beds--item',
+              ],
+            ],
+          ],
+          "$fourth_field_key" => [
+            '#type' => 'html_tag',
+            '#tag' => 'p',
+            '#weight' => -1,
+            '#value' => "<span>$fourth_field_content</span>" . " large double bed",
+            '#attributes' => [
+              'class' => [
+                'beds--item',
+              ],
+            ],
+          ],
+        ],
+        'item-title' => [
+          '#type' => 'html_tag',
+          '#tag' => 'h2',
+          '#weight' => 0,
+          '#value' => 'Bed type(s)',
+          '#attributes' => [
+            'class' => [
+              'beds--title',
+            ],
+          ],
+        ],
+      ];
+      $variables['content']['_layout_builder'][0]['first']['guests_beds_area_wrapper']['area_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => 0,
+        '#attributes' => [
+          'class' => 'area--wrapper',
+        ],
+        'area_items_wrapper' => [
+          '#type' => 'container',
+          '#weight' => 0,
+          '#attributes' => [
+            'class' => 'area-items--wrapper',
+          ],
+          "$fifth_field_key" => [
+            '#type' => 'html_tag',
+            '#tag' => 'p',
+            '#weight' => -1,
+            '#value' => "<span>$fifth_field_content</span>" . " m<sup>2</sup>",
+            '#attributes' => [
+              'class' => [
+                'area--item',
+              ],
+            ],
+          ],
+        ],
+        'item-title' => [
+          '#type' => 'html_tag',
+          '#tag' => 'h2',
+          '#weight' => 0,
+          '#value' => 'Room size',
+          '#attributes' => [
+            'class' => [
+              'area--title',
+            ],
+          ],
+        ],
+      ];
+      unset($variables['content']['_layout_builder'][0]['first'][$first_field_key]);
+      unset($variables['content']['_layout_builder'][0]['first'][$second_field_key]);
+      unset($variables['content']['_layout_builder'][0]['first'][$third_field_key]);
+      unset($variables['content']['_layout_builder'][0]['first'][$fourth_field_key]);
+      unset($variables['content']['_layout_builder'][0]['first'][$fifth_field_key]);
+    }
+    $product = Product::load($node->get('field_product')->target_id);
+  }
+
+  // Add wrapper to title and price 'Daily room' content type.
+  if ($node->bundle() === 'daily_room'
+    && isset($variables['content']['_layout_builder'][0]['left'])) {
+    $first_section = $variables['content']['_layout_builder'][0]['left'];
+    foreach ($first_section as $key_item => $item) {
+      if ($item['#plugin_id'] === 'field_block:node:daily_room:title') {
+        $first_field_key = $key_item;
+        $first_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:daily_room:field_price') {
+        $second_field_key = $key_item;
+        $second_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:daily_room:field_night_hour') {
+        $third_field_key = $key_item;
+        $third_field = $item;
+      }
+      else {
+        continue;
+      }
+    };
+    if ($first_field['#plugin_id'] === 'field_block:node:daily_room:title'
+      && $second_field['#plugin_id'] === 'field_block:node:daily_room:field_price'
+      && $third_field['#plugin_id'] === 'field_block:node:daily_room:field_night_hour') {
+      $variables['content']['_layout_builder'][0]['left']['title_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => -10,
+        '#attributes' => [
+          'class' => 'title--container',
+        ],
+      ];
+      $variables['content']['_layout_builder'][0]['left']['title_wrapper']['price_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => 0,
+        '#attributes' => [
+          'class' => 'price--container',
+        ],
+      ];
+      $variables['content']['_layout_builder'][0]['left']['title_wrapper'][$first_field_key] = $first_field;
+      $variables['content']['_layout_builder'][0]['left']['title_wrapper']['price_wrapper'][$second_field_key] = $second_field;
+      $variables['content']['_layout_builder'][0]['left']['title_wrapper']['price_wrapper'][$third_field_key] = $third_field;
+      unset($variables['content']['_layout_builder'][0]['left'][$first_field_key]);
+      unset($variables['content']['_layout_builder'][0]['left'][$second_field_key]);
+      unset($variables['content']['_layout_builder'][0]['left'][$third_field_key]);
+    }
+    $product = Product::load($node->get('field_product')->target_id);
+  }
+
+  // Add wrapper to number of guests in 'Daily room' content type.
+  if ($node->bundle() === 'daily_room'
+    && isset($variables['content']['_layout_builder'][0]['left'])) {
+    $first_section = $variables['content']['_layout_builder'][0]['left'];
+    foreach ($first_section as $key_item => $item) {
+      if ($item['#plugin_id'] === 'field_block:node:daily_room:field_adults_number') {
+        $first_field_key = $key_item;
+        $first_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:daily_room:field_children_number') {
+        $second_field_key = $key_item;
+        $second_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:daily_room:field_single_beds_number') {
+        $third_field_key = $key_item;
+        $third_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:daily_room:field_double_beds_number') {
+        $fourth_field_key = $key_item;
+        $fourth_field = $item;
+      }
+      else if ($item['#plugin_id'] === 'field_block:node:daily_room:field_area') {
+        $fifth_field_key = $key_item;
+        $fifth_field = $item;
+      }
+      else {
+        continue;
+      }
+    };
+    if ($first_field['#plugin_id'] === 'field_block:node:daily_room:field_adults_number'
+      && $second_field['#plugin_id'] === 'field_block:node:daily_room:field_children_number'
+      && $third_field['#plugin_id'] === 'field_block:node:daily_room:field_single_beds_number'
+      && $fourth_field['#plugin_id'] === 'field_block:node:daily_room:field_double_beds_number'
+      && $fifth_field['#plugin_id'] === 'field_block:node:daily_room:field_area') {
+
+      $first_field_content = $first_field['content'][0]['#markup'];
+      $second_field_content = $second_field['content'][0]['#markup'];
+      $third_field_content = $third_field['content'][0]['#markup'];
+      $fourth_field_content = $fourth_field['content'][0]['#markup'];
+      $fifth_field_content = $fifth_field['content'][0]['#markup'];
+
+      $variables['content']['_layout_builder'][0]['left']['guests_beds_area_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => -6,
+        '#attributes' => [
+          'class' => 'guests-beds-area--wrapper',
+        ],
+      ];
+      $variables['content']['_layout_builder'][0]['left']['guests_beds_area_wrapper']['guests_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => -2,
+        '#attributes' => [
+          'class' => 'guests--wrapper',
+        ],
+        'guests_items_wrapper' => [
+          '#type' => 'container',
+          '#weight' => -1,
+          '#attributes' => [
+            'class' => 'guests-items--wrapper',
+          ],
+          "$first_field_key" => [
+            '#type' => 'html_tag',
+            '#tag' => 'p',
+            '#weight' => -2,
+            '#value' => "$first_field_content",
+            '#attributes' => [
+              'class' => [
+                'guests--item',
+              ],
+            ],
+          ],
+          "$second_field_key" => [
+            '#type' => 'html_tag',
+            '#tag' => 'p',
+            '#weight' => -1,
+            '#value' => "$second_field_content",
+            '#attributes' => [
+              'class' => [
+                'guests--item',
+              ],
+            ],
+          ],
+        ],
+        'item-title' => [
+          '#type' => 'html_tag',
+          '#tag' => 'h2',
+          '#weight' => 0,
+          '#value' => 'Max guests',
+          '#attributes' => [
+            'class' => [
+              'guests--title',
+            ],
+          ],
+        ],
+      ];
+      $variables['content']['_layout_builder'][0]['left']['guests_beds_area_wrapper']['beds_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => -1,
+        '#attributes' => [
+          'class' => 'beds--wrapper',
+        ],
+        'beds_items_wrapper' => [
+          '#type' => 'container',
+          '#weight' => -1,
+          '#attributes' => [
+            'class' => 'beds-items--wrapper',
+          ],
+          "$third_field_key" => [
+            '#type' => 'html_tag',
+            '#tag' => 'p',
+            '#weight' => -2,
+            '#value' => "$third_field_content",
+            '#attributes' => [
+              'class' => [
+                'beds--item',
+              ],
+            ],
+          ],
+          "$fourth_field_key" => [
+            '#type' => 'html_tag',
+            '#tag' => 'p',
+            '#weight' => -1,
+            '#value' => "$fourth_field_content",
+            '#attributes' => [
+              'class' => [
+                'beds--item',
+              ],
+            ],
+          ],
+        ],
+        'item-title' => [
+          '#type' => 'html_tag',
+          '#tag' => 'h2',
+          '#weight' => 0,
+          '#value' => 'Bed type(s)',
+          '#attributes' => [
+            'class' => [
+              'beds--title',
+            ],
+          ],
+        ],
+      ];
+      $variables['content']['_layout_builder'][0]['left']['guests_beds_area_wrapper']['area_wrapper'] = [
+        '#type' => 'container',
+        '#weight' => 0,
+        '#attributes' => [
+          'class' => 'area--wrapper',
+        ],
+        'area_items_wrapper' => [
+          '#type' => 'container',
+          '#weight' => 0,
+          '#attributes' => [
+            'class' => 'area-items--wrapper',
+          ],
+          "$fifth_field_key" => [
+            '#type' => 'html_tag',
+            '#tag' => 'p',
+            '#weight' => -1,
+            '#value' => "$fifth_field_content",
+            '#attributes' => [
+              'class' => [
+                'area--item',
+              ],
+            ],
+          ],
+        ],
+        'item-title' => [
+          '#type' => 'html_tag',
+          '#tag' => 'h2',
+          '#weight' => 0,
+          '#value' => 'Room size',
+          '#attributes' => [
+            'class' => [
+              'area--title',
+            ],
+          ],
+        ],
+      ];
+      unset($variables['content']['_layout_builder'][0]['left'][$first_field_key]);
+      unset($variables['content']['_layout_builder'][0]['left'][$second_field_key]);
+      unset($variables['content']['_layout_builder'][0]['left'][$third_field_key]);
+      unset($variables['content']['_layout_builder'][0]['left'][$fourth_field_key]);
+      unset($variables['content']['_layout_builder'][0]['left'][$fifth_field_key]);
+    }
+    $product = Product::load($node->get('field_product')->target_id);
+  }
+
+  // Wrapper in 'Homepage About Block' on page 'about_us'.
+  if ($node->bundle() === 'page' && isset($variables['content'])) {
+    $first_section = $variables['content']['field_block'][0]['#ds_configuration']['regions'];
+    foreach ($first_section as $key_item => $item) {
+      if ($key_item === 'header') {
+        $first_field_key = $key_item;
+        $first_field = $item;
+      }
+      else if ($key_item === 'left') {
+        $second_field_key = $key_item;
+        $second_field = $item;
+      }
+      else {
+        continue;
+      }
+    };
+    if ($first_field_key === 'header' && $second_field_key === 'left') {
+      unset($variables['content']['field_block'][0]['#ds_configuration']['regions'][$first_field_key]);
+      foreach ($first_field as $item) {
+        $variables['content']['field_block'][0]['#ds_configuration']['regions']['header'][] = $item;
+      }
+      foreach ($second_field as $item) {
+        $variables['content']['field_block'][0]['#ds_configuration']['regions']['header'][] = $item;
+      }
+      unset($variables['content']['field_block'][0]['#ds_configuration']['regions'][$second_field_key]);
+    }
+    
+    $item = $variables['content']['field_block'][0];
+    unset($variables['content']['field_block'][0]);
+    $variables['content']['field_block'][0]['content-wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'container'],
+      '#weight' => 1,
+    ];
+    $variables['content']['field_block'][0]['content-wrapper'][] = $item;
+    
+    // Wrappers 'container' in paragraphs on page 'about_us'
+    $first_item = $variables['content']['field_paragraphs'][0];
+    $second_item = $variables['content']['field_paragraphs'][1];
+    $third_item = $variables['content']['field_paragraphs'][2];
+
+    unset($variables['content']['field_paragraphs'][0]);
+    unset($variables['content']['field_paragraphs'][1]);
+    unset($variables['content']['field_paragraphs'][2]);
+    $variables['content']['field_paragraphs'][0]['paragraph_first_item_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'first-item-wrapper'],
+      '#weight' => 2,
+    ];
+    $variables['content']['field_paragraphs'][1]['paragraph_second_item_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'slider-item-wrapper'],
+      '#weight' => 3,
+    ];
+    $variables['content']['field_paragraphs'][2]['paragraph_third_item_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'third-item-wrapper'],
+      '#weight' => 4,
+    ];
+
+    $variables['content']['field_paragraphs'][0]['paragraph_first_item_wrapper']['paragraph-wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'container'],
+      '#weight' => 0,
+    ];
+    $variables['content']['field_paragraphs'][2]['paragraph_third_item_wrapper']['paragraph-wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => 'container'],
+      '#weight' => 0,
+    ];
+
+    $variables['content']['field_paragraphs'][0]['paragraph_first_item_wrapper']['paragraph-wrapper'][] = $first_item;
+    $variables['content']['field_paragraphs'][1]['paragraph_second_item_wrapper'][] = $second_item;
+    $variables['content']['field_paragraphs'][2]['paragraph_third_item_wrapper']['paragraph-wrapper'][] = $third_item;
+
+    //dd($variables['content']['field_paragraphs']);
+  }
+}
+
+

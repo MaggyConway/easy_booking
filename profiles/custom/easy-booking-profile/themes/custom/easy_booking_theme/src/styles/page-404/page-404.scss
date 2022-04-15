@@ -1,0 +1,179 @@
+.path-404 {
+
+    .title-content-block--wrapper {
+        background: $extra-bg;
+//
+        .container {
+            padding-top: 125px;
+            padding-bottom: 240px;
+
+            @include breakpoint(sl-tablet) {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    #block-easy-booking-theme-page-title {
+        display: none;
+    }
+
+    .view-_04 {
+        .field-content {
+            display: flex;
+
+            @include breakpoint(sl-tablet) {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .text-wrapper {
+        font-size: $extra-font-size;
+        line-height: $extra-line-height;
+        color: $secondary-color-text;
+        margin-right: 131px;
+
+        @include breakpoint(ll) {
+            margin-right: 50px;
+        }
+
+        .page_404_field_title {
+            font-weight: bold;
+            font-size: $extra-font-size-title;
+            line-height: $extra-line-height-title;
+            position: relative;
+            margin-bottom: 34px;
+
+            @include breakpoint(sl) {
+                font-size: 36px;
+                line-height: 49px;
+            }
+
+            &::after {
+                position: absolute;
+                display: block;
+                content: '';
+                height: 2px;
+                width: 102px;
+                background: $secondary-color-text;
+                bottom: -4px;
+                left: 0;
+            }
+        }
+
+        .page_404_field_text {
+            margin-bottom: 103px;
+
+            @include breakpoint(sl-tablet) {
+                margin-bottom: 40px;
+            }
+
+            @include breakpoint(sl) {
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+
+        .page_404_field_link {
+
+            @include breakpoint(sl-tablet) {
+                margin-bottom: 40px;
+            }
+
+            a {
+                @include btn-black;
+                width: 86px;
+                color: $secondary-color-text;
+                border: $border-btn-extra-light;
+            }
+        }
+    }
+
+    .images-wrapper {
+        max-width: 560px;
+        width: 100%;
+
+        article {
+            margin-bottom: 52px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        img {
+            height: 134px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// .view-_04.view-display-id-404_page {
+//     color: $secondary-color-text;
+//     background-color: $extra-bg;
+//     padding: 125px 0 240px 0;
+
+//     .views-row {
+//         display: flex;
+        
+//         @include container;
+//     }
+
+//     .views-field-nothing {
+//         width: 50%;
+//     }
+
+//     .views-field-field-title {
+//         font-weight: bold;
+//         font-size: 64px;
+//         line-height: 87px;
+
+//         &::after {
+//             content: "";
+//             display: block;
+//             width: 102px;
+//             height: 2px;
+//             background-color: $secondary-bg;
+//             margin-top: 10px;
+//             margin-bottom: 28px;
+//         }
+//     }
+
+//     .views-field-field-text {
+//         max-width: 474px;
+//         font-weight: 300;
+//         font-size: 18px;
+//         line-height: 25px;
+//         margin-bottom: 103px;
+//     }
+
+//     .views-field-field-link {
+//         a {
+//             display: inline-block;
+//             font-weight: 300;
+//             font-size: 12px;
+//             line-height: 16px;
+//             color: $secondary-color-text;
+//             padding: 13px 16px;
+//             border: 1px solid $secondary-color-text;
+//             border-radius: 5px;
+//         }
+//     }
+
+//     .views-field-field-images {
+//         width: 50%;
+//     }
+
+//     .field--name-field-media-image {
+//         margin-bottom: 52px;
+//     }
+// }

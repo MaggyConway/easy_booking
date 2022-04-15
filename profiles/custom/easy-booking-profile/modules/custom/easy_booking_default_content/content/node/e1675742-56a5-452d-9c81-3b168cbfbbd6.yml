@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e1675742-56a5-452d-9c81-3b168cbfbbd6
+  bundle: reason
+  default_langcode: en
+  depends:
+    d4346f5a-91dd-4484-be2a-ae61b8d55139: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Low rates'
+  created:
+    -
+      value: 1605861199
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_image:
+    -
+      entity: d4346f5a-91dd-4484-be2a-ae61b8d55139
+  field_text:
+    -
+      value: 'Pay the price you see - no hidden costs.'
+      format: plain_text

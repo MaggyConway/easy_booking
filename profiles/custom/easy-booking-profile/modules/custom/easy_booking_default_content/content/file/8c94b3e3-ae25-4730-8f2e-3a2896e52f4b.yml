@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8c94b3e3-ae25-4730-8f2e-3a2896e52f4b
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: fridge.png
+  uri:
+    -
+      value: 'public://2020-10/fridge_0_1_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 891
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310139
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

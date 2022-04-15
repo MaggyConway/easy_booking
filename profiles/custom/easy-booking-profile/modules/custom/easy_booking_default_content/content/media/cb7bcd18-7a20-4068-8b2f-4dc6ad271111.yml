@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: cb7bcd18-7a20-4068-8b2f-4dc6ad271111
+  bundle: image
+  default_langcode: en
+  depends:
+    d3e0a786-7815-4d4d-94f0-0543378904df: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: koster_posuda_kemping_177919_1280x720.jpg
+  created:
+    -
+      value: 1603445260
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: d3e0a786-7815-4d4d-94f0-0543378904df
+      alt: Attraction
+      title: ''
+      width: 1280
+      height: 720

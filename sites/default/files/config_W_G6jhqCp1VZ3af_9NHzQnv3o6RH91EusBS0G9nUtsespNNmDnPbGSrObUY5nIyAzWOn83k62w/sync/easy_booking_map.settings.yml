@@ -1,0 +1,10 @@
+access_token: pk.eyJ1IjoiYWxleGFuZGVyLWthbGFzaG5payIsImEiOiJja2Z6NXBrNHQyNHF1MnlzOGFmazZyOGttIn0.37fX1xz9kk9smXoiOP9ukw
+style: 'mapbox://styles/alexander-kalashnik/ckhbhevmq0iee19o48h3vdtjb'
+coordinates:
+  lat: '37.7796755'
+  lon: '-122.3934647'
+zoom: 13
+anchor: bottom
+marker:
+  id: 120
+  url: 'http://easy-booking-app.lndo.site/sites/default/files/2021-03/location-pin_0.png'

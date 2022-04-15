@@ -1,0 +1,36 @@
+uuid: 86c25c84-6e72-4371-92d7-f91ddc38270c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.simplenews_issue.body
+    - field.field.node.simplenews_issue.simplenews_issue
+    - node.type.simplenews_issue
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: RRQx5oDHXGibVHNZDovA_Ebh2KenmGvqalbiKb-e1nM
+id: node.simplenews_issue.teaser
+targetEntityType: node
+bundle: simplenews_issue
+mode: teaser
+content:
+  body:
+    type: text_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    label: hidden
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true
+  search_api_excerpt: true
+  simplenews_issue: true

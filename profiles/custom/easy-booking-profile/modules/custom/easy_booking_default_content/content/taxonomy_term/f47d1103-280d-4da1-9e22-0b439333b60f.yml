@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: f47d1103-280d-4da1-9e22-0b439333b60f
+  bundle: amenities
+  default_langcode: en
+  depends:
+    26416a5a-5447-499a-ade8-735336b565cc: media
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Breakfast
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /amenities/breakfast
+      langcode: en
+      pathauto: 1
+  field_icon:
+    -
+      entity: 26416a5a-5447-499a-ade8-735336b565cc

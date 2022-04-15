@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 044d08b4-9c8d-4468-b1b5-27e2aadde4e2
+  bundle: image
+  default_langcode: en
+  depends:
+    fd52a38e-2112-471f-b593-746e4ce5b398: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: candle.png
+  created:
+    -
+      value: 1615793668
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: fd52a38e-2112-471f-b593-746e4ce5b398
+      alt: 'Relax centre'
+      title: ''
+      width: 40
+      height: 40

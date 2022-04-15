@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 32f96e74-de0e-4576-9597-db7262972a50
+  bundle: image
+  default_langcode: en
+  depends:
+    23e04a1c-9b18-4b65-9ece-964038c0208f: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: washing-machine.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 23e04a1c-9b18-4b65-9ece-964038c0208f
+      alt: 'Washing Machine'
+      title: ''
+      width: 40
+      height: 40

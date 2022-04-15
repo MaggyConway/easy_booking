@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 2497d997-35cf-463e-8ab3-24351d708fab
+  bundle: image
+  default_langcode: en
+  depends:
+    fb26acab-81d5-4796-a011-2aa10fe4f2e7: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: turist_velosiped_pohod_173292_300x168.jpg
+  created:
+    -
+      value: 1603445260
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: fb26acab-81d5-4796-a011-2aa10fe4f2e7
+      alt: Attraction
+      title: ''
+      width: 300
+      height: 168

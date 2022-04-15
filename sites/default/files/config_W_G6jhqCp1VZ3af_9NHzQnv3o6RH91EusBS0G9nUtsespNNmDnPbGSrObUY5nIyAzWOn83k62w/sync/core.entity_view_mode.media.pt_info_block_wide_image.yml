@@ -1,0 +1,12 @@
+uuid: 0c83cc76-6937-47bd-ba81-ad87b16042fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 0f-yJxnYWnljk3BLFEMBX2AUsy60lLTxbdMFfV1T2-M
+id: media.pt_info_block_wide_image
+label: 'PT Info Block: Wide Image'
+targetEntityType: media
+cache: true

@@ -1,0 +1,113 @@
+.view-filters,
+.block-views-exposed-filter-blockattractions-attractions-page {
+    margin-bottom: 24px;
+
+    fieldset {
+        margin: 0;
+    }
+
+    .form-actions {
+        margin: 0;
+    }
+    /* Filter content */
+    .form-radios {
+        .form-radios {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            transition: transform 0.3s ease;
+
+            .form-item {
+                margin: 0 8px 8px 0;
+
+                &:last-child {
+                    margin: 0 0 8px 0;
+                }
+
+                .form-radio {
+                    display: none;
+                }
+
+                label {
+                    display: block;
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding: 7px 16px;
+                    border: $border-btn-dark;
+                    border-radius: $border-radius-all;
+                    cursor: pointer;
+
+                    @include breakpoint(sl) {
+                        border: none;
+                        width: 100%;
+                        font-size: $main-font-size;
+                    }
+                }
+
+                .form-radio:checked + label {
+                    color: $secondary-color-text;
+                    background-color: $extra-bg;
+
+                    @include breakpoint(sl) {
+                        border-bottom: 2px solid $secondary-color-text;
+                        border-top: 2px solid $secondary-color-text;
+                        background-color: $primary-bg;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        color: $primary-color-text;
+                        border-radius: 0;
+                        font-size: $extra-font-size;
+                        line-height: 30px;
+                    }
+                }
+
+                @include breakpoint(sl) {
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 8px;
+                }
+            }
+
+            @include breakpoint(sl) {
+                position: relative;
+                flex-wrap: wrap;
+                background-color: $primary-bg;
+                position: fixed;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                z-index: 100000;
+                text-align: center;
+                border-top: 2px solid $extra-bg;
+                transform: translateY(100%);
+            }
+
+            &.show {
+                transform: translateY(0);
+            }
+        }
+    }
+
+
+    .mobile-filter-container {
+        display: none;
+        border: $border-btn-dark;
+        border-radius: $border-radius-all;
+        padding: 13px 16px;
+        font-weight: 300;
+        font-size: $extra-font-size;
+        line-height: 19px;
+        background-repeat: no-repeat;
+        background-position: center right 20px;
+        background-image: url(../../assets/images/icon-filter-arrows.svg);
+
+        @include breakpoint(sl) {
+            display: block;
+        }
+
+        &.show {
+            border: $border-btn-link;
+        }
+    }
+}

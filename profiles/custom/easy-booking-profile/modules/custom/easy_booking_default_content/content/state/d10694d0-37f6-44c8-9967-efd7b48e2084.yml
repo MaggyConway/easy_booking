@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: state
+  uuid: d10694d0-37f6-44c8-9967-efd7b48e2084
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: Available
+  created:
+    -
+      value: 1614652901
+  color:
+    -
+      value: '#42f649'
+  calendar_label:
+    -
+      value: AV
+  blocking:
+    -
+      value: 0
+  locked:
+    -
+      value: 0
+  machine_name:
+    -
+      value: bee_daily_available
+  event_type:
+    -
+      target_id: availability_daily

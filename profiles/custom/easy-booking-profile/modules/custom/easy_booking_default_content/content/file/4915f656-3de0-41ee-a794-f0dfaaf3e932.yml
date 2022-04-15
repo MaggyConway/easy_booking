@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4915f656-3de0-41ee-a794-f0dfaaf3e932
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: luggage.png
+  uri:
+    -
+      value: 'public://2020-10/luggage_0_1_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1197
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310139
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

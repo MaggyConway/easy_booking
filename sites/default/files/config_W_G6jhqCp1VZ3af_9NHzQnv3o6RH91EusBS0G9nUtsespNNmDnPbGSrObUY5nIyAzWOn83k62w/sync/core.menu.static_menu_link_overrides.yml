@@ -1,0 +1,15 @@
+definitions:
+  user__page:
+    weight: -49
+    menu_name: account
+    parent: ''
+    enabled: true
+    expanded: false
+  user__logout:
+    weight: -48
+    menu_name: account
+    parent: ''
+    expanded: false
+    enabled: true
+_core:
+  default_config_hash: dvOX2yt87di55pNtshSe0oWbqMOtgC3u7xxk-JoQFnA

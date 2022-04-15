@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7741cad5-e5a6-42b5-af3e-5c9202a66a6e
+  bundle: image
+  default_langcode: en
+  depends:
+    c1110f7e-01b2-4d8f-902e-52e3782940e5: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: Marker
+  created:
+    -
+      value: 1616995495
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: c1110f7e-01b2-4d8f-902e-52e3782940e5
+      alt: Marker
+      title: ''
+      width: 23
+      height: 35

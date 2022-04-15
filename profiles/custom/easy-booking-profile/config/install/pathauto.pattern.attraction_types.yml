@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: attraction_types
+label: 'Attraction Types'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/attractions/types/[term:name]'
+selection_criteria:
+  69f49f02-8a3c-4481-9c0d-c9d38e2ae45e:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      attractions: attractions
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 69f49f02-8a3c-4481-9c0d-c9d38e2ae45e
+selection_logic: and
+weight: -5
+relationships: {  }

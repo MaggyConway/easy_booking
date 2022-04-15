@@ -1,0 +1,15 @@
+uuid: 6bf16a61-0a23-48eb-93d2-7a8311ccb861
+langcode: en
+status: true
+dependencies: {  }
+name: checkout_advantages_thumbnail_20x20
+label: 'Checkout advantages thumbnail (20x20)'
+effects:
+  ef0a6903-641a-4207-ac01-0a453e60f72b:
+    uuid: ef0a6903-641a-4207-ac01-0a453e60f72b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 20
+      height: 20
+      anchor: center-center

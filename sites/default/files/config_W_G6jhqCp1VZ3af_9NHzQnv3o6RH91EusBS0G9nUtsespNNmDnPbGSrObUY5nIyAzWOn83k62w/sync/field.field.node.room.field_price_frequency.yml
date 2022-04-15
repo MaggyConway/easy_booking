@@ -1,0 +1,23 @@
+uuid: da628c15-81c6-40c7-8df5-c4421b32056c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_frequency
+    - node.type.room
+  module:
+    - options
+_core:
+  default_config_hash: _ST-ohwETx_Zvb8YSTkhS7GRqmS2450ExDtb5qzHWJs
+id: node.room.field_price_frequency
+field_name: field_price_frequency
+entity_type: node
+bundle: room
+label: 'Price frequency'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

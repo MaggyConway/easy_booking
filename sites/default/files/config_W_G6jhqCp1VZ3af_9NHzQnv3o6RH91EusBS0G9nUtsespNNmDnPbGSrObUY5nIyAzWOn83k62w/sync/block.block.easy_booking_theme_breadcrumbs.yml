@@ -1,0 +1,27 @@
+uuid: ffe88620-979c-46c9-8c90-dcb764311435
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - easy_booking_theme
+_core:
+  default_config_hash: jyXZsE5QuK4Fevq46JbP6lw_DdfyhtSzpoBYIaTjIiA
+id: easy_booking_theme_breadcrumbs
+theme: easy_booking_theme
+region: content
+weight: -12
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/news/*\r\n/rooms/*"
+    negate: false
+    context_mapping: {  }

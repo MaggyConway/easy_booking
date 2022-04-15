@@ -1,0 +1,23 @@
+uuid: 54155c67-2741-4300-9b05-221603bf13ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_event.event_type.availability_hourly
+    - field.storage.bat_event.event_series
+_core:
+  default_config_hash: 6bFOz6KyGxe5B2Z1muzPMrI4iQ6DccqGOd_UijItIOA
+id: bat_event.availability_hourly.event_series
+field_name: event_series
+entity_type: bat_event
+bundle: availability_hourly
+label: 'Event series'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:bat_event_series'
+  handler_settings: {  }
+field_type: entity_reference

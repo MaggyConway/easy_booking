@@ -1,0 +1,114 @@
+<?php
+
+/**
+ * @file
+ *   Implements custom code related to commerce for easy booking profile.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\commerce_order\Entity\OrderInterface;
+use Drupal\commerce_cart\CartProvider;
+
+/**
+ * Implements hook_theme().
+ */
+function easy_booking_commerce_theme() {
+  return [
+    'easy_booking_commerce_booking_room_information_pane' => [
+      'variables' => [
+        'rooms' => [],
+      ],
+    ],
+    'easy_booking_commerce_checkout_form__with_sidebar' => [
+      'base hook' => 'commerce_checkout_form',
+      'variables' => [],
+    ],
+    'easy_booking_commerce_room_amenities_pane' => [
+      'variables' => [
+        'amenities' => [],
+      ],
+    ],
+    'easy_booking_commerce_check_in_time_pane' => [
+      'variables' => [
+        'items_check_in_time' => [],
+      ],
+    ],
+    'easy_booking_commerce_checkout_progress' => [
+      'variables' => [
+        'steps' => [],
+      ],
+    ],
+    'easy_booking_commerce_completion_message' => [
+      'variables' => [
+        'order_entity' => NULL,
+        'user_id' => NULL,
+        'orders_url' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function easy_booking_commerce_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (preg_match("/views_form_commerce_cart_form_default_\d+/", $form_id)) {
+    $form['actions']['submit']['#type'] = FALSE;
+    $store = \Drupal::service('commerce_store.current_store')->getStore();
+    $cart_provider = \Drupal::service('commerce_cart.cart_provider');
+    $cart_manager = \Drupal::service('commerce_cart.cart_manager');
+    $user =  \Drupal::currentUser();
+    /** @var \Drupal\commerce_order\Entity\Order $order */
+    $carts = $cart_provider->getCarts($user);   
+    $main_order_items = [];
+    foreach ($carts as $cart) {
+      if (isset($cart) && $cart->hasItems()) {
+        $order_items = $cart->getItems();
+        $cart_id = $cart->get('order_id')->value;
+        foreach ($order_items as $order_item) {
+          if (in_array($order_item, $main_order_items)) {
+            continue;
+          }
+          else {
+            $main_order_items[] = $order_item;
+          };
+        };
+      };
+    };
+    $main_order = $cart_provider->getCart('rooms_order', $store, $user);
+    $main_order_id = $main_order->get('order_id')->value;
+    foreach ($carts as $cart) {
+      $cart_id = $cart->get('order_id')->value;
+      if (!empty($cart) && !($cart_id == $main_order_id)) {
+        $cart_manager->emptyCart($cart);
+      }
+    };
+    $main_order->setItems($main_order_items);
+    $main_order->recalculateTotalPrice();
+    $main_order->save();
+    foreach ($carts as $order) {
+      if (!($order->get('order_id')->value == $main_order_id)) {
+        $order->delete;
+        $cart_provider->finalizeCart($order, $save_cart = FALSE);
+      }
+      else {
+        continue;
+      };
+    };
+    if (isset($main_order) && $main_order->hasItems()) {
+      $form_state->set('order', $main_order);
+      $form['actions']['checkout']['#value'] = t('Proceed to checkout');
+    }
+  }
+}
+
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function easy_booking_commerce_theme_suggestions_commerce_checkout_form_alter(array &$suggestions, array $variables) {
+  if ($variables['theme_hook_original'] == 'commerce_checkout_form' && $suggestions) {
+    $suggestions[0] = 'easy_booking_' . $variables['theme_hook_original'] . '__with_sidebar';
+  }
+}
+

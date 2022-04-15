@@ -1,0 +1,24 @@
+uuid: b6abfec6-0452-49a6-8a63-f1e9c7497720
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coordinates
+    - node.type.attraction
+  module:
+    - geofield
+_core:
+  default_config_hash: kTPs9i3zR0H70K2W5l74MlLuexlEvLv7Tvk8R9aAIeM
+id: node.attraction.field_coordinates
+field_name: field_coordinates
+entity_type: node
+bundle: attraction
+label: Coordinates
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

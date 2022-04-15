@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_frequency
+    - node.type.room
+  module:
+    - options
+id: node.room.field_price_frequency
+field_name: field_price_frequency
+entity_type: node
+bundle: room
+label: 'Price frequency'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

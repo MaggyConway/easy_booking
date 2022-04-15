@@ -1,0 +1,10 @@
+uuid: 59d779cc-716e-4577-9201-3aecfd756d60
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YXiROW39t34GZZok8CuhYAPKw5kpKFxCH09KE0bSlis
+name: Images
+vid: images
+description: 'Image categories.'
+weight: 0

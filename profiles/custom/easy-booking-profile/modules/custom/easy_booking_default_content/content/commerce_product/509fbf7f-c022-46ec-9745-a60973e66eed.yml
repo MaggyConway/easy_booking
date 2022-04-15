@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 509fbf7f-c022-46ec-9745-a60973e66eed
+  bundle: bee_room
+  default_langcode: en
+  depends:
+    9b090114-4549-4310-a125-fa159e0e144c: commerce_store
+    5004335a-c4d9-487b-a634-60ab658f8647: commerce_product_variation
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: 9b090114-4549-4310-a125-fa159e0e144c
+  title:
+    -
+      value: 'Luxury Hall Of Fame'
+  variations:
+    -
+      entity: 5004335a-c4d9-487b-a634-60ab658f8647
+  default_variation:
+    -
+      entity: 5004335a-c4d9-487b-a634-60ab658f8647
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1603424606

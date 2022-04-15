@@ -1,0 +1,28 @@
+uuid: 262d7380-7fba-43c4-b5e1-10e26f34b286
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+    - commerce_checkout
+third_party_settings:
+  commerce_cart:
+    cart_form_view: commerce_cart_form
+    cart_block_view: commerce_cart_block
+    cart_expiration:
+      unit: day
+      number: 30
+  commerce_checkout:
+    checkout_flow: rooms_checkout_flow
+_core:
+  default_config_hash: HllN78Du4XpK7qEvItSh7KrHI1MVzHe65r397jqgzLk
+label: 'Rooms Order'
+id: rooms_order
+workflow: order_fulfillment
+numberPattern: null
+refresh_mode: customer
+refresh_frequency: 300
+sendReceipt: true
+receiptBcc: ''
+traits: {  }
+locked: false

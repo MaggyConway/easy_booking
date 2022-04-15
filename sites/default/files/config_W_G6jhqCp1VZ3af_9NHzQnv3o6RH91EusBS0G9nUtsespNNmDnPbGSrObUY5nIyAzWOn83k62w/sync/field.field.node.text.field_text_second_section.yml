@@ -1,0 +1,21 @@
+uuid: 6e059928-12ac-4375-8ee4-3c44acb0b78a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_second_section
+    - node.type.text
+  module:
+    - text
+id: node.text.field_text_second_section
+field_name: field_text_second_section
+entity_type: node
+bundle: text
+label: 'Text second section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: 8af92b49-daeb-4177-85e6-156dcab4a136
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: Jdqu7ksF7WRQQNFQ8hYqDHx3kCixg19e6lBDVYJd4lQ
+name: pt_info_block_square_image_328x328
+label: 'PT Info Block: Square Image (328x328)'
+effects:
+  65d76690-f09b-442f-9ced-efa44ea38e83:
+    uuid: 65d76690-f09b-442f-9ced-efa44ea38e83
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 328
+      height: 328
+      crop_type: focal_point

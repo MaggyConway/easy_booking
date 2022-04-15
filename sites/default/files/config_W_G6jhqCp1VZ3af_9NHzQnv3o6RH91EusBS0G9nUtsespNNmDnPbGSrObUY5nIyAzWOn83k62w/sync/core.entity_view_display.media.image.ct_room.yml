@@ -1,0 +1,35 @@
+uuid: 3a275aab-fa67-4c2c-b877-317204bceb66
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.ct_room
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_type
+    - image.style.ct_room_273x496
+    - media.type.image
+  module:
+    - image
+_core:
+  default_config_hash: x8fusrqfQrI1mEQX92kd4v5shf9q0svkAWC5q16B6ro
+id: media.image.ct_room
+targetEntityType: media
+bundle: image
+mode: ct_room
+content:
+  field_media_image:
+    label: hidden
+    weight: 0
+    settings:
+      image_style: ct_room_273x496
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_type: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

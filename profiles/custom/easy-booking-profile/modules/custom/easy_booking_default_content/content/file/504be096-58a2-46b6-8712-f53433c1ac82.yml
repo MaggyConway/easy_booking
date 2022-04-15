@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 504be096-58a2-46b6-8712-f53433c1ac82
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: spalnaya_shkaf_stil_derevyannyy_39785_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/spalnaya_shkaf_stil_derevyannyy_39785_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 102284
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603423225
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 4bf5daff-d277-4c9a-a226-87a9f1186b72
+  bundle: bee
+  default_langcode: en
+  depends:
+    e4f1abac-cbda-49d8-80b8-e3d2ecf0aca2: commerce_product
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  product_id:
+    -
+      entity: e4f1abac-cbda-49d8-80b8-e3d2ecf0aca2
+  sku:
+    -
+      value: bee_room_13
+  title:
+    -
+      value: 'Basic Deluxe Room'
+  price:
+    -
+      number: '0.000000'
+      currency_code: USD
+      formatted: $0.00
+  created:
+    -
+      value: 1603426332

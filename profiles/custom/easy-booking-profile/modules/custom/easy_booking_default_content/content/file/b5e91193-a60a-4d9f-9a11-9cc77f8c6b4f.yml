@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b5e91193-a60a-4d9f-9a11-9cc77f8c6b4f
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: lounge_chair.jpg
+  uri:
+    -
+      value: 'public://2021-03/lounge_chair.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 185548
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1614914529
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

@@ -1,0 +1,22 @@
+uuid: dc4af3aa-69f9-4fab-9ed9-bc7d117c97f4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sEIiHR0IUGgl3xCN_nF-Hd2aWf1RRGHisv_LmFsJfFA
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access content'
+  - 'display eu cookie compliance popup'
+  - 'manage own commerce_payment_method'
+  - 'subscribe to newsletters'
+  - 'view calendar data for any availability_daily event'
+  - 'view calendar data for any availability_hourly event'
+  - 'view commerce_product'
+  - 'view files'
+  - 'view media'
+  - 'view own commerce_order'

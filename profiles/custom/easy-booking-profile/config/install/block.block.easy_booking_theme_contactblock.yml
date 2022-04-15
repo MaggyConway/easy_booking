@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:phone:6fdb600c-48b8-41e7-bea0-a6b64c30a0ea'
+  module:
+    - block_content
+  theme:
+    - easy_booking_theme
+id: easy_booking_theme_contactblock
+theme: easy_booking_theme
+region: header
+weight: -7
+provider: null
+plugin: 'block_content:6fdb600c-48b8-41e7-bea0-a6b64c30a0ea'
+settings:
+  id: 'block_content:6fdb600c-48b8-41e7-bea0-a6b64c30a0ea'
+  label: 'Contact Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

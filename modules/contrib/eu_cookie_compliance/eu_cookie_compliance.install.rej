@@ -1,0 +1,59 @@
+--- eu_cookie_compliance.install	(revision 42c23da8aeaeca0c98623430c4abe0d57b5b3996)
++++ eu_cookie_compliance.install	(date 1608875607717)
+@@ -100,26 +100,28 @@
+     }
+   }
+ 
++  $config = Drupal::config('eu_cookie_compliance.settings');
++
+   // We can't be sure "Restricted HTML" exists.
+   // Initialize rich text editors with a text format that actually exists.
+   // https://www.drupal.org/project/eu_cookie_compliance/issues/2979440 .
+   \Drupal::configFactory()
+     ->getEditable('eu_cookie_compliance.settings')
+     ->set('popup_agreed', [
+-      'value' => '<h2>Thank you for accepting cookies</h2><p>You can now hide this message or find out more about cookies.</p>',
+-      'format' => $default_filter_format,
++      'value' => $config->get('popup_agreed')['value'] ?? '<h2>Thank you for accepting cookies</h2><p>You can now hide this message or find out more about cookies.</p>',
++      'format' => $config->get('popup_agreed')['format'] ?? $default_filter_format,
+     ])
+     ->set('popup_info', [
+-      'value' => '<h2>We use cookies on this site to enhance your user experience</h2><p>By clicking the Accept button, you agree to us doing so.</p>',
+-      'format' => $default_filter_format,
++      'value' => $config->get('popup_info')['value'] ?? '<h2>We use cookies on this site to enhance your user experience</h2><p>By clicking the Accept button, you agree to us doing so.</p>',
++      'format' => $config->get('popup_info')['format'] ?? $default_filter_format,
+     ])
+     ->set('mobile_popup_info', [
+-      'value' => '<h2>We use cookies on this site to enhance your user experience</h2><p>By tapping the Accept button, you agree to us doing so.</p>',
+-      'format' => $default_filter_format,
++      'value' => $config->get('mobile_popup_info')['value'] ?? '<h2>We use cookies on this site to enhance your user experience</h2><p>By tapping the Accept button, you agree to us doing so.</p>',
++      'format' => $config->get('mobile_popup_info')['format'] ?? $default_filter_format,
+     ])
+     ->set('withdraw_message', [
+-      'value' => '<h2>We use cookies on this site to enhance your user experience</h2><p>You have given your consent for us to set cookies.</p>',
+-      'format' => $default_filter_format,
++      'value' => $config->get('withdraw_message')['value'] ?? '<h2>We use cookies on this site to enhance your user experience</h2><p>You have given your consent for us to set cookies.</p>',
++      'format' => $config->get('withdraw_message')['format'] ?? $default_filter_format,
+     ])
+     ->save();
+ 
+@@ -302,6 +304,8 @@
+  * Add config variables for the withdraw banner.
+  */
+ function eu_cookie_compliance_update_8109() {
++  $config = \Drupal::config('eu_cookie_compliance.settings');
++
+   $default_filter_format = filter_default_format();
+   $full_html_format = FilterFormat::load('full_html');
+   if (($default_filter_format === 'restricted_html' || $default_filter_format === 'plain_text') && !empty($full_html_format) && $full_html_format->get('status')) {
+@@ -311,8 +315,8 @@
+   \Drupal::configFactory()
+     ->getEditable('eu_cookie_compliance.settings')
+     ->set('withdraw_message', [
+-      'value' => '<h2>We use cookies on this site to enhance your user experience</h2><p>You have given your consent for us to set cookies.</p>',
+-      'format' => $default_filter_format,
++      'value' => $config->get('withdraw_message')['value'] ?? '<h2>We use cookies on this site to enhance your user experience</h2><p>You have given your consent for us to set cookies.</p>',
++      'format' => $config->get('withdraw_message')['format'] ?? $default_filter_format,
+     ])
+     ->set('withdraw_action_button_label', 'Withdraw consent')
+     ->set('withdraw_tab_button_label', 'Privacy settings')

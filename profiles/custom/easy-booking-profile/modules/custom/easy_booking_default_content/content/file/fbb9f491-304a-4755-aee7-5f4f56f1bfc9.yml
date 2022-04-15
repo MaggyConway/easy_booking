@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: fbb9f491-304a-4755-aee7-5f4f56f1bfc9
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: postel_komnata_spalnaya_mebel_39746_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/postel_komnata_spalnaya_mebel_39746_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 80704
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603423225
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

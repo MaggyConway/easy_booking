@@ -1,0 +1,87 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a53a1590-6065-4a7f-9145-f2a686e80799
+  bundle: news
+  default_langcode: en
+  depends:
+    d6518c75-964a-4244-a0cb-40d5a1f556f7: media
+    2497d997-35cf-463e-8ab3-24351d708fab: media
+    28273341-0116-4ee0-ab92-f4950bcaa4fb: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Perfect camping'
+  created:
+    -
+      value: 1614915614
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /news/perfect-camping
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1615952122
+  field_image:
+    -
+      entity: d6518c75-964a-4244-a0cb-40d5a1f556f7
+  field_news_articles:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: de03453a-b36f-4663-ab94-db6fe922c382
+          bundle: article
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1614915617
+          behavior_settings:
+            -
+              value: {  }
+          field_article_images:
+            -
+              entity: d6518c75-964a-4244-a0cb-40d5a1f556f7
+            -
+              entity: 2497d997-35cf-463e-8ab3-24351d708fab
+          field_article_text:
+            -
+              value: "With the opening of several sophisticated new dining spots in Westport, such as Easy Booking, it seems only fitting that the area have an upscale new hotel to accommodate out-of-town visitors.\r\n\r\nSlated to open in January, the 123-room Easy Booking \r\nis only the second of its kind to open in the United States. (A New Orleans location opened in the fall.) The sleek, modern look of the Easy Booking brand reflects the aesthetics of the European countries where it was first introduced and pairs high style with high tech, offering mobile check-in and USB charging stations. "
+              format: plain_text
+          field_article_title:
+            -
+              value: 'Perfect camping'
+  field_text:
+    -
+      value: 'With the opening of several sophisticated new dining spots in Westport, such as Easy Booking, it seems only fitting that the area have an upscale new hotel to accommodate out-of-town visitors.'
+      format: plain_text
+  field_title:
+    -
+      value: 'Perfect camping'
+  field_type:
+    -
+      entity: 28273341-0116-4ee0-ab92-f4950bcaa4fb

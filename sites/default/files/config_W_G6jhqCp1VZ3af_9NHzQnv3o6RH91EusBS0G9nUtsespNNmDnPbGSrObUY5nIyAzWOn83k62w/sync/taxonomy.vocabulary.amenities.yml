@@ -1,0 +1,10 @@
+uuid: 1d3e9a2f-d56f-48f1-ab9c-299016cf066d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Hh9hbm7rKbADLWq6JF6E0cCpHugTlsX5XBH5NzkPpyw
+name: Amenities
+vid: amenities
+description: 'Room amenities.'
+weight: 0

@@ -1,0 +1,235 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.room.field_adults_number
+    - field.field.node.room.field_amenities
+    - field.field.node.room.field_area
+    - field.field.node.room.field_availability_hourly
+    - field.field.node.room.field_check_in_time
+    - field.field.node.room.field_check_out_time
+    - field.field.node.room.field_children_number
+    - field.field.node.room.field_description
+    - field.field.node.room.field_double_beds_number
+    - field.field.node.room.field_night_hour
+    - field.field.node.room.field_open_hours
+    - field.field.node.room.field_photos
+    - field.field.node.room.field_price
+    - field.field.node.room.field_price_frequency
+    - field.field.node.room.field_product
+    - field.field.node.room.field_properties
+    - field.field.node.room.field_room_details
+    - field.field.node.room.field_single_beds_number
+    - field.field.node.room.field_type
+    - field.field.node.room.field_use_open_hours
+    - node.type.room
+  module:
+    - commerce_price
+    - media_library
+    - office_hours
+    - paragraphs
+    - path
+    - text
+    - time_field
+id: node.room.default
+targetEntityType: node
+bundle: room
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_adults_number:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_amenities:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_area:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_check_in_time:
+    weight: 8
+    settings:
+      enabled: false
+      step: 5
+    third_party_settings: {  }
+    type: time_range_widget
+    region: content
+  field_check_out_time:
+    weight: 9
+    settings:
+      enabled: false
+      step: 5
+    third_party_settings: {  }
+    type: time_widget
+    region: content
+  field_children_number:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_double_beds_number:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_night_hour:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_open_hours:
+    type: office_hours_default
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_photos:
+    type: media_library_widget
+    weight: 21
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_price:
+    type: commerce_price_default
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_price_frequency:
+    type: options_select
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_properties:
+    type: paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: properties
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    region: content
+  field_room_details:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_single_beds_number:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_type:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_use_open_hours:
+    type: boolean_checkbox
+    weight: 11
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 19
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 17
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 20
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 18
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 15
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 22
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_availability_hourly: true
+  field_product: true

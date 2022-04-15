@@ -1,0 +1,33 @@
+uuid: 7c29017b-2a57-4575-8c10-7464e1c404f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_articles
+    - node.type.news
+    - paragraphs.paragraphs_type.article
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: VahhOl7wycZn4WbBDwVVGRngUg7DNBx4Fjx2qAezI9c
+id: node.news.field_news_articles
+field_name: field_news_articles
+entity_type: node
+bundle: news
+label: Articles
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      article: article
+    target_bundles_drag_drop:
+      article:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

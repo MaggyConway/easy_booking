@@ -1,0 +1,27 @@
+uuid: c4360756-da7c-44d1-9084-b7f43e6c0872
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_area
+    - node.type.room
+_core:
+  default_config_hash: B3F-QPGAjiepSSWj9Z-AxUnUuU_gcGWeEr1kWsJMbtk
+id: node.room.field_area
+field_name: field_area
+entity_type: node
+bundle: room
+label: Area
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: !!float 15
+default_value_callback: ''
+settings:
+  min: !!float 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

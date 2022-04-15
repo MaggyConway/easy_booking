@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 28273341-0116-4ee0-ab92-f4950bcaa4fb
+  bundle: news
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Event
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /news/types/event
+      langcode: en
+      pathauto: 1

@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f35a6246-3cce-47db-a27a-82ed71ef8849
+  bundle: image
+  default_langcode: en
+  depends:
+    ae5eb3b2-abf3-43ce-b6b8-377d334fbf4b: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: no-smoking.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: ae5eb3b2-abf3-43ce-b6b8-377d334fbf4b
+      alt: 'No Smoking'
+      title: ''
+      width: 40
+      height: 40

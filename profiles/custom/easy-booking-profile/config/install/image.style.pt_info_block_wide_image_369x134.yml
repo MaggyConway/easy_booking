@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: pt_info_block_wide_image_369x134
+label: 'PT Info Block: Wide Image (369x134)'
+effects:
+  0779c2d9-2210-4b46-8bcf-c41184412533:
+    uuid: 0779c2d9-2210-4b46-8bcf-c41184412533
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 369
+      height: 134
+      crop_type: focal_point

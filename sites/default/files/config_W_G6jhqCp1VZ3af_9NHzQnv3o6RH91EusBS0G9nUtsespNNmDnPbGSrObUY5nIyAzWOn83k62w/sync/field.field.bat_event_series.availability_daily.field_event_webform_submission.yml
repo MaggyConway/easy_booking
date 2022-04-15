@@ -1,0 +1,23 @@
+uuid: a2129ae9-e8f9-417a-a294-d45f2d1c0549
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_event_series.event_series_type.availability_daily
+    - field.storage.bat_event_series.field_event_webform_submission
+_core:
+  default_config_hash: B9IpauItp5mLXsLkc5xvA15I86119JdZUJzTQYxe23k
+id: bat_event_series.availability_daily.field_event_webform_submission
+field_name: field_event_webform_submission
+entity_type: bat_event_series
+bundle: availability_daily
+label: Webform
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform_submission'
+  handler_settings: {  }
+field_type: entity_reference

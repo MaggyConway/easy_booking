@@ -1,0 +1,89 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adults_number
+    - field.storage.node.field_children_number
+    - field.storage.node.field_type
+    - field.storage.node.field_availability_hourly
+    - search_api.server.rooms_server
+  module:
+    - node
+    - taxonomy
+    - bat_unit
+    - search_api
+id: rooms_index
+name: 'Rooms Index'
+description: ''
+read_only: false
+field_settings:
+  adults_number:
+    label: 'Adults Number'
+    datasource_id: 'entity:node'
+    property_path: field_adults_number
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_adults_number
+  children_number:
+    label: 'Children Number'
+    datasource_id: 'entity:node'
+    property_path: field_children_number
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_children_number
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
+  room_type:
+    label: 'Room Type'
+    datasource_id: 'entity:node'
+    property_path: 'field_type:entity:tid'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_type
+      module:
+        - taxonomy
+  unit_type_id:
+    label: 'Availability » Unit » Unit Type » Unit type » ID'
+    datasource_id: 'entity:node'
+    property_path: 'field_availability_hourly:entity:unit_type_id:entity:id'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_availability_hourly
+      module:
+        - bat_unit
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - daily_room
+        - room
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: rooms_server

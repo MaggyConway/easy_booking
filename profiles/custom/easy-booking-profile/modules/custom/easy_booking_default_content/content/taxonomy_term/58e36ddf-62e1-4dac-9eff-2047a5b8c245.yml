@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 58e36ddf-62e1-4dac-9eff-2047a5b8c245
+  bundle: rooms
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Deluxe
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /rooms/types/deluxe
+      langcode: en
+      pathauto: 1

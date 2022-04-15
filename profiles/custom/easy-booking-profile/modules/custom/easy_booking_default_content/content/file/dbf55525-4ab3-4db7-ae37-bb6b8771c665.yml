@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: dbf55525-4ab3-4db7-ae37-bb6b8771c665
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: makaruny_mindalnoe_pechene_desert_119144_300x168.jpg
+  uri:
+    -
+      value: 'public://2020-10/makaruny_mindalnoe_pechene_desert_119144_300x168_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 10817
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603445260
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

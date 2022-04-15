@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: fd52a38e-2112-471f-b593-746e4ce5b398
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: candle.png
+  uri:
+    -
+      value: 'public://2021-03/candle.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1538
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1615793668
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

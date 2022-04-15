@@ -1,0 +1,12 @@
+uuid: e7eed030-d91e-4f6e-97cd-1f9f49cab125
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: ZTJNqJxEosyThrlc4EadF057ZMkWR2RHhQW5LoQv2qs
+id: media.pt_album
+label: 'PT Album'
+targetEntityType: media
+cache: true

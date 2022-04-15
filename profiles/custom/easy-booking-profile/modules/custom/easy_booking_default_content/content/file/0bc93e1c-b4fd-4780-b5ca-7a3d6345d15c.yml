@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0bc93e1c-b4fd-4780-b5ca-7a3d6345d15c
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: postel_spalnaya_krovat_mebel_39761_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/postel_spalnaya_krovat_mebel_39761_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 91491
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603423225
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

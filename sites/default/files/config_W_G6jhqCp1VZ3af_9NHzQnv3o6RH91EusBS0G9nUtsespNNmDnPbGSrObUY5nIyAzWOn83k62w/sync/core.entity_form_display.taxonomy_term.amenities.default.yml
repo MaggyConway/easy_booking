@@ -1,0 +1,55 @@
+uuid: e755540c-7f4f-4a24-9d75-f301ed9118b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.amenities.field_icon
+    - taxonomy.vocabulary.amenities
+  module:
+    - media_library
+    - path
+    - text
+_core:
+  default_config_hash: QhsaTFhk5fyk-ZUDPTIF3O9WreDsECgxnVpHimiCc4M
+id: taxonomy_term.amenities.default
+targetEntityType: taxonomy_term
+bundle: amenities
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon:
+    type: media_library_widget
+    weight: 101
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+hidden: {  }

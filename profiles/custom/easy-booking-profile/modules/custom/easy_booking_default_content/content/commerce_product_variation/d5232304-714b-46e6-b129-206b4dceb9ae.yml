@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: d5232304-714b-46e6-b129-206b4dceb9ae
+  bundle: bee
+  default_langcode: en
+  depends:
+    90b2cda9-c043-4a46-b9c7-d898e8f6f615: commerce_product
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  product_id:
+    -
+      entity: 90b2cda9-c043-4a46-b9c7-d898e8f6f615
+  sku:
+    -
+      value: bee_room_4
+  title:
+    -
+      value: 'Pacific room'
+  price:
+    -
+      number: '0.000000'
+      currency_code: USD
+      formatted: $0.00
+  created:
+    -
+      value: 1603424753

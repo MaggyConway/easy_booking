@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 27998a35-f6de-4249-a412-02f81e2906db
+  bundle: amenities
+  default_langcode: en
+  depends:
+    49cf2d31-2670-4bf9-9966-72c618997ab1: media
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Heater
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /amenities/heater
+      langcode: en
+      pathauto: 1
+  field_icon:
+    -
+      entity: 49cf2d31-2670-4bf9-9966-72c618997ab1

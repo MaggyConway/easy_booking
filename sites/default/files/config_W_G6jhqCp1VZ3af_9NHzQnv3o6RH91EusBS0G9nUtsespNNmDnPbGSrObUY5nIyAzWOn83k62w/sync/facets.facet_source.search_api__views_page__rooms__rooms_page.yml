@@ -1,0 +1,11 @@
+uuid: ff11e2ab-679e-4b5d-a3b7-a80147aba566
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: y8f3NU-cv_ZDuJnKRVw8pd6uESk487TW62ml6K_j4KM
+id: search_api__views_page__rooms__rooms_page
+name: 'search_api:views_page__rooms__rooms_page'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

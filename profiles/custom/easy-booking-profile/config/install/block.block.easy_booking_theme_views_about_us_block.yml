@@ -1,0 +1,29 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.about_us
+  module:
+    - system
+    - views
+  theme:
+    - easy_booking_theme
+id: easy_booking_theme_views_about_us_block
+theme: easy_booking_theme
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:about_us-about_us_block'
+settings:
+  id: 'views_block:about_us-about_us_block'
+  label: 'About us'
+  provider: views
+  label_display: visible
+  views_label: 'About us'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

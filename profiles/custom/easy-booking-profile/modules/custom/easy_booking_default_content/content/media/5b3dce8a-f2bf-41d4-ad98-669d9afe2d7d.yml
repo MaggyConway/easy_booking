@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 5b3dce8a-f2bf-41d4-ad98-669d9afe2d7d
+  bundle: image
+  default_langcode: en
+  depends:
+    024d6d0e-6d76-4ea6-8ada-57d2b7b35186: file
+    ba12914e-2d52-4bc2-83e4-9ce3e73bc937: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: postel_potolok_spalnaya_oformlenie_39725_1280x720.jpg
+  created:
+    -
+      value: 1603423225
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 024d6d0e-6d76-4ea6-8ada-57d2b7b35186
+      alt: Room
+      title: ''
+      width: 1280
+      height: 720
+  field_type:
+    -
+      entity: ba12914e-2d52-4bc2-83e4-9ce3e73bc937

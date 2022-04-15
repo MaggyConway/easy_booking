@@ -1,0 +1,21 @@
+uuid: bc93d4b4-d3ba-4559-baa0-e9fdb1937a2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_second_item
+    - paragraphs.paragraphs_type.homepage_about_us
+  module:
+    - text
+id: paragraph.homepage_about_us.field_second_item
+field_name: field_second_item
+entity_type: paragraph
+bundle: homepage_about_us
+label: 'Second item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

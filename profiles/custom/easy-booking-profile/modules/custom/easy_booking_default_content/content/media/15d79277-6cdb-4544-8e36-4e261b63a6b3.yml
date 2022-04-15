@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 15d79277-6cdb-4544-8e36-4e261b63a6b3
+  bundle: image
+  default_langcode: en
+  depends:
+    40ca4be2-324e-406a-9e89-04de7d51a83e: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: chashka_kofe_gazeta_zavtrak_113335_1280x720.jpg
+  created:
+    -
+      value: 1603427770
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 40ca4be2-324e-406a-9e89-04de7d51a83e
+      alt: News
+      title: ''
+      width: 1280
+      height: 720

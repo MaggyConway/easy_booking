@@ -1,0 +1,30 @@
+uuid: cf939ae6-4dce-434c-8d6e-1d461af84b96
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_booking.booking_bundle.bee
+    - field.storage.bat_booking.field_room
+    - node.type.room
+_core:
+  default_config_hash: _4Y4wNrd0XDwUHDhYr8nqPFyPYrWChC_Rrcxc-EicHM
+id: bat_booking.bee.field_room
+field_name: field_room
+entity_type: bat_booking
+bundle: bee
+label: Room
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      room: room
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

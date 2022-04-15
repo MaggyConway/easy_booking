@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.ct_room_details_preview
+label: 'CT Room Details Preview'
+targetEntityType: media
+cache: true

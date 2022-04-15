@@ -1,0 +1,41 @@
+uuid: cdc35ef1-d6a7-497a-8fbd-32a362e12440
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.phone
+    - field.field.block_content.phone.field_icon
+    - field.field.block_content.phone.field_number
+  module:
+    - media_library
+    - telephone
+_core:
+  default_config_hash: xI2xvm10RtIQirqJ54CvlThuFcOKOZdERXzQXyTGi4A
+id: block_content.phone.default
+targetEntityType: block_content
+bundle: phone
+mode: default
+content:
+  field_icon:
+    type: media_library_widget
+    weight: 27
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_number:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

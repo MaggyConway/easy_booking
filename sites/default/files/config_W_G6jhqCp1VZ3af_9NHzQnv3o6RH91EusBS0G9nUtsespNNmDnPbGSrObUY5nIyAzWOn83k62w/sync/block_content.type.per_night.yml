@@ -1,0 +1,8 @@
+uuid: 9338adff-936e-4796-a33f-983e37168927
+langcode: en
+status: true
+dependencies: {  }
+id: per_night
+label: 'Per night'
+revision: 0
+description: ''

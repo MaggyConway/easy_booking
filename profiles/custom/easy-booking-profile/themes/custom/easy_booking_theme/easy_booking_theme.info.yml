@@ -1,0 +1,16 @@
+name: Easy Booking Theme
+type: theme
+description: Theme Easy Booking
+core: 8.x
+# Defines the base theme
+base theme: classy
+# Defines libraries group in which we can add css/js.
+libraries:
+  - easy_booking_theme/global-styling
+# Regions
+regions:
+  header: Header
+  content: Content
+  sidebar_first: First sidebar
+  sidebar_second: Second sidebar
+  footer: Footer

@@ -1,0 +1,65 @@
+uuid: c1e1e0f8-197e-4904-944e-201c6f04ff64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.info_blocks.field_first_section
+    - field.field.paragraph.info_blocks.field_info_blocks
+    - field.field.paragraph.info_blocks.field_second_section
+    - field.field.paragraph.info_blocks.field_text
+    - field.field.paragraph.info_blocks.field_title
+    - paragraphs.paragraphs_type.info_blocks
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: gSNccob5Qey5QnCCgI1dH84bhPoc6LAbJpeuD1mU1ow
+id: paragraph.info_blocks.default
+targetEntityType: paragraph
+bundle: info_blocks
+mode: default
+content:
+  field_first_section:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_second_section:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  field_info_blocks: true
+  status: true

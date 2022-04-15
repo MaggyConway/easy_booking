@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - easy_booking_theme
+id: easy_booking_theme_page_title
+theme: easy_booking_theme
+region: content
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/checkout/*/*\r\n/about\r\n/rooms/*\r\n/contact\r\n/404\r\n/news/*"
+    negate: true
+    context_mapping: {  }

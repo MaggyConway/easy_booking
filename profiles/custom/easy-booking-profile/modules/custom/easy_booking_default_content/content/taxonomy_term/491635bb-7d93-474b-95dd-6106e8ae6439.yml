@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 491635bb-7d93-474b-95dd-6106e8ae6439
+  bundle: rooms
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Family
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /rooms/types/family
+      langcode: en
+      pathauto: 1

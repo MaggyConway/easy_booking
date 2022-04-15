@@ -1,0 +1,20 @@
+uuid: 19468976-1140-4c81-a17e-94c2474ac8b0
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - easy_booking_theme
+id: messages
+theme: easy_booking_theme
+region: content
+weight: -13
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: visible
+visibility: {  }

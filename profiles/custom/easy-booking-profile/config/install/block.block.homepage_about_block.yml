@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+id: homepage_about_block
+theme: bartik
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:f5b14482-fe97-45b2-845d-b32e59a536d6'
+settings:
+  id: 'block_content:f5b14482-fe97-45b2-845d-b32e59a536d6'
+  label: 'Homepage About Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

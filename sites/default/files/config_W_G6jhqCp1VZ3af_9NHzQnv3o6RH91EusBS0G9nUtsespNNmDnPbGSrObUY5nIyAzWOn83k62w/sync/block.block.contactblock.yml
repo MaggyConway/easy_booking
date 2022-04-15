@@ -1,0 +1,23 @@
+uuid: 496ab360-f14a-4de3-b878-cc032db67f29
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bartik
+_core:
+  default_config_hash: N4Dxp-REGeVwj72IzoVQJniTNBGWUzChowaxCrSvvO4
+id: contactblock
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:6fdb600c-48b8-41e7-bea0-a6b64c30a0ea'
+settings:
+  id: 'block_content:6fdb600c-48b8-41e7-bea0-a6b64c30a0ea'
+  label: 'Contact Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

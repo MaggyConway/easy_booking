@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 0f21b9e4-0584-4584-8390-d78b3b7f82f9
+  bundle: image
+  default_langcode: en
+  depends:
+    68f083e6-1a87-4f8e-8169-742269f631df: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: krovat_spalnya_stil_80382_1280x720.jpg
+  created:
+    -
+      value: 1603423225
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 68f083e6-1a87-4f8e-8169-742269f631df
+      alt: Room
+      title: ''
+      width: 1280
+      height: 720

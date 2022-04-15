@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1a8287c6-730d-4083-90aa-38e27d969640
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: door-handle.png
+  uri:
+    -
+      value: 'public://2020-10/door-handle_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1370
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310739
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

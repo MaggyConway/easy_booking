@@ -1,0 +1,12 @@
+uuid: 8c8c2982-1510-4f7c-a792-0ed5bb52b923
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: eagDdP4nqLk1Z-Hkc_dJXE8MADshaBWRjmSKTulIKb0
+id: media.ct_news
+label: 'CT News'
+targetEntityType: media
+cache: true

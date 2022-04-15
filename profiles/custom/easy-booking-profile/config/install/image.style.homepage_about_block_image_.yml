@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: homepage_about_block_image_
+label: 'Homepage about block image(905 x 502) '
+effects:
+  b3582a76-8252-41d3-824a-121f654fa419:
+    uuid: b3582a76-8252-41d3-824a-121f654fa419
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 905
+      height: 502
+      anchor: center-center

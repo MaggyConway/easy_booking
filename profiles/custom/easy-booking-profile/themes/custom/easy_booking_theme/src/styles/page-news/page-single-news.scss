@@ -1,0 +1,198 @@
+.path--node-news {
+    font-weight: 300;
+    font-size: $main-font-size;
+    line-height: $main-line-height;
+
+    #block-easy-booking-theme-main-page-content {
+        background: $primary-bg;
+    }
+
+    .container {
+        padding-bottom: 217px;
+
+        @include breakpoint(sll) {
+            padding-bottom: 136px;
+        }
+    }
+
+    p {
+        margin-bottom: 19px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .first-content-wrapper {
+        margin-bottom: 24px;
+
+        .field--name-field-title {
+            margin-bottom: 8px;
+            @include main-title-page;
+        }
+
+        .field--name-published-at {
+            letter-spacing: 0.02em;
+        }
+    }
+
+    .second-content-wrapper {
+        margin-bottom: 32px;
+        display: flex;
+
+        @include breakpoint(sll) {
+            display: block;
+        }
+
+        .field--name-field-text {
+            @include news-width-text-container;
+        }
+
+        .field--name-field-image {
+            @include news-width-img-container;
+
+            img {
+                height: 261px;
+
+                @include breakpoint(s) {
+                    height: 134px;
+                }
+            }
+        }
+    }
+
+    .second-content-wrapper,
+    .third-content-wrapper {
+        max-width: 963px;
+        width: 100%;
+    }
+
+    .third-content-wrapper {
+        .field__item {
+            margin-bottom: 32px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .paragraph--type--article {
+            display: flex;
+
+            @include breakpoint(sll) {
+                display: block;
+            }
+
+            .left-article-section {
+                @include news-width-text-container;
+
+                .field--name-field-article-title {
+                    font-weight: bold;
+                    font-size: $secondary-font-size-title;
+                    line-height: $secondary-line-height-title;
+                    margin-bottom: 8px;
+                }
+            }
+
+            .right-article-section {
+                @include news-width-img-container;
+
+                img {
+                    height: 261px;
+
+                    @include breakpoint(s) {
+                        height: 187px;
+                    }
+                }
+
+                /* Slick */
+                .slick__slide {
+                    &:focus {
+                        border: none;
+                    }
+                }
+
+                .slick__arrow {
+                    left: 16px;
+                    right: 16px;
+                    width: auto;
+
+                    @include breakpoint(sl) {
+                        left: 0;
+                        right: 0;
+                        top: auto;
+                        transform: translateY(0);
+                        bottom: -32px;
+                    }
+
+                    .slick-arrow {
+                        width: 32px;
+                        height: 32px;
+                        border: $border-btn-extra-light;
+                        border-radius: $border-radius-all;
+                        transition: all $default-transition-time;
+
+                        @include breakpoint(sl) {
+                            border: $border-btn-dark;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            border: $border-btn-link;
+
+                            &::before {
+                                color: $link-color;
+                            }
+                        }
+
+                        &::before {
+                            color: $secondary-color-text;
+                            font-size: 12px;
+
+                            @include breakpoint(sl) {
+                                color: $primary-color-text;
+                            }
+                        }
+
+                    }
+
+                    .slick-prev {
+                        &::before {
+                            content: "\f0d9";
+                            font-family: FontAwesome;
+                        }
+                    }
+
+                    .slick-next {
+                        &::before {
+                            content: "\f0da";
+                            font-family: FontAwesome;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#block-easy-booking-theme-breadcrumbs {
+    font-weight: 300;
+    font-size: $secondary-font-size;
+    line-height: $secondary-line-height;
+    background: $primary-bg;
+
+    .breadcrumb {
+        @include container;
+        padding: 32px 32px 17px;
+
+        a {
+            text-decoration-line: underline;
+            color: $primary-color-text;
+
+            &:hover,
+            &:focus {
+                color: $link-color-hover;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_second_section
+    - paragraphs.paragraphs_type.info_block
+    - paragraphs.paragraphs_type.info_blocks
+  module:
+    - entity_reference_revisions
+id: paragraph.info_blocks.field_second_section
+field_name: field_second_section
+entity_type: paragraph
+bundle: info_blocks
+label: 'Second section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      info_block: info_block
+    target_bundles_drag_drop:
+      album:
+        weight: 11
+        enabled: false
+      article:
+        weight: 12
+        enabled: false
+      info_block:
+        enabled: true
+        weight: 13
+      info_blocks:
+        weight: 14
+        enabled: false
+      properties:
+        weight: 15
+        enabled: false
+      rule:
+        weight: 16
+        enabled: false
+      rules:
+        weight: 17
+        enabled: false
+      safety:
+        weight: 18
+        enabled: false
+      safety_item:
+        weight: 19
+        enabled: false
+      service:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

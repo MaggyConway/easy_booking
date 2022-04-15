@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6e0a316c-8c85-495b-8f46-a18a1a4619d3
+  bundle: image
+  default_langcode: en
+  depends:
+    c6b99c25-f132-4b09-b1d7-7ecee86e76f9: file
+    46dde997-c304-4644-b7a2-3be7044bc38b: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: restoran_oformlenie_dizayn_interer_mebel_70082_1280x720.jpg
+  created:
+    -
+      value: 1603445260
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: c6b99c25-f132-4b09-b1d7-7ecee86e76f9
+      alt: Attraction
+      title: ''
+      width: 1280
+      height: 720
+  field_type:
+    -
+      entity: 46dde997-c304-4644-b7a2-3be7044bc38b

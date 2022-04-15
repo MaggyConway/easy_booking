@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 705b8ff9-11b5-4263-bc5c-5039265247b9
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: menu.png
+  uri:
+    -
+      value: 'public://2020-10/menu_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 969
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310739
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

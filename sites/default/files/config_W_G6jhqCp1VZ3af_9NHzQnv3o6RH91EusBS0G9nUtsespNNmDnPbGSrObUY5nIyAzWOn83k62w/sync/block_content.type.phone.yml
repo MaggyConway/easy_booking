@@ -1,0 +1,10 @@
+uuid: 7bdc13e1-fd1f-4b81-9fc5-89ca49bb0bae
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KIJwNdUOnHdiBN1weYi8DPYRihLi14jz-btL_d-mHfM
+id: phone
+label: Phone
+revision: 0
+description: ''

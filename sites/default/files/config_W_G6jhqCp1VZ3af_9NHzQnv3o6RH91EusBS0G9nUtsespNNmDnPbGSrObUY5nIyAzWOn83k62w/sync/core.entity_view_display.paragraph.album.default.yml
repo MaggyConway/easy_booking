@@ -1,0 +1,85 @@
+uuid: 402fd5b8-adfd-4441-b795-3f9657b13432
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.album.field_images
+    - paragraphs.paragraphs_type.album
+  module:
+    - ds
+    - slick
+_core:
+  default_config_hash: CpoFg1iB9kl04_XCs2vslmS3v66VuhcsfKOZsnbZIpA
+id: paragraph.album.default
+targetEntityType: paragraph
+bundle: album
+mode: default
+content:
+  field_images:
+    type: slick_media
+    weight: 0
+    label: hidden
+    settings:
+      style: ''
+      vanilla: true
+      optionset: easy_booking_slick
+      optionset_thumbnail: ''
+      skin: classic
+      skin_thumbnail: ''
+      image_style: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      media_switch: ''
+      box_style: ''
+      thumbnail_style: ''
+      box_media_style: ''
+      ratio: ''
+      box_caption: ''
+      view_mode: pt_album
+      box_caption_custom: ''
+      grid: null
+      grid_medium: null
+      grid_small: null
+      visible_items: 12
+      image: ''
+      title: ''
+      link: ''
+      layout: ''
+      class: ''
+      cache: 0
+      current_view_mode: default
+      background: false
+      caption:
+        field_type: '0'
+        title: '0'
+        alt: '0'
+      preserve_keys: false
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      thumbnail: ''
+      thumbnail_caption: ''
+      skin_arrows: ''
+      skin_dots: ''
+      fx: ''
+      icon: ''
+      responsive_image_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      id: ''
+      overlay: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    region: content
+hidden:
+  search_api_excerpt: true

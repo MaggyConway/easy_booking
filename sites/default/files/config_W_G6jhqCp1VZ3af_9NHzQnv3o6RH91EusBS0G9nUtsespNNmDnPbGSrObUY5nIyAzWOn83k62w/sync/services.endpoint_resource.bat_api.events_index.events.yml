@@ -1,0 +1,18 @@
+uuid: 79418960-47ae-43b1-be1d-927992f03179
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: Lk-VXGK_n9jRWun8Pg1W7rvXQ2GfZF-J_ZkJWwif7q8
+id: bat_api.events_index.events
+service_plugin_id: 'events_index:events'
+service_endpoint_id: bat_api
+formats:
+  json: json
+  hal_json: '0'
+  xml: '0'
+authentication:
+  cookie: cookie
+no_cache: null

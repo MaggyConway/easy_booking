@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3ea66c71-da7b-4097-91a4-518e86f2464e
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: singapur_kazino_otel_59558_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/singapur_kazino_otel_59558_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 112407
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603445260
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

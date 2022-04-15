@@ -1,0 +1,5 @@
+mapbox.admin:
+  title: MapBox
+  description: 'MapBox settings'
+  parent: system.admin_structure
+  route_name: mapbox.configure

@@ -1,0 +1,32 @@
+uuid: 67621e32-33e1-4453-bbbe-c65f6c6ec660
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.attractions
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+_core:
+  default_config_hash: 2yprtbrEG8NjYWbA_30Ku-XKDdIWvExY_e4d7-epR6k
+id: views_block__attractions_block
+theme: bartik
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:attractions-attractions_block'
+settings:
+  id: 'views_block:attractions-attractions_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

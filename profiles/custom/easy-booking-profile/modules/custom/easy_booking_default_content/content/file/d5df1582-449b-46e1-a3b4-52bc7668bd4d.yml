@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d5df1582-449b-46e1-a3b4-52bc7668bd4d
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bed.png
+  uri:
+    -
+      value: 'public://2020-10/bed_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1019
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310739
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

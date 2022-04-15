@@ -1,0 +1,21 @@
+uuid: 43c8955a-8a46-4734-ae99-487e3bac692f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - time_field
+_core:
+  default_config_hash: 6YPP9EyyOOpdHMLLdT_3S34e2-HSkULlqj6URd-Efjw
+id: node.field_check_in_time
+field_name: field_check_in_time
+entity_type: node
+type: time_range
+settings: {  }
+module: time_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

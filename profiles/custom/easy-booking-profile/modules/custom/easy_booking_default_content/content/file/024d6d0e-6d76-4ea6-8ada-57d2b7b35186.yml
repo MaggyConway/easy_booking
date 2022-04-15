@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 024d6d0e-6d76-4ea6-8ada-57d2b7b35186
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: postel_potolok_spalnaya_oformlenie_39725_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/postel_potolok_spalnaya_oformlenie_39725_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 125018
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603423225
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

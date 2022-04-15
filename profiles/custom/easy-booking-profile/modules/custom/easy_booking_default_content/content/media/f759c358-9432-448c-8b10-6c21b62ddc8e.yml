@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f759c358-9432-448c-8b10-6c21b62ddc8e
+  bundle: image
+  default_langcode: en
+  depends:
+    88b97b6d-4fc9-4b7e-a0ea-e458f69de0d6: file
+    ecbb3792-b88a-4a34-afd9-95c5d37ea217: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: postel_okno_spalnaya_stil_39184_1280x720.jpg
+  created:
+    -
+      value: 1603423225
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 88b97b6d-4fc9-4b7e-a0ea-e458f69de0d6
+      alt: Room
+      title: ''
+      width: 1280
+      height: 720
+  field_type:
+    -
+      entity: ecbb3792-b88a-4a34-afd9-95c5d37ea217

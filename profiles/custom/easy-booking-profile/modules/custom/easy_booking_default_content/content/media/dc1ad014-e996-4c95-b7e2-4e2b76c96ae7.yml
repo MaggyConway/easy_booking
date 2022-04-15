@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: dc1ad014-e996-4c95-b7e2-4e2b76c96ae7
+  bundle: image
+  default_langcode: en
+  depends:
+    b63d47cb-3c06-4064-acf7-b96763b16020: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: postel_spalnaya_stil_dver_39171_1280x720.jpg
+  created:
+    -
+      value: 1603423225
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: b63d47cb-3c06-4064-acf7-b96763b16020
+      alt: Room
+      title: ''
+      width: 1280
+      height: 720

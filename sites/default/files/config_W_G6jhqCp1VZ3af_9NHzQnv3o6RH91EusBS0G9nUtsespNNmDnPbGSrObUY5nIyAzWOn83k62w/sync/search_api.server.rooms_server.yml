@@ -1,0 +1,19 @@
+uuid: 3149cdec-42f7-48b2-92c8-eb613f20abe4
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+_core:
+  default_config_hash: yz8q5g4u2i2vsNHme5Xp99etxaZSpNfENIv5Eux71oM
+id: rooms_server
+name: 'Rooms Server'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

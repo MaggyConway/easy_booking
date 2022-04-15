@@ -1,0 +1,137 @@
+uuid: 2a247185-5109-4b96-848b-ae1280b966fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about
+    - core.entity_view_mode.block_content.full
+    - field.field.block_content.about.field_image
+    - field.field.block_content.about.field_link
+    - field.field.block_content.about.field_services
+    - field.field.block_content.about.field_text
+    - field.field.block_content.about.field_title
+    - image.style.about_us_page_about_block_image_905_x_502_
+  module:
+    - entity_reference_revisions
+    - field_group
+    - media
+    - text
+third_party_settings:
+  field_group:
+    group_text_wrapper:
+      children:
+        - field_title
+        - field_text
+      parent_name: group_text_image_wrapper
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: about-us-about-block-text-wrapper
+      label: 'Text wrapper'
+    group_image_wrapper:
+      children:
+        - field_image
+      parent_name: group_text_image_wrapper
+      weight: 2
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: about-us-about-block-image-wrapper
+      label: 'Image wrapper'
+    group_services_wrapper:
+      children:
+        - field_services
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: about-us-about-block-services-wrapper
+      label: 'Services wrapper'
+    group_text_image_wrapper:
+      children:
+        - group_text_wrapper
+        - group_image_wrapper
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: about-us-about-block-text-image-wrapper
+      label: 'Text-image wrapper'
+_core:
+  default_config_hash: aEsfIVgQMqhdkHcgBjm9G8cxAXa5nWF-syavioloWZg
+id: block_content.about.full
+targetEntityType: block_content
+bundle: about
+mode: full
+content:
+  field_image:
+    type: media_thumbnail
+    weight: 6
+    label: hidden
+    settings:
+      image_style: about_us_page_about_block_image_905_x_502_
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_services:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_text:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    type: string
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_link: true
+  search_api_excerpt: true

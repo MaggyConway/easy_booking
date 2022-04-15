@@ -1,0 +1,22 @@
+uuid: 5c65d536-789f-4049-922f-5cc80cfa8cf0
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_event
+    - bat_unit
+_core:
+  default_config_hash: Qw4qJjRDVhncBcqa94uBe-C1MmgEFboXZmBSV66MgZQ
+id: bat_event.event_bat_unit_reference
+field_name: event_bat_unit_reference
+entity_type: bat_event
+type: entity_reference
+settings:
+  target_type: bat_unit
+module: core
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+name: Easy Booking Commerce
+type: module
+description: Custom commerce code for Easy Booking Profile
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Easy Booking
+dependencies:
+  - commerce:commerce
+  - commerce:commerce_cart
+  - commerce:commerce_product

@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: ct_room_details_preview_562x496
+label: 'CT Room Details Preview (562x496)'
+effects:
+  d37e1ca3-496e-49d0-b041-9034599e49cb:
+    uuid: d37e1ca3-496e-49d0-b041-9034599e49cb
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 562
+      height: 496
+      crop_type: focal_point

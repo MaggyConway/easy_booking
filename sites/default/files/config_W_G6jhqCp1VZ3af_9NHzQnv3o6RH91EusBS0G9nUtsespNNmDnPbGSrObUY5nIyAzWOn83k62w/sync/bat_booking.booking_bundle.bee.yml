@@ -1,0 +1,8 @@
+uuid: facdc1c5-fb73-400c-b308-772d5b0acddd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yG-PMVw-aEU4l-uAl-6pVqVFQcgBlpo4zd4gisjcpog
+name: BEE
+type: bee

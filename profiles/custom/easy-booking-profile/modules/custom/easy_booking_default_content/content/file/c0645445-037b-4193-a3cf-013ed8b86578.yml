@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c0645445-037b-4193-a3cf-013ed8b86578
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: zavtrak_kasha_vafli_frukty_115145_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/zavtrak_kasha_vafli_frukty_115145_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 179563
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603445260
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

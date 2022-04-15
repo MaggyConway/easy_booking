@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 55535864-b0e5-4259-ab49-2efc9ef6f74a
+  bundle: image
+  default_langcode: en
+  depends:
+    d8607e52-718b-4b09-9a50-399fa39689bd: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: burger_myaso_kotleta_syr_bulochka_93265_1280x720.jpg
+  created:
+    -
+      value: 1603445260
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: d8607e52-718b-4b09-9a50-399fa39689bd
+      alt: Attraction
+      title: ''
+      width: 1280
+      height: 720

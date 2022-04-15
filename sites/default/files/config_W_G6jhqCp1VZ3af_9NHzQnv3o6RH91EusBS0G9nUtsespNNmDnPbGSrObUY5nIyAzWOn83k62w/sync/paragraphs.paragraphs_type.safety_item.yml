@@ -1,0 +1,12 @@
+uuid: 76c6f905-0d45-4a78-8665-41d9d97b9f04
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: z2MOC_iGbQyw8Yp0l_MPQyhssfZWFHSN0GhkKwjjppA
+id: safety_item
+label: 'Safety Item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

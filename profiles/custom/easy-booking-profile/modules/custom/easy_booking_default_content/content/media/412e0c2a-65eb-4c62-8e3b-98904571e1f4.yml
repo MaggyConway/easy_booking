@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 412e0c2a-65eb-4c62-8e3b-98904571e1f4
+  bundle: image
+  default_langcode: en
+  depends:
+    8c94b3e3-ae25-4730-8f2e-3a2896e52f4b: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: fridge.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 8c94b3e3-ae25-4730-8f2e-3a2896e52f4b
+      alt: Fridge
+      title: ''
+      width: 40
+      height: 40

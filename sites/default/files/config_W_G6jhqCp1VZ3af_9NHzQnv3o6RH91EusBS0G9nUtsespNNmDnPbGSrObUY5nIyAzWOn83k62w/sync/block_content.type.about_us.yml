@@ -1,0 +1,8 @@
+uuid: 97924f52-d7f4-4c79-84a4-af13ed6e6b4f
+langcode: en
+status: true
+dependencies: {  }
+id: about_us
+label: 'Homepage About us'
+revision: 0
+description: ''

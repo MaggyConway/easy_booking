@@ -1,0 +1,92 @@
+.header--bottom-container {
+    @include container;
+
+    #block-easy-booking-theme-easy-booking-checkout-progress {
+        font-size: $secondary-font-size;
+        line-height: $secondary-line-height-header;
+        font-weight: 300;
+        color: $secondary-color-text;
+
+        h2 {
+            display: none;
+        }
+
+        .checkout-progress {
+            margin: 0 -16px;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            @include breakpoint(sl-tablet) {
+                flex-direction: column;
+                margin: 0;
+            }
+
+            &::after {
+                display: block;
+                content: '';
+                width: 100%;
+                height: 1px;
+                left: 0;
+                background: $secondary-bg;
+                @include absolute-vertical-center;
+
+                @include breakpoint(sl-tablet) {
+                    width: 1px;
+                    height: 99%;
+                    top: 1px;
+                    @include absolute-horizontal-center;
+                }
+            }
+
+            .checkout-progress--step {
+                padding: 0 16px;
+                z-index: 5;
+                background: $extra-bg;
+
+                @include breakpoint(sl-tablet) {
+                    display: block;
+                    padding: 8px 0 8px;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        padding: 8px 0 0;
+                        margin: 0;
+                    }
+
+                    &:first-child {
+                        padding: 0 0 8px;
+                    }
+                }
+
+                span {
+                    display: block;
+                    padding: 8px 16px;
+                    border: $border-btn-extra-light;
+                    border-radius: $border-radius-all;
+                    width: 177px;
+                    text-align: center;
+
+                    @include breakpoint(sl-tablet) {
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+
+                    @include breakpoint(sl) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .checkout-progress--step__current {
+                span {
+                    background: $secondary-bg;
+                    color: $primary-color-text;
+                    font-weight: 300;
+
+                }
+            }
+        }
+    }
+}

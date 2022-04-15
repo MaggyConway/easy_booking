@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 33e0a2c7-8995-41a4-9b79-5b2781092846
+  bundle: image
+  default_langcode: en
+  depends:
+    f7c47408-8ad1-4abc-8675-e03605a04cef: file
+    ecbb3792-b88a-4a34-afd9-95c5d37ea217: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: spalnaya_komnata_postel_televizor_39776_1280x720.jpg
+  created:
+    -
+      value: 1603423225
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: f7c47408-8ad1-4abc-8675-e03605a04cef
+      alt: Room
+      title: ''
+      width: 1280
+      height: 720
+  field_type:
+    -
+      entity: ecbb3792-b88a-4a34-afd9-95c5d37ea217

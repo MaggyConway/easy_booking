@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ff1381fc-4b58-46fa-a0e8-c9f18176a873
+  bundle: image
+  default_langcode: en
+  depends:
+    ed86eb16-f3df-4da2-8f9b-01b7fb1053f9: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: spalnaya_postel_stil_interer_39274_1280x720.jpg
+  created:
+    -
+      value: 1603423225
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: ed86eb16-f3df-4da2-8f9b-01b7fb1053f9
+      alt: Room
+      title: ''
+      width: 1280
+      height: 720

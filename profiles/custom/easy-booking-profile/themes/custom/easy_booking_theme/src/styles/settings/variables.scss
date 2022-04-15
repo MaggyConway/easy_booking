@@ -1,0 +1,101 @@
+/* Colors */
+$primary-color-text: #12171D;
+$primary-color-text-second: rgba(18, 23, 29, 0.6);
+$secondary-color-text: #FFFFFF;
+$extra-color-text: #F2EDED;
+$color-grey-text: #898C8F;
+$c-grey: #5a5859;
+$c-dark: #000000;
+$error-color-text: #CB351F;
+$link-color: #F09C40;
+$link-color-hover: #CB9838;
+$color-focus-btn: rgba(255, 255, 255, 0.25);
+$color-scroll: rgba(0, 0, 0, 0.3);
+
+/* Background */
+$primary-bg: #F2EDED;
+$secondary-bg: #FFF;
+$extra-bg: #12171D;
+$extra-bg-second: #12171d99;
+$extra-bg-third: #12171db3;
+$extra-bg-third-50: #12171d3a;
+$black-50: #3B434B;
+
+/* Padding */
+$padding-container: 64px;
+
+/* Border */
+$border-btn-light: 1px solid $extra-color-text;
+$border-btn-extra-light: 1px solid $secondary-color-text;
+$border-btn-dark: 1px solid $primary-color-text;
+$border-btn-link: 1px solid $link-color;
+$border-radius-all: 5px;
+
+/* Fonts */
+$nunito-fonts: 'Nunito', sans-serif;
+
+/* Base fonts variables */
+$main-text-color: $primary-color-text;
+$heading-font: $nunito-fonts;
+$heading-color: $primary-color-text;
+
+$main-font-size: 14px;
+$main-line-height: 19px;
+$main-line-height-second: 21px;
+$main-line-height-extra: 24px;
+
+$secondary-font-size: 16px;
+$secondary-line-height: 24px;
+$secondary-line-height-header: 22px;
+$secondary-line-height-card: 20px;
+
+$font-size-card-text: 12px;
+$line-height-card-text: 14px;
+$line-height-card-text-second: 16px;
+$line-height-card-text-extra: 18px;
+
+$extra-font-size: 18px;
+$extra-line-height: 25px;
+$extra-line-height-secondary: 21px;
+
+$main-font-size-title: 32px;
+$main-line-height-title: 44px;
+$main-tablet-font-size-title: 28px;
+$main-tablet-line-height-title: 40px;
+$main-mobile-font-size-title: 24px;
+$main-mobile-line-height-title: 34px;
+
+$secondary-font-size-title: 24px;
+$secondary-line-height-title: 33px;
+$secondary-font-size-title-mobile: 18px;
+$secondary-line-height-title-mobile: 25px;
+
+$single-room-title: 24px;
+$single-room-title-line-height: 15px;
+
+$single-room-name: 12px;
+$single-room-name-line-height: 15px;
+
+$extra-font-size-title: 64px;
+$extra-line-height-title: 87px;
+
+/* Animations */
+$default-transition-time: .3s;
+$default-transition: all $default-transition-time ease;
+
+/* Media variables */
+$breakpoints: (
+  s: '375px',
+  s-book: '490px',
+  sl: '600px',
+  sl-tablet: '768px',
+  sl-tablet-filter: '818px',
+  sll: '900px',
+  l: '1024px',
+  ll: '1203px',
+  xll: '1360px',
+  xllg: '1440px',
+  xlg: '1600px',
+  xxlg: '1780px',
+  xxxlg: '2200px'
+) !default;

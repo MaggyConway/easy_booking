@@ -1,0 +1,26 @@
+uuid: 266fbd62-8bcb-4e22-81c4-b38e4c9f6ca3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 35aspgJ2HkI6gHMQwRrEWm5kY2YYfQN34SCaEo4pExM
+name: Room
+type: room
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
+bee:
+  bookable: 1
+  bookable_type: hourly
+  availability: available
+  payment: 1
+  type_id: '1'

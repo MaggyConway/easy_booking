@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the completion message.
+ *
+ * Available variables:
+ * - order_entity: The order entity.
+ * - orders_url: Orders page
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="checkout-completion-message">
+  <h1>{{ 'The room is booked!'|t }}</h1>
+  <p>{{ 'We will be very glad to see you in our hotel.'|t }}</p>
+  {% if user_id %}
+    <p>{{ 'You can view your order on the '|t }}<a href="{{ orders_url }}">{{ 'orders page.'|t }}</a></p>
+</div>
+  {% endif %}

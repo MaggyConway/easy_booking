@@ -1,0 +1,199 @@
+.path-checkout {
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    .path-complete-orange-text {
+        color: $link-color;
+    }
+
+    #block-easy-booking-theme-main-page-content {
+        .layout-region-checkout-main {
+            .checkout-pane-payment-details {
+                .payment-details__title {
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-bottom: 16px;
+                }
+
+                .payment-details__text,
+                .cards,
+                .payment-details__additional-text {
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 0.02em;
+                }
+
+                .payment-details__text {
+                    margin-bottom: 15px;
+                }
+
+                .cards {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .cards__label {
+                        width: 100%;
+                        margin-bottom: 7px;
+                    }
+
+                    img {
+                        display: inline-block;
+                        width: 50px !important;
+                        margin-right: 13px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+
+            .payment-details__additional-text {
+                margin-bottom: 40px;
+            }
+        }
+
+        .checkout-pane-information {
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+
+            .information__title {
+                font-size: 18px;
+                line-height: 25px;
+                margin-bottom: 16px;
+            }
+
+            .information__label {
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.02em;
+                margin-bottom: 0;
+            }
+
+            .ferries-wrapper {
+                padding-left: 7px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .layout-region-checkout-secondary {
+
+            .completion-message {
+                position: relative;
+                padding-bottom: 32px;
+                margin-bottom: 32px;
+                border-bottom: 0.5px solid #12171d36;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+                padding-right: 150px;
+
+                @include breakpoint(sl-tablet) {
+                    padding-right: 0;
+                }
+            }
+
+            .completion-message__title,
+            .order-details__title {
+                font-size: 24px;
+                line-height: 33px;
+                margin-bottom: 8px;
+            }
+
+            .order-details__title {
+                margin-bottom: 16px;
+            }
+
+            .list__item {
+                padding-left: 18px;
+                background-repeat: no-repeat;
+                background-size: 8px 7px;
+                background-position: top 5px left 0;
+                background-image: url(../../assets/images/icom-marker-step-form.svg);
+            }
+
+            #edit-custom-completion-message-wrapper-print {
+                @include btn-white;
+                display: inline-block;
+                width: auto;
+                position: absolute;
+                right: 0;
+                top: 0;
+
+                @include breakpoint(sl-tablet) {
+                    position: relative;
+                    margin-top: 15px;
+                }
+
+                @include breakpoint(s-book) {
+                    width: 100%;
+                }
+            }
+
+            .order-details__items {
+                margin-bottom: 30px;
+            }
+
+            .order-details__item {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                line-height: 40px;
+                border-bottom: 1px dashed #F2EDED;
+
+                    .order-details__item__name {
+                        width: 50%;
+                    }
+
+                    .order-details__item__value {
+                        font-weight: 300;
+                        width: 50%;
+                    }
+            }
+
+            .order-details__order-total__price__label,
+            .order-details__order-total__price__value {
+                display: inline-block;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 25px;
+                margin-bottom: 8px;
+            }
+
+            .order-details__order-total__price__label {
+                width: 49%;
+
+                @include breakpoint(s-book) {
+                    font-size: 16px;
+                }
+            }
+
+            .order-details__order-total__price__value {
+                width: 49%;
+
+                @include breakpoint(sl-tablet) {
+                    width: 40%;
+                }
+
+                @include breakpoint(s-book) {
+                    font-size: 16px;
+                }
+            }
+
+            .order-details__order-total__price__footnote,
+            .order-details__order-total__additional-text {
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.02em;
+            }
+
+            .order-details__order-total__price__footnote {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

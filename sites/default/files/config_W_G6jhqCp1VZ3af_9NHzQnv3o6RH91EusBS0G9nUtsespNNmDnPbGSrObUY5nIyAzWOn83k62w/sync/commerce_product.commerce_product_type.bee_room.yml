@@ -1,0 +1,14 @@
+uuid: d17e5240-5680-4cab-84c7-b40455613dd3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: iP8oelev5K8NPqrXwVF7xirqA68w5pNxe13OGClJO48
+id: bee_room
+label: Room
+description: null
+variationType: bee
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

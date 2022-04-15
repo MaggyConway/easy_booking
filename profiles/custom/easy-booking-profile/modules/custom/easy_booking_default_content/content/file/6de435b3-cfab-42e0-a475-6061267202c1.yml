@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6de435b3-cfab-42e0-a475-6061267202c1
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: kartofel_fri_burger_gamburger_ovoshchi_bulochka_110510_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/kartofel_fri_burger_gamburger_ovoshchi_bulochka_110510_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 102511
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603445260
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

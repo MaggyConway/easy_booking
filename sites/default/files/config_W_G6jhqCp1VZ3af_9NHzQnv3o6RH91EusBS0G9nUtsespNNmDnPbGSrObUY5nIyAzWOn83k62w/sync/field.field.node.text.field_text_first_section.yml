@@ -1,0 +1,21 @@
+uuid: b9f841b2-374a-431b-accf-7663f298b28b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_first_section
+    - node.type.text
+  module:
+    - text
+id: node.text.field_text_first_section
+field_name: field_text_first_section
+entity_type: node
+bundle: text
+label: 'Text first section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

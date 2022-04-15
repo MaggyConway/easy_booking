@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bbe05595-b606-4fe1-a8a3-bb8f223c5058
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: parking.png
+  uri:
+    -
+      value: 'public://2021-03/parking.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1845
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1615793710
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

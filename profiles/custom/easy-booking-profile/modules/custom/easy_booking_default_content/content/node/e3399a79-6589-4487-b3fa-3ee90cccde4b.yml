@@ -1,0 +1,118 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e3399a79-6589-4487-b3fa-3ee90cccde4b
+  bundle: news
+  default_langcode: en
+  depends:
+    329c4acd-bab5-466c-86fd-69cd44f42d05: media
+    15d79277-6cdb-4544-8e36-4e261b63a6b3: media
+    29ba8f87-7ea6-4666-acde-a31739e92967: media
+    0f72f76e-8d1a-4672-a45e-1b6fa2b2df5c: media
+    28b4bb81-e5bd-4958-b11e-9d589262a092: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'How To Book A Room?'
+  created:
+    -
+      value: 1603428249
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /news/how-book-room
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1615952145
+  field_image:
+    -
+      entity: 329c4acd-bab5-466c-86fd-69cd44f42d05
+  field_news_articles:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5bb11c1d-2d2a-4726-a922-abfbc19bf901
+          bundle: article
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1603428271
+          behavior_settings:
+            -
+              value: {  }
+          field_article_images:
+            -
+              entity: 15d79277-6cdb-4544-8e36-4e261b63a6b3
+            -
+              entity: 329c4acd-bab5-466c-86fd-69cd44f42d05
+            -
+              entity: 29ba8f87-7ea6-4666-acde-a31739e92967
+            -
+              entity: 0f72f76e-8d1a-4672-a45e-1b6fa2b2df5c
+          field_article_text:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+              format: plain_text
+          field_article_title:
+            -
+              value: 'Article 1'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ee24653b-c1c4-4dbc-af95-536bc5e41b7c
+          bundle: article
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1603428287
+          behavior_settings:
+            -
+              value: {  }
+          field_article_images:
+            -
+              entity: 329c4acd-bab5-466c-86fd-69cd44f42d05
+          field_article_text:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+              format: plain_text
+  field_text:
+    -
+      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      format: plain_text
+  field_title:
+    -
+      value: 'How To Book A Room?'
+  field_type:
+    -
+      entity: 28b4bb81-e5bd-4958-b11e-9d589262a092

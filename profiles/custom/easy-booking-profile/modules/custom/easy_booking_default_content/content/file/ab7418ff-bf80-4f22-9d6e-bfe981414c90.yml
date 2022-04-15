@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ab7418ff-bf80-4f22-9d6e-bfe981414c90
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: koster_ogon_kemping_121785_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-11/koster_ogon_kemping_121785_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 200416
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1604652030
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

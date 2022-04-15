@@ -1,0 +1,22 @@
+uuid: a0ac9f0c-897e-4c4e-9b14-7d17ecacbb1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+_core:
+  default_config_hash: qg0v6iA01fyUpO0wh677vBpNlc-paJIDuEm_YGxgqTg
+id: media.field_type
+field_name: field_type
+entity_type: media
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,141 @@
+#cboxOverlay {
+    background: $secondary-bg;
+}
+
+.page-node-type-room {
+    .slick-wrapper {
+       position: relative;
+
+        .colorbox {
+            &::before {
+               position: absolute;
+               left: 0;
+               top: 0;
+               content: "";
+               display: block;
+               width: 100%;
+               height: 220px;
+               background: linear-gradient(180deg, #12171D 0%, rgba(18, 23, 29, 0) 100%);
+               background-size: cover;
+               z-index: 1;
+            }
+        }
+
+    }
+
+    .block-inline-blockcustom-link {
+        z-index: 2;
+    }
+}
+
+#colorbox {
+    box-shadow: none;
+    position: relative;
+
+    #cboxContent {
+        margin-bottom: 0;
+    }
+
+    #cboxClose {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -80px;
+        right: -10%;
+        width: 91px;
+        height: 40px;
+        border: $border-btn-dark;
+        border-radius: 5px;
+        background: none;
+        text-indent: 0;
+
+        span {
+            margin-left: 13px;
+        }
+
+        @include breakpoint(ll) {
+            right: 0;
+        }
+
+        @include breakpoint(s-book) {
+            top: -80%;
+            transform: translateY(80%);
+        }
+    }
+
+    #cboxTitle {
+        display: none !important;
+    }
+
+    #cboxCurrent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -80px;
+        right: 50%;
+        transform: translateX(-50%);
+        border-left: none;
+        padding: 0;
+        height: 40px;
+
+        @include breakpoint(ll) {
+            right: auto;
+            left: 0;
+            transform: translateX(0);
+        }
+
+        @include breakpoint(s-book) {
+            top: -80%;
+            transform: translateY(80%);
+        }
+    }
+
+    #cboxPrevious,
+    #cboxNext {
+        width: 32px;
+        height: 32px;
+        border: $border-btn-dark;
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+    #cboxPrevious {
+        left: -10%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../../assets/images/colorbox-prev.svg);
+
+        @include breakpoint(ll) {
+            left: 0;
+            top: auto;
+            bottom: -15%;
+            transform: translateY(15%);
+        }
+
+        @include breakpoint(s-book) {
+            bottom: -90%;
+            transform: translateY(90%);
+        }
+    }
+
+    #cboxNext {
+        right: -10%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../../assets/images/colorbox-next.svg);
+
+        @include breakpoint(ll) {
+            right: 0;
+            top: auto;
+            bottom: -15%;
+            transform: translateY(15%);
+        }
+
+        @include breakpoint(s-book) {
+            bottom: -90%;
+            transform: translateY(90%);
+        }
+    }
+}

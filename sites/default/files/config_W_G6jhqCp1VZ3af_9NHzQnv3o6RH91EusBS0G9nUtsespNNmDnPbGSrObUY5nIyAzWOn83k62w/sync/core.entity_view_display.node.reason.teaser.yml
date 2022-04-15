@@ -1,0 +1,32 @@
+uuid: 30d9f3eb-2c44-4c52-8d4b-1ff169ed3e55
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.reason.field_image
+    - field.field.node.reason.field_text
+    - node.type.reason
+  module:
+    - user
+_core:
+  default_config_hash: 1S8LaqSwW2gU0FZZciYP0MN6votZj-3nVGBW0hmWxkc
+id: node.reason.teaser
+targetEntityType: node
+bundle: reason
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image: true
+  field_text: true
+  search_api_excerpt: true

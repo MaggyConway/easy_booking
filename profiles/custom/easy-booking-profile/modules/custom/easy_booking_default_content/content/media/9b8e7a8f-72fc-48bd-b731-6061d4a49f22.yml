@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 9b8e7a8f-72fc-48bd-b731-6061d4a49f22
+  bundle: image
+  default_langcode: en
+  depends:
+    29e7005a-723d-4cc3-b1eb-c25adbe2485a: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: bathtub.png
+  created:
+    -
+      value: 1603310739
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 29e7005a-723d-4cc3-b1eb-c25adbe2485a
+      alt: Bathtub
+      title: ''
+      width: 40
+      height: 40

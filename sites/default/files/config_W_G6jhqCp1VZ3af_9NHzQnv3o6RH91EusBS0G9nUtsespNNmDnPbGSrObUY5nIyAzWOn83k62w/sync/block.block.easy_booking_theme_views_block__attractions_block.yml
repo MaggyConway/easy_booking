@@ -1,0 +1,32 @@
+uuid: 64506e72-48ab-4dc2-a38c-54e93ef869d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.attractions
+  module:
+    - system
+    - views
+  theme:
+    - easy_booking_theme
+_core:
+  default_config_hash: 2yprtbrEG8NjYWbA_30Ku-XKDdIWvExY_e4d7-epR6k
+id: easy_booking_theme_views_block__attractions_block
+theme: easy_booking_theme
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:attractions-attractions_block'
+settings:
+  id: 'views_block:attractions-attractions_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

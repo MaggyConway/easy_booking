@@ -1,0 +1,179 @@
+.menu-cart-wrapper {
+    width: 83%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint(l) {
+        display: none;
+
+        &.open {
+            display: block;
+            position: fixed;
+            background: $extra-bg;
+            top: 56px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 100005;
+            width: 100%;
+            padding: 0 32px;
+        }
+    }
+
+    .menu--main {
+        @include breakpoint(l) {
+            margin-bottom: 93px;
+            padding-top: 62px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu {
+            display: flex;
+            margin: 0;
+
+            @include breakpoint(l) {
+                display: block;
+                text-align: center;
+            }
+
+            .menu-item {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 22px;
+                margin-right: 41px;
+                padding: 0 0 6px 0;
+
+                @include breakpoint(l) {
+                    margin-right: 0;
+                    padding: 0;
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-bottom: 27px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    &.is-active {
+                        color: $secondary-color-text;
+
+                        &::after {
+                            width: 17px;
+                            @include menu-item-after;
+                        }
+                    }
+
+                    &:hover::after {
+                        width: 12px;
+                        @include menu-item-after;
+                    }
+
+                    @include breakpoint(l) {
+                        padding: 0 40px;
+                    }
+                }
+                flex {
+                        @include menu-item-after;
+                    }
+            }
+        }
+    }
+}
+
+.mobile-cart-hamburger-wrapper {
+    display: none;
+    align-items: center;
+
+    @include breakpoint(l) {
+        display: flex;
+    }
+
+    .mobile-hamburger-wrapper {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        cursor: pointer;
+        padding: 4px 3px;
+        background: inherit;
+        margin-left: 35px;
+
+        &:hover, &:focus {
+            #block-hamburgerblock {
+                background: $color-grey-text;
+            }
+        }
+
+        &.open {
+            #block-hamburgerblock {
+                width: 0%;
+                background: $extra-color-text;
+                border-radius: 0;
+
+                &::before{
+                    transform: rotate(45deg);
+                    width: 18px;
+                    left: -6px;
+                }
+
+                  &::after{
+                    transform: rotate(-45deg);
+                    width: 18px;
+                    top: 9px;
+                    left: -6px;
+                }
+            }
+
+            &:hover, &:focus {
+                #block-hamburgerblock {
+                    background: $color-grey-text;
+                }
+            }
+        }
+
+        #block-hamburgerblock {
+            height: 2px;
+            width: 14px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50px;
+            background-color: $extra-color-text;
+            transform: translate(-50%,-50%) rotate(0deg);
+            transition: transform ease 0.3s, background-color .3s ease-in-out;
+
+            &::before,
+            &::after {
+              content:"";
+              position: absolute;
+              height: inherit;
+              border-radius: inherit;
+              background-color: inherit;
+              margin: auto;
+              transform-origin: left center;
+              transition: transform .3s ease-in-out;
+            }
+
+            &::before{
+                top: -5px;
+                left: 0;
+                width: 14px;
+                transform-origin: left center;
+            }
+
+              &::after{
+                bottom:-5px;
+                right: 0;
+                width: 8px;
+                transform-origin: left center;
+            }
+        }
+    }
+}

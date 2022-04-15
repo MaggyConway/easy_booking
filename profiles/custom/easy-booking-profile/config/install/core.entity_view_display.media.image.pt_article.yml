@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.pt_article
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_type
+    - image.style.pt_article_578x261
+    - media.type.image
+  module:
+    - image
+id: media.image.pt_article
+targetEntityType: media
+bundle: image
+mode: pt_article
+content:
+  field_media_image:
+    label: hidden
+    weight: 0
+    settings:
+      image_style: pt_article_578x261
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_type: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

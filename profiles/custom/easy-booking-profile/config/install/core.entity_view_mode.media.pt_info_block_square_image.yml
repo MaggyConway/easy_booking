@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.pt_info_block_square_image
+label: 'PT Info Block: Square Image'
+targetEntityType: media
+cache: true

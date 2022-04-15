@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e5c8ab37-7d32-4119-a02c-83914833bd3d
+  bundle: image
+  default_langcode: en
+  depends:
+    b5c14ab8-8f51-4b3a-846e-1e385dbb6b77: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: clock.png
+  created:
+    -
+      value: 1603310739
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: b5c14ab8-8f51-4b3a-846e-1e385dbb6b77
+      alt: Clock
+      title: ''
+      width: 40
+      height: 40

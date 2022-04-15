@@ -1,0 +1,19 @@
+uuid: c7d67580-f11e-4201-94f8-0fece4ad1feb
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_third_item
+field_name: field_third_item
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

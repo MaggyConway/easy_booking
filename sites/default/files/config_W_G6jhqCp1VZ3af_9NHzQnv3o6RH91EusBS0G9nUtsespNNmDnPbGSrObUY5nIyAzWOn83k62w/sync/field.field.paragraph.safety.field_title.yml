@@ -1,0 +1,23 @@
+uuid: d30296c3-ae4a-4385-afaa-9ce4c4114a91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.safety
+  module:
+    - text
+_core:
+  default_config_hash: sjVf_tABL40NVWbs9vYj0ihvuGLSWgigfYCeXc_cAQ0
+id: paragraph.safety.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: safety
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

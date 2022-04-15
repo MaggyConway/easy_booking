@@ -1,0 +1,39 @@
+uuid: 2129f8ff-88cf-4cbf-8dd0-d3ee6208307e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_info_blocks
+    - paragraphs.paragraphs_type.info_block
+    - paragraphs.paragraphs_type.info_blocks
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: jI1cKBc2mssehGUOCBlC35a331-7VlbH0Uus2rJ67pk
+id: paragraph.info_blocks.field_info_blocks
+field_name: field_info_blocks
+entity_type: paragraph
+bundle: info_blocks
+label: 'Info Blocks'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      info_block: info_block
+    target_bundles_drag_drop:
+      article:
+        weight: 4
+        enabled: false
+      info_block:
+        enabled: true
+        weight: 5
+      info_blocks:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

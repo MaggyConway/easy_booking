@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 127747a9-daa8-432d-87ee-88530f923ce6
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: tropiki_plyazh_lodki_90646_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-11/tropiki_plyazh_lodki_90646_1280x720_1_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 187816
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1604652431
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

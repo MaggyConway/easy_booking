@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_booking
+id: bat_booking.field_adults_number
+field_name: field_adults_number
+entity_type: bat_booking
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

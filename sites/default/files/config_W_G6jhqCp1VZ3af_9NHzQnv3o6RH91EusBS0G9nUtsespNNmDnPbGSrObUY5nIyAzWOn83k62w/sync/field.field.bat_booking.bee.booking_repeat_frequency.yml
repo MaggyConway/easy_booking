@@ -1,0 +1,23 @@
+uuid: d536d126-6c99-4482-9a31-9f247dda48e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_booking.booking_bundle.bee
+    - field.storage.bat_booking.booking_repeat_frequency
+  module:
+    - options
+_core:
+  default_config_hash: zJ5nxx0_WFaP8vIwNdQ9QwAzgm9ZQecam7NaqdGuidY
+id: bat_booking.bee.booking_repeat_frequency
+field_name: booking_repeat_frequency
+entity_type: bat_booking
+bundle: bee
+label: 'Repeat frequency'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

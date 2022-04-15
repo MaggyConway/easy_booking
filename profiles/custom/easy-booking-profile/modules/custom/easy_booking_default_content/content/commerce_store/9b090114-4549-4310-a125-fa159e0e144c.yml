@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_store
+  uuid: 9b090114-4549-4310-a125-fa159e0e144c
+  bundle: online
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Rooms Store'
+  mail:
+    -
+      value: example@gmail.com
+  default_currency:
+    -
+      target_id: USD
+  timezone:
+    -
+      value: UTC
+  address:
+    -
+      langcode: ''
+      country_code: US
+      administrative_area: NY
+      locality: 'New York'
+      dependent_locality: ''
+      postal_code: '11520'
+      sorting_code: ''
+      address_line1: '8149 Saxton Lane Freeport'
+      address_line2: ''
+      organization: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  is_default:
+    -
+      value: true
+  prices_include_tax:
+    -
+      value: false

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: bee
+label: BEE
+orderItemType: bee
+generateTitle: true
+traits: {  }
+locked: false

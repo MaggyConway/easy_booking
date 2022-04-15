@@ -1,0 +1,21 @@
+uuid: 6e381b12-0a82-49bb-ac6b-dfa51e8a030d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - time_field
+_core:
+  default_config_hash: uT5h_R6-LOffHaNeXqGOcQpZZSTx0nU4z9jlzd2CJh4
+id: node.field_check_out_time
+field_name: field_check_out_time
+entity_type: node
+type: time
+settings: {  }
+module: time_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

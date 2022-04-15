@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 5bb1e7e7-7052-4315-a057-1a9284ab59f0
+  bundle: image
+  default_langcode: en
+  depends:
+    78cef626-1f23-4638-b649-d9612bc1a765: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: lamp.png
+  created:
+    -
+      value: 1603310739
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 78cef626-1f23-4638-b649-d9612bc1a765
+      alt: Lamp
+      title: ''
+      width: 40
+      height: 40

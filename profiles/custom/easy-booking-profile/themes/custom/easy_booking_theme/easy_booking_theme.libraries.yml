@@ -1,0 +1,15 @@
+global-styling:
+  css:
+    base:
+      dist/main/style.css: {}
+      https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css: { }
+  js:
+    dist/runtime/index.js: {}
+    dist/vendors/index.js: {}
+    dist/main/index.js: {}
+    https://cdn.jsdelivr.net/momentjs/latest/moment.min.js: { type: external }
+    https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js: { type: external }
+  dependencies:
+  - core/drupal
+  - core/jquery
+  - core/jquery.once

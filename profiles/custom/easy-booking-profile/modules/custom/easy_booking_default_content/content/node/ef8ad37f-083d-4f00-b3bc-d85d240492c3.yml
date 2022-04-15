@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ef8ad37f-083d-4f00-b3bc-d85d240492c3
+  bundle: attraction
+  default_langcode: en
+  depends:
+    6f7022d0-a1dd-4a0f-81ce-8b2e3d8255ec: media
+    8a953785-7a26-4f30-ba79-d158a098a85a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Hotel & Casino'
+  created:
+    -
+      value: 1603446074
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/hotel-casino
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1617093694
+  field_address:
+    -
+      value: 'Unnamed Rd, Thailand, ตำบล เกาะยาวใหญ่ อำเภอ เกาะยาว พังงา'
+  field_attraction_name:
+    -
+      value: 'Brilliant Thai casino'
+  field_coordinates:
+    -
+      value: 'POINT (-122.4017233 37.7722625)'
+      geo_type: Point
+      lat: 37.7722625
+      lon: -122.4017233
+      left: -122.4017233
+      top: 37.7722625
+      right: -122.4017233
+      bottom: 37.7722625
+      geohash: 9q8yysjz3h5fr
+      latlon: '37.7722625,-122.4017233'
+  field_country:
+    -
+      value: TH
+  field_destination:
+    -
+      value: '9.20'
+  field_image:
+    -
+      entity: 6f7022d0-a1dd-4a0f-81ce-8b2e3d8255ec
+  field_type:
+    -
+      entity: 8a953785-7a26-4f30-ba79-d158a098a85a

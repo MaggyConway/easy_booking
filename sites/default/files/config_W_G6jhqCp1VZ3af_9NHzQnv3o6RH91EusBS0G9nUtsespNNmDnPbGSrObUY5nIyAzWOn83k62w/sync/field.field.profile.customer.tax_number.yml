@@ -1,0 +1,30 @@
+uuid: 8a109dee-06f5-4017-9bcd-50db1454833c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.tax_number
+    - profile.type.customer
+  enforced:
+    module:
+      - commerce_tax
+  module:
+    - commerce_tax
+_core:
+  default_config_hash: 1o-TpCtTeEweG5p-JZb-SKvDz8ASVerr5wqdaQ2hGdo
+id: profile.customer.tax_number
+field_name: tax_number
+entity_type: profile
+bundle: customer
+label: 'Tax number'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings:
+  countries: {  }
+  verify: true
+  allow_unverified: true
+field_type: commerce_tax_number

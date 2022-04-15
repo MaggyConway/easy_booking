@@ -1,0 +1,22 @@
+uuid: 99b14487-69da-498d-a249-12df034ac0a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_booking
+    - node
+_core:
+  default_config_hash: '-ScPpB49csm6YeenM21gypGmkr1kpHBu3aLE_ABkOwQ'
+id: bat_booking.field_room
+field_name: field_room
+entity_type: bat_booking
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

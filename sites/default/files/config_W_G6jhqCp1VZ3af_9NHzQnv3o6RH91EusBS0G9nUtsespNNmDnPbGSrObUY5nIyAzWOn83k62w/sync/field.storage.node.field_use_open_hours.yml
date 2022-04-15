@@ -1,0 +1,20 @@
+uuid: c1607d8d-bfaf-4d04-aabe-e85da4b9b4c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: lgIebP89peTcpfX3kAPWaIQ1iAx2e_zyp-OCvMrkS4w
+id: node.field_use_open_hours
+field_name: field_use_open_hours
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

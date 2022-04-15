@@ -1,0 +1,20 @@
+uuid: 5033cd3c-8e3f-4de4-905d-a08be2c14092
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2-G41qXRXGfbT8CVIzgp8epZq8rGRt6XGBORHzO6Rms
+name: 'Default newsletter'
+id: default
+description: 'This is an example newsletter. Change it.'
+format: plain
+priority: 0
+receipt: true
+from_name: 'Easy Booking Profile by ADCI Solutions'
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: ''
+hyperlinks: false
+allowed_handlers: {  }
+new_account: none
+opt_inout: double
+weight: 0

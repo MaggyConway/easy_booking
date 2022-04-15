@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 860a804f-f2a9-4591-8034-1541656dabb4
+  bundle: image
+  default_langcode: en
+  depends:
+    b5e91193-a60a-4d9f-9a11-9cc77f8c6b4f: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: lounge_chair
+  created:
+    -
+      value: 1614914514
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: b5e91193-a60a-4d9f-9a11-9cc77f8c6b4f
+      alt: lounge_chair
+      title: ''
+      width: 562
+      height: 254

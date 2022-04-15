@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 891dcdc8-6e64-462c-accb-042af775a33d
+  bundle: image
+  default_langcode: en
+  depends:
+    ec8e658a-ad7b-415d-9a7a-3c0f6cb986ef: file
+    46dde997-c304-4644-b7a2-3be7044bc38b: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: postel_spalnaya_uyut_kartiny_39762_1280x720.jpg
+  created:
+    -
+      value: 1603423225
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: ec8e658a-ad7b-415d-9a7a-3c0f6cb986ef
+      alt: Room
+      title: ''
+      width: 1280
+      height: 720
+  field_type:
+    -
+      entity: 46dde997-c304-4644-b7a2-3be7044bc38b

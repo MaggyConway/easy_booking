@@ -1,0 +1,51 @@
+uuid: c2224722-a54a-4ad2-a3c7-77a2a4598313
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_booking.booking_bundle.bee
+    - field.field.bat_booking.bee.booking_capacity
+    - field.field.bat_booking.bee.booking_end_date
+    - field.field.bat_booking.bee.booking_event_reference
+    - field.field.bat_booking.bee.booking_event_series_reference
+    - field.field.bat_booking.bee.booking_repeat_frequency
+    - field.field.bat_booking.bee.booking_repeat_until
+    - field.field.bat_booking.bee.booking_start_date
+    - field.field.bat_booking.bee.field_adults_number
+    - field.field.bat_booking.bee.field_children_number
+    - field.field.bat_booking.bee.field_room
+  module:
+    - user
+_core:
+  default_config_hash: 5Qsy5Ngv5K62WIwalCt88vwxzhllZkEMxOcNmqOqTF0
+id: bat_booking.bee.default
+targetEntityType: bat_booking
+bundle: bee
+mode: default
+content:
+  field_room:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  booking_capacity: true
+  booking_end_date: true
+  booking_event_reference: true
+  booking_event_series_reference: true
+  booking_repeat_frequency: true
+  booking_repeat_until: true
+  booking_start_date: true
+  field_adults_number: true
+  field_children_number: true
+  search_api_excerpt: true

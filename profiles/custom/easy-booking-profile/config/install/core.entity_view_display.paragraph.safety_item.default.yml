@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.safety_item.field_more_link
+    - field.field.paragraph.safety_item.field_safety_text
+    - paragraphs.paragraphs_type.safety_item
+  module:
+    - link
+    - text
+id: paragraph.safety_item.default
+targetEntityType: paragraph
+bundle: safety_item
+mode: default
+content:
+  field_more_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_safety_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  search_api_excerpt: true

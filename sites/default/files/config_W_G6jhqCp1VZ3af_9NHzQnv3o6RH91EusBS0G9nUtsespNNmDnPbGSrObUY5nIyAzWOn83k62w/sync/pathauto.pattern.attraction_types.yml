@@ -1,0 +1,25 @@
+uuid: 0e2e014e-9f9d-4504-a834-84a712d2f157
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+_core:
+  default_config_hash: '-hq8sFrA45FqnAT2l-aEbqU4EJ_C3uVMrToz8Dl4W5E'
+id: attraction_types
+label: 'Attraction Types'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/attractions/types/[term:name]'
+selection_criteria:
+  69f49f02-8a3c-4481-9c0d-c9d38e2ae45e:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      attractions: attractions
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 69f49f02-8a3c-4481-9c0d-c9d38e2ae45e
+selection_logic: and
+weight: -5
+relationships: {  }

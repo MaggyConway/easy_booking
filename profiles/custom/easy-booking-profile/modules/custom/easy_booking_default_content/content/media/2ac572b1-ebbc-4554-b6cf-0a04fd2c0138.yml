@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 2ac572b1-ebbc-4554-b6cf-0a04fd2c0138
+  bundle: image
+  default_langcode: en
+  depends:
+    1d70e242-3a6b-4d83-9aba-c88d8ca05081: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: telephone.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 1d70e242-3a6b-4d83-9aba-c88d8ca05081
+      alt: Telephone
+      title: ''
+      width: 40
+      height: 40

@@ -1,0 +1,31 @@
+uuid: 01c4809a-0af0-4e9f-8d6b-33acfcb1c3a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.attraction
+    - taxonomy.vocabulary.attractions
+_core:
+  default_config_hash: pAeVI25ieAFi1WOfl54D5nxwfBk_xWphnk3DhJ_vNm4
+id: node.attraction.field_type
+field_name: field_type
+entity_type: node
+bundle: attraction
+label: Type
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      attractions: attractions
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

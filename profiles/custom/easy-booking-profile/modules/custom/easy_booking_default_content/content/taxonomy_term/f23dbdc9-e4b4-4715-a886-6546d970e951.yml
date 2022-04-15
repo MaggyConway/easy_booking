@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: f23dbdc9-e4b4-4715-a886-6546d970e951
+  bundle: amenities
+  default_langcode: en
+  depends:
+    32f96e74-de0e-4576-9597-db7262972a50: media
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Washing Machine'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /amenities/washing-machine
+      langcode: en
+      pathauto: 1
+  field_icon:
+    -
+      entity: 32f96e74-de0e-4576-9597-db7262972a50

@@ -1,0 +1,42 @@
+uuid: a224c559-3cd9-4db6-96ae-e6674a6ca0b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.contact
+  module:
+    - system
+    - user
+    - webform
+  theme:
+    - bartik
+_core:
+  default_config_hash: 97IIsrwfRNXByvuqVZ56q0T5wI5Mh3BlrRtXKv6pO4s
+id: contact
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Contact
+  provider: webform
+  label_display: visible
+  webform_id: contact
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

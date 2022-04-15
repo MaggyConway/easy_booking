@@ -1,0 +1,11 @@
+mapbox:
+  js:
+    'https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js': { type: external }
+    js/mapbox.js: {}
+  css:
+    theme:
+      'https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css': { type: external }
+      css/mapbox.css: {}
+  dependencies:
+    - core/drupalSettings
+    - core/jquery

@@ -1,0 +1,27 @@
+uuid: 9a296495-84f9-45c6-b9fa-f44d3977a2d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: O2A3rMj-ku9wG8vIIC2gzR-AHETvkYpzKf7pvg5y_9A
+id: page_title
+theme: bartik
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/checkout/*/*\r\n/about\r\n/rooms/*"
+    negate: true
+    context_mapping: {  }

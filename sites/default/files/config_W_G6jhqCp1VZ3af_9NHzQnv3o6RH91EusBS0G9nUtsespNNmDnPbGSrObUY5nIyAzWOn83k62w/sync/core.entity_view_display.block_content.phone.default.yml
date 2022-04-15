@@ -1,0 +1,36 @@
+uuid: fab4bf6b-bda7-4437-a5ce-c42542f92628
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.phone
+    - field.field.block_content.phone.field_icon
+    - field.field.block_content.phone.field_number
+  module:
+    - telephone
+_core:
+  default_config_hash: WCpBm0qFBXR7yudsrKupW8ZzTEBJumGgwKQDVakNPzQ
+id: block_content.phone.default
+targetEntityType: block_content
+bundle: phone
+mode: default
+content:
+  field_icon:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_number:
+    weight: 1
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+hidden:
+  search_api_excerpt: true

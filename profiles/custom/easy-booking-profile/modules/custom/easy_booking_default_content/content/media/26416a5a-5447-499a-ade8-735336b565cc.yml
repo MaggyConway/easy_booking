@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 26416a5a-5447-499a-ade8-735336b565cc
+  bundle: image
+  default_langcode: en
+  depends:
+    9f079699-b96d-4561-b062-1f9d4374b811: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: breakfast.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 9f079699-b96d-4561-b062-1f9d4374b811
+      alt: Breakfast
+      title: ''
+      width: 40
+      height: 40

@@ -1,0 +1,168 @@
+uuid: 70ee087f-bfdd-4b3f-8833-00bc51e2e21f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about
+    - field.field.block_content.about.field_image
+    - field.field.block_content.about.field_link
+    - field.field.block_content.about.field_services
+    - field.field.block_content.about.field_text
+    - field.field.block_content.about.field_title
+    - image.style.homepage_about_block_image_
+  module:
+    - entity_reference_revisions
+    - field_group
+    - link
+    - media
+    - text
+third_party_settings:
+  field_group:
+    group_text_wrapper:
+      children:
+        - field_title
+        - field_text
+        - field_link
+      parent_name: group_text_image_wrapper
+      weight: 21
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: homepage-about-block-text-wrapper
+      label: 'Text wrapper'
+    group_image_wrapper:
+      children:
+        - field_image
+      parent_name: group_text_image_wrapper
+      weight: 22
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: homepage-about-block-image-wrapper
+      label: 'Image wrapper'
+    group_services_wrapper:
+      children:
+        - field_services
+      parent_name: group_about_content_wrapper
+      weight: 2
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: homepage-about-block-services-wrapper
+      label: 'Services wrapper'
+    group_text_image_wrapper:
+      children:
+        - group_text_wrapper
+        - group_image_wrapper
+      parent_name: group_about_content_wrapper
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: homepage-about-block-text-image-wrapper
+      label: 'Text-image wrapper'
+    group_about_content_wrapper:
+      children:
+        - group_text_image_wrapper
+        - group_services_wrapper
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: container
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'About content wrapper'
+_core:
+  default_config_hash: 7wZZNsCYVxVZJ8JJgLwEA3B7EO95jbSrxzWmGn7UQsA
+id: block_content.about.default
+targetEntityType: block_content
+bundle: about
+mode: default
+content:
+  field_image:
+    type: media_thumbnail
+    weight: 1
+    label: hidden
+    settings:
+      image_style: homepage_about_block_image_
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_link:
+    type: link
+    weight: 25
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_services:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_text:
+    weight: 24
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 23
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

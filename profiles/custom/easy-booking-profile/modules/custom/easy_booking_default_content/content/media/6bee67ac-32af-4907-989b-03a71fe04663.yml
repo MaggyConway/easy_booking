@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6bee67ac-32af-4907-989b-03a71fe04663
+  bundle: image
+  default_langcode: en
+  depends:
+    a9596dee-f0f8-47a8-b4a6-a26ac249ac36: file
+    ba12914e-2d52-4bc2-83e4-9ce3e73bc937: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: old_castle
+  created:
+    -
+      value: 1614914559
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: a9596dee-f0f8-47a8-b4a6-a26ac249ac36
+      alt: old_castle
+      title: ''
+      width: 562
+      height: 254
+  field_type:
+    -
+      entity: ba12914e-2d52-4bc2-83e4-9ce3e73bc937

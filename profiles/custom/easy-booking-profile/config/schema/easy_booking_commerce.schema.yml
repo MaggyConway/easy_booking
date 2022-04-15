@@ -1,0 +1,163 @@
+commerce_checkout.commerce_checkout_flow.plugin.custom_multistep_checkout:
+  type: commerce_checkout_flow_with_panes_configuration
+
+commerce_checkout_flow_with_panes_configuration:
+  type: mapping
+  mapping:
+    display_checkout_progress:
+      type: boolean
+      label: 'Display checkout progress'
+    order_summary_view:
+      type: string
+      label: 'Order summary view'
+    panes:
+      type: sequence
+      label: 'Panes'
+      sequence:
+        type: commerce_checkout.commerce_checkout_pane.[%key]
+
+commerce_order.commerce_order_type.*:
+  type: commerce_config_entity_bundle
+commerce_order.commerce_order_item_type.*:
+  type: commerce_config_entity_bundle
+commerce_product.commerce_product_type.*:
+  type: commerce_config_entity_bundle
+commerce_product.commerce_product_variation_type.*:
+  type: commerce_config_entity_bundle
+commerce_store.commerce_store_type.*:
+  type: commerce_config_entity_bundle
+
+commerce_config_entity_bundle:
+  type: config_entity
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    traits:
+      type: sequence
+      label: 'Traits'
+      orderby: value
+      sequence:
+        type: string
+    locked:
+      type: boolean
+      label: 'Locked'
+
+commerce.commerce_condition.plugin.order_payment_gateway:
+  type: commerce_condition_configuration
+  mapping:
+    payment_gateways:
+      type: sequence
+      label: 'Payment gateways'
+      orderby: value
+      sequence:
+        type: string
+        label: 'Payment gateway'
+
+commerce_payment.commerce_payment_gateway.*:
+  type: config_entity
+  label: 'Payment gateway'
+  mapping:
+    id:
+      type: string
+      label: 'Machine-readable name'
+    label:
+      type: label
+      label: 'Label'
+    weight:
+      type: integer
+      label: 'Weight'
+    plugin:
+      type: string
+      label: 'Plugin'
+    configuration:
+      type: commerce_payment.commerce_payment_gateway.plugin.[%parent.plugin]
+    conditions:
+      type: sequence
+      sequence:
+        type: commerce_condition
+    conditionOperator:
+      type: string
+      label: 'Condition operator'
+
+commerce_payment.commerce_payment_gateway.plugin.*:
+  type: commerce_payment_gateway_configuration
+
+commerce_payment.commerce_payment_gateway.plugin.manual:
+  type: commerce_payment_gateway_configuration
+  mapping:
+    instructions:
+      type: text_format
+      label: 'Payment instructions'
+      translatable: true
+
+commerce_payment_gateway_configuration:
+  type: mapping
+  mapping:
+    display_label:
+      type: label
+      label: 'Display label'
+    mode:
+      type: string
+      label: 'Mode'
+    payment_method_types:
+      type: sequence
+      label: 'Payment method types'
+      orderby: value
+      sequence:
+        type: string
+    collect_billing_information:
+      type: boolean
+      label: 'Collect billing information'
+
+commerce_checkout.commerce_checkout_pane.payment_process:
+  type: commerce_checkout_pane_configuration
+  mapping:
+    capture:
+      type: boolean
+      label: 'Transaction mode'
+
+commerce_checkout.commerce_checkout_flow.default:configuration.panes.payment_process:
+  type: commerce_checkout.commerce_checkout_pane.payment_process
+
+commerce_order.commerce_order_type.*.third_party.commerce_cart:
+  type: mapping
+  label: 'Shopping cart settings'
+  mapping:
+    cart_block_view:
+      type: string
+      label: 'Shopping cart block view'
+    cart_form_view:
+      type: string
+      label: 'Shopping cart form view'
+    cart_expiration:
+      type: mapping
+      label: 'Shopping cart expiration'
+      mapping:
+        unit:
+          type: string
+          label: 'Cart expiration unit'
+        number:
+          type: integer
+          label: 'Cart expiration time'
+
+commerce_order.commerce_order_type.*.third_party.commerce_checkout:
+  type: mapping
+  label: 'Checkout settings'
+  mapping:
+    checkout_flow:
+      type: string
+      label: 'Checkout flow'
+
+commerce_checkout.commerce_checkout_pane.custom_login:
+  type: commerce_checkout_pane_configuration
+  mapping:
+    allow_guest_checkout:
+      type: boolean
+      label: 'Allow guest checkout'
+    allow_registration:
+      type: boolean
+      label: 'Allow registration'

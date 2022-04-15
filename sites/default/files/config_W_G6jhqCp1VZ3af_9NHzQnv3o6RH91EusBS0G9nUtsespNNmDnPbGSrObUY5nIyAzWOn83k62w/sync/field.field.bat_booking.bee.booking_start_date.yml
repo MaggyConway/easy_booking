@@ -1,0 +1,23 @@
+uuid: 1ccfdd5b-f336-4d16-8af4-1656d3ce2b27
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_booking.booking_bundle.bee
+    - field.storage.bat_booking.booking_start_date
+  module:
+    - datetime
+_core:
+  default_config_hash: GiFaNILIZ8b-yJF01SZ0dL4IfEIKywYBP2TIyPqGNFs
+id: bat_booking.bee.booking_start_date
+field_name: booking_start_date
+entity_type: bat_booking
+bundle: bee
+label: 'Start Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

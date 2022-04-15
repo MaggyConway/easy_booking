@@ -1,0 +1,34 @@
+uuid: c41b4786-5f7b-4a69-8ca3-5e5ce9235407
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.other_rooms
+  module:
+    - ctools
+    - views
+  theme:
+    - bartik
+_core:
+  default_config_hash: xWQTAOqK0srmbyOKzy2V8J3zsV_GEnF9ze0t183MPqU
+id: views_block__other_rooms
+theme: bartik
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:other_rooms-other_rooms'
+settings:
+  id: 'views_block:other_rooms-other_rooms'
+  label: 'Select Other Rooms'
+  provider: views
+  label_display: visible
+  views_label: 'Select Other Rooms'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      room: room
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

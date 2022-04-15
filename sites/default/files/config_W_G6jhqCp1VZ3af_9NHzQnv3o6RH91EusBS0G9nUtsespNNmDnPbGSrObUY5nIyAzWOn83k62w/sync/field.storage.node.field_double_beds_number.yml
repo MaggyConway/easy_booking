@@ -1,0 +1,22 @@
+uuid: eecee4e4-0181-49ce-bce8-304344efda66
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: uQAmEJvKMxX0_8wcWmpzsoSbQGF3-E-wmnLsh0ilxHw
+id: node.field_double_beds_number
+field_name: field_double_beds_number
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

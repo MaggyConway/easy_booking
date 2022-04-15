@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.text.field_lean_more
+    - field.field.node.text.field_text_first_section
+    - field.field.node.text.field_text_second_section
+    - field.field.node.text.field_text_third_section
+    - node.type.text
+  module:
+    - link
+    - text
+    - user
+id: node.text.default
+targetEntityType: node
+bundle: text
+mode: default
+content:
+  field_lean_more:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_text_first_section:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text_second_section:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text_third_section:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  links: true
+  search_api_excerpt: true
+  sharethis: true

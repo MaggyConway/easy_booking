@@ -1,0 +1,23 @@
+uuid: 21114162-8421-45ff-a92e-e7a4249dcb21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_availability_hourly
+    - node.type.room
+_core:
+  default_config_hash: TlBCr69FHT5cP8slT3SQUPOI7Wndicnj9wxPkC6-FuU
+id: node.room.field_availability_hourly
+field_name: field_availability_hourly
+entity_type: node
+bundle: room
+label: Availability
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:bat_unit'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: d7687537-f0e6-4f5e-92bf-60ba0acbfcdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about
+    - field.storage.block_content.field_text
+  module:
+    - text
+_core:
+  default_config_hash: G6VF_jSVJXVyZ12Zy44OdufXQTVy0jTLlPPB9tQNJBo
+id: block_content.about.field_text
+field_name: field_text
+entity_type: block_content
+bundle: about
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

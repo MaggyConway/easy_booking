@@ -1,0 +1,19 @@
+uuid: b73df1bd-47ac-4aa0-a603-169d5e719a32
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: ivCcNyVnrFK5hDobuMFCQVvsWj1pN7-Vu1asDUvsyZQ
+name: pt_album_80x80
+label: 'PT Album (80x80)'
+effects:
+  39b28430-072b-4b58-bad7-4450ebd77494:
+    uuid: 39b28430-072b-4b58-bad7-4450ebd77494
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 80
+      height: 80
+      crop_type: focal_point

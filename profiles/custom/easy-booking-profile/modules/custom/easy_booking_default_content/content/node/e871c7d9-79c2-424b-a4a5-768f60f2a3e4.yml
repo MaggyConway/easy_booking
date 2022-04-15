@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e871c7d9-79c2-424b-a4a5-768f60f2a3e4
+  bundle: attraction
+  default_langcode: en
+  depends:
+    38c9df61-e5e7-4db1-8b36-8aa8a6e8d9cd: media
+    ee048577-cd77-4691-808f-b68933520cc0: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Massage & Spa'
+  created:
+    -
+      value: 1603445482
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/massage-spa
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1617093711
+  field_address:
+    -
+      value: 'Unnamed Rd, Thailand, ตำบล เกาะยาวใหญ่ อำเภอ เกาะยาว พังงา'
+  field_attraction_name:
+    -
+      value: 'Thai spa'
+  field_coordinates:
+    -
+      value: 'POINT (-122.4152577 37.7894783)'
+      geo_type: Point
+      lat: 37.7894783
+      lon: -122.4152577
+      left: -122.4152577
+      top: 37.7894783
+      right: -122.4152577
+      bottom: 37.7894783
+      geohash: 9q8yyr7gttrfx
+      latlon: '37.7894783,-122.4152577'
+  field_country:
+    -
+      value: TH
+  field_destination:
+    -
+      value: '1.49'
+  field_image:
+    -
+      entity: 38c9df61-e5e7-4db1-8b36-8aa8a6e8d9cd
+  field_type:
+    -
+      entity: ee048577-cd77-4691-808f-b68933520cc0

@@ -1,0 +1,21 @@
+uuid: 579cedf7-6263-4b23-8208-6d5139a58596
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.per_night
+    - field.storage.block_content.field_per_night_text
+id: block_content.per_night.field_per_night_text
+field_name: field_per_night_text
+entity_type: block_content
+bundle: per_night
+label: Text
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '| per night'
+default_value_callback: ''
+settings: {  }
+field_type: string

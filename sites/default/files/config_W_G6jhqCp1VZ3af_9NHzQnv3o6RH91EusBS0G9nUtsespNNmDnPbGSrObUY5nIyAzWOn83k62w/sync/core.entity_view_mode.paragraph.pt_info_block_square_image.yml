@@ -1,0 +1,12 @@
+uuid: 656d8c98-48b2-48e3-8af4-a077efbbb545
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: hjZKkvq0QvQYv-_faksG_uY9aOWWrm71p7YNgeQRk-M
+id: paragraph.pt_info_block_square_image
+label: 'PT Info Block: Square Image'
+targetEntityType: paragraph
+cache: true

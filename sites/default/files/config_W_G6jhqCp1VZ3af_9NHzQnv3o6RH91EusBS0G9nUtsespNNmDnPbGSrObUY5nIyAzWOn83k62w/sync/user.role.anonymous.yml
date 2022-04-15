@@ -1,0 +1,20 @@
+uuid: fe2b0e05-002b-4a9f-8437-7c1b822e210a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 24QsIRYkHqN96KcOe9fdcFDhXFiN3lN7UtCiTXRx-U8
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access content'
+  - 'display eu cookie compliance popup'
+  - 'subscribe to newsletters'
+  - 'view calendar data for any availability_daily event'
+  - 'view calendar data for any availability_hourly event'
+  - 'view commerce_product'
+  - 'view files'
+  - 'view media'

@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7183fa2c-bd6f-4138-b53b-37966b47dc25
+  bundle: attraction
+  default_langcode: en
+  depends:
+    fe4ff33f-1a24-4617-9add-ec3dfc0597bd: media
+    9f8cd9ee-b27b-4542-a895-50d58303d9dd: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Coffee House'
+  created:
+    -
+      value: 1603445571
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/coffee-house
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1617093718
+  field_address:
+    -
+      value: 'Unnamed Rd, Thailand, ตำบล เกาะยาวใหญ่ อำเภอ เกาะยาว พังงา'
+  field_attraction_name:
+    -
+      value: 'Thai coffee house'
+  field_coordinates:
+    -
+      value: 'POINT (-122.4091798 37.7664806)'
+      geo_type: Point
+      lat: 37.7664806
+      lon: -122.4091798
+      left: -122.4091798
+      top: 37.7664806
+      right: -122.4091798
+      bottom: 37.7664806
+      geohash: 9q8yye0meqk00
+      latlon: '37.7664806,-122.4091798'
+  field_country:
+    -
+      value: TH
+  field_destination:
+    -
+      value: '0.36'
+  field_image:
+    -
+      entity: fe4ff33f-1a24-4617-9add-ec3dfc0597bd
+  field_type:
+    -
+      entity: 9f8cd9ee-b27b-4542-a895-50d58303d9dd

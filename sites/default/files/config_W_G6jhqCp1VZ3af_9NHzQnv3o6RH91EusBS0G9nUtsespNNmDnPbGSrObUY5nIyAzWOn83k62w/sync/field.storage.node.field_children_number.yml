@@ -1,0 +1,22 @@
+uuid: b546d3a7-4fd7-40a9-a826-0fcb35fa02f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Xr2begQSdXRnlr-xjDmy8B1VE3VsBxwK9QCoelT15bg
+id: node.field_children_number
+field_name: field_children_number
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

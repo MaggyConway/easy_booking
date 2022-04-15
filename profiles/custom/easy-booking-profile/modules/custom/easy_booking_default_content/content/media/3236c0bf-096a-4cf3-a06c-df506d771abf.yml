@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 3236c0bf-096a-4cf3-a06c-df506d771abf
+  bundle: image
+  default_langcode: en
+  depends:
+    4915f656-3de0-41ee-a794-f0dfaaf3e932: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: luggage.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 4915f656-3de0-41ee-a794-f0dfaaf3e932
+      alt: Luggage
+      title: ''
+      width: 40
+      height: 40

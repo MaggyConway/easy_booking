@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+label: BEE
+id: bee
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3e477c33-c382-4d79-9c0e-f4b9e3c937d5
+  bundle: text
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Text2
+  created:
+    -
+      value: 1605090330
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_text_first_section:
+    -
+      value: "Easy Booking Resort features free WiFi throughout \Lthe property. "
+      format: plain_text
+  field_text_second_section:
+    -
+      value: 'You will find a 24-hour front desk '
+      format: plain_text
+  field_text_third_section:
+    -
+      value: "at \Lthe property. You can play billiards at this at the property. \r\nYou can play billiards at this resort, and the area "
+      format: plain_text

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: bat_unit_type
+  uuid: aa260132-cf1f-4366-9f0c-2ad0c773ece3
+  bundle: hourly
+  default_langcode: en
+  depends:
+    330a6e6e-2920-4481-83ee-42f1e5dd283c: state
+default:
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: Room
+  created:
+    -
+      value: 1603301982
+  status:
+    -
+      value: true
+  field_availability_hourly:
+    -
+      entity: 330a6e6e-2920-4481-83ee-42f1e5dd283c

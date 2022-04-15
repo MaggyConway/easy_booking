@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: state
+  uuid: d4bc9653-7884-4806-9cbb-5bc691f230d9
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: Booked
+  created:
+    -
+      value: 1614652901
+  color:
+    -
+      value: '#4b3cea'
+  calendar_label:
+    -
+      value: BOOK
+  blocking:
+    -
+      value: 1
+  locked:
+    -
+      value: 0
+  machine_name:
+    -
+      value: bee_hourly_booked
+  event_type:
+    -
+      target_id: availability_hourly

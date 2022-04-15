@@ -1,0 +1,21 @@
+uuid: 4c8c2914-09e4-41d9-89a8-038c5c0e8cbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.rooms_order
+    - field.storage.commerce_order.cart_is_non_current
+id: commerce_order.rooms_order.cart_is_non_current
+field_name: cart_is_non_current
+entity_type: commerce_order
+bundle: rooms_order
+label: 'Non-current cart'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

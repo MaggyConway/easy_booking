@@ -1,0 +1,20 @@
+uuid: 68c86dc3-391f-4006-975c-1094d9f4b60c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: JspXxgw5dqC9paY_qAbSjc8FpoDS8C1U_GLT-8oPtSk
+name: Reason
+type: reason
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

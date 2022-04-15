@@ -1,0 +1,25 @@
+uuid: d7becdba-fd13-4bc8-9503-4c80c3da2705
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about
+    - field.storage.block_content.field_link
+  module:
+    - link
+_core:
+  default_config_hash: fLxByvoGMqcwRXqgNsjaNRk7SZpB5rGYkhV0IBTc488
+id: block_content.about.field_link
+field_name: field_link
+entity_type: block_content
+bundle: about
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link

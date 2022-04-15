@@ -1,0 +1,330 @@
+/* Mixins */
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin btn-reset {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+@mixin clearfix {
+  &::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+@mixin main-title-page {
+  font-size: $main-font-size-title;
+  line-height: $main-line-height-title;
+  font-weight: bold;
+
+  @include breakpoint(l) {
+    font-size: $main-tablet-font-size-title;
+    line-height: $main-tablet-line-height-title;
+  }
+
+  @include breakpoint(sl) {
+    font-size: $main-mobile-font-size-title;
+    line-height: $main-mobile-line-height-title;
+  }
+}
+
+@mixin subtitle-text-page {
+  font-size: $secondary-font-size;
+  line-height: $secondary-line-height;
+  font-weight: 300;
+}
+
+@mixin btn-white {
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  font-weight: 300;
+  padding: 10px 16px;
+  width: 118px;
+  color: $primary-color-text;
+  display: block;
+  border-radius: $border-radius-all;
+  border: $border-btn-dark;
+  text-align: center;
+  transition: all $default-transition-time;
+
+  &:hover {
+    color: $secondary-color-text;
+    background: $extra-bg;
+  }
+
+  &:focus {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    background-color: $c-dark;
+    border: 1px solid $c-dark;
+    color: $primary-color-text;
+  }
+
+  &:disabled {
+    opacity: .5;
+  }
+
+  @include breakpoint(sll) {
+    line-height: 18px;
+    padding: 10px 14px 10px 13px;
+  }
+}
+
+@mixin btn-black {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  color: $extra-color-text;
+  border-radius: $border-radius-all;
+  border: $border-btn-light;
+  width: 64px;
+  padding: 7px 10px;
+  text-align: center;
+  transition: all $default-transition-time;
+
+  &:hover {
+    color: $primary-color-text;
+    background: $secondary-bg;
+  }
+
+  &:focus {
+    box-shadow: 0px 5px 10px $color-focus-btn;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $primary-bg;
+    opacity: .7;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+@mixin btn-extra {
+  width: 128px;
+  font-size: $main-font-size;
+  line-height: 18px;
+  font-weight: bold;
+  border-radius: $border-radius-all;
+  border: $border-btn-dark;
+  text-align: center;
+  background: $extra-bg;
+  color: $secondary-color-text;
+  letter-spacing: 0.02em;
+  transition: all $default-transition-time;
+  padding: 10px;
+
+  &:hover {
+    color: $primary-color-text;
+    background: $secondary-bg;
+  }
+
+  &:focus {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    background-color: $primary-bg;
+    color: $primary-color-text;
+    opacity: .7;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+@mixin btn-book-room {
+  width: 153px;
+  font-size: $main-font-size;
+  line-height: 18px;
+  font-weight: 300;
+  border-radius: $border-radius-all;
+  border: $border-btn-dark;
+  text-align: center;
+  background: $extra-bg;
+  color: $secondary-color-text;
+  letter-spacing: 0.02em;
+  transition: all $default-transition-time;
+  padding: 10px;
+
+  &:hover, &:focus {
+    color: $primary-color-text;
+    background: $secondary-bg;
+  }
+
+  @include breakpoint(sl) {
+    width: 100%;
+  }
+}
+
+@mixin btn-style-form {
+  @include btn-white;
+  width: 111px;
+  padding: 11px 16px;
+  margin: 0;
+  background: $secondary-bg;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin form-style-input {
+  padding: 8px 19px 9px 16px;
+  font-weight: 300;
+  font-size: $main-font-size;
+  line-height: $main-line-height-second;
+  color: $primary-color-text;
+  border-radius: $border-radius-all;
+  border: 0.5px solid $primary-color-text;
+  transition: all $default-transition-time;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    border: 0.5px solid $link-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $primary-color-text;
+    opacity: 0.6;
+  }
+}
+
+@mixin width-map-form {
+  width: calc(69% - 24px);
+
+  @include breakpoint(sl-tablet) {
+    width: 100%;
+  }
+}
+
+@mixin text-hide {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+@mixin absolute-vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+}
+
+@mixin absolute-horizontal-center {
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+
+@mixin element-cover {
+  width: auto;
+  min-width: 100%;
+  max-width: none;
+  height: auto;
+  min-height: 100%;
+  max-height: none;
+}
+
+@mixin element-100 {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin element-absolute-100 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+@mixin menu-item-after {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: $secondary-bg;
+  border-radius: 2px;
+}
+
+@mixin container {
+  margin: 0 auto;
+  max-width: 1204px;
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@mixin news-width-text-container {
+  margin-right: 31px;
+  width: calc(40% - 31px);
+
+  @include breakpoint(sll) {
+    margin-right: 0;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+}
+
+@mixin news-width-img-container {
+  width: 60%;
+
+  @include breakpoint(sll) {
+    max-width: 578px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == '' {
+    @content;
+  }
+
+ @else {
+    // Retrieves the value from the key
+    $value: map-get($breakpoints, $breakpoint);
+
+    // If the key exists in the map
+    @if $value != null {
+      // Prints a media query based on the value
+      @media (max-width: $value) {
+        @content;
+      }
+    }
+
+    // If the key doesn't exist in the map
+    @else {
+      @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. '
+        + 'Please make sure it is defined in `$breakpoints` map.';
+    }
+  }
+}

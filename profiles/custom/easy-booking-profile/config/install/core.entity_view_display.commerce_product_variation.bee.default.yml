@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.bee
+  module:
+    - commerce_order
+    - commerce_price
+id: commerce_product_variation.bee.default
+targetEntityType: commerce_product_variation
+bundle: bee
+mode: default
+content:
+  list_price:
+    label: hidden
+    type: commerce_price_default
+    weight: 1
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+  price:
+    type: commerce_price_calculated
+    weight: 2
+    label: hidden
+    settings:
+      adjustment_types: {  }
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    region: content
+  product_id:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true
+  sku: true

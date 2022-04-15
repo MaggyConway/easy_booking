@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies: {  }
+id: easy_booking_pager
+label: 'Easy booking pager'
+panes:
+  left:
+    style: none
+    config: {  }
+  center:
+    style: progressive
+    config:
+      quantity: 4
+      display_mode: normal
+      display: pages
+      display_restriction: 2
+      prefix_display: false
+      suffix_display: false
+      separator_display: false
+      breaker_display: true
+      first_link: never
+      previous_link: not_on_first
+      next_link: not_on_last
+      last_link: never
+      tags:
+        page_breaker: …
+        page_separator: '|'
+        pages:
+          prefix_label: Page
+          suffix_label: 'of @total'
+          page_current: '@number'
+          page_previous: '@number'
+          page_next: '@number'
+          first: '@number'
+          previous: ◂
+          next: ▸
+          last: '@number'
+          pageset_empty: 'No pages to display.'
+          page_current_title: 'Current page'
+          page_title: 'Go to page @number'
+          first_title: 'Go to first page'
+          previous_title: 'Go to previous page'
+          next_title: 'Go to next page'
+          last_title: 'Go to last page'
+          page_current_reader: 'Current page'
+          page_reader: Page
+          first_reader: 'First page'
+          previous_reader: 'Previous page'
+          next_reader: 'Next page'
+          last_reader: 'Last page'
+          page_previous_relative: ''
+          page_next_relative: ''
+      progr_links: absolute
+      factors: '100'
+  right:
+    style: none
+    config: {  }

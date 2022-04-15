@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 38d61a3b-ec86-42cb-82fe-affef536528f
+  bundle: attraction
+  default_langcode: en
+  depends:
+    2de0359b-183a-418c-9e0e-dd07f33240a9: media
+    9f8cd9ee-b27b-4542-a895-50d58303d9dd: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Breakfast
+  created:
+    -
+      value: 1603446253
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/breakfast
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1617093677
+  field_address:
+    -
+      value: 'Unnamed Rd, Thailand, ตำบล เกาะยาวใหญ่ อำเภอ เกาะยาว พังงา'
+  field_attraction_name:
+    -
+      value: 'Thai aunt`s bistro'
+  field_coordinates:
+    -
+      value: 'POINT (-122.4023375 37.7939994)'
+      geo_type: Point
+      lat: 37.7939994
+      lon: -122.4023375
+      left: -122.4023375
+      top: 37.7939994
+      right: -122.4023375
+      bottom: 37.7939994
+      geohash: 9q8zn8jq4b1up
+      latlon: '37.7939994,-122.4023375'
+  field_country:
+    -
+      value: TH
+  field_destination:
+    -
+      value: '0.02'
+  field_image:
+    -
+      entity: 2de0359b-183a-418c-9e0e-dd07f33240a9
+  field_type:
+    -
+      entity: 9f8cd9ee-b27b-4542-a895-50d58303d9dd

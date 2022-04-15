@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b298b219-6e1b-4d23-bd43-532cb3a754cb
+  bundle: image
+  default_langcode: en
+  depends:
+    d8cb0ed5-f349-49e2-bc68-92195b98b8e2: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: black-outdoor-lounge-chair-in-between-blue-swimming-pool-189296-6.png
+  created:
+    -
+      value: 1603302990
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: d8cb0ed5-f349-49e2-bc68-92195b98b8e2
+      alt: black-outdoor-lounge-chair-in-between-blue-swimming-pool-189296-6
+      title: ''
+      width: 273
+      height: 267

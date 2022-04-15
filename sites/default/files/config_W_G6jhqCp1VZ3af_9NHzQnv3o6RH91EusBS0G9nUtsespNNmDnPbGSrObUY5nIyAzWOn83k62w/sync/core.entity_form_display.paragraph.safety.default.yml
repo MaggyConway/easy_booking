@@ -1,0 +1,41 @@
+uuid: 7e73a2ba-fdd9-4224-af81-b9e71a340452
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.safety.field_safety_items
+    - field.field.paragraph.safety.field_title
+    - paragraphs.paragraphs_type.safety
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: gvuH-dFQY63-UVPD4uzy6yhuxJYfi4cfD71nI7kONHE
+id: paragraph.safety.default
+targetEntityType: paragraph
+bundle: safety
+mode: default
+content:
+  field_safety_items:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true

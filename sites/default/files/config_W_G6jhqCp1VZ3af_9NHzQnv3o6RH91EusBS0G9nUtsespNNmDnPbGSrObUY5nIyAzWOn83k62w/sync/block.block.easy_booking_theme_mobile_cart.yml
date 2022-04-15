@@ -1,0 +1,21 @@
+uuid: e2cccbec-5d79-4ce4-8519-bdbe63e3750e
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - easy_booking_theme
+id: easy_booking_theme_mobile_cart
+theme: easy_booking_theme
+region: header
+weight: -9
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: false
+visibility: {  }

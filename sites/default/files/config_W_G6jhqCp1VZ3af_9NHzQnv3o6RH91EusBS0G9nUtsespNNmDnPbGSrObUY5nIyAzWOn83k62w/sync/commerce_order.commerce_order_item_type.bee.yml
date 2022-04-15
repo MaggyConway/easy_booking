@@ -1,0 +1,12 @@
+uuid: d4a619e0-ada6-476b-b289-5b73309c576a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pyfh8eHwhnxzE-V-bsBV52ihrqTf8_3cCUv-_bLcZFc
+label: BEE
+id: bee
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

@@ -1,0 +1,12 @@
+uuid: 755ed2b2-92e6-4122-87c5-be0499e893e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat
+_core:
+  default_config_hash: 152lbOUwioA8LXjMIyYptO4Ougw8wCk4RDj9Nl5vdvg
+id: bat_type_group.token
+label: Token
+targetEntityType: bat_type_group
+cache: true

@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c6b99c25-f132-4b09-b1d7-7ecee86e76f9
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: restoran_oformlenie_dizayn_interer_mebel_70082_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/restoran_oformlenie_dizayn_interer_mebel_70082_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 178885
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603445260
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

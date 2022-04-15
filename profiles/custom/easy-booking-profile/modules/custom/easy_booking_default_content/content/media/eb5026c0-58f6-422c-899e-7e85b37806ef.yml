@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: eb5026c0-58f6-422c-899e-7e85b37806ef
+  bundle: image
+  default_langcode: en
+  depends:
+    705b8ff9-11b5-4263-bc5c-5039265247b9: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: menu.png
+  created:
+    -
+      value: 1603310739
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 705b8ff9-11b5-4263-bc5c-5039265247b9
+      alt: Menu
+      title: ''
+      width: 40
+      height: 40

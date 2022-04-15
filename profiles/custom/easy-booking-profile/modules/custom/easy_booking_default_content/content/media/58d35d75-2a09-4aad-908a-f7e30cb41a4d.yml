@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 58d35d75-2a09-4aad-908a-f7e30cb41a4d
+  bundle: image
+  default_langcode: en
+  depends:
+    b135f560-adcb-4fba-a91a-665e3c2b7932: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: spalnya_dizajn_interer_krovat_105771_1280x720.jpg
+  created:
+    -
+      value: 1603423225
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: b135f560-adcb-4fba-a91a-665e3c2b7932
+      alt: Room
+      title: ''
+      width: 1280
+      height: 720

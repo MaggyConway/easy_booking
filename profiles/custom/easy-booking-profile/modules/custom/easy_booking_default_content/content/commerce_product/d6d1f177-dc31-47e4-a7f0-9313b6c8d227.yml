@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: d6d1f177-dc31-47e4-a7f0-9313b6c8d227
+  bundle: bee_room
+  default_langcode: en
+  depends:
+    9b090114-4549-4310-a125-fa159e0e144c: commerce_store
+    de16d66d-9e7b-466b-85c4-fd6e236bda1d: commerce_product_variation
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: 9b090114-4549-4310-a125-fa159e0e144c
+  title:
+    -
+      value: 'Regular Family Room'
+  variations:
+    -
+      entity: de16d66d-9e7b-466b-85c4-fd6e236bda1d
+  default_variation:
+    -
+      entity: de16d66d-9e7b-466b-85c4-fd6e236bda1d
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1603425794

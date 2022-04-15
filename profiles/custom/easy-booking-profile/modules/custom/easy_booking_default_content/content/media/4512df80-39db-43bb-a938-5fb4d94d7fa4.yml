@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 4512df80-39db-43bb-a938-5fb4d94d7fa4
+  bundle: image
+  default_langcode: en
+  depends:
+    731f57a8-7264-4c4f-89a7-93a41035d730: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: pirog_sladost_eda_vkusno_86679_300x168.jpg
+  created:
+    -
+      value: 1603445260
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 731f57a8-7264-4c4f-89a7-93a41035d730
+      alt: Attraction
+      title: ''
+      width: 300
+      height: 168

@@ -1,0 +1,12 @@
+uuid: bb891790-0491-4ae9-ac56-f3b82f5e45ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 9HOHRKhykrvD3yBHZ_y6JFhzN8qlafEbW7hZMuMSTGs
+id: media.pt_article
+label: 'PT Article'
+targetEntityType: media
+cache: true

@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: ad13e5a9-4edc-4254-b76e-8fe42266af57
+  bundle: bee
+  default_langcode: en
+  depends:
+    9583acd5-7184-4642-ba24-50a01c66b79c: commerce_product
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  product_id:
+    -
+      entity: 9583acd5-7184-4642-ba24-50a01c66b79c
+  sku:
+    -
+      value: bee_room_8
+  title:
+    -
+      value: 'Regular Single Room'
+  price:
+    -
+      number: '0.000000'
+      currency_code: USD
+      formatted: $0.00
+  created:
+    -
+      value: 1603425477

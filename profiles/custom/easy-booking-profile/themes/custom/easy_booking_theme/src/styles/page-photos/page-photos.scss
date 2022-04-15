@@ -1,0 +1,25 @@
+.path--photos {
+
+    .title-content-block--wrapper {
+        background: $primary-bg;
+
+        .container {
+            padding-top: 32px;
+            padding-bottom: 62px;
+        }
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    #block-easy-booking-theme-page-title {
+        margin-bottom: 4px;
+    }
+
+    .masonry-layout-photos {
+        .masonry-item {
+            margin-bottom: 18px;
+        }
+    }
+}

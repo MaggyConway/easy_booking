@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 7242d0c5-b70a-40ee-b0e9-9d0221d4b2f7
+  bundle: amenities
+  default_langcode: en
+  depends:
+    b15f0493-359b-4dbb-b6e8-4c9444b4b9cc: media
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Newspaper
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /amenities/newspaper
+      langcode: en
+      pathauto: 1
+  field_icon:
+    -
+      entity: b15f0493-359b-4dbb-b6e8-4c9444b4b9cc

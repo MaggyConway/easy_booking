@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 65998756-fe0e-4684-8f7a-ae6cadcd0eab
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: myaso_govyadina_ovoshchi_sous_110955_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/myaso_govyadina_ovoshchi_sous_110955_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 132910
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603445260
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

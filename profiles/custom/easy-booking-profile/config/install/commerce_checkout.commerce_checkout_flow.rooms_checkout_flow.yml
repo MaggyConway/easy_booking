@@ -1,0 +1,120 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_payment
+    - easy_booking_commerce
+id: rooms_checkout_flow
+label: 'Rooms Checkout Flow'
+plugin: custom_multistep_checkout
+configuration:
+  display_checkout_progress: true
+  display_checkout_progress_breadcrumb_links: 0
+  panes:
+    customer_details:
+      title: 'Enter your details'
+      step: order_information
+      weight: 0
+    custom_login:
+      allow_guest_checkout: true
+      allow_registration: false
+      step: login
+      weight: 0
+    booking_room_information:
+      step: order_information
+      weight: 1
+    order_comment:
+      message_maxlength: 300
+      step: order_information
+      weight: 2
+    custom_billing_information:
+      step: payment
+      weight: 3
+    payment_information:
+      step: payment
+      weight: 4
+    payment_process:
+      capture: true
+      step: payment_process
+      weight: 5
+    custom_completion_message:
+      title: 'Thank you. Your order has been received.'
+      step: complete
+      weight: 6
+    order_details:
+      title: 'Check your details'
+      step: complete
+      weight: 7
+      footnote: "* You'll pay Easy Booking in their currency. The exact amount in your currency depends on when you pay. Today’s exchange rate: $4,281.76 = THB134271.90\L"
+      additional_text: 'Your card provider may charge a foreign transaction fee'
+    completion_register:
+      step: _sidebar
+      weight: 8
+    payment_details:
+      additional_text: "\LShould you have a query related to payment, <span class=\"path-complete-black-text\">please check with the property first at</span> <span class=\"path-complete-orange-text\">Easybooking@gmail.com</span> or on\L <span class=\"path-complete-orange-text\">8‒800‒000‒000</span>."
+      cards_icons: null
+      cards_label: 'This property accepts the following <span class="path-complete-black-text">forms of payment</span>'
+      title: 'Your payment details'
+      text: 'Payment will be taken directly by the property. In some cases, prior to your arrival, they may <span class="path-complete-orange-text">pre-authorise your card</span> to confirm that your card is valid and hasn’t been lost or stolen. This can appear as a temporary reduction in your balance, but is not the actual charge. For further details, you can contact your credit card provider or <span class="path-complete-black-text">Easy Booking</span>.'
+      step: _sidebar
+      weight: 9
+      cards: '12,15,10'
+    information:
+      title: 'Important information'
+      label: 'Getting to the resort'
+      step: _sidebar
+      weight: 10
+      text: "<div class=\"ferries-wrapper\"><p>ferries depart from Jean Pier in Koh Sireh to Koh Ya 3 times daily at 09:30, 13:00 and 17:00. On Fridays, ferries depart at 09:00 and 18:00 only;</p>\L<p>ferries depart from Rong Pier to Koh Ya from \L08:30 - 16:00 and 18:00;</p><p>ferries depart from Ao Pier (Krabi) \Lto Koh Ya at 11:00.</p></div>"
+      additional_text: "<div class=\"information-wrapper\"><p>From Koh Ya, it is a further 10-minute taxi ride \Lto Easybooking.</p><p>Please note that the hotel does not accept American Express credit cards.</p><p>Please note that the resort provides free pick-up services from the piers for guests staying \Lfor a <span class=\"path-complete-orange-text\">minimum of 3 nights</span>. Guests are kindly advised to inform the resort in advance of their arrival details.</p></div>"
+    check_in_time:
+      step: _sidebar
+      weight: 11
+    room_amenities:
+      step: _sidebar
+      weight: 12
+    advantages:
+      block_title: '3 reasons to book directly with us'
+      first_item_title: 'Low rates'
+      first_item_text: 'Pay the price you see - no hidden costs.'
+      first_item_icon: '9'
+      second_item_title: 'Instant confirmation'
+      second_item_text: 'No stress on arrival. Your reservation is guaranteed.'
+      second_item_icon: '7'
+      third_item_title: 'Secure booking'
+      third_item_text: 'We take your privacy seriously.'
+      third_item_icon: '30'
+      step: _sidebar
+      weight: 13
+    reasons:
+      title: '3 reasons to book directly with us'
+      step: _disabled
+      weight: 14
+    completion_message:
+      message:
+        value: "Your order number is [commerce_order:order_number].\r\nYou can view your order on your account page when logged in."
+        format: plain_text
+      step: _disabled
+      weight: 15
+    order_summary:
+      view: ''
+      step: _disabled
+      weight: 16
+    contact_information:
+      double_entry: false
+      step: _disabled
+      weight: 17
+    login:
+      allow_guest_checkout: true
+      allow_registration: false
+      step: _disabled
+      weight: 18
+    review:
+      step: _disabled
+      weight: 19
+    custom_order_summary:
+      step: _disabled
+      weight: 20
+    custom_contact_information:
+      double_entry: false
+      step: _disabled
+      weight: 21

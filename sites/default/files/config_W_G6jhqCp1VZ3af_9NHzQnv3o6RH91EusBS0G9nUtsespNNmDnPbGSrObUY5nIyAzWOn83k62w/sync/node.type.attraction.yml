@@ -1,0 +1,20 @@
+uuid: c8e12e9d-abc0-480b-a0c3-f0ca17b8a8a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: DQf-EgManCX9lu2MIzWmhsNRcSMx2aayQ80VwXga9bs
+name: Attraction
+type: attraction
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

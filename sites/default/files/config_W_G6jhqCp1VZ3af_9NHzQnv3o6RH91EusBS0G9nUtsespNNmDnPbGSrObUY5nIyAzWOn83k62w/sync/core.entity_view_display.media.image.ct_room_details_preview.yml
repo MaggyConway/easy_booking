@@ -1,0 +1,46 @@
+uuid: 13b24be0-4d49-4c6a-861d-6b2154688c04
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.ct_room_details_preview
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_type
+    - image.style.ct_room_details_preview_562x496
+    - image.style.lightbox_image_style_948x600_
+    - media.type.image
+  module:
+    - colorbox
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+_core:
+  default_config_hash: _Agl5B8hDsPsweyNM63c6KIWyRzXy6AjtyD9SA-BC84
+id: media.image.ct_room_details_preview
+targetEntityType: media
+bundle: image
+mode: ct_room_details_preview
+content:
+  field_media_image:
+    label: hidden
+    weight: 0
+    settings:
+      colorbox_node_style: ct_room_details_preview_562x496
+      colorbox_node_style_first: ct_room_details_preview_562x496
+      colorbox_image_style: lightbox_image_style_948x600_
+      colorbox_gallery: field_page
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    type: colorbox
+    region: content
+hidden:
+  created: true
+  field_type: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

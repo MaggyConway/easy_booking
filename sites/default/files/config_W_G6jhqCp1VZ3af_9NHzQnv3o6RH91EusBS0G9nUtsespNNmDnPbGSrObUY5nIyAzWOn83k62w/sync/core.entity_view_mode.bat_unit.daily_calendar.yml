@@ -1,0 +1,15 @@
+uuid: 451d284b-e6cf-4129-8eee-3ef6ca7e9dec
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - bee
+  module:
+    - bat_unit
+_core:
+  default_config_hash: iDKcBeIyfxRdnVmGDahzvDb0_izZq9xHwJXsaPOCiPc
+id: bat_unit.daily_calendar
+label: 'Daily Calendar'
+targetEntityType: bat_unit
+cache: true

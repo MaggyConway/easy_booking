@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b5085e66-3896-4ce5-aab8-e00be00d7c45
+  bundle: image
+  default_langcode: en
+  depends:
+    1a8287c6-730d-4083-90aa-38e27d969640: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: door-handle.png
+  created:
+    -
+      value: 1603310739
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 1a8287c6-730d-4083-90aa-38e27d969640
+      alt: 'Door Handle'
+      title: ''
+      width: 40
+      height: 40

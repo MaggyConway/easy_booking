@@ -1,0 +1,23 @@
+uuid: dd0f91a2-3929-4b40-899d-d4e349b85cf9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_safety_text
+    - paragraphs.paragraphs_type.safety_item
+  module:
+    - text
+_core:
+  default_config_hash: rmgcnAOodsKhGNB_2rZHzQJyMYqFPs4uUN7TraQHvGs
+id: paragraph.safety_item.field_safety_text
+field_name: field_safety_text
+entity_type: paragraph
+bundle: safety_item
+label: 'Safety Text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

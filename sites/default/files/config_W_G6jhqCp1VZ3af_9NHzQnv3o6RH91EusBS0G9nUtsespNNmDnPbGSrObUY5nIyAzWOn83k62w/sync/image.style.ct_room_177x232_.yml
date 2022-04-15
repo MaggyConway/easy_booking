@@ -1,0 +1,15 @@
+uuid: 1c46adbe-af1f-43b5-bf27-9157496cd3a2
+langcode: en
+status: true
+dependencies: {  }
+name: ct_room_177x232_
+label: 'CT Room (177x232)'
+effects:
+  6463627d-6579-410d-b01d-794b95cc7bb4:
+    uuid: 6463627d-6579-410d-b01d-794b95cc7bb4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 177
+      height: 232
+      anchor: center-center

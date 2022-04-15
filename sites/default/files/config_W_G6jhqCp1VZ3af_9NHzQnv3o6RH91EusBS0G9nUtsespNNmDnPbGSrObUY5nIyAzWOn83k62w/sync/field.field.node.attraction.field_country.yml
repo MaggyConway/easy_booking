@@ -1,0 +1,24 @@
+uuid: 37962c1b-02b2-4e07-a166-ec0c8b2b6a70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.attraction
+  module:
+    - address
+id: node.attraction.field_country
+field_name: field_country
+entity_type: node
+bundle: attraction
+label: Country
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: TH
+default_value_callback: ''
+settings:
+  available_countries: {  }
+field_type: address_country

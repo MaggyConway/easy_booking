@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5dd47943-77ff-4311-84c7-ddd3b7ae6df2
+  bundle: attraction
+  default_langcode: en
+  depends:
+    cb7bcd18-7a20-4068-8b2f-4dc6ad271111: media
+    5ffa8ccb-9605-4ab1-bfc0-00bf68bc3b1f: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Hike
+  created:
+    -
+      value: 1603445696
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/hike
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1617093707
+  field_address:
+    -
+      value: 'Unnamed Rd, Thailand, ตำบล เกาะยาวใหญ่ อำเภอ เกาะยาว พังงา'
+  field_attraction_name:
+    -
+      value: 'Three Thai oaks kamp'
+  field_coordinates:
+    -
+      value: 'POINT (-122.4010473 37.7880708)'
+      geo_type: Point
+      lat: 37.7880708
+      lon: -122.4010473
+      left: -122.4010473
+      top: 37.7880708
+      right: -122.4010473
+      bottom: 37.7880708
+      geohash: 9q8yyxn72yun9
+      latlon: '37.7880708,-122.4010473'
+  field_country:
+    -
+      value: TH
+  field_destination:
+    -
+      value: '8.44'
+  field_image:
+    -
+      entity: cb7bcd18-7a20-4068-8b2f-4dc6ad271111
+  field_type:
+    -
+      entity: 5ffa8ccb-9605-4ab1-bfc0-00bf68bc3b1f

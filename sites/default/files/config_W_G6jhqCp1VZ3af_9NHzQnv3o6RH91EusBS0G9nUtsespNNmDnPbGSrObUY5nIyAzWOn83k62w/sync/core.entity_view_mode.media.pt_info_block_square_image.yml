@@ -1,0 +1,12 @@
+uuid: f4d82353-ae4f-4185-a127-457f867d668d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 7-Fa1NNIclh166wycyKrwjN7ANgRubx26-pVE9mWt9U
+id: media.pt_info_block_square_image
+label: 'PT Info Block: Square Image'
+targetEntityType: media
+cache: true

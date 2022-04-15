@@ -1,0 +1,97 @@
+<?php
+/**
+ * @file
+ * Installing file.
+ *
+ * Install, update and uninstall functions
+ * for the easy_booking.
+ */
+
+use Drupal\bat_event\Entity\State;
+use Drupal\commerce_store\Entity\Store;
+use Drupal\search_api\Entity\Index;
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function easy_booking_install() {
+  // First, do everything in standard profile.
+  include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
+  standard_install();
+
+  // Install default content module.
+  Drupal::service('module_installer')->install(['easy_booking_default_content']);
+
+  easy_booking_set_default_store();
+  easy_booking_set_rooms_state();
+  easy_booking_index_rooms();
+}
+
+/**
+ * Sets default store for commerce module.
+ */
+function easy_booking_set_default_store() {
+  $store = Store::load(1);
+  $store_storage = \Drupal::service('entity_type.manager')->getStorage('commerce_store');
+  $store_storage->markAsDefault($store);
+}
+
+/**
+ * Sets bat state for exported rooms.
+ */
+function easy_booking_set_rooms_state() {
+
+  $bat_units_hourly = \Drupal::entityTypeManager()
+    ->getStorage('bat_unit_type')
+    ->loadByProperties(['type' => 'hourly']);
+
+  foreach ($bat_units_hourly as $bat_unit_hourly) {
+    $state = State::loadByMachineName('bee_hourly_available');
+    $bat_unit_hourly
+      ->set('field_availability_hourly', $state->id())
+      ->save();
+    $bee_settings = [
+      'bookable' => 1,
+      'bookable_type' => 'hourly',
+      'availability' => 'available',
+      'payment' => 1,
+      'type_id' => $bat_unit_hourly->id(),
+    ];
+    \Drupal::configFactory()
+      ->getEditable('node.type.room')
+      ->set('bee', $bee_settings)
+      ->save(TRUE);
+  }
+
+  $bat_units_daily = \Drupal::entityTypeManager()
+    ->getStorage('bat_unit_type')
+    ->loadByProperties(['type' => 'daily']);
+
+  foreach ($bat_units_daily as $bat_unit_daily) {
+    $state = State::loadByMachineName('bee_daily_available');
+    $bat_unit_daily
+      ->set('field_availability_daily', $state->id())
+      ->save();
+    $bee_settings = [
+      'bookable' => 1,
+      'bookable_type' => 'daily',
+      'availability' => 'available',
+      'payment' => 1,
+      'type_id' => $bat_unit_daily->id(),
+    ];
+    \Drupal::configFactory()
+      ->getEditable('node.type.room')
+      ->set('bee', $bee_settings)
+      ->save(TRUE);
+  }
+
+}
+
+function easy_booking_index_rooms() {
+  $index = Index::load('rooms_index');
+  $index->indexItems();
+}

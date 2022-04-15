@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - adci_contact_info
+  theme:
+    - claro
+id: adci_contact_info_block
+theme: claro
+region: header
+weight: -9999
+provider: null
+plugin: adci_contact_info_block
+settings:
+  id: adci_contact_info_block
+  label: 'ADCI Solutions contact information'
+  provider: adci_contact_info
+  label_display: '0'
+  info: 'The website is using Drupal @version'
+  site:
+    title: 'Supported by'
+    text: 'ADCI Solutions'
+    link: 'https://www.adcisolutions.com/'
+  email:
+    title: Email
+    email: hello@adcillc.com
+visibility: {  }

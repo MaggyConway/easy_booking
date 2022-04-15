@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: fea559b9-8ff7-4226-a390-4ab7b58afeaa
+  bundle: attraction
+  default_langcode: en
+  depends:
+    6e0a316c-8c85-495b-8f46-a18a1a4619d3: media
+    9f8cd9ee-b27b-4542-a895-50d58303d9dd: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Restaurant & Bar'
+  created:
+    -
+      value: 1603446019
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/restaurant-bar
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1617093690
+  field_address:
+    -
+      value: 'Unnamed Rd, Thailand, ตำบล เกาะยาวใหญ่ อำเภอ เกาะยาว พังงา'
+  field_attraction_name:
+    -
+      value: 'Stylish Thai Restaurant'
+  field_coordinates:
+    -
+      value: 'POINT (-122.4079487 37.765414)'
+      geo_type: Point
+      lat: 37.765414
+      lon: -122.4079487
+      left: -122.4079487
+      top: 37.765414
+      right: -122.4079487
+      bottom: 37.765414
+      geohash: 9q8yydcr2p3vx
+      latlon: '37.765414,-122.4079487'
+  field_country:
+    -
+      value: TH
+  field_destination:
+    -
+      value: '0.41'
+  field_image:
+    -
+      entity: 6e0a316c-8c85-495b-8f46-a18a1a4619d3
+  field_type:
+    -
+      entity: 9f8cd9ee-b27b-4542-a895-50d58303d9dd

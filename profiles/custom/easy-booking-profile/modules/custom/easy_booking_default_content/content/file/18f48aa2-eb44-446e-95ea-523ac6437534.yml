@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 18f48aa2-eb44-446e-95ea-523ac6437534
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: kofeynye_zerna_eda_poverhnost_91913_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/kofeynye_zerna_eda_poverhnost_91913_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 224686
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603445260
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

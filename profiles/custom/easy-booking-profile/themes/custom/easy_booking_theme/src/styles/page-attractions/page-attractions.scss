@@ -1,0 +1,162 @@
+.path--attractions {
+
+    #block-easy-booking-theme-page-title {
+        display: none;
+    }
+
+    .container {
+        padding-top: 32px;
+        padding-bottom: 72px;
+    }
+
+    .view-display-id-attractions_page {
+        .view-header {
+            @include main-title-page;
+            margin-bottom: 24px;
+            position: relative;
+
+            .block-views-exposed-filter-blockattractions-attractions-page {
+                padding-top: 4px;
+            }
+
+            #map {
+                height: 200px;
+            }
+        }
+
+        .view-content {
+            margin: 0 -8px 8px;
+
+            .views-row {
+                display: flex;
+                margin-bottom: 16px;
+
+                .views-col {
+                    width: calc(100% / 6 - 16px) !important;
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    cursor: pointer;
+                    transition: border $default-transition-time ease;
+
+                    .views-field-field-coordinates,
+                    .views-field-field-attraction-name,
+                    .views-field-field-address,
+                    .views-field-field-country,
+                    .views-field-field-destination-1,
+                    .views-field-nothing-1 {
+                        display: none;
+                    }
+
+                    .textfields-container {
+                        opacity: 1;
+                        transition: opacity 0.3s ease;
+                        padding: 16px 32px 24px 16px;
+    
+                        @include breakpoint(sl) {
+                            padding: 8px 11px 16px 8px;
+                        }
+    
+                        .textfields-container-title {
+                            font-size: $secondary-font-size;
+                            line-height: $secondary-line-height-card;
+                        }
+    
+                        .textfields-container-description {
+                            font-size: $font-size-card-text;
+                            line-height: $line-height-card-text;
+                        }
+                    }
+
+                    &.active {
+                        border: 3px solid #F09C40;
+
+                        .textfields-container {
+                            opacity: 0;
+                        }
+                    }
+
+                    img {
+                        @include breakpoint(sl-tablet) {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    @include breakpoint(l) {
+                        width: calc(100% / 4 - 16px) !important;
+                        margin-bottom: 16px;
+                    }
+
+                    @include breakpoint(sl-tablet) {
+                        width: calc(100% / 3 - 16px) !important;
+                        margin-bottom: 16px;
+                    }
+
+                    @include breakpoint(sl) {
+                        width: calc(100% / 2 - 16px) !important;
+                        margin-bottom: 16px;
+                    }
+                }
+
+                @include breakpoint(l) {
+                    flex-wrap: wrap;
+                }
+
+            }
+        }
+
+        .pagerer-container {
+            margin: 0;
+        }
+    }
+
+    .map-info-wrapper {
+        max-width: 330px;
+        position: absolute;
+        bottom: 16px;
+        left: 24px;
+        padding: 16px 24px 30px 24px;
+        background-color: $secondary-bg;
+
+        @include breakpoint(sll) {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            margin-top: 20px;
+        }
+
+        @include breakpoint(s-book) {
+            max-width: none;
+            width: 100%;
+        }
+
+            .title-info {
+                font-size: 16px;
+                line-height: 150%;
+                margin-bottom: 5px;
+            }
+
+            .map-info-item {
+                display: flex;
+                margin-bottom: 7px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .map-info-label {
+                        font-size: 12px;
+                        line-height: 20px;
+                        width: 80px;
+                    }
+
+                    .map-info-text-wrapper {
+                        flex: 1;
+                        font-size: 12px;
+                        line-height: 17px;
+                        letter-spacing: 0.02em;
+                        font-weight: normal;
+                    }
+            }
+    }
+}

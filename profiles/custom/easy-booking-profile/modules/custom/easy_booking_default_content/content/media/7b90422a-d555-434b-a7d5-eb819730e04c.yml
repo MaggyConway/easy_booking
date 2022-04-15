@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7b90422a-d555-434b-a7d5-eb819730e04c
+  bundle: image
+  default_langcode: en
+  depends:
+    22559a34-450e-4d90-825e-1bda99f711b9: file
+    46dde997-c304-4644-b7a2-3be7044bc38b: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: postel_spalnaya_kreslo_stil_39759_1280x720.jpg
+  created:
+    -
+      value: 1603423225
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 22559a34-450e-4d90-825e-1bda99f711b9
+      alt: Room
+      title: ''
+      width: 1280
+      height: 720
+  field_type:
+    -
+      entity: 46dde997-c304-4644-b7a2-3be7044bc38b

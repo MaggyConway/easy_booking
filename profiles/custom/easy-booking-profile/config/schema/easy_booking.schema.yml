@@ -1,0 +1,1238 @@
+bat_event.event_type.availability_daily:
+  type: config_entity
+  label: Event type
+  mapping:
+    name:
+      type: string
+      label: Name
+    type:
+      type: string
+      label: Type
+    event_granularity:
+      type: string
+      label: Event granularity
+    fixed_event_states:
+      type: integer
+      label: Fixed event states
+    default_event_value_field_ids:
+      type: string
+      label: Default event value field ids
+    default_event_label_field_name:
+      type: string
+      label: Default event label field name
+    target_entity_type:
+      type: string
+      label: Target entity type
+bat_event.event_type.availability_hourly:
+  type: config_entity
+  label: Event type
+  mapping:
+    name:
+      type: string
+      label: Name
+    type:
+      type: string
+      label: Type
+    event_granularity:
+      type: string
+      label: Event granularity
+    fixed_event_states:
+      type: integer
+      label: Fixed event states
+    default_event_value_field_ids:
+      type: string
+      label: Default event value field ids
+    default_event_label_field_name:
+      type: string
+      label: Default event label field name
+    target_entity_type:
+      type: string
+      label: Target entity type
+block.block.adci_contact_info_block:
+  type: config_entity
+  label: ADCI Contact Info Block
+  mapping:
+    id:
+      type: string
+      label: ID
+    theme:
+      type: string
+      label: Theme
+    region:
+      type: string
+      label: Theme
+    weight:
+      type: integer
+      label: Weight
+    provider:
+      type: string
+      label: Provider
+    plugin:
+      type: string
+      label: Plugin
+    settings:
+      type: mapping
+      label: Settings
+      mapping:
+        id:
+          type: string
+          label: ID
+        label:
+          type: string
+          label: Label
+        provider:
+          type: string
+          label: Provider
+        label_display:
+          type: string
+          label: Label display
+        info:
+          type: string
+          label: Info
+        site:
+          type: mapping
+          label: Site
+          mapping:
+            title:
+              type: string
+              label: Title
+            text:
+              type: string
+              label: Text
+            link:
+              type: string
+              label: Link
+        email:
+          type: mapping
+          label: Email
+          mapping:
+            title:
+              type: string
+              label: Title
+            email:
+              type: string
+              label: Email
+    visibility:
+      type: sequence
+      label: Visibility
+block.block.location_block:
+  type: config_entity
+  label: Location Block
+  mapping:
+    id:
+      type: string
+      label: ID
+    theme:
+      type: string
+      label: Theme
+    region:
+      type: string
+      label: Region
+    weight:
+      type: integer
+      label: Weight
+    provider:
+      type: string
+      label: Provider
+    plugin:
+      type: string
+      label: Plugin
+    settings:
+      type: mapping
+      label: Settings
+      mapping:
+        id:
+          type: string
+          label: ID
+        label:
+          type: string
+          label: Label
+        provider:
+          type: string
+          label: Provider
+        label_display:
+          type: string
+          label: Label display
+        phone:
+          type: string
+          label: Phone
+        address:
+          type: string
+          label: Address
+    visibility:
+      type: mapping
+      label: Visibility
+      mapping:
+        request_path:
+          type: mapping
+          label: Request path
+          mapping:
+            id:
+              type: string
+              label: ID
+            pages:
+              type: string
+              label: Pages
+            negate:
+              type: boolean
+              label: Negate
+            context_mapping:
+              type: sequence
+              label: Context mapping
+block.block.socialmedialinks:
+  type: config_entity
+  label: Social Media Links
+  mapping:
+    id:
+      type: string
+      label: ID
+    theme:
+      type: string
+      label: Theme
+    region:
+      type: string
+      label: Region
+    weight:
+      type: integer
+      label: Weight
+    provider:
+      type: string
+      label: Provider
+    plugin:
+      type: string
+      label: Plugin
+    settings:
+      type: mapping
+      label: Settings
+      mapping:
+        id:
+          type: string
+          label: ID
+        label:
+          type: string
+          label: Label
+        provider:
+          type: string
+          label: Provider
+        label_display:
+          type: string
+          label: Label display
+        platforms:
+          type: sequence
+          label: Platforms
+          sequence:
+            type: mapping
+            mapping:
+              value:
+                type: string
+                label: Value
+              description:
+                type: string
+                label: Description
+              weight:
+                type: string
+                label: Weight
+        appearance:
+          type: mapping
+          label: Appearance
+          mapping:
+            orientation:
+              type: string
+              label: Orientation
+            show_name:
+              type: integer
+              label: Show name
+        link_attributes:
+          type: mapping
+          label: Link attributes
+          mapping:
+            target:
+              type: string
+              label: Target
+            rel:
+              type: string
+              label: Rel
+        iconset:
+          type: mapping
+          label: Iconset
+          mapping:
+            style:
+              type: string
+              label: Style
+            installed_iconsets:
+              type: sequence
+              label: Installed iconsets
+              sequence:
+                type: sequence
+                label: Iconset
+                sequence:
+                  type: string
+    visibility:
+      type: sequence
+      label: Visibility
+commerce_checkout.commerce_checkout_flow.rooms_checkout_flow:
+  type: config_entity
+  label: Rooms Checkout Flow
+  mapping:
+    id:
+      type: string
+      label: ID
+    label:
+      type: string
+      label: Label
+    plugin:
+      type: string
+      label: Plugin
+    configuration:
+      type: mapping
+      label: Configuration
+      mapping:
+        display_checkout_progress:
+          type: boolean
+          label: Display checkout progress
+        panes:
+          type: sequence
+          label: Panes
+          sequence:
+            type: mapping
+            label: Pane
+            mapping:
+              step:
+                type: string
+                label: Step
+              weight:
+                type: integer
+                label: Weight
+              allow_registration:
+                type: boolean
+                label: Allow registration
+              allow_guest_checkout:
+                type: boolean
+                label: Allow guest checkout
+              double_entry:
+                type: boolean
+                label: Double entry
+              capture:
+                type: boolean
+                label: Capture
+              title:
+                type: string
+                label: Title
+              footnote:
+                type: string
+                label: Footnote
+              additional_text:
+                type: string
+                label: Additional text
+              text:
+                type: string
+                label: Text
+              cards_icons:
+                type: string
+                label: Cards icons
+              cards_label:
+                type: string
+                label: Cards label
+              cards:
+                type: string
+                label: Cards
+              label:
+                type: string
+                label: Label
+              message:
+                type: mapping
+                label: Message
+                mapping:
+                  value:
+                    type: string
+                    label: Value
+                  format:
+                    type: string
+                    label: Format
+              view:
+                type: string
+                label: View
+              message_maxlength:
+                type: integer
+                label: Message max length
+core.entity_form_display.node.room.default:
+  type: config_entity
+  label: Room Form Display
+  mapping:
+    id:
+      type: string
+      label: ID
+    targetEntityType:
+      type: string
+      label: Target entity type
+    bundle:
+      type: string
+      label: Bundle
+    mode:
+      type: string
+      label: Mode
+    content:
+      type: sequence
+      label: Fields
+      sequence:
+        type: mapping
+        label: Field
+        mapping:
+          type:
+            type: string
+            label: Type
+          weight:
+            type: integer
+            label: Weight
+          settings:
+            type: mapping
+            label: Settings
+            mapping:
+              size:
+                type: integer
+                label: Size
+              match_operator:
+                type: string
+                label: Match operator
+              match_limit:
+                type: integer
+                label: Match limit
+              placeholder:
+                type: string
+                label: Placeholder
+              enabled:
+                type: boolean
+                label: Enabled
+              step:
+                type: integer
+                label: Step
+              rows:
+                type: integer
+                label: Rows
+              media_types:
+                type: sequence
+              title:
+                type: string
+                label: Title
+              title_plural:
+                type: string
+                label: Title plural
+              edit_mode:
+                type: string
+                label: Edit mode
+              closed_mode:
+                type: string
+                label: Closed mode
+              autocollapse:
+                type: string
+                label: Autocollapse
+              closed_mode_threshold:
+                type: integer
+                label: Closed mode threshold
+              add_mode:
+                type: string
+                label: Add mode
+              form_display_mode:
+                type: string
+                label: Form display mode
+              default_paragraph_type:
+                type: string
+                label: Default paragraph type
+              features:
+                type: mapping
+                label: Features
+                mapping:
+                  add_above:
+                    type: string
+                    label: Add above
+                  collapse_edit_all:
+                    type: string
+                    label: Collapse edit all
+                  duplicate:
+                    type: string
+                    label: Duplicate
+              display_label:
+                type: boolean
+                label: Display label
+          third_party_settings:
+            type: sequence
+            label: Third party settings
+          region:
+            type: string
+            label: Region
+    hidden:
+      type: sequence
+      label: Hidden
+      sequence:
+        type: boolean
+        label: Field
+core.entity_view_display.node.room.default:
+  type: config_entity
+  label: Room View Display
+  mapping:
+    id:
+      type: string
+      label: ID
+    targetEntityType:
+      type: string
+      label: Target entity type
+    bundle:
+      type: string
+      label: Bundle
+    mode:
+      type: string
+      label: Mode
+    hidden:
+      type: sequence
+      label: Hidden
+      sequence:
+        type: boolean
+        label: Field
+    content:
+      type: sequence
+      label: Fields
+      sequence:
+        type: mapping
+        label: Field
+        mapping:
+          type:
+            type: string
+            label: Type
+          weight:
+            type: integer
+            label: Weight
+          third_party_settings:
+            type: mapping
+            label: Third party settings
+          region:
+            type: string
+            label: Region
+          label:
+            type: string
+            label: Label
+          settings:
+            type: mapping
+            label: Settings
+            mapping:
+              thousand_separator:
+                type: string
+                label: Thousand separator
+              prefix_suffix:
+                type: boolean
+                label: Profix suffix
+              link:
+                type: ignore
+                label: Link
+              decimal_separator:
+                type: string
+                label: Decimal separator
+              scale:
+                type: integer
+                label: Scale
+              view_mode:
+                type: string
+                label: View mode
+              time_format:
+                type: string
+                label: Time format
+              timerange_format:
+                type: string
+                label: Timerange format
+              day_format:
+                type: string
+                label: Day format
+              compress:
+                type: boolean
+                label: Compress
+              grouped:
+                type: boolean
+                label: Grouped
+              show_closed:
+                type: string
+                label: Show closed
+              closed_format:
+                type: string
+                label: Closed format
+              separator:
+                type: sequence
+                label: Separators
+                sequence:
+                  type: string
+                  label: Separator
+              current_status:
+                type: sequence
+                label: Current status
+                sequence:
+                  type: string
+                  label: Status
+              schema:
+                type: mapping
+                label: Schema
+                mapping:
+                  enabled:
+                    type: boolean
+                    label: Enabled
+              timezone_field:
+                type: string
+                label: Timezone field
+              office_hours_first_day:
+                type: string
+                label: Office hours first day
+              strip_trailing_zeroes:
+                type: boolean
+                label: Strip trailing zeroes
+              currency_display:
+                type: string
+                label: Currency display
+              style:
+                type: string
+                label: Style
+              vanilla:
+                type: boolean
+                label: Vanilla
+              optionset:
+                type: string
+                label: Optionset
+              optionset_thumbnail:
+                type: string
+                label: Optionset thumbnail
+              skin:
+                type: string
+                label: Skin
+              skin_thumbnail:
+                type: string
+                label: Skin thumbnail
+              image_style:
+                type: string
+                label: Image style
+              thumbnail_effect:
+                type: string
+                label: Thumbnail effect
+              thumbnail_position:
+                type: string
+                label: Thumbnail position
+              media_switch:
+                type: string
+                label: Media switch
+              thumbnail_style:
+                type: string
+                label: Thumbnail style
+              ratio:
+                type: string
+                label: Ratio
+              grid:
+                type: string
+                label: Grid
+              grid_medium:
+                type: string
+                label: Grid medium
+              grid_small:
+                type: string
+                label: Grid small
+              visible_items:
+                type: string
+                label: Visible items
+              image:
+                type: string
+                label: Image
+              title:
+                type: string
+                label: Title
+              layout:
+                type: string
+                label: Layout
+              class:
+                type: string
+                label: Class
+              cache:
+                type: integer
+                label: Cache
+              current_view_mode:
+                type: string
+                label: Current view mode
+              background:
+                type: boolean
+                label: Background
+              caption:
+                type: mapping
+                label: Caption
+                mapping:
+                  title:
+                    type: string
+                    label: Title
+                  alt:
+                    type: string
+                    label: Alt
+              preserve_keys:
+                type: boolean
+                label: Preserve keys
+              override:
+                type: boolean
+                label: Override
+              overridables:
+                type: sequence
+                label: Overridables
+                sequence:
+                  type: string
+                  label: Overridable
+              thumbnail:
+                type: string
+                label: Thumbnail
+              thumbnail_caption:
+                type: string
+                label: Thumbnail caption
+              skin_arrows:
+                type: string
+                label: Skin arrows
+              skin_dots:
+                type: string
+                label: Skin dots
+              fx:
+                type: string
+                label: FX
+              icon:
+                type: string
+                label: Icon
+              box_caption:
+                type: string
+                label: Box caption
+              box_caption_custom:
+                type: string
+                label: Box caption custom
+              box_media_style:
+                type: string
+                label: Box media style
+              responsive_image_style:
+                type: string
+                label: Responsive image style
+              box_style:
+                type: string
+                label: Box style
+              _uri:
+                type: string
+                label: Uri
+              breakpoints:
+                type: sequence
+                label: Breakpoints
+              sizes:
+                type: string
+                label: Sizes
+              grid_header:
+                type: string
+                label: Grid header
+              id:
+                type: string
+                label: ID
+              overlay:
+                type: string
+                label: Overlay
+    third_party_settings:
+      type: sequence
+      label: Third party settings
+      sequence:
+        type: mapping
+        label: Setting
+        mapping:
+          allow_custom:
+            type: boolean
+            label: Allow custom
+          enabled:
+            type: boolean
+            label: Enabled
+          sections:
+            type: sequence
+            label: Sections
+            sequence:
+              type: mapping
+              label: Section
+              mapping:
+                layout_id:
+                  type: string
+                  label: Layout ID
+                layout_settings:
+                  type: mapping
+                  label: Layout settings
+                  mapping:
+                    label:
+                      type: string
+                      label: Label
+                    column_widths:
+                      type: string
+                      label: Column widths
+                components:
+                  type: sequence
+                  label: Components
+                  sequence:
+                    type: mapping
+                    label: Component
+                    mapping:
+                      uuid:
+                        type: string
+                        label: UUID
+                      region:
+                        type: string
+                        label: Region
+                      configuration:
+                        type: mapping
+                        label: Configuration
+                        mapping:
+                          id:
+                            type: string
+                            label: ID
+                          label:
+                            type: string
+                            label: Label
+                          provider:
+                            type: string
+                            label: Provider
+                          label_display:
+                            type: string
+                            label: Label display
+                          formatter:
+                            type: mapping
+                            label: Formatter
+                            mapping:
+                              label:
+                                type: string
+                                label: Label
+                              type:
+                                type: string
+                                label: Type
+                              settings:
+                                type: mapping
+                                label: Settings
+                                mapping:
+                                  view_mode:
+                                    type: string
+                                    label: View mode
+                                  link_to_entity:
+                                    type: boolean
+                                    label: Link to entity
+                                  strip_trailing_zeroes:
+                                    type: boolean
+                                    label: Strip trailing zeroes
+                                  currency_display:
+                                    type: string
+                                    label: Currency display
+                                  thousand_separator:
+                                    type: string
+                                    label: Thousand separator
+                                  prefix_suffix:
+                                    type: boolean
+                                    label: Prefix suffix
+                                  link:
+                                    type: boolean
+                                    label: Link
+                              third_party_settings:
+                                type: mapping
+                          context_mapping:
+                            type: mapping
+                            label: Context mapping
+                            mapping:
+                              entity:
+                                type: string
+                                label: Entity
+                              view_mode:
+                                type: string
+                                label: View mode
+                              node:
+                                type: string
+                                label: Node
+                          views_label:
+                            type: string
+                            label: Views label
+                          items_per_page:
+                            type: string
+                            label: Items per page
+                      additional:
+                        type: sequence
+                        label: Additional
+                      weight:
+                        type: integer
+                        label: Weight
+                third_party_settings:
+                  type: mapping
+                  label: Third party settings
+facets.facet.rooms_facet:
+  type: config_entity
+  label: Rooms Facet
+  mapping:
+    id:
+      type: string
+      label: ID
+    name:
+      type: string
+      label: Name
+    url_alias:
+      type: string
+      label: URL alias
+    weight:
+      type: integer
+      label: Weight
+    min_count:
+      type: integer
+      label: Min count
+    show_only_one_result:
+      type: boolean
+      label: Show only one result
+    field_identifier:
+      type: string
+      label: Field identifier
+    facet_source_id:
+      type: string
+      label: Facet source ID
+    widget:
+      type: mapping
+      label: Widget
+      mapping:
+        type:
+          type: string
+          label: Type
+        config:
+          type: mapping
+          label: Config
+          mapping:
+            event_type:
+              type: string
+              label: Event type
+            state:
+              type: sequence
+              label: State
+              sequence:
+                type: string
+                label: State ID
+    query_operator:
+      type: string
+      label: Query operator
+    use_hierarchy:
+      type: boolean
+      label: Use hierarchy
+    expand_hierarchy:
+      type: boolean
+      label: Expand hierarchy
+    enable_parent_when_child_gets_disabled:
+      type: boolean
+      label: Enable parent when child gets disabled
+    hard_limit:
+      type: integer
+      label: Hard limit
+    exclude:
+      type: boolean
+      label: Exclude
+    only_visible_when_facet_source_is_visible:
+      type: boolean
+      label: Only visible when facet source is visible
+    processor_configs:
+      type: sequence
+      label: Processor configs
+      sequence:
+        type: mapping
+        label: Processor
+        mapping:
+          processor_id:
+            type: string
+            label: Processor ID
+          weights:
+            type: sequence
+            label: Weights
+            sequence:
+              type: integer
+              label: Weight
+          settings:
+            type: mapping
+            label: Settings
+            mapping:
+              sort:
+                type: string
+                label: Sort
+    empty_behavior:
+      type: sequence
+      label: Empty behavior
+      sequence:
+        type: string
+        label: Behavior
+    show_title:
+      type: boolean
+      label: Show title
+node.type.room:
+  type: config_entity
+  label: Room
+  mapping:
+    type:
+      type: string
+      label: Type
+    name:
+      type: string
+      label: Name
+    description:
+      type: string
+      label: Description
+    third_party_settings:
+      type: mapping
+      label: Third party settings
+      mapping:
+        menu_ui:
+          type: mapping
+          label: Menu UI
+          mapping:
+            available_menus:
+              type: sequence
+              label: Available menus
+              sequence:
+                type: string
+                label: Menu
+            parent:
+              type: string
+              label: Parent
+    help:
+      type: string
+      label: Help
+    new_revision:
+      type: boolean
+      label: New revision
+    preview_mode:
+      type: integer
+      label: Preview mode
+    display_submitted:
+      type: boolean
+      label: Display submitted
+    bee:
+      type: mapping
+      label: BEE
+      mapping:
+        bookable:
+          type: integer
+          label: Bookable
+        bookable_type:
+          type: string
+          label: Bookable type
+        availability:
+          type: string
+          label: Availability
+        payment:
+          type: integer
+          label: Payment
+        type_id:
+          type: string
+          label: Type ID
+field.field.node.room.field_check_in_time:
+  type: config_entity
+  label: Field check in time
+  mapping:
+    id:
+      type: string
+      label: ID
+    field_name:
+      type: string
+      label: Field name
+    entity_type:
+      type: string
+      label: Entity type
+    bundle:
+      type: string
+      label: Bundle
+    label:
+      type: string
+      label: Label
+    description:
+      type: string
+      label: Description
+    required:
+      type: boolean
+      label: Required
+    translatable:
+      type: boolean
+      label: Translatable
+    default_value:
+      type: sequence
+      label: Default value
+      sequence:
+        type: mapping
+        label: Values
+        mapping:
+          from:
+            type: integer
+            label: From
+          to:
+            type: integer
+            label: To
+    default_value_callback:
+      type: string
+      label: Default value callback
+    settings:
+      type: sequence
+      label: Settings
+    field_type:
+      type: string
+      label: Field type
+field.field.node.room.field_price:
+  type: config_entity
+  label: Field check in time
+  mapping:
+    id:
+      type: string
+      label: ID
+    field_name:
+      type: string
+      label: Field name
+    entity_type:
+      type: string
+      label: Entity type
+    bundle:
+      type: string
+      label: Bundle
+    label:
+      type: string
+      label: Label
+    description:
+      type: string
+      label: Description
+    required:
+      type: boolean
+      label: Required
+    translatable:
+      type: boolean
+      label: Translatable
+    default_value:
+      type: mapping
+      label: Default value
+      mapping:
+        number:
+          type: integer
+          label: Number
+        currency_code:
+          type: string
+          label: Currency code
+    default_value_callback:
+      type: string
+      label: Default value callback
+    settings:
+      type: mapping
+      label: Settings
+      mapping:
+        available_currencies:
+          type: sequence
+          label: Available currencies
+    field_type:
+      type: string
+      label: Field type
+field.field.block_content.page_not_found.field_link:
+  type: config_entity
+  label: Field Link
+  mapping:
+    id:
+      type: string
+      label: ID
+    field_name:
+      type: string
+      label: Field name
+    entity_type:
+      type: string
+      label: Entity type
+    bundle:
+      type: string
+      label: Bundle
+    label:
+      type: string
+      label: Label
+    description:
+      type: string
+      label: Description
+    required:
+      type: boolean
+      label: Required
+    translatable:
+      type: boolean
+      label: Translatable
+    default_value:
+      type: sequence
+      label: Default values
+      sequence:
+        type: mapping
+        label: Default value
+        mapping:
+          attributes:
+            type: sequence
+            label: Attributes
+          uri:
+            type: string
+            label: Uri
+          title:
+            type: string
+            label: Title
+          options:
+            type: sequence
+            label: Options
+    default_value_callback:
+      type: string
+      label: Default value callback
+    settings:
+      type: mapping
+      label: Settings
+      mapping:
+        link_type:
+          type: integer
+          label: Link type
+        title:
+          type: integer
+          label: Title
+    field_type:
+      type: string
+      label: Field type
+flippy.settings:
+  type: config_object
+  mapping:
+    flippy_room:
+      type: integer
+      label: Room
+    flippy_head_room:
+      type: integer
+      label: Head room
+    flippy_empty_room:
+      type: integer
+      label: Head room
+    flippy_prev_label_room:
+      type: string
+      label: Prev label room
+    flippy_next_label_room:
+      type: string
+      label: Next label room
+    flippy_first_label_room:
+      type: string
+      label: First label room
+    flippy_last_label_room:
+      type: string
+      label: Last label room
+    flippy_show_empty_room:
+      type: integer
+      label:  Show emptyroom
+    flippy_first_last_room:
+      type: integer
+      label: First last room
+    flippy_loop_room:
+      type: integer
+      label: Loop room
+    flippy_random_room:
+      type: integer
+      label: Random room
+    flippy_custom_sorting_room:
+      type: integer
+      label: Custom sorting room
+    flippy_random_label_room:
+      type: string
+      label: Random label room
+    flippy_truncate_room:
+      type: string
+      label: Truncate room
+    flippy_ellipse_room:
+      type: string
+      label: Ellipce room
+    flippy_sort_room:
+      type: string
+      label: Sort room
+    flippy_order_room:
+      type: string
+      label: Order room
+    flippy_press_swipe_room:
+      type: string
+      label: Press swipe room

@@ -1,0 +1,23 @@
+uuid: ce71f607-1394-450e-9557-6281a6afefb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_unit.type_bundle.daily
+    - field.storage.bat_unit_type.field_price
+  module:
+    - commerce_price
+id: bat_unit_type.daily.field_price
+field_name: field_price
+entity_type: bat_unit_type
+bundle: daily
+label: Price
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_currencies:
+    - USD
+field_type: commerce_price

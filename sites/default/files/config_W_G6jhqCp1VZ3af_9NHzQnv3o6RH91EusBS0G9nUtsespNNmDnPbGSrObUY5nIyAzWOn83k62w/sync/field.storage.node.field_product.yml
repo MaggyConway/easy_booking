@@ -1,0 +1,22 @@
+uuid: 3652a93e-f889-468d-a974-38b06c8c47c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - node
+_core:
+  default_config_hash: HqzGtYsc-FvAKq9DepWG7ud9VphPntESE7hpQ202Qss
+id: node.field_product
+field_name: field_product
+entity_type: node
+type: entity_reference
+settings:
+  target_type: commerce_product
+module: core
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

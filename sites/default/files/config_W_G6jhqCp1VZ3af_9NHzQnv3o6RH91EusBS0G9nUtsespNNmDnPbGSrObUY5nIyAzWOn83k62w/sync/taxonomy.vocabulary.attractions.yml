@@ -1,0 +1,10 @@
+uuid: 16fb4226-5728-44ec-9234-dbd02271b5fa
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1xVe-x5cHFYQ3OM9fbxna3Gj8ck-PrdKScUqzBHWwF8
+name: Attractions
+vid: attractions
+description: 'Attraction types.'
+weight: 0

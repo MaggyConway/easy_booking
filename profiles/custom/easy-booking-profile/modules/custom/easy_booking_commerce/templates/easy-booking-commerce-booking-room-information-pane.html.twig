@@ -1,0 +1,18 @@
+<div class="rooms">
+  {% for room in rooms %}
+    <div class="room">
+      <img class="room-img" src="{{ file_url(room.photo) }}"/>
+      <h2 class="room-title">
+          {{ room.title }}
+      </h2>
+      <div class="room-info">
+          <div class="room-info__reservation">
+              {{ room.reservation }} ({{ room.nights }})
+          </div>
+          <div class="room-info__guests">
+              {{ 'Guests:'|trans }} {{ room.adults }}{% if room.children %}, {{ room.children }} {% endif %}
+          </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

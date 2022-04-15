@@ -1,0 +1,12 @@
+uuid: b39ab2c9-1886-47af-826c-96fcc3098ddb
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 9dzqx_ntdb-wuytV6Ipur3lmFRVyPGI3z-nASW7Sz8I
+id: media.ct_attraction
+label: 'CT Attraction'
+targetEntityType: media
+cache: true

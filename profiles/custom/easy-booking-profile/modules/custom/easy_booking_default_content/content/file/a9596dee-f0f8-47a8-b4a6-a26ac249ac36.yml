@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a9596dee-f0f8-47a8-b4a6-a26ac249ac36
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: old_castle.jpg
+  uri:
+    -
+      value: 'public://2021-03/old_castle.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 251111
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1614914564
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

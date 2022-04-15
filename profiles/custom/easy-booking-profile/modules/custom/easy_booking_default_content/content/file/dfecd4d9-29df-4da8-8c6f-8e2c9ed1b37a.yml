@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: dfecd4d9-29df-4da8-8c6f-8e2c9ed1b37a
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: flip-flops.png
+  uri:
+    -
+      value: 'public://2020-10/flip-flops_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1695
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310739
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

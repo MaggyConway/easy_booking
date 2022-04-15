@@ -1,0 +1,23 @@
+uuid: 22894d27-0b6a-4751-ac72-98309cfdbc77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_rule_text
+    - paragraphs.paragraphs_type.rule
+  module:
+    - text
+_core:
+  default_config_hash: 5JqhyXZTVqUDxpCMuw4SBFwN8UvXnqckLy4IrXkboA8
+id: paragraph.rule.field_rule_text
+field_name: field_rule_text
+entity_type: paragraph
+bundle: rule
+label: 'Rule Text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

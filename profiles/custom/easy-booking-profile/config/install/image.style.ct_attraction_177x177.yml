@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: ct_attraction_177x177
+label: 'CT Attraction (177x177)'
+effects:
+  456ff765-9e5d-4877-a818-ca344c895dfa:
+    uuid: 456ff765-9e5d-4877-a818-ca344c895dfa
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 177
+      height: 177
+      crop_type: focal_point

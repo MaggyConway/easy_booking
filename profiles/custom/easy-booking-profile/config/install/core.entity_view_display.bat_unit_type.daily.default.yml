@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_unit.type_bundle.daily
+    - field.field.bat_unit_type.daily.field_availability_daily
+    - field.field.bat_unit_type.daily.field_price
+  module:
+    - commerce_price
+    - user
+id: bat_unit_type.daily.default
+targetEntityType: bat_unit_type
+bundle: daily
+mode: default
+content:
+  field_price:
+    weight: 1
+    label: above
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    type: commerce_price_default
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_availability_daily: true
+  search_api_excerpt: true

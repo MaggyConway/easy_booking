@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d5d29622-3d53-4994-8507-57d2583110e1
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: eight-ball.png
+  uri:
+    -
+      value: 'public://2020-10/eight-ball_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 2003
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310739
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

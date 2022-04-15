@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 84b0d4c3-8bef-49ce-9648-e148fef767d7
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: mastercard.png
+  uri:
+    -
+      value: 'public://2020-12/mastercard_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 34924
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1607502960
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

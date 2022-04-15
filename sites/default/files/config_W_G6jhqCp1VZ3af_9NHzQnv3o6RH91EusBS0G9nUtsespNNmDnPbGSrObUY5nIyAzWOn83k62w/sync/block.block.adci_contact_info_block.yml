@@ -1,0 +1,30 @@
+uuid: 3e7aa8ef-2d94-4bdf-a835-335afb4d6ff9
+langcode: en
+status: true
+dependencies:
+  module:
+    - adci_contact_info
+  theme:
+    - claro
+_core:
+  default_config_hash: RrjvdiEwJZ342xqSFLpyh8zUfn2RRgtNrlA7BMZlXw4
+id: adci_contact_info_block
+theme: claro
+region: header
+weight: -9999
+provider: null
+plugin: adci_contact_info_block
+settings:
+  id: adci_contact_info_block
+  label: 'ADCI Solutions contact information'
+  provider: adci_contact_info
+  label_display: '0'
+  info: 'The website is using Drupal @version'
+  site:
+    title: 'Supported by'
+    text: 'ADCI Solutions'
+    link: 'https://www.adcisolutions.com/'
+  email:
+    title: Email
+    email: hello@adcillc.com
+visibility: {  }

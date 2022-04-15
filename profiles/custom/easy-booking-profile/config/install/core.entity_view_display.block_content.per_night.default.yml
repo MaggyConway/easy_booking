@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.per_night
+    - field.field.block_content.per_night.field_per_night_text
+id: block_content.per_night.default
+targetEntityType: block_content
+bundle: per_night
+mode: default
+content:
+  field_per_night_text:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

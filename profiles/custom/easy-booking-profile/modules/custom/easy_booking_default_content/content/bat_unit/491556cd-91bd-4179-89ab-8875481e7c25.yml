@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: bat_unit
+  uuid: 491556cd-91bd-4179-89ab-8875481e7c25
+  bundle: default
+  default_langcode: en
+  depends:
+    aa260132-cf1f-4366-9f0c-2ad0c773ece3: bat_unit_type
+default:
+  uid:
+    -
+      target_id: 1
+  unit_type_id:
+    -
+      entity: aa260132-cf1f-4366-9f0c-2ad0c773ece3
+  name:
+    -
+      value: 'Regular Single Room 1'
+  created:
+    -
+      value: 1603425477
+  status:
+    -
+      value: true

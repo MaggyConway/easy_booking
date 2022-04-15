@@ -1,0 +1,80 @@
+uuid: 56a5a08f-cef8-48fb-a77c-2a394cd79af2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.attraction.field_address
+    - field.field.node.attraction.field_attraction_name
+    - field.field.node.attraction.field_coordinates
+    - field.field.node.attraction.field_country
+    - field.field.node.attraction.field_destination
+    - field.field.node.attraction.field_image
+    - field.field.node.attraction.field_type
+    - node.type.attraction
+  module:
+    - address
+    - user
+_core:
+  default_config_hash: s0dLmbY6_jMA9zw8eXuO04Tv6OhhmsLrcHjNcloEhig
+id: node.attraction.default
+targetEntityType: node
+bundle: attraction
+mode: default
+content:
+  field_address:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_attraction_name:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_country:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_country_default
+    region: content
+  field_destination:
+    weight: 3
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: ct_attraction
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_coordinates: true
+  field_type: true
+  published_at: true
+  search_api_excerpt: true

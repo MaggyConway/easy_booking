@@ -1,0 +1,15 @@
+uuid: f4494231-16af-4008-8fd8-64d2a84d4e12
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - simplenews
+  module:
+    - node
+_core:
+  default_config_hash: yShQ57N0Jy7P8f6Em7vX7GSZSV-l90IIv7UB6S__9D8
+id: node.email_textalt
+label: 'Email: HTML text alternative'
+targetEntityType: node
+cache: true

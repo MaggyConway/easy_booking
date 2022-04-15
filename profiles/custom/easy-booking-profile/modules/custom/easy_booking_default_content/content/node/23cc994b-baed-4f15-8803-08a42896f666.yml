@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 23cc994b-baed-4f15-8803-08a42896f666
+  bundle: attraction
+  default_langcode: en
+  depends:
+    b024957a-d418-4cce-af81-56fc6a1426f1: media
+    9f8cd9ee-b27b-4542-a895-50d58303d9dd: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Desserts
+  created:
+    -
+      value: 1603445736
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/desserts
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1617093703
+  field_address:
+    -
+      value: 'Unnamed Rd, Thailand, ตำบล เกาะยาวใหญ่ อำเภอ เกาะยาว พังงา'
+  field_attraction_name:
+    -
+      value: 'Sweets and Thai makaruny'
+  field_coordinates:
+    -
+      value: 'POINT (-122.4342048 37.7899785)'
+      geo_type: Point
+      lat: 37.7899785
+      lon: -122.4342048
+      left: -122.4342048
+      top: 37.7899785
+      right: -122.4342048
+      bottom: 37.7899785
+      geohash: 9q8yvzqns6842
+      latlon: '37.7899785,-122.4342048'
+  field_country:
+    -
+      value: TH
+  field_destination:
+    -
+      value: '1.22'
+  field_image:
+    -
+      entity: b024957a-d418-4cce-af81-56fc6a1426f1
+  field_type:
+    -
+      entity: 9f8cd9ee-b27b-4542-a895-50d58303d9dd

@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - easy_booking_commerce
+id: easy_booking_gateway
+label: 'Easy Booking Gateway'
+weight: null
+plugin: easy_booking_gateway
+configuration:
+  display_label: 'Easy Booking Gateway'
+  mode: test
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

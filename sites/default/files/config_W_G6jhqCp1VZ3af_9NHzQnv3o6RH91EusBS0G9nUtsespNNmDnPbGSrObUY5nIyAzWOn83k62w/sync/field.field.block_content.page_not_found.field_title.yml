@@ -1,0 +1,23 @@
+uuid: 6d4d0d13-56d9-482e-ad2c-b911359eac60
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.page_not_found
+    - field.storage.block_content.field_title
+_core:
+  default_config_hash: I9clV_6OO5-R201VawuqlA5ZFNJ89gUq9aWJN-yASLA
+id: block_content.page_not_found.field_title
+field_name: field_title
+entity_type: block_content
+bundle: page_not_found
+label: Title
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Page not found'
+default_value_callback: ''
+settings: {  }
+field_type: string

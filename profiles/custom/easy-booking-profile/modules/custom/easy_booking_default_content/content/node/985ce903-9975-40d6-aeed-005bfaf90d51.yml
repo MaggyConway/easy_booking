@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 985ce903-9975-40d6-aeed-005bfaf90d51
+  bundle: attraction
+  default_langcode: en
+  depends:
+    2497d997-35cf-463e-8ab3-24351d708fab: media
+    8e226e82-ed8b-43b2-8884-85fac255a2ff: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Adventure
+  created:
+    -
+      value: 1603446216
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/adventure
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1617093715
+  field_address:
+    -
+      value: 'Unnamed Rd, Thailand, ตำบล เกาะยาวใหญ่ อำเภอ เกาะยาว พังงา'
+  field_attraction_name:
+    -
+      value: 'Mountain bikes'
+  field_coordinates:
+    -
+      value: 'POINT (-122.4213356 37.7867756)'
+      geo_type: Point
+      lat: 37.7867756
+      lon: -122.4213356
+      left: -122.4213356
+      top: 37.7867756
+      right: -122.4213356
+      bottom: 37.7867756
+      geohash: 9q8yynzebjebr
+      latlon: '37.7867756,-122.4213356'
+  field_country:
+    -
+      value: TH
+  field_destination:
+    -
+      value: '1.05'
+  field_image:
+    -
+      entity: 2497d997-35cf-463e-8ab3-24351d708fab
+  field_type:
+    -
+      entity: 8e226e82-ed8b-43b2-8884-85fac255a2ff

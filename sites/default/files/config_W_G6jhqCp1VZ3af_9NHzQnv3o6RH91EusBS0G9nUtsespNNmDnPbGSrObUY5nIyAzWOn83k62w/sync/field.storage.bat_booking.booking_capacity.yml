@@ -1,0 +1,22 @@
+uuid: fba547a9-3550-4c09-b47c-1cc32028b144
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_booking
+_core:
+  default_config_hash: xPMTmB68jVZEh_fdaWPUJlS3ltS34CyO6atynyR9Fl4
+id: bat_booking.booking_capacity
+field_name: booking_capacity
+entity_type: bat_booking
+type: integer
+settings:
+  unsigned: true
+  size: normal
+module: core
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

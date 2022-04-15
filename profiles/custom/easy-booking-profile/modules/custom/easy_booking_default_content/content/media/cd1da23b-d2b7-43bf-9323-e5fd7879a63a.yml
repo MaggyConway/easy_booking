@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: cd1da23b-d2b7-43bf-9323-e5fd7879a63a
+  bundle: image
+  default_langcode: en
+  depends:
+    bdcf37b9-0b67-41ec-8efd-27d697a948aa: file
+    ecbb3792-b88a-4a34-afd9-95c5d37ea217: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: spalnaya_komnata_dizayn_interer_39675_1280x720.jpg
+  created:
+    -
+      value: 1603423225
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: bdcf37b9-0b67-41ec-8efd-27d697a948aa
+      alt: Room
+      title: ''
+      width: 1280
+      height: 720
+  field_type:
+    -
+      entity: ecbb3792-b88a-4a34-afd9-95c5d37ea217

@@ -1,0 +1,180 @@
+// stylelint-disable
+
+header {
+    background-color: $extra-bg;
+    padding: 39px 0 16px 0;
+
+    @include breakpoint(l) {
+        padding: 16px 0 14px 0;
+    }
+    @include breakpoint(sll) {
+        padding: 10px 0 15px;
+        // height: 56px;
+    }
+
+    a {
+        position: relative;
+        color: $secondary-color-text;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            color: $secondary-color-text;
+            opacity: 0.5;
+        }
+    }
+
+    .header--top-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto 26px auto !important;
+        position: relative;
+
+        @include container;
+
+        @include breakpoint(sll) {
+            margin-bottom: 10px !important;
+            padding-left: 17px;
+            padding-right: 17px;
+        }
+
+        .site-logo {
+            margin-right: 113px;
+            padding-bottom: 7px;
+
+            @include breakpoint(sll) {
+                padding-bottom: 0;
+                max-width: 60px;
+            }
+
+            svg {
+                fill: $primary-bg;
+            }
+        }
+
+        .header--top-right-container {
+            @include breakpoint(l) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header--cart-user-container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-bottom: 7px;
+
+                @include breakpoint(l) {
+                    display: block;
+                    order: 1;
+                    margin-bottom: 0;
+                }
+
+                .block-commerce-cart {
+                    @include breakpoint(l) {
+                        display: none;
+                    }
+                }
+
+                .menu--account {
+                    margin: 0 0 0 27px;
+
+                    @include breakpoint(sll) {
+                        margin: 0;
+                    }
+
+                    .menu {
+                        display: flex;
+                        align-items: center;
+                        margin: 0;
+
+                        @include breakpoint(sll) {
+                            flex-direction: column;
+                        }
+
+                        .menu-item {
+                            margin-left: 10px;
+
+                            &:first-child {
+                                margin-left: 0;
+                            }
+
+                            a {
+                                color: $secondary-color-text;
+                            }
+
+                            &:first-child {
+                                a {
+                                    display: block;
+                                    background-repeat: no-repeat;
+                                    background-size: 14px 14px;
+                                    background-image: url(../../assets/images/icon-user-menu.svg);
+                                    background-position: left;
+                                    width: 14px;
+                                    height: 14px;
+                                    font-size: 0;
+
+                                    @include breakpoint(l) {
+                                        width: auto;
+                                        height: auto;
+                                        font-size: 18px;
+                                        padding-left: 25px;
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #block-easy-booking-theme-contactblock {
+                display: flex;
+                align-items: center;
+
+                @include breakpoint(l) {
+                    order: 0;
+                    margin-bottom: 18px;
+                }
+
+                .field--name-field-number {
+                    margin-left: 12px;
+
+                    @include breakpoint(l) {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cart--cart-block {
+    position: relative;
+    font-size: 0;
+    width: 14px;
+    height: 14px;
+
+    .cart-block--summary__count {
+        position: absolute;
+        top: -2px;
+        right: -5px;
+        width: 5px;
+        height: 5px;
+        background-color: $error-color-text;
+        display: none;
+        border-radius: 50%;
+
+        &.full-cart {
+            display: block;
+        }
+    }
+}
+
+.full-cart {
+    .cart-block--summary__count {
+        display: block;
+    }
+}

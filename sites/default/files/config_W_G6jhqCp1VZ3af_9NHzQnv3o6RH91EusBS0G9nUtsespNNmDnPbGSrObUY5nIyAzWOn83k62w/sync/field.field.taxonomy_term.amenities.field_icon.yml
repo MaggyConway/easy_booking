@@ -1,0 +1,30 @@
+uuid: 8b123265-233a-4ec2-ba58-b0c29c039b9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_icon
+    - media.type.image
+    - taxonomy.vocabulary.amenities
+_core:
+  default_config_hash: 0OqNNDcs9I1-D_zWzhbc5WjRG-4keHCpsQrAIC3y-70
+id: taxonomy_term.amenities.field_icon
+field_name: field_icon
+entity_type: taxonomy_term
+bundle: amenities
+label: Icon
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: f97e208a-0709-4a54-810d-ca252d15d84a
+name: 'Easy Booking App'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: /404
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: HLyyArZOEyUexCK5QdjSCWqnwxYyYgdeCyhbEYP-EvU

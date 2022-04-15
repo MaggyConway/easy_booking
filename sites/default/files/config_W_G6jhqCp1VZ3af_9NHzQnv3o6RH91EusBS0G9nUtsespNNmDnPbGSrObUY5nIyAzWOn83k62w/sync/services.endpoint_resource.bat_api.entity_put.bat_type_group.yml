@@ -1,0 +1,18 @@
+uuid: 8a964be1-a308-4def-8c94-96266216606d
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: Y_bUIOU8_qyHKpPIs4I_D9XDhXTOuGqjpke9iikzAXE
+id: bat_api.entity_put.bat_type_group
+service_plugin_id: 'entity_put:bat_type_group'
+service_endpoint_id: bat_api
+formats:
+  json: json
+  hal_json: '0'
+  xml: '0'
+authentication:
+  cookie: cookie
+no_cache: null

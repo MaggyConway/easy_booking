@@ -1,0 +1,12 @@
+uuid: 9d35d1f9-65ac-4073-8c44-c66dd8c39e24
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_unit
+_core:
+  default_config_hash: UXFipOpdkgFQYOGH9uMU1nxobbuynyTRq5Nxy38pZNA
+id: bat_unit.token
+label: Token
+targetEntityType: bat_unit
+cache: true

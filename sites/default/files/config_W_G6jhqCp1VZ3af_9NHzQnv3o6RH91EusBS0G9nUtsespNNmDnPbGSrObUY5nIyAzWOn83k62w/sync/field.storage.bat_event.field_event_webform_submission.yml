@@ -1,0 +1,22 @@
+uuid: 0ee49c35-25a1-4577-bb41-258565a7a52a
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_event
+    - webform
+_core:
+  default_config_hash: 9VvYfhMI2GAdqeCp37uIciLcxfhHS2gaeVF3Cd670Qs
+id: bat_event.field_event_webform_submission
+field_name: field_event_webform_submission
+entity_type: bat_event
+type: entity_reference
+settings:
+  target_type: webform_submission
+module: core
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

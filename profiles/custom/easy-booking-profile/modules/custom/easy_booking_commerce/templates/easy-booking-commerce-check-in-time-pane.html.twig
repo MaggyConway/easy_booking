@@ -1,0 +1,20 @@
+<div class="checkout-booking-time">
+  <div class="check-in-time">
+    <p>Check-in:</p>
+    {% for item_check_in_time in items_check_in_time %}
+      {% if loop.first %}
+        <p>{{ item_check_in_time.booking_start_date }}</p>
+        <p>{{ item_check_in_time.room_check_in_time }}</p>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="check-out-time">
+    <p>Check-out:</p>
+    {% for item_check_in_time in items_check_in_time %}
+      {% if loop.last %}
+        <p>{{ item_check_in_time.booking_end_date }}</p>
+        <p>{{ item_check_in_time.room_check_out_time }}</p>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

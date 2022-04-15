@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: bee_room
+label: Room
+description: null
+variationType: bee
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

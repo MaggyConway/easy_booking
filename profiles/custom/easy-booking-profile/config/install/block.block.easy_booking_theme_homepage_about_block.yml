@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:about:f5b14482-fe97-45b2-845d-b32e59a536d6'
+  module:
+    - block_content
+    - system
+  theme:
+    - easy_booking_theme
+id: easy_booking_theme_homepage_about_block
+theme: easy_booking_theme
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:f5b14482-fe97-45b2-845d-b32e59a536d6'
+settings:
+  id: 'block_content:f5b14482-fe97-45b2-845d-b32e59a536d6'
+  label: 'Homepage About Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

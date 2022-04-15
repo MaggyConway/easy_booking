@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ccda39a9-3cb1-4728-b23c-74e0fdc1967c
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: place_for_relax.jpg
+  uri:
+    -
+      value: 'public://2021-03/place_for_relax.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 171431
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1614914620
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

@@ -1,0 +1,19 @@
+uuid: d4bb9e47-026e-46dc-b916-5485c4effab7
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: 86w09IlUG96k_F9rhqz2nDDjsF7Y_Is7wHfEeUvSqso
+name: ct_attraction_177x177
+label: 'CT Attraction (177x177)'
+effects:
+  456ff765-9e5d-4877-a818-ca344c895dfa:
+    uuid: 456ff765-9e5d-4877-a818-ca344c895dfa
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 177
+      height: 177
+      crop_type: focal_point

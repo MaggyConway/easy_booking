@@ -1,0 +1,39 @@
+uuid: 7fa16ecb-35c7-4780-9baa-a7790c51c828
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.service
+    - core.entity_form_mode.commerce_order_item.add_to_cart
+    - field.field.commerce_order_item.service.field_related_room
+  module:
+    - commerce_order
+_core:
+  default_config_hash: C771t-5SIlB8QP90DQ_-yvocmttK-c0I5IxK2E6gd_A
+id: commerce_order_item.service.add_to_cart
+targetEntityType: commerce_order_item
+bundle: service
+mode: add_to_cart
+content:
+  purchased_entity:
+    type: entity_reference_autocomplete
+    weight: -1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  quantity:
+    type: commerce_quantity
+    weight: 1
+    region: content
+    settings:
+      step: '1'
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_related_room: true
+  unit_price: true

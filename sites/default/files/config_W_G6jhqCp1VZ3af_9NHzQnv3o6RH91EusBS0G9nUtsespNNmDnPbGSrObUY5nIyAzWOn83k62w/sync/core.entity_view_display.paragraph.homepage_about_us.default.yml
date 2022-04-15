@@ -1,0 +1,96 @@
+uuid: 0e42b598-e7a2-41e2-8d1f-fdff1118e7d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.homepage_about_us.field_first_item
+    - field.field.paragraph.homepage_about_us.field_second_item
+    - field.field.paragraph.homepage_about_us.field_third_item
+    - paragraphs.paragraphs_type.homepage_about_us
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_first_item_wrapper:
+      children:
+        - field_first_item
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: about-us--first-item-wrapper
+      label: 'First item wrapper'
+    group_second_item_wrapper:
+      children:
+        - field_second_item
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: about-us--second-item-wrapper
+      label: 'Second item wrapper'
+    group_third_item_wrapper:
+      children:
+        - field_third_item
+      parent_name: ''
+      weight: 4
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: about-us--third-item-wrapper
+      label: 'Third item wrapper'
+id: paragraph.homepage_about_us.default
+targetEntityType: paragraph
+bundle: homepage_about_us
+mode: default
+content:
+  field_first_item:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_second_item:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_third_item:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  search_api_excerpt: true

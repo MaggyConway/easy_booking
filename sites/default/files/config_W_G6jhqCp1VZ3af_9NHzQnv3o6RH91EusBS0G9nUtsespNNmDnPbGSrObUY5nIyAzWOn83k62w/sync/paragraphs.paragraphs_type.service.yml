@@ -1,0 +1,12 @@
+uuid: 2aeef5fb-11a0-4020-b58b-9100830abd6b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lEjaCHgDvO-kgM3fq17m2dnYmcaCm0s8td4czIQVKv4
+id: service
+label: Service
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

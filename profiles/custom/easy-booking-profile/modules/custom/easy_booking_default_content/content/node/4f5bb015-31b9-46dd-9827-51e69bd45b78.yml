@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4f5bb015-31b9-46dd-9827-51e69bd45b78
+  bundle: attraction
+  default_langcode: en
+  depends:
+    0841f7e3-b240-43b1-9dfd-a032e94f9d2b: media
+    9f8cd9ee-b27b-4542-a895-50d58303d9dd: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Fastfood & Bar'
+  created:
+    -
+      value: 1603445522
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/fastfood-bar
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1617093681
+  field_address:
+    -
+      value: 'Unnamed Rd, Thailand, ตำบล เกาะยาวใหญ่ อำเภอ เกาะยาว พังงา'
+  field_attraction_name:
+    -
+      value: 'Thai uncle`s burgers'
+  field_coordinates:
+    -
+      value: 'POINT (-122.4000978 37.787242)'
+      geo_type: Point
+      lat: 37.787242
+      lon: -122.4000978
+      left: -122.4000978
+      top: 37.787242
+      right: -122.4000978
+      bottom: 37.787242
+      geohash: 9q8yywyyxh2n9
+      latlon: '37.787242,-122.4000978'
+  field_country:
+    -
+      value: TH
+  field_destination:
+    -
+      value: '0.56'
+  field_image:
+    -
+      entity: 0841f7e3-b240-43b1-9dfd-a032e94f9d2b
+  field_type:
+    -
+      entity: 9f8cd9ee-b27b-4542-a895-50d58303d9dd

@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 41f0fef7-51f5-4893-8fe6-bd237ab4a9b8
+  bundle: image
+  default_langcode: en
+  depends:
+    b5547250-7251-472f-b06a-cb6fa36de203: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: ring-bell.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: b5547250-7251-472f-b06a-cb6fa36de203
+      alt: 'Ring Bell'
+      title: ''
+      width: 40
+      height: 40

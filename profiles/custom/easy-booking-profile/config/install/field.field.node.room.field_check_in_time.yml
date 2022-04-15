@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_check_in_time
+    - node.type.room
+  module:
+    - time_field
+id: node.room.field_check_in_time
+field_name: field_check_in_time
+entity_type: node
+bundle: room
+label: 'Check In Time'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    from: 57600
+    to: 7200
+default_value_callback: ''
+settings: {  }
+field_type: time_range

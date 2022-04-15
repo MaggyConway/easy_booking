@@ -1,0 +1,12 @@
+uuid: 81063f94-c3e5-427b-ad9d-6ea4b1086d2d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wU4CH-8eQvJTKeeW9U963NX5k57ILbhc7qL36d00GXM
+id: safety
+label: Safety
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,535 @@
+.path-checkout {
+
+    .messages--status {
+        border: none;
+        box-shadow: none;
+        background-image: none;
+        text-align: center;
+        font-size: $secondary-font-size;
+        line-height: $secondary-line-height-header;
+        color: $link-color;
+    }
+
+    #block-easy-booking-theme-main-page-content {
+        background: $primary-bg;
+
+        fieldset {
+            margin: 0;
+            border: none;
+            padding: 0;
+        }
+
+        input {
+            @include form-style-input;
+        }
+
+        .commerce-checkout-flow-custom-multistep-checkout {
+            @include container;
+            padding-top: 32px;
+            padding-bottom: 97px;
+
+            @include breakpoint(l) {
+                padding-top: 54px;
+                padding-bottom: 80px;
+            }
+
+            .layout-checkout-form {
+                @include breakpoint(l) {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .layout-region-checkout-main {
+                float: left;
+                width: 34%;
+                padding: 32px 20px 40px 24px;
+
+                @include breakpoint(l) {
+                    float: none;
+                    width: 100%;
+                    padding: 0;
+                    order: 1;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .checkout-pane-check-in-time {
+                    width: 100%;
+                    margin-bottom: 53px;
+
+                    @include breakpoint(l) {
+                        margin-bottom: 64px;
+                    }
+                }
+
+                .checkout-booking-time {
+                    font-size: $main-font-size;
+                    line-height: $main-line-height;
+                    font-weight: 300;
+                    color: $c-dark;
+
+                    @include breakpoint(l) {
+                        display: flex;
+                    }
+
+                    .check-in-time {
+                        margin-bottom: 19px;
+
+                        @include breakpoint(l) {
+                            margin-bottom: 0;
+                            margin-right: 15px;
+                        }
+                    }
+
+                    .check-in-time,
+                    .check-out-time {
+                        p {
+                            margin: 0;
+
+                            &:nth-child(1) {
+                                font-size: $font-size-card-text;
+                                line-height: $line-height-card-text-second;
+
+                                @include breakpoint(l) {
+                                    font-size: inherit;
+                                    line-height: inherit;
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+
+                .checkout-pane-room-amenities {
+                    margin-top: 0;
+                    margin-bottom: 60px;
+
+                    @include breakpoint(l) {
+                        margin-bottom: 64px;
+                    }
+
+                    legend {
+                        display: block;
+                        font-weight: bold;
+                        font-size: $extra-font-size;
+                        line-height: $extra-line-height;
+                        margin-bottom: 16px;
+                    }
+
+                    .fieldset-wrapper {
+                        margin: 0 -10px;
+
+                        .checkout-room-amenities {
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            .amenity {
+                                margin: 0 10px 16px;
+                                width: calc(100% / 2 - 20px);
+                                display: flex;
+                                align-items: flex-start;
+                                letter-spacing: 0.02em;
+                                font-weight: 300;
+                                font-size: $main-font-size;
+                                line-height: $main-line-height-second;
+
+                                @include breakpoint(l) {
+                                    width: calc(100% / 3 - 20px);
+                                }
+
+                                @include breakpoint(sl) {
+                                    width: calc(100% / 2 - 20px);
+                                }
+
+                                img {
+                                    margin-right: 8px;
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .checkout-pane-advantages {
+                    width: 100%;
+                }
+
+                .advantages--wrapper {
+                    h2 {
+                        font-weight: bold;
+                        font-size: $extra-font-size;
+                        line-height: $extra-line-height;
+                        margin-bottom: 16px;
+                    }
+
+                    .items--wrapper {
+                        @include breakpoint(l) {
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin: 0 -8px;
+                        }
+
+                        @include breakpoint(sl) {
+                            margin: 0;
+                        }
+
+                        .advantage-item--wrapper {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 16px;
+
+                            @include breakpoint(l) {
+                                width: calc(100% / 2 - 16px);
+                                margin: 0 8px 16px;
+                            }
+
+                            @include breakpoint(sl) {
+                                width: 100%;
+                                margin: 0 0 16px;
+                            }
+
+                            &:last-child {
+                                margin-bottom: 0;
+
+                                @include breakpoint(l) {
+                                    margin-bottom: 16px;
+                                }
+
+                                @include breakpoint(sl) {
+                                    margin-bottom: 0;
+                                }
+                            }
+
+                            .advantage-item--icon {
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 10px;
+                            }
+
+                            .advantage-text--wrapper {
+                                .advantage-item--title {
+                                    font-weight: bold;
+                                    font-size: $main-font-size;
+                                    line-height: $main-line-height-second;
+                                    letter-spacing: 0.02em;
+                                    margin-bottom: 4px;
+                                }
+
+                                .advantage-item--text {
+                                    font-weight: 300;
+                                    font-size: $font-size-card-text;
+                                    line-height: $line-height-card-text-extra;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .layout-region-checkout-secondary {
+                float: right;
+                width: 66%;
+                padding: 32px 24px 64px;
+                background: $secondary-bg;
+
+                @include breakpoint(l) {
+                    padding: 24px 16px 80px;
+                    float: none;
+                    width: 100%;
+                    order: 0;
+                    margin-bottom: 64px;
+                }
+
+                .checkout-pane-customer-details {
+                    margin-bottom: 64px;
+
+                    .customer-details--wrapper {
+                        .customer-details--title {
+                            font-weight: bold;
+                            font-size: $secondary-font-size-title;
+                            line-height: $secondary-line-height-title;
+                            margin-bottom: 16px;
+                        }
+
+                        .customer-details--items {
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin: 0 -8.5px;
+
+                            @include breakpoint(sl) {
+                                margin: 0;
+                            }
+
+                            > .form-item {
+                                width: calc(50% - 17px);
+                                margin: 0 8.5px 16px;
+
+                                @include breakpoint(sl) {
+                                    width: 100%;
+                                    margin: 0 0 16px;
+
+                                    &:nth-child(1) {
+                                        order: 0;
+                                    }
+
+                                    &:nth-child(2) {
+                                        order: 3;
+                                    }
+
+                                    &:nth-child(3) {
+                                        order: 1;
+                                        margin-bottom: 8px;
+                                    }
+
+                                    &:nth-child(4) {
+                                        order: 4;
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+
+                            p {
+                                font-weight: 300;
+                                font-size: $font-size-card-text;
+                                line-height: $line-height-card-text-second;
+                                color: $c-dark;
+                                margin-top: -8px;
+                                margin: -8px 8px 0;
+                                width: 100%;
+
+                                @include breakpoint(sl) {
+                                    font-size: $main-font-size;
+                                    line-height: $main-line-height;
+                                    order: 2;
+                                    margin-top: 0;
+                                    margin-bottom: 16px;
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+
+                .checkout-pane-booking-room-information {
+                    margin-bottom: 89px;
+
+                    legend {
+                        display: block;
+                        font-weight: bold;
+                        font-size: $extra-font-size;
+                        line-height: $extra-line-height;
+                        margin-bottom: 16px;
+                    }
+
+                    .room {
+                        position: relative;
+                        margin-bottom: 48px;
+                        font-weight: 300;
+                        font-size: $main-font-size;
+                        display: inline-block;
+                        width: 100%;
+
+                        /* Clearfix */
+                        &::after {
+                            display: block;
+                            content: " ";
+                            clear: both;
+                        }
+
+                        &::before {
+                            position: absolute;
+                            display: block;
+                            content: '';
+                            width: 100%;
+                            height: 1px;
+                            background: $extra-bg;
+                            opacity: 0.5;
+                            bottom: -24px;
+                            left: 0;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .room-img-wrapper {
+                            margin-right: 16px;
+                            float: left;
+                            width: calc(15% - 16px);
+
+                            @include breakpoint(l) {
+                                width: calc(11% - 16px);
+                            }
+
+                            @include breakpoint(sll) {
+                                width: calc(13% - 16px);
+                            }
+
+                            @include breakpoint(sl-tablet) {
+                                width: calc(16% - 16px);
+                            }
+
+                            @include breakpoint(sl) {
+                                width: calc(21% - 16px);
+                            }
+
+                            @include breakpoint(s-book) {
+                                width: calc(27% - 16px);
+                            }
+
+                            @include breakpoint(s) {
+                                width: calc(38% - 16px);
+                            }
+
+                            img {
+                                height: 119px;
+                            }
+                        }
+
+                        .room-info,
+                        .form-item {
+                            display: block;
+                            float: right;
+                            width: 85%;
+
+                            @include breakpoint(l) {
+                                width: 89%;
+                            }
+
+                            @include breakpoint(sll) {
+                                width: 87%;
+                            }
+
+                            @include breakpoint(sl-tablet) {
+                                width: 84%;
+                            }
+
+                            @include breakpoint(sl) {
+                                width: 79%;
+                            }
+
+                            @include breakpoint(s-book) {
+                                width: 73%;
+                            }
+
+                            @include breakpoint(s) {
+                                width: 62%;
+                            }
+                        }
+
+                        .room-info {
+                            margin-bottom: 14px;
+
+                            @include breakpoint(sl) {
+                                min-height: 119px;
+                                margin-bottom: 8px;
+                            }
+                        }
+
+                        .room-info__title {
+                            font-weight: bold;
+                            font-size: $secondary-font-size;
+                            line-height: $secondary-line-height-header;
+                            margin-bottom: 8px;
+
+                            @include breakpoint(l) {
+                                font-size: $extra-font-size;
+                                line-height: $extra-line-height;
+                            }
+                        }
+
+                        .room-info__reservation,
+                        .room-info__guests {
+                            line-height: $main-line-height;
+                        }
+
+                        .form-item {
+                            margin: 0 0 8px;
+
+                            @include breakpoint(sl) {
+                                width: 100%;
+                            }
+
+                            &:last-child {
+                                margin: 0;
+                            }
+
+                            input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .checkout-pane-order-comment {
+                    margin-bottom: 24px;
+
+                    legend {
+                        display: block;
+                        font-weight: bold;
+                        font-size: $extra-font-size;
+                        line-height: $extra-line-height;
+                        margin-bottom: 8px;
+                    }
+
+                    .fieldset-wrapper {
+                        font-weight: 300;
+                        font-size: $main-font-size;
+                        line-height: $main-line-height;
+
+                        p {
+                            margin-bottom: 8px;
+                        }
+
+                        .form-item-order-comment-message {
+                            margin: 0;
+
+                            .form-textarea-wrapper {
+                                margin-bottom: 8px;
+
+                                textarea {
+                                    @include form-style-input;
+                                    resize: none;
+                                    height: 79px;
+                                }
+                            }
+
+                            #edit-order-comment-message--description {
+                                font-weight: 300;
+                                font-size: 9px;
+                                line-height: 14px;
+                                color: $link-color;
+
+                                @include breakpoint(l) {
+                                    font-size: $main-font-size;
+                                    line-height: $main-line-height-second;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .form-actions {
+                    margin: 0;
+
+                    input {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: 0;
+                        @include btn-book-room;
+
+                        @include breakpoint(sl) {
+                            margin-right: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

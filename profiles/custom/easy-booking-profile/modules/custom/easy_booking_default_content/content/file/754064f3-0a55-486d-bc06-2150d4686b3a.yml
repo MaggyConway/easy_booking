@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 754064f3-0a55-486d-bc06-2150d4686b3a
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: television.png
+  uri:
+    -
+      value: 'public://2020-10/television_0_0_1_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 858
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603295113
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

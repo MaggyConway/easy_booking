@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 38c9df61-e5e7-4db1-8b36-8aa8a6e8d9cd
+  bundle: image
+  default_langcode: en
+  depends:
+    3252743e-cff0-4ed7-9985-24c4d06e07aa: file
+    4926f139-c791-498e-b0ef-4dd667c48480: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: kamni_svechi_aromaterapiya_spa_voda_bambuk_massazh_67321_1280x720.jpg
+  created:
+    -
+      value: 1603445260
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 3252743e-cff0-4ed7-9985-24c4d06e07aa
+      alt: Attraction
+      title: ''
+      width: 1280
+      height: 720
+  field_type:
+    -
+      entity: 4926f139-c791-498e-b0ef-4dd667c48480

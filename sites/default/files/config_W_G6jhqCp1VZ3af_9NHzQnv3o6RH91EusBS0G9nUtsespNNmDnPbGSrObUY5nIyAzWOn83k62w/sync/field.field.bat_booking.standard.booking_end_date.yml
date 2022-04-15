@@ -1,0 +1,23 @@
+uuid: cb1bc590-9b2f-4884-b503-53ec214f930b
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_booking.booking_bundle.standard
+    - field.storage.bat_booking.booking_end_date
+  module:
+    - datetime
+_core:
+  default_config_hash: _JBA8x2kRNYYgS1UeKlw9lzEOxdyJszOtCK-Rm5dQg0
+id: bat_booking.standard.booking_end_date
+field_name: booking_end_date
+entity_type: bat_booking
+bundle: standard
+label: 'End Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

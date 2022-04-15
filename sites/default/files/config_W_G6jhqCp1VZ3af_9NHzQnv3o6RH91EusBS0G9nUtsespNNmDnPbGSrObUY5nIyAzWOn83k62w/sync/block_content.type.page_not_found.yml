@@ -1,0 +1,10 @@
+uuid: 23123897-d0fe-4c97-9ec3-5382d8fda5f0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VcLfT11gdnPhplxsUMfsiK3W47bmC8wkD9nvPDKKR0I
+id: page_not_found
+label: 'Page Not Found'
+revision: 0
+description: ''

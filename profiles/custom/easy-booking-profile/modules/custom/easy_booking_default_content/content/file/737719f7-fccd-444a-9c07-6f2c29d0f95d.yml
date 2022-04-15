@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 737719f7-fccd-444a-9c07-6f2c29d0f95d
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: wi-fi.png
+  uri:
+    -
+      value: 'public://2021-03/wi-fi.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1465
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1615793522
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

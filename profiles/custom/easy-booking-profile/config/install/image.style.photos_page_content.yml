@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: photos_page_content
+label: 'Photos page: Content'
+effects:
+  81c882c0-3785-40f3-a29a-15c70b0a1efb:
+    uuid: 81c882c0-3785-40f3-a29a-15c70b0a1efb
+    id: image_scale
+    weight: 1
+    data:
+      width: 273
+      height: null
+      upscale: true

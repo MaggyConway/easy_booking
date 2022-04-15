@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0d4df27a-0f63-4f44-957a-5c0032de453d
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: kosti_igra_gazeta_7921_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/kosti_igra_gazeta_7921_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 67291
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603427770
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

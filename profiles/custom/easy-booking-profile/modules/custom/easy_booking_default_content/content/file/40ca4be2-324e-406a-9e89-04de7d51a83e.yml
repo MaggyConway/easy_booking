@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 40ca4be2-324e-406a-9e89-04de7d51a83e
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: chashka_kofe_gazeta_zavtrak_113335_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/chashka_kofe_gazeta_zavtrak_113335_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 175008
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603427770
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

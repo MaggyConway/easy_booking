@@ -1,0 +1,18 @@
+uuid: ca438a03-6e34-40ca-85a7-2ff8f8ae97c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: 9I276MPzT_t553Q-XgT2qsoPoBfTQbT72iMLNTEOgD8
+id: bat_api.entity_index.bat_event
+service_plugin_id: 'entity_index:bat_event'
+service_endpoint_id: bat_api
+formats:
+  json: json
+  hal_json: '0'
+  xml: '0'
+authentication:
+  cookie: cookie
+no_cache: null

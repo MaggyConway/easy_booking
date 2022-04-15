@@ -1,0 +1,303 @@
+.path-rooms {
+
+    .container {
+        padding-top: 32px;
+        padding-bottom: 80px;
+
+        @include breakpoint(sl) {
+            padding-bottom: 0;
+        }
+    }
+
+    .views-element-container {
+        .view-header {
+            margin: 0 8px 24px 8px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    .location-block--wrapper {
+        @include container;
+
+        margin: -20px auto 0;
+
+        .block-location-block {
+            background-color: $secondary-bg;
+            margin: 0 auto;
+            padding-top: 16px;
+            padding-bottom: 64px;
+            padding-right: 46px;
+            width: 100%;
+            margin-bottom: 64px;
+
+            @include breakpoint(sll) {
+                padding-right: 0;
+                padding-bottom: 40px;
+            }
+
+            h2 {
+                padding-left: 24px;
+                font-size: 32px;
+                line-height: 44px;
+                margin-bottom: 4px;
+
+                @include breakpoint(sll) {
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+            }
+
+            .title-text {
+                padding-left: 24px;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 150%;
+                margin-bottom: 24px;
+
+                @include breakpoint(sll) {
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+            }
+
+            .info-map--wrapper {
+                display: flex;
+                margin-bottom: 64px;
+
+                @include breakpoint(sll) {
+                    flex-wrap: wrap;
+                    margin-bottom: 40px;
+                }
+            }
+
+            #map {
+                flex: 1;
+                margin-right: 24px;
+
+                @include breakpoint(sll) {
+                    flex: 100%;
+                    margin-right: 0;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .info {
+                width: 30%;
+
+                @include breakpoint(sll) {
+                    width: 100%;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+
+                .site-name {
+                    display: block;
+                    font-size: 16px;
+                    line-height: 150%;
+                    margin-bottom: 15px;
+                }
+
+                .info-field {
+                    display: flex;
+                    margin-bottom: 15px;
+
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                }
+
+                label {
+                    display: inline-block;
+                    font-weight: bold;
+                    font-size: 16px;
+                    min-width: 105px;
+                    margin-right: 11px;
+
+                    @include breakpoint(ll) {
+                        min-width: 80px;
+                    }
+                }
+
+                p {
+                    display: inline-block;
+                }
+            }
+
+            .reasons  {
+                padding-left: 28px;
+                padding-right: 96px;
+
+                @include breakpoint(sll) {
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+
+                .reasons-title {
+                    margin-bottom: 19px;
+                    padding-left: 0;
+                }
+
+                .views-row {
+                    display: flex;
+
+                    @include breakpoint(sl-tablet) {
+                        flex-wrap: wrap;
+                    }
+
+                    .views-col {
+                        flex: 1;
+                        margin-right: 30px;
+
+                        @include breakpoint(sl-tablet) {
+                            flex: 100%;
+                            margin-bottom: 15px;
+                        }
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+
+                        .layout--twocol-section--25-75 {
+                            display: flex;
+
+                            .layout__region--first {
+                                flex: 0 1 15%;
+                                margin-right: 10px;
+
+                                @include breakpoint(sl-tablet) {
+                                    flex: 0 1 33px;
+                                }
+
+                                    img {
+                                        width: 33px;
+                                    }
+                            }
+
+                            .layout__region--second {
+                                flex: 0 1 calc(85% - 10px);
+
+                                @include breakpoint(sl-tablet) {
+                                    flex: 0 1 calc(100% - 45px);
+                                }
+
+                                .field--name-title {
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                    line-height: 150%;
+                                }
+
+                                .block-field-blocknodereasonfield-text {
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 150%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* If choise room */
+    #block-easy-booking-theme-customcartblock {
+        display: none;
+        background-color: $secondary-bg;
+        border-bottom: 2px solid $primary-bg;
+        padding: 31px 0;
+
+        @include breakpoint(sl-tablet) {
+            padding: 14px 0 38px;
+        }
+
+        &.custom-cart-form {
+            display: block;
+
+        }
+
+        #custom-cart-form {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+            @include container;
+
+            @include breakpoint(sl-tablet) {
+                align-items: center;
+            }
+
+            .cart-info {
+                display: flex;
+                align-items: center;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 25px;
+                margin-bottom: 18px;
+                flex-wrap: wrap;
+                // padding-top: 31px;
+
+                @include breakpoint(sl-tablet) {
+                    justify-content: center;
+                }
+
+                .rooms-info {
+                    @include breakpoint(sl-tablet) {
+                        margin-bottom: 24px;
+                    }
+                }
+
+                .total-price {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 33px;
+                    margin-left: 6px;
+
+                    @include breakpoint(sl-tablet) {
+                        margin-bottom: 24px;
+                    }
+                }
+
+                .checkout-button-wrapper {
+                    margin-left: 33px;
+
+                    @include breakpoint(sl-tablet) {
+                        margin-left: 0;
+                        width: 100%;
+                    }
+
+                    .checkout-button {
+                        text-transform: uppercase;
+                        @include btn-extra;
+
+                        @include breakpoint(sl-tablet) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .cart-button {
+                // padding-bottom: 31px;
+                #edit-clear {
+                    border: none;
+                    background: none;
+                    font-weight: 300;
+                    font-size: $main-font-size;
+                    $main-line-height: 19px;
+                    text-decoration-line: underline;
+                    transition: all $default-transition-time;
+
+                    &:hover {
+                        color: $color-grey-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.view-empty {
+    display: none;
+}

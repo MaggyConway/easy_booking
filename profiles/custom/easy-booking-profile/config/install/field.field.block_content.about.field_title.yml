@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about
+    - field.storage.block_content.field_title
+id: block_content.about.field_title
+field_name: field_title
+entity_type: block_content
+bundle: about
+label: Title
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 'A brand new hotel beyond ordinary'
+default_value_callback: ''
+settings: {  }
+field_type: string

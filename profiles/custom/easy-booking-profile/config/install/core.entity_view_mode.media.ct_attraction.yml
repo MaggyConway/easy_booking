@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.ct_attraction
+label: 'CT Attraction'
+targetEntityType: media
+cache: true

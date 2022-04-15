@@ -1,0 +1,30 @@
+uuid: 4651f781-b589-48b4-9d1e-60094186f0de
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.bee
+    - commerce_order.commerce_order_item_type.service
+    - field.storage.commerce_order_item.field_related_room
+_core:
+  default_config_hash: QI_Bp5Ep7wmj5uL3X4soajJCYMwRym0-gufhRj9bfC4
+id: commerce_order_item.service.field_related_room
+field_name: field_related_room
+entity_type: commerce_order_item
+bundle: service
+label: 'Related Room'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_order_item'
+  handler_settings:
+    target_bundles:
+      bee: bee
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

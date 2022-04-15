@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 9583acd5-7184-4642-ba24-50a01c66b79c
+  bundle: bee_room
+  default_langcode: en
+  depends:
+    9b090114-4549-4310-a125-fa159e0e144c: commerce_store
+    ad13e5a9-4edc-4254-b76e-8fe42266af57: commerce_product_variation
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: 9b090114-4549-4310-a125-fa159e0e144c
+  title:
+    -
+      value: 'Regular Single Room'
+  variations:
+    -
+      entity: ad13e5a9-4edc-4254-b76e-8fe42266af57
+  default_variation:
+    -
+      entity: ad13e5a9-4edc-4254-b76e-8fe42266af57
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1603425477

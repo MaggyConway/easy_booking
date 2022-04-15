@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2e79d277-334f-4ced-abf1-520db7ec2e74
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: place_for_spa.jpg
+  uri:
+    -
+      value: 'public://2021-03/place_for_spa.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 103888
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1614914646
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

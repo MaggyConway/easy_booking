@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 8e226e82-ed8b-43b2-8884-85fac255a2ff
+  bundle: attractions
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Adventure
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/types/adventure
+      langcode: en
+      pathauto: 1

@@ -1,0 +1,21 @@
+uuid: 85258f67-b9f7-4009-a17f-617bf6784864
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+_core:
+  default_config_hash: vCppJ2dUP71Sms40-Kgh0Nr5FmxDEqnJn8YPIsqFs6k
+id: commerce_order_item.field_related_room
+field_name: field_related_room
+entity_type: commerce_order_item
+type: entity_reference
+settings:
+  target_type: commerce_order_item
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

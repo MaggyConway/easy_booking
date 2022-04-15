@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 0cbf22d5-1f4a-4f8d-8d52-35fd6493d808
+  bundle: image
+  default_langcode: en
+  depends:
+    539ad03f-31d8-4a3c-b18b-ab735d2ec63d: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: krovat_spalnya_detskaya_komnata_80381_1280x720.jpg
+  created:
+    -
+      value: 1603423225
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 539ad03f-31d8-4a3c-b18b-ab735d2ec63d
+      alt: Room
+      title: ''
+      width: 1280
+      height: 720

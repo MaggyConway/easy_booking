@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5c40b012-1f18-44f3-b97d-7df048e2fa43
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bellboy.png
+  uri:
+    -
+      value: 'public://2020-10/bellboy_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1051
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310739
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

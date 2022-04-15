@@ -1,0 +1,23 @@
+uuid: b506bf81-78e4-4fad-8eb7-321aecdb0ce2
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_event_series.event_series_type.availability_daily
+    - field.storage.bat_event_series.event_bat_unit_reference
+_core:
+  default_config_hash: 6zlci2QeI_QUxtdgUaEDi0sPcGyBq8CVGzVGQBzRZ50
+id: bat_event_series.availability_daily.event_bat_unit_reference
+field_name: event_bat_unit_reference
+entity_type: bat_event_series
+bundle: availability_daily
+label: Unit
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:bat_unit'
+  handler_settings: {  }
+field_type: entity_reference

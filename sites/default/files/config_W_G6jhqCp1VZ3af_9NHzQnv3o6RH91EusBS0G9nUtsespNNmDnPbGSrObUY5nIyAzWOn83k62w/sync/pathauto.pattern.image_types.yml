@@ -1,0 +1,25 @@
+uuid: 2302b27a-ac01-4c07-b580-149b2a24e061
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+_core:
+  default_config_hash: Go8FR_VZv7j0ddEoFu9LtUQhUgyudS9s6gK-LRjpcaM
+id: image_types
+label: 'Image Types'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/images/types/[term:name]'
+selection_criteria:
+  c637afb1-6c5f-445a-89f9-ea949ef745ca:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      images: images
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: c637afb1-6c5f-445a-89f9-ea949ef745ca
+selection_logic: and
+weight: -5
+relationships: {  }

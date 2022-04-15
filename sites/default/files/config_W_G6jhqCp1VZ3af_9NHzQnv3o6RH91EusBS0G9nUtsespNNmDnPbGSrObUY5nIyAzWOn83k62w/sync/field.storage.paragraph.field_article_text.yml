@@ -1,0 +1,21 @@
+uuid: 42070387-a9fb-4dca-b910-c2139b96a321
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: b7Q-sSgCJRTuY3i_ScaD5UOdjp_Io0KyDGpbJjs3m1A
+id: paragraph.field_article_text
+field_name: field_article_text
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

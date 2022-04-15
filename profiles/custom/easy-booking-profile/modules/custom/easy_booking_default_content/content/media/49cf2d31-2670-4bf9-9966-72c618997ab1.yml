@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 49cf2d31-2670-4bf9-9966-72c618997ab1
+  bundle: image
+  default_langcode: en
+  depends:
+    9f3ba11f-e35a-48d0-a90f-84689b7315d3: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: heater.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 9f3ba11f-e35a-48d0-a90f-84689b7315d3
+      alt: Heater
+      title: ''
+      width: 40
+      height: 40

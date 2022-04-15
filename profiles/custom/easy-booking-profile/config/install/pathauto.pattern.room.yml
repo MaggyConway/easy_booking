@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: room
+label: Room
+type: 'canonical_entities:node'
+pattern: '/rooms/[node:title]'
+selection_criteria:
+  ced56565-61b1-4ad2-b4b0-26a2d98a86f1:
+    id: node_type
+    bundles:
+      daily_room: daily_room
+      room: room
+    negate: false
+    context_mapping:
+      node: node
+    uuid: ced56565-61b1-4ad2-b4b0-26a2d98a86f1
+selection_logic: and
+weight: -5
+relationships: {  }

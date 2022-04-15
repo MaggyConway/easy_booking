@@ -1,0 +1,289 @@
+.field--name-field-block {
+    background: $primary-bg;
+
+    .container {
+        padding-top: 32px;
+        padding-bottom: 64px;
+
+        @include breakpoint(sl) {
+            padding-top: 64px;
+        }
+    }
+
+    .about-us-about-block-text-image-wrapper {
+        margin-bottom: 66px;
+
+        @include breakpoint(sl) {
+            margin-bottom: 24px;
+        }
+
+        .about-us-about-block-text-wrapper {
+            margin-bottom: 24px;
+
+            .field--name-field-title {
+                margin-bottom: 32px;
+                @include main-title-page;
+            }
+
+            .field--name-field-text {
+                font-weight: 300;
+                font-size: $main-font-size;
+                line-height: $main-line-height-second;
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        .about-us-about-block-image-wrapper {
+            .field--name-field-image {
+                img {
+                    @include breakpoint(s) {
+                        height: 132px;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-us-about-block-services-wrapper {
+        margin: 0 -9px;
+
+        @include breakpoint(sl) {
+            margin: 0;
+        }
+
+        .field--name-field-services {
+            display: flex;
+            flex-wrap: wrap;
+
+            > .field__item {
+                margin: 0 9px 32px 9px;
+                width: calc(100% / 3 - 18px);
+
+                @include breakpoint(sll) {
+                    width: calc(100% / 2 - 18px);
+                }
+
+                @include breakpoint(sl) {
+                    margin: 0 0 16px;
+                    width: 100%;
+                }
+
+                .field--name-field-icon  {
+                    margin-bottom: 16px;
+                }
+
+                .field--name-field-title {
+                    font-weight: bold;
+                    font-size: $secondary-font-size;
+                    line-height: $secondary-line-height;
+                    letter-spacing: 0.02em;
+                    margin-bottom: 8px;
+                }
+
+                .field--name-field-description {
+                    font-weight: 300;
+                    font-size: $main-font-size;
+                    line-height: $main-line-height-second;
+                }
+            }
+        }
+    }
+}
+
+.field--name-field-paragraphs {
+    .first-item-wrapper {
+        background: $secondary-bg;
+
+        .container {
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+
+        .paragraph--type-info-blocks {
+            .group-right {
+                .field--name-field-first-section {
+                    margin: 0 -29px;
+                    display: flex;
+
+                    @include breakpoint(sl-tablet) {
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
+
+                    > .field__item {
+                        position: relative;
+                        margin: 0 29px 16px;
+
+                        img {
+                            @include breakpoint(sl-tablet) {
+                                width: 296px;
+                                height: 296px;
+                            }
+                        }
+
+                        .field--name-field-title {
+                            position: absolute;
+                            bottom: 42px;
+                            left: -8px;
+                            max-width: 208px;
+                            width: 100%;
+                            text-align: center;
+                            padding: 20px 20px 19px;
+                            background-color: $primary-bg;
+                            font-weight: bold;
+                            font-size: $secondary-font-size-title;
+                            line-height: $secondary-line-height-title;
+
+                            @include breakpoint(sll) {
+                                font-size: $secondary-font-size-title-mobile;
+                                line-height: $secondary-line-height-title-mobile;
+                                max-width: 148px;
+                                padding: 20px 20px 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slider-item-wrapper {
+        background: $primary-bg;
+
+        .paragraph--type--album {
+            padding-top: 64px;
+            padding-bottom: 32px;
+
+            .slick__slider {
+                .slick-track {
+                    display: flex;
+
+                    .slick__slide {
+                        margin: 0 8px;
+
+                        &:focus {
+                            border: none;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .slick__arrow {
+                height: 100%;
+
+                .slick-arrow {
+                    height: 100%;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .third-item-wrapper {
+        background: $primary-bg;
+
+        .container {
+            padding-top: 32px;
+            padding-bottom: 64px;
+        }
+
+        .paragraph--type-info-blocks {
+            .group-header {
+                .field--name-field-text {
+                    margin: 0 -9px 64px !important;
+                }
+            }
+
+            .group-footer {
+                .field--name-field-second-section {
+                    display: flex;
+                    margin: 0 -8px;
+
+                    @include breakpoint(sl-tablet) {
+                        display: block;
+                        margin: 0;
+                    }
+
+                    > .field__item {
+                        margin: 0 8px;
+                        width: calc(100% / 3 - 16px);
+
+                        @include breakpoint(sl-tablet) {
+                            width: 100%;
+                            margin: 0 0 16px;
+                        }
+
+                        img {
+                            height: 134px;
+
+                            @include breakpoint(sl-tablet) {
+                                width: 100%;
+                            }
+
+                            @include breakpoint(sl) {
+                                height: 124px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .first-item-wrapper,
+    .third-item-wrapper {
+        .paragraph--type-info-blocks {
+            .group-header {
+                .field--name-field-title {
+                    margin-bottom: 32px;
+                    @include main-title-page;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                .field--name-field-text {
+                    display: flex;
+                    margin: 0 -9px 32px;
+
+                    @include breakpoint(sl-tablet) {
+                        display: block;
+                        margin: 0 0 16px !important;
+                    }
+
+                    .field__item {
+                        margin: 0 9px;
+                        font-weight: 300;
+                        font-size: $main-font-size;
+                        line-height: $main-line-height-second;
+                        width: calc(100% / 2 - 18px);
+
+                        @include breakpoint(sl-tablet) {
+                            width: 100%;
+                            margin: 0 0 16px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+                        }
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

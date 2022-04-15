@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 8ac1356c-5172-4fa1-835d-b5aae26538e1
+  bundle: image
+  default_langcode: en
+  depends:
+    81f9fcc5-f06a-4384-8254-9028fe4e4d59: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: cctv.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 81f9fcc5-f06a-4384-8254-9028fe4e4d59
+      alt: CCTV
+      title: ''
+      width: 40
+      height: 40

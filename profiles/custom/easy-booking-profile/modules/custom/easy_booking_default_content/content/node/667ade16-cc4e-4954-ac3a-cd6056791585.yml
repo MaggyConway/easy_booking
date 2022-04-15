@@ -1,0 +1,162 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 667ade16-cc4e-4954-ac3a-cd6056791585
+  bundle: room
+  default_langcode: en
+  depends:
+    f47d1103-280d-4da1-9e22-0b439333b60f: taxonomy_term
+    bc8681f1-a3bd-487c-b568-2208e7352094: taxonomy_term
+    5c203156-eb49-4971-94ae-b48d09fde4d1: taxonomy_term
+    967b4719-5efc-4545-b7ae-4595fc93dcdd: taxonomy_term
+    1a29506c-d518-4672-8477-12c45cc1e378: taxonomy_term
+    3909b3f3-86b9-4702-9c75-d6cffb3d7d76: taxonomy_term
+    792b7145-5ced-4c1b-9f60-d27a0e8073c3: taxonomy_term
+    27998a35-f6de-4249-a412-02f81e2906db: taxonomy_term
+    5cb8e4b7-2cba-4135-b94c-2ab1147e4695: taxonomy_term
+    52d515ca-9735-405c-8107-0aa678e5fff0: taxonomy_term
+    7242d0c5-b70a-40ee-b0e9-9d0221d4b2f7: taxonomy_term
+    446ebe61-db57-4a37-8512-20df19f0678d: taxonomy_term
+    c6a37363-3b38-48a0-b900-2ebd75acfb37: taxonomy_term
+    4970aebf-3232-49b4-9ccc-56797687faaa: taxonomy_term
+    1014d472-f895-496a-a577-2e58e5cad753: taxonomy_term
+    a307da23-462f-4fdb-9685-70fe1924618e: taxonomy_term
+    e852a821-4005-4271-986f-31fdbb749782: taxonomy_term
+    11f92e4b-f01e-475e-9124-7d289e31175e: taxonomy_term
+    f23dbdc9-e4b4-4715-a886-6546d970e951: taxonomy_term
+    46cb9973-bcc4-4d6e-b91e-385bef8678c6: bat_unit
+    33e0a2c7-8995-41a4-9b79-5b2781092846: media
+    cd1da23b-d2b7-43bf-9323-e5fd7879a63a: media
+    891dcdc8-6e64-462c-accb-042af775a33d: media
+    de3c9a29-7d92-47ba-ad73-9060d5284965: media
+    58d35d75-2a09-4aad-908a-f7e30cb41a4d: media
+    cb4fe000-92fa-4588-b4b6-a3a5d249e620: media
+    1c666dd2-d756-4723-9519-9616a20617a2: commerce_product
+    6f13db7e-0bb7-408c-b283-c7c3efbdca19: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Presidential Room'
+  created:
+    -
+      value: 1603425604
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /rooms/presidential-room
+      langcode: en
+      pathauto: 1
+  field_adults_number:
+    -
+      value: 4
+  field_amenities:
+    -
+      entity: f47d1103-280d-4da1-9e22-0b439333b60f
+    -
+      entity: bc8681f1-a3bd-487c-b568-2208e7352094
+    -
+      entity: 5c203156-eb49-4971-94ae-b48d09fde4d1
+    -
+      entity: 967b4719-5efc-4545-b7ae-4595fc93dcdd
+    -
+      entity: 1a29506c-d518-4672-8477-12c45cc1e378
+    -
+      entity: 3909b3f3-86b9-4702-9c75-d6cffb3d7d76
+    -
+      entity: 792b7145-5ced-4c1b-9f60-d27a0e8073c3
+    -
+      entity: 27998a35-f6de-4249-a412-02f81e2906db
+    -
+      entity: 5cb8e4b7-2cba-4135-b94c-2ab1147e4695
+    -
+      entity: 52d515ca-9735-405c-8107-0aa678e5fff0
+    -
+      entity: 7242d0c5-b70a-40ee-b0e9-9d0221d4b2f7
+    -
+      entity: 446ebe61-db57-4a37-8512-20df19f0678d
+    -
+      entity: c6a37363-3b38-48a0-b900-2ebd75acfb37
+    -
+      entity: 4970aebf-3232-49b4-9ccc-56797687faaa
+    -
+      entity: 1014d472-f895-496a-a577-2e58e5cad753
+    -
+      entity: a307da23-462f-4fdb-9685-70fe1924618e
+    -
+      entity: e852a821-4005-4271-986f-31fdbb749782
+    -
+      entity: 11f92e4b-f01e-475e-9124-7d289e31175e
+    -
+      entity: f23dbdc9-e4b4-4715-a886-6546d970e951
+  field_area:
+    -
+      value: '65.00'
+  field_availability_hourly:
+    -
+      entity: 46cb9973-bcc4-4d6e-b91e-385bef8678c6
+  field_check_in_time:
+    -
+      from: 57600
+      to: 7200
+  field_check_out_time:
+    -
+      value: 79200
+  field_children_number:
+    -
+      value: 2
+  field_double_beds_number:
+    -
+      value: 1
+  field_night_hour:
+    -
+      value: '| per hour'
+  field_photos:
+    -
+      entity: 33e0a2c7-8995-41a4-9b79-5b2781092846
+    -
+      entity: cd1da23b-d2b7-43bf-9323-e5fd7879a63a
+    -
+      entity: 891dcdc8-6e64-462c-accb-042af775a33d
+    -
+      entity: de3c9a29-7d92-47ba-ad73-9060d5284965
+    -
+      entity: 58d35d75-2a09-4aad-908a-f7e30cb41a4d
+    -
+      entity: cb4fe000-92fa-4588-b4b6-a3a5d249e620
+  field_price:
+    -
+      number: '99.000000'
+      currency_code: USD
+      formatted: $99.00
+  field_price_frequency:
+    -
+      value: hour
+  field_product:
+    -
+      entity: 1c666dd2-d756-4723-9519-9616a20617a2
+  field_single_beds_number:
+    -
+      value: 2
+  field_type:
+    -
+      entity: 6f13db7e-0bb7-408c-b283-c7c3efbdca19
+  field_use_open_hours:
+    -
+      value: false

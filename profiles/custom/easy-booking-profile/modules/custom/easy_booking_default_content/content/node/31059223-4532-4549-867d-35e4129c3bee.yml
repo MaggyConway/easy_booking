@@ -1,0 +1,493 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 31059223-4532-4549-867d-35e4129c3bee
+  bundle: page
+  default_langcode: en
+  depends:
+    f5b14482-fe97-45b2-845d-b32e59a536d6: block_content
+    d6518c75-964a-4244-a0cb-40d5a1f556f7: media
+    c69f139d-f543-47f1-900a-2f1692504a2f: media
+    2497d997-35cf-463e-8ab3-24351d708fab: media
+    106f608d-3f1e-42c1-b79d-80161d337dfc: media
+    fba54f09-5298-460b-b122-dbb75dee45bd: media
+    6efdc838-203a-44a6-a32f-bf054701f9f2: media
+    dba7c752-645c-4401-b743-7d780fbb8b18: media
+    6f7022d0-a1dd-4a0f-81ce-8b2e3d8255ec: media
+    cb4fe000-92fa-4588-b4b6-a3a5d249e620: media
+    7b90422a-d555-434b-a7d5-eb819730e04c: media
+    56df5a20-d051-41d3-9431-39c938a0babd: media
+    ab04b7e9-0b26-436c-8964-b97b6dd50184: media
+    24a21f18-bd1b-4fe2-b8b9-ef537cbe50a3: media
+    b1d6851c-669b-45e7-a427-51a51081b6da: media
+    319ef6b0-7f78-482c-aef2-0ea11420dc67: media
+    b9a229fc-a05f-496e-815c-2af828082fca: media
+    f8347d70-9bbd-40e0-9481-ff0ca467c62e: media
+    4ed6a0a6-0c1c-4316-8882-a72cd4f598e8: media
+    b298b219-6e1b-4d23-bd43-532cb3a754cb: media
+    f25999c8-e1b4-4378-9714-f17d52b7f7da: media
+    aac1a57b-ab81-4ad9-a923-5f6b9b17198b: media
+    0bd8fef0-e15a-4e09-8c46-03453daf0b31: media
+    8b5d9780-df6a-4b1f-806f-437927fb42f4: media
+    7c5ab3c8-034b-4dfc-8e1a-f55a9a29bbd4: media
+    d8f7d476-c630-43e0-afe8-f7e843ea17d5: media
+    84830071-bd7e-4ba3-86a2-2a2b7c1d1ea0: media
+    e306260b-2090-482c-85ea-3d1a5e0d016c: media
+    1e6dd897-4cb8-428f-a465-85d67e1fd3ee: media
+    180ddce4-6bdf-42c8-893d-376dfa7f9185: media
+    c9448623-25cb-41c3-aa28-e13f7b171665: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'About us'
+  created:
+    -
+      value: 1604651001
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /about
+      langcode: en
+      pathauto: 0
+  field_block:
+    -
+      entity: f5b14482-fe97-45b2-845d-b32e59a536d6
+  field_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f2ace025-b4b5-4403-809b-a4a923ca7679
+          bundle: info_blocks
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604651937
+          behavior_settings:
+            -
+              value: {  }
+          field_first_section:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 14b3edfd-e64b-4c9c-8b2e-0a827a72a925
+                  bundle: info_block
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1615882261
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_image:
+                    -
+                      entity: d6518c75-964a-4244-a0cb-40d5a1f556f7
+                  field_title:
+                    -
+                      value: Gathering
+                      format: plain_text
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7cb93559-9f84-40d7-8aa9-c641d2ad324a
+                  bundle: info_block
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1615882264
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_image:
+                    -
+                      entity: c69f139d-f543-47f1-900a-2f1692504a2f
+                  field_title:
+                    -
+                      value: 'Nice Food'
+                      format: plain_text
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f67e672e-502e-4565-8b44-98846a012cfb
+                  bundle: info_block
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1615882266
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_image:
+                    -
+                      entity: 2497d997-35cf-463e-8ab3-24351d708fab
+                  field_title:
+                    -
+                      value: Explore
+                      format: plain_text
+          field_info_blocks:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 42824d64-b22a-4d2b-8a6b-7fbb41c8ac8c
+                  bundle: info_block
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1604651937
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_image:
+                    -
+                      entity: d6518c75-964a-4244-a0cb-40d5a1f556f7
+                  field_title:
+                    -
+                      value: Gathering
+                      format: plain_text
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6d3b0245-e1dd-440a-b5e0-ddfffaaaab6a
+                  bundle: info_block
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1604652051
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_image:
+                    -
+                      entity: c69f139d-f543-47f1-900a-2f1692504a2f
+                  field_title:
+                    -
+                      value: 'Nice Food'
+                      format: plain_text
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 723f114a-f518-4cba-987f-ee1eef55823d
+                  bundle: info_block
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1604652076
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_image:
+                    -
+                      entity: 106f608d-3f1e-42c1-b79d-80161d337dfc
+                  field_title:
+                    -
+                      value: Explore
+                      format: plain_text
+          field_text:
+            -
+              value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nec volutpat arcu dignissim \Ldis aliquam. Nec sed porta potenti id urna sit id egestas. Lectus ac ut nulla imperdiet porta mollis diam enim dolor. Nisl integer sed magna dolor."
+              format: plain_text
+            -
+              value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nec volutpat arcu dignissim \Ldis aliquam. Nec sed porta potenti id urna sit id egestas. Lectus ac ut nulla imperdiet porta mollis diam enim dolor. Nisl integer sed magna dolor."
+              format: plain_text
+          field_title:
+            -
+              value: 'Things to do near'
+              format: plain_text
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c2f1028a-4951-4275-812e-894b0225a800
+          bundle: album
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604653253
+          behavior_settings:
+            -
+              value: {  }
+          field_images:
+            -
+              entity: fba54f09-5298-460b-b122-dbb75dee45bd
+            -
+              entity: 6efdc838-203a-44a6-a32f-bf054701f9f2
+            -
+              entity: dba7c752-645c-4401-b743-7d780fbb8b18
+            -
+              entity: 6f7022d0-a1dd-4a0f-81ce-8b2e3d8255ec
+            -
+              entity: cb4fe000-92fa-4588-b4b6-a3a5d249e620
+            -
+              entity: 7b90422a-d555-434b-a7d5-eb819730e04c
+            -
+              entity: 56df5a20-d051-41d3-9431-39c938a0babd
+            -
+              entity: ab04b7e9-0b26-436c-8964-b97b6dd50184
+            -
+              entity: 24a21f18-bd1b-4fe2-b8b9-ef537cbe50a3
+            -
+              entity: b1d6851c-669b-45e7-a427-51a51081b6da
+            -
+              entity: 319ef6b0-7f78-482c-aef2-0ea11420dc67
+            -
+              entity: b9a229fc-a05f-496e-815c-2af828082fca
+            -
+              entity: f8347d70-9bbd-40e0-9481-ff0ca467c62e
+            -
+              entity: 4ed6a0a6-0c1c-4316-8882-a72cd4f598e8
+            -
+              entity: b298b219-6e1b-4d23-bd43-532cb3a754cb
+            -
+              entity: f25999c8-e1b4-4378-9714-f17d52b7f7da
+            -
+              entity: aac1a57b-ab81-4ad9-a923-5f6b9b17198b
+            -
+              entity: 0bd8fef0-e15a-4e09-8c46-03453daf0b31
+            -
+              entity: 8b5d9780-df6a-4b1f-806f-437927fb42f4
+            -
+              entity: 7c5ab3c8-034b-4dfc-8e1a-f55a9a29bbd4
+            -
+              entity: d8f7d476-c630-43e0-afe8-f7e843ea17d5
+            -
+              entity: 84830071-bd7e-4ba3-86a2-2a2b7c1d1ea0
+            -
+              entity: e306260b-2090-482c-85ea-3d1a5e0d016c
+            -
+              entity: 1e6dd897-4cb8-428f-a465-85d67e1fd3ee
+            -
+              entity: 180ddce4-6bdf-42c8-893d-376dfa7f9185
+            -
+              entity: c9448623-25cb-41c3-aa28-e13f7b171665
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 55555498-5642-48ba-b6e4-3a5c7e83ecfa
+          bundle: info_blocks
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604652381
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_info_blocks:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1322fe34-6b95-49c0-a678-eb03de904b18
+                  bundle: info_block
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1604652381
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_image:
+                    -
+                      entity: dba7c752-645c-4401-b743-7d780fbb8b18
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4e167e28-5007-4477-b214-353c0a06d078
+                  bundle: info_block
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1604652423
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_image:
+                    -
+                      entity: 6efdc838-203a-44a6-a32f-bf054701f9f2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: eb930559-87d5-4623-9bbe-1a998d8c1bcd
+                  bundle: info_block
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1604652440
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_image:
+                    -
+                      entity: fba54f09-5298-460b-b122-dbb75dee45bd
+          field_second_section:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: dde2f78b-0e82-49de-ad6d-1b076ee41a15
+                  bundle: info_block
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1615882465
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_image:
+                    -
+                      entity: fba54f09-5298-460b-b122-dbb75dee45bd
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4f9a3605-f901-4965-892a-24baf62eb5c3
+                  bundle: info_block
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1615882468
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_image:
+                    -
+                      entity: 6efdc838-203a-44a6-a32f-bf054701f9f2
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 577bda81-c7d5-4635-a496-b418502c2ad1
+                  bundle: info_block
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1615882470
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_image:
+                    -
+                      entity: dba7c752-645c-4401-b743-7d780fbb8b18
+          field_text:
+            -
+              value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nec volutpat arcu dignissim \Ldis aliquam. Nec sed porta potenti id urna sit id egestas. Lectus ac ut nulla imperdiet porta mollis diam enim dolor. Nisl integer sed magna dolor."
+              format: plain_text
+            -
+              value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nec volutpat arcu dignissim \Ldis aliquam. Nec sed porta potenti id urna sit id egestas. Lectus ac ut nulla imperdiet porta mollis diam enim dolor. Nisl integer sed magna dolor."
+              format: plain_text
+          field_title:
+            -
+              value: 'Things to do near'
+              format: plain_text

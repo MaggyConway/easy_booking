@@ -1,0 +1,89 @@
+#sliding-popup {
+    height: auto !important;
+}
+
+.eu-cookie-compliance-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px;
+
+    @include breakpoint(sl) {
+        max-width: 100%;
+    }
+
+    @include breakpoint(s) {
+        display: block;
+    }
+
+    .eu-cookie-compliance-message {
+        max-width: none;
+    }
+
+    #popup-text {
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: $main-font-size;
+        line-height: $main-line-height;
+        margin-right: 12px;
+        margin-top: 0;
+
+        @include breakpoint(s) {
+            margin-bottom: 16px;
+            margin-right: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+
+            a {
+                font-size: $main-font-size;
+                line-height: $main-line-height;
+                color: $link-color;
+                text-decoration-line: underline;
+                transition: all .3s;
+
+                &:hover {
+                    color: $link-color-hover;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .eu-cookie-compliance-buttons {
+        margin: 0;
+        .agree-button {
+            border: $border-btn-light;
+            border-radius: 5px;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 16px;
+            color: $secondary-color-text;
+            padding: 5px 10px;
+            width: 42px;
+            margin: 0;
+            background-color: $extra-bg;
+            background-image: none;
+            box-shadow: none;
+            text-shadow: none;
+            transition: all $default-transition-time;
+
+            &:hover {
+                color: $primary-color-text;
+                background: $secondary-bg;
+            }
+
+            @include breakpoint(s) {
+                width: 111px;
+                padding: 11px 10px;
+            }
+        }
+    }
+
+    @include breakpoint(s) {
+        padding: 19px 32px 27px 32px;
+    }
+}
+

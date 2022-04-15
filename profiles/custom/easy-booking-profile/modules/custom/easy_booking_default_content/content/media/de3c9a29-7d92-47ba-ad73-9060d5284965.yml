@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: de3c9a29-7d92-47ba-ad73-9060d5284965
+  bundle: image
+  default_langcode: en
+  depends:
+    504be096-58a2-46b6-8712-f53433c1ac82: file
+    ba12914e-2d52-4bc2-83e4-9ce3e73bc937: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: spalnaya_shkaf_stil_derevyannyy_39785_1280x720.jpg
+  created:
+    -
+      value: 1603423225
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 504be096-58a2-46b6-8712-f53433c1ac82
+      alt: Room
+      title: ''
+      width: 1280
+      height: 720
+  field_type:
+    -
+      entity: ba12914e-2d52-4bc2-83e4-9ce3e73bc937

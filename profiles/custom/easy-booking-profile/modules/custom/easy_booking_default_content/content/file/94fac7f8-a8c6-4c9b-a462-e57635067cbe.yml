@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 94fac7f8-a8c6-4c9b-a462-e57635067cbe
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: key-card.png
+  uri:
+    -
+      value: 'public://2020-10/key-card_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 742
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310739
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

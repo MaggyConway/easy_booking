@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.bee_room
+    - field.storage.node.field_product
+    - node.type.room
+id: node.room.field_product
+field_name: field_product
+entity_type: node
+bundle: room
+label: Product
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      bee_room: bee_room
+field_type: entity_reference

@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 731f57a8-7264-4c4f-89a7-93a41035d730
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pirog_sladost_eda_vkusno_86679_300x168.jpg
+  uri:
+    -
+      value: 'public://2020-10/pirog_sladost_eda_vkusno_86679_300x168_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 17957
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603445260
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 5a4cbec1-1a09-49fa-b772-77351b1b3503
+  bundle: image
+  default_langcode: en
+  depends:
+    2e79d277-334f-4ced-abf1-520db7ec2e74: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: place_for_spa
+  created:
+    -
+      value: 1614914642
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 2e79d277-334f-4ced-abf1-520db7ec2e74
+      alt: place_for_spa
+      title: ''
+      width: 562
+      height: 254

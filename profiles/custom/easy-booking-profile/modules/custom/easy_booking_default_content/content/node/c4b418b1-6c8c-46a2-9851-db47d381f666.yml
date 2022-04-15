@@ -1,0 +1,141 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c4b418b1-6c8c-46a2-9851-db47d381f666
+  bundle: room
+  default_langcode: en
+  depends:
+    f47d1103-280d-4da1-9e22-0b439333b60f: taxonomy_term
+    bc8681f1-a3bd-487c-b568-2208e7352094: taxonomy_term
+    5c203156-eb49-4971-94ae-b48d09fde4d1: taxonomy_term
+    967b4719-5efc-4545-b7ae-4595fc93dcdd: taxonomy_term
+    1a29506c-d518-4672-8477-12c45cc1e378: taxonomy_term
+    792b7145-5ced-4c1b-9f60-d27a0e8073c3: taxonomy_term
+    27998a35-f6de-4249-a412-02f81e2906db: taxonomy_term
+    5cb8e4b7-2cba-4135-b94c-2ab1147e4695: taxonomy_term
+    52d515ca-9735-405c-8107-0aa678e5fff0: taxonomy_term
+    7242d0c5-b70a-40ee-b0e9-9d0221d4b2f7: taxonomy_term
+    e417fc9f-b4c6-46a9-84f6-1c80a864a208: taxonomy_term
+    c6a37363-3b38-48a0-b900-2ebd75acfb37: taxonomy_term
+    a307da23-462f-4fdb-9685-70fe1924618e: taxonomy_term
+    11f92e4b-f01e-475e-9124-7d289e31175e: taxonomy_term
+    f23dbdc9-e4b4-4715-a886-6546d970e951: taxonomy_term
+    7ac7458f-161c-45e0-939f-5745f4556ba2: bat_unit
+    58d35d75-2a09-4aad-908a-f7e30cb41a4d: media
+    de3c9a29-7d92-47ba-ad73-9060d5284965: media
+    891dcdc8-6e64-462c-accb-042af775a33d: media
+    cd1da23b-d2b7-43bf-9323-e5fd7879a63a: media
+    21fc6bee-eb86-4794-af8d-9b87bcacf77f: commerce_product
+    61b0ccb8-4b89-42e6-af54-89618a7e3b56: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Basic Luxury Room'
+  created:
+    -
+      value: 1603427060
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  path:
+    -
+      alias: /rooms/basic-luxury-room
+      langcode: en
+      pathauto: 1
+  field_adults_number:
+    -
+      value: 2
+  field_amenities:
+    -
+      entity: f47d1103-280d-4da1-9e22-0b439333b60f
+    -
+      entity: bc8681f1-a3bd-487c-b568-2208e7352094
+    -
+      entity: 5c203156-eb49-4971-94ae-b48d09fde4d1
+    -
+      entity: 967b4719-5efc-4545-b7ae-4595fc93dcdd
+    -
+      entity: 1a29506c-d518-4672-8477-12c45cc1e378
+    -
+      entity: 792b7145-5ced-4c1b-9f60-d27a0e8073c3
+    -
+      entity: 27998a35-f6de-4249-a412-02f81e2906db
+    -
+      entity: 5cb8e4b7-2cba-4135-b94c-2ab1147e4695
+    -
+      entity: 52d515ca-9735-405c-8107-0aa678e5fff0
+    -
+      entity: 7242d0c5-b70a-40ee-b0e9-9d0221d4b2f7
+    -
+      entity: e417fc9f-b4c6-46a9-84f6-1c80a864a208
+    -
+      entity: c6a37363-3b38-48a0-b900-2ebd75acfb37
+    -
+      entity: a307da23-462f-4fdb-9685-70fe1924618e
+    -
+      entity: 11f92e4b-f01e-475e-9124-7d289e31175e
+    -
+      entity: f23dbdc9-e4b4-4715-a886-6546d970e951
+  field_area:
+    -
+      value: '33.00'
+  field_availability_hourly:
+    -
+      entity: 7ac7458f-161c-45e0-939f-5745f4556ba2
+  field_check_in_time:
+    -
+      from: 57600
+      to: 7200
+  field_check_out_time:
+    -
+      value: 79200
+  field_children_number:
+    -
+      value: 0
+  field_double_beds_number:
+    -
+      value: 0
+  field_night_hour:
+    -
+      value: '| per hour'
+  field_photos:
+    -
+      entity: 58d35d75-2a09-4aad-908a-f7e30cb41a4d
+    -
+      entity: de3c9a29-7d92-47ba-ad73-9060d5284965
+    -
+      entity: 891dcdc8-6e64-462c-accb-042af775a33d
+    -
+      entity: cd1da23b-d2b7-43bf-9323-e5fd7879a63a
+  field_price:
+    -
+      number: '48.000000'
+      currency_code: USD
+      formatted: $48.00
+  field_price_frequency:
+    -
+      value: hour
+  field_product:
+    -
+      entity: 21fc6bee-eb86-4794-af8d-9b87bcacf77f
+  field_single_beds_number:
+    -
+      value: 2
+  field_type:
+    -
+      entity: 61b0ccb8-4b89-42e6-af54-89618a7e3b56
+  field_use_open_hours:
+    -
+      value: false

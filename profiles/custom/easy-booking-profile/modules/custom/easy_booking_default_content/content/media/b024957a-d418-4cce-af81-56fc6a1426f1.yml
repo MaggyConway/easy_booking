@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b024957a-d418-4cce-af81-56fc6a1426f1
+  bundle: image
+  default_langcode: en
+  depends:
+    dbf55525-4ab3-4db7-ae37-bb6b8771c665: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: makaruny_mindalnoe_pechene_desert_119144_300x168.jpg
+  created:
+    -
+      value: 1603445260
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: dbf55525-4ab3-4db7-ae37-bb6b8771c665
+      alt: Attraction
+      title: ''
+      width: 300
+      height: 168

@@ -1,0 +1,26 @@
+uuid: b09aaad2-e5a3-4bb0-8f8d-fd3ae2b00b46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.album.field_images
+    - paragraphs.paragraphs_type.album
+  module:
+    - media_library
+_core:
+  default_config_hash: XdgW7oWq_VXZjrhFq261LmMxN7wXlSiMbqcYnUZViD0
+id: paragraph.album.default
+targetEntityType: paragraph
+bundle: album
+mode: default
+content:
+  field_images:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

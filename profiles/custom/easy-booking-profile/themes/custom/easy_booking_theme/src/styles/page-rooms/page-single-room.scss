@@ -1,0 +1,1275 @@
+.page-node-type-room {
+    .daterangepicker {
+        // max-width: 546px !important;
+        margin: 16px 0 0 -24px !important;
+        background: #f2eded;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+
+        &.opened {
+            border: 1px solid #000 !important;
+        }
+        
+        @include breakpoint(sll) {
+            max-width: 836px !important;
+            margin: 16px 0 0 0 !important;
+            left: 32px !important;
+            right: 32px !important;
+            width: auto !important;
+        }
+        
+        @include breakpoint(sl-tablet) {
+            width: 100% !important;
+            left: 0 !important;
+            right: 0 !important;
+        }
+
+        .calendar-table {
+            background: #f2eded;
+            border: 1px solid #f2eded;
+        }
+        
+        .off.ends.available,
+        .weekend.off.ends.available {
+            display: none;
+        }
+        
+        .drp-calendar {
+            &.left {
+                @include breakpoint(sl) {
+                    padding-bottom: 0 !important;
+                    margin-bottom: 6px;
+                }
+                
+                .calendar-time {
+                    @include breakpoint(sl) {
+                        margin: 10px auto 0 auto;
+                    }
+                }
+            }
+            
+            &.right {
+                @include breakpoint(sl) {
+                    display: block !important;
+                    margin-bottom: 26px;
+                }
+                
+                .calendar-table {
+                    @include breakpoint(sl) {
+                        display: none;
+                    }
+                }
+            }
+
+            .calendar-table {
+                table {
+                    td {
+                        border-top: 3px solid #f2eded;
+                        border-bottom: 3px solid #f2eded;
+                        &.in-range {
+                            background: #fff;
+                        }
+
+                        &.active {
+                            background: none;
+                        }
+                    }
+
+                    .start-date + .in-range,
+                    .first-day-in-month,
+                    .off + .in-range,
+                    .start-date.prev-end-date {
+                        background: linear-gradient(90deg, transparent, #fff) !important;
+                    }
+
+                    .prev-end-date,
+                    .last-day-in-month,
+                    .start-date.prev-end-date + .end-date {
+                        background: linear-gradient(90deg, #fff, transparent) !important;
+                    }
+
+                    .start-date + .prev-end-date {
+                        background: linear-gradient(90deg, transparent, #fff, transparent) !important;
+                    }
+                }
+            }
+
+            .hourselect, .minuteselect, .ampmselect {
+                border: 1px solid #12171D;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+    h2 {
+        font-size: $secondary-font-size-title;
+        line-height: $secondary-line-height-title;
+        margin-bottom: 8px;
+    }
+    
+    #block-easy-booking-theme-main-page-content {
+        background: $primary-bg;
+    }
+    
+    .layout--twocol-section--50-50 {
+        @include container;
+        
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 300;
+        font-size: $main-font-size;
+        line-height: $main-line-height;
+        padding: 0 32px 32px;
+        
+        @include breakpoint(sll) {
+            flex-direction: column;
+        }
+        
+        .messages--error {
+            font-family: $nunito-fonts;
+            font-weight: 300;
+            font-size: $main-font-size;
+            line-height: $main-line-height;
+            letter-spacing: 0.02em;
+            border: none;
+            color: $error-color-text;
+            background-color: transparent;
+            background-image: none;
+            box-shadow: none;
+            padding: 0;
+            display: flex;
+            margin-bottom: 8px;
+            
+            &::before {
+                content: '*';
+                display: block;
+            }
+        }
+        
+        .layout__region--first {
+            width: calc(50.7% - 32px);
+            flex: 1;
+            margin-right: 32px;
+            display: flex;
+            flex-direction: column;
+            
+            @include breakpoint(sll) {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 32px;
+            }
+            
+            @include breakpoint(sl) {
+                order: 1;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+        .layout__region--second {
+            width: 49.3%;
+            flex: 1;
+            position: relative;
+            
+            @include breakpoint(sll) {
+                max-width: 562px;
+                width: 100%;
+                margin: 0 auto;
+            }
+            
+            @include breakpoint(sl) {
+                order: 0;
+            }
+            
+            .title--container {
+                display: none;
+                
+                @include breakpoint(sl) {
+                    display: block;
+                }
+            }
+            
+            .block-inline-blockcustom-link {
+                position: absolute;
+                top: 24px;
+                right: 24px;
+                
+                @include breakpoint(sl) {
+                    top: 88px;
+                    right: 21px;
+                }
+                
+                .field--name-field-custom-link {
+                    a {
+                        @include btn-black;
+                        width: 135px;
+                        font-size: $main-font-size;
+                        line-height: $main-line-height;
+                        color: $secondary-color-text;
+                        letter-spacing: 0.02em;
+                        display: block;
+                        padding: 9px 10px 10px;
+                    }
+                    
+                    &:hover {
+                        a {
+                            color: $primary-color-text;
+                        }
+                    }
+                }
+            }
+            
+            /* Slick */
+            .slick-wrapper {
+                max-width: 562px;
+                width: 100%;
+                
+                @include breakpoint(sll) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+        .title--container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            order: 0;
+            
+            @include breakpoint(sl) {
+                display: none;
+            }
+            
+            .block-field-blocknoderoomtitle {
+                @include main-title-page;
+                
+                margin-bottom: 0;
+            }
+            
+            .price--container {
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.02em;
+                
+                .block-field-blocknoderoomfield-price {
+                    font-weight: bold;
+                    font-size: $extra-font-size;
+                    line-height: $extra-line-height;
+                    margin-bottom: 0;
+                }
+                
+                .block-field-blocknoderoomfield-night-hour {
+                    font-weight: 300;
+                    font-size: $main-font-size;
+                    line-height: $main-line-height;
+                    margin-left: 4px;
+                }
+            }
+        }
+        /* Form */
+        .block-reservation-form-block {
+            margin-bottom: 12px;
+            order: 1;
+            
+            @include breakpoint(sl) {
+                order: 0;
+                margin-bottom: 32px;
+            }
+        }
+        /* Display settings */
+        .guests-beds-area--wrapper {
+            display: flex;
+            align-items: flex-end;
+            border: $border-btn-extra-light;
+            border-radius: $border-radius-all;
+            padding: 14px 22px 20px;
+            margin-bottom: 15px;
+            order: 2;
+            
+            @include breakpoint(sl) {
+                padding: 15px 15px 20px;
+                margin-bottom: 32px;
+                order: 1;
+            }
+            
+            .guests--wrapper,
+            .beds--wrapper {
+                position: relative;
+                margin-right: 12px;
+                padding-right: 12px;
+                
+                &::after {
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    width: 1px;
+                    background: $secondary-color-text;
+                    height: 100%;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            
+            .guests--wrapper,
+            .beds--wrapper,
+            .area--wrapper {
+                flex: 1;
+                
+            }
+            
+            .guests--wrapper {
+                @include breakpoint(sl) {
+                    flex: 32%;
+                }
+            }
+            
+            .beds--wrapper {
+                @include breakpoint(sl) {
+                    flex: 42%;
+                }
+            }
+            
+            .area--wrapper {
+                @include breakpoint(sl) {
+                    flex: 26%;
+                }
+            }
+            
+            .guests-items--wrapper,
+            .beds-items--wrapper,
+            .area-items--wrapper {
+                margin-bottom: 1px;
+                
+                @include breakpoint(sl) {
+                    margin-bottom: 8px;
+                }
+            }
+            
+            h2 {
+                font-size: $extra-font-size;
+                line-height: $extra-line-height-secondary;
+                margin: 0;
+                
+                @include breakpoint(sl) {
+                    font-size: $font-size-card-text;
+                    line-height: $line-height-card-text;
+                }
+            }
+            
+            p {
+                font-weight: 300;
+                font-size: $main-font-size;
+                line-height: $main-line-height;
+                margin-bottom: 1px;
+                
+                @include breakpoint(sl) {
+                    font-size: $single-room-name;
+                    line-height: $single-room-name-line-height;
+                    margin-bottom: 8px;
+                }
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                
+                span {
+                    font-weight: bold;
+                    font-size: $secondary-font-size-title;
+                    line-height: $secondary-line-height-title;
+                    margin-right: 3px;
+                    
+                    @include breakpoint(sl) {
+                        font-size: $single-room-title;
+                        line-height: $single-room-title-line-height;
+                        margin-bottom: 3px;
+                        margin-right: 0;
+                    }
+                    
+                    @include breakpoint(s-book) {
+                        display: block;
+                    }
+                }
+            }
+            
+        }
+        /* Other */
+        .block-field-blocknoderoomfield-room-details {
+            order: 3;
+        }
+        
+        .block-field-blocknoderoomfield-amenities {
+            order: 4;
+        }
+        
+        .block-field-blocknoderoomfield-properties {
+            order: 5;
+        }
+        
+        .block-layout-builder {
+            margin-bottom: 24px;
+            
+            @include breakpoint(sl) {
+                margin-bottom: 32px;
+            }
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+            
+            h2 {
+                @include breakpoint(sl) {
+                    font-size: $secondary-font-size-title-mobile;
+                    line-height: $secondary-line-height-title-mobile;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+        
+        .block-field-blocknoderoomfield-room-details {
+            .field__label {
+                font-size: $secondary-font-size-title;
+                line-height: $secondary-line-height-title;
+                margin-bottom: 8px;
+                
+                @include breakpoint(sl) {
+                    font-size: $secondary-font-size-title-mobile;
+                    line-height: $secondary-line-height-title-mobile;
+                    margin-bottom: 16px;
+                }
+            }
+            
+            .field__item {
+                margin-bottom: 8px;
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+        .block-field-blocknoderoomfield-amenities {
+            .field--name-field-amenities {
+                display: flex;
+                flex-wrap: wrap;
+                font-weight: 300;
+                font-size: 14px;
+                margin: 0 -10px;
+                
+                @include breakpoint(sl) {
+                    margin: 0 -11px;
+                }
+                
+                > .field__item {
+                    width: calc(100% / 3 - 20px);
+                    margin: 0 10px 16px;
+                    
+                    @include breakpoint(sl) {
+                        width: calc(100% / 2 - 22px);
+                        margin: 0 11px 18px;
+                    }
+                }
+                
+                .layout--twocol-section--50-50 {
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    
+                    @include breakpoint(sll) {
+                        flex-direction: row;
+                    }
+                }
+                
+                .layout__region--first {
+                    max-width: 24px;
+                    margin-right: 8px;
+                    margin-bottom: 0;
+                    
+                    @include breakpoint(sll) {
+                        order: 0;
+                    }
+                }
+                
+                .layout__region--second {
+                    flex: 1;
+                    
+                    @include breakpoint(sll) {
+                        order: 1;
+                    }
+                }
+            }
+        }
+        
+        .block-field-blocknoderoomfield-properties {
+            .paragraph--type--properties {
+                display: flex;
+                margin: 0 -8px;
+                
+                @include breakpoint(sl) {
+                    display: block;
+                    margin: 0;
+                }
+                
+                .field--name-field-rules,
+                .field--name-field-safety {
+                    width: 50%;
+                    margin: 0 8px;
+                    
+                    p {
+                        margin: 0;
+                    }
+                    
+                    @include breakpoint(sl) {
+                        width: 100%;
+                        margin: 0 0 16px 0;
+                        
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+                
+                .field--name-field-title {
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                }
+                
+                .field--name-field-rule-items,
+                .field--name-field-safety-items,
+                .check-in,
+                .check-out {
+                    line-height: $main-line-height-extra;
+                }
+                
+                .field--name-field-safety-items {
+                    a {
+                        line-height: $main-line-height;
+                        text-decoration: underline;
+                        color: $link-color;
+                        transition: all $default-transition-time;
+                        
+                        &:hover,
+                        &:focus {
+                            color: $link-color-hover;
+                            text-decoration: none;
+                        }
+                    }
+                    
+                    .paragraph--type--safety-item {
+                        @include breakpoint(sl) {
+                            display: flex;
+                        }
+                        
+                        .field--name-field-more-link {
+                            @include breakpoint(sl) {
+                                margin-left: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    .layout--onecol {
+        background-color: $secondary-bg;
+        
+        .layout__region--content {
+            @include container;
+            padding-top: 32px;
+            padding-bottom: 30px;
+        }
+    }
+    
+    .easy-booking-custom-reservation-form {
+        position: relative;
+        max-width: 546px;
+        width: 100%;
+        font-size: $main-font-size;
+        line-height: $main-line-height;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        // background-color: $secondary-bg;
+        background-color: #F2EDED;
+        border-radius: 5px;
+        border: 1px solid #12171D;
+        height: 56px;
+        
+        @include breakpoint(ll) {
+            flex-wrap: wrap;
+            background-color: transparent;
+            border-radius: 0px;
+            height: auto;
+        }
+        
+        @include breakpoint(sll) {
+            max-width: 100%;
+        }
+        
+        h4 {
+            font-weight: bold;
+            line-height: 16px;
+        }
+        
+        .reservation_form--wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            @include breakpoint(ll) {
+                flex-wrap: wrap;
+            }
+            
+            @include breakpoint(s) {
+                display: block;
+            }
+            
+            .form-wrapper {
+                width: 100%;
+                height: 100%;
+                padding: 10px 35px 10px 25px;
+                border-radius: 5px;
+                cursor: pointer;
+                position: relative;
+                transition: background-color .2s ease-in-out;
+                
+                @include breakpoint(ll) {
+                    width: 50%;
+                    padding: 10px 24px;
+                }
+                
+                @include breakpoint(sl) {
+                    width: 100%;
+                }
+                
+                &.active {
+                    background-color: #000;
+                    
+                    .form-item-datetime-interval:before,
+                    &#edit-guests-wrapper > .guest_items_wrap:before {
+                        color: #fff;
+                    }
+                    
+                    #edit-datetime-interval, &#edit-guests-wrapper > .guest_items_wrap {
+                        color: rgba(255, 255, 255, .7);
+                    }
+                }
+            }
+            
+            &:not(.show) {
+                .form-wrapper {
+                    &:hover {
+                        background-color: #12171D;
+                        
+                        .form-item-datetime-interval:before,
+                        &#edit-guests-wrapper > .guest_items_wrap:before {
+                            color: #fff;
+                        }
+                        
+                        #edit-datetime-interval, &#edit-guests-wrapper > .guest_items_wrap {
+                            color: rgba(255, 255, 255, .7);
+                        }
+                    }
+                }
+
+                .reservation-dates--wrapper:hover + #edit-guests-wrapper:before {
+                    display: none;
+                }
+
+                #edit-guests-wrapper:hover {
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+
+            &.show {
+                #edit-guests-wrapper::before {
+                    display: none;
+                }
+            }
+        }
+        
+        .reservation-dates--wrapper {
+            @include breakpoint(ll) {
+                flex-wrap: wrap;
+                background-color: $secondary-bg;
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+                height: 56px !important;
+            }
+            
+            @include breakpoint(sl) {
+                height: 59px !important;
+                border-radius: 5px;
+                margin-bottom: 4px;
+            }
+            
+            .form-item-datetime-interval {
+                position: relative;
+                padding-top: 17px;
+                color: $extra-bg-third;
+                display: flex;
+                align-items: center;
+                
+                @include breakpoint(ll) {
+                    width: 100%;
+                }
+                
+                &:before {
+                    position: absolute;
+                    content: 'From-to';
+                    top: 0;
+                    left: 0;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $extra-bg;
+                }
+                
+                &:after {
+                    content: '';
+                    display: block;
+                    opacity: 1;
+                    visibility: visible;
+                    width: 8px;
+                    height: 4px;
+                    position: relative;
+                    background: url('../../assets/images/icon-dropdown.svg') no-repeat center center;
+                    background-size: 8px 4px;
+                    transition: all 0.27s ease-in-out;
+                    transform: rotate(0deg);
+                    margin-left: 8px;
+                    
+                    @include breakpoint(ll) {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+            
+            #edit-datetime-interval {
+                width: 160px;
+                border: none;
+                padding: 0;
+                outline: none;
+                cursor: pointer;
+                background: transparent;
+                
+                @include breakpoint(ll) {
+                    width: 100%;
+                }
+            }
+            
+            // &:after {
+            //     position: absolute;
+            //     content: '';
+            //     right: 0;
+            //     top: 50%;
+            //     transform: translateY(-50%);
+            //     display: block;
+            //     height: 30px;
+            //     width: 1px;
+            //     background-color: $c-grey;
+            //     opacity: 0.2;
+                
+            //     @include breakpoint(sl) {
+            //         display: none;
+            //     }
+            // }
+        }
+        
+        .reservation-guests--wrapper {
+            @include breakpoint(ll) {
+                flex-wrap: wrap;
+                background-color: $secondary-bg;
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+                height: 56px !important;
+            }
+            
+            @include breakpoint(sl) {
+                height: 59px !important;
+                border-radius: 5px;
+            }
+            
+            .guest_items_wrap {
+                position: relative;
+                padding-top: 17px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                color: $extra-bg-third;
+                
+                &:before {
+                    position: absolute;
+                    content: 'Guests';
+                    top: 0;
+                    left: 0;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $extra-bg;
+                }
+                
+                &:after {
+                    content: '';
+                    display: block;
+                    opacity: 1;
+                    visibility: visible;
+                    width: 8px;
+                    height: 4px;
+                    position: relative;
+                    background: url('../../assets/images/icon-dropdown.svg') no-repeat center center;
+                    background-size: 8px 4px;
+                    transition: all 0.27s ease-in-out;
+                    transform: rotate(0deg);
+                    margin-left: 8px;
+                }
+                
+                input[type="number"] {
+                    border: none;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 18px;
+                    outline: none;
+                    padding: 0;
+                    margin-right: 2px;
+                }
+                
+                > .form-type-number {
+                    align-items: baseline;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+                
+                .form-item-adults {
+                    padding-right: 15px;
+                    position: relative;
+                    
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        right: 4px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 5px;
+                        height: 5px;
+                        background-color: $extra-bg-second;
+                        border-radius: 50%;
+                    }
+                }
+                
+                .form-item-children {
+                    max-width: 44px;
+                    overflow: hidden;
+                }
+            }
+        }
+        
+        .form-submit {
+            background: $extra-bg;
+            padding: 5px 10px;
+            color: $extra-color-text;
+            font-size: $main-font-size;
+            line-height: $main-line-height;
+            border-radius: $border-radius-all;
+            border: none;
+            min-width: 113px;
+            width: 113px;
+            height: 40px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 8px 0 0;
+            
+            &:hover {
+                background-color: $black-50;
+            }
+            
+            &:focus {
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+            }
+            
+            &:active {
+                background-color: $c-dark;
+            }
+            
+            &:disabled {
+                opacity: 0.5;
+            }
+            
+            @include breakpoint(ll) {
+                width: 100%;
+                margin: 10px 0 0 0;
+            }
+        }
+        
+        .form-type-number {
+            display: inline-flex;
+            cursor: pointer;
+            
+            label {
+                cursor: pointer;
+                order: 1;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        
+        input[type="number"] {
+            order: 0;
+            width: 12px;
+            margin-right: 5px;
+            background-color: transparent;
+        }
+        
+        input[type="number"],
+        input[type="date"] {
+            border: none;
+            font-weight: 300;
+            font-size: 14px;
+            outline: none;
+        }
+        
+        input[type="date"] {
+            max-width: 126px;
+        }
+        
+        div.form-item {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        #edit-guests-wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-left: 24px;
+            padding-right: 16px;
+            margin-right: 7px;
+            cursor: pointer;
+            
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                display: block;
+                height: 30px;
+                width: .5px;
+                background-color: $extra-bg;
+                opacity: 0.2;
+                
+                @include breakpoint(sl-tablet) {
+                    display: none;
+                }
+            }
+            
+            .guests-dropdown {
+                display: none;
+                width: 307px;
+                position: absolute;
+                top: calc(100% + 8px);
+                left: 0;
+                background-color: #F2EDED;
+                border: 1px solid #000;
+                padding: 16px 24px;
+                border-radius: 5px;
+                font-size: 14px;
+                z-index: 2;
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+                
+                @include breakpoint(ll) {
+                    width: 100%;
+                }
+                
+                @include breakpoint(sl-tablet) {
+                    position: fixed;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    top: unset;
+                    bottom: 0;
+                    z-index: 100000;
+                    border-radius: 5px 5px 0 0;
+                }
+                
+                .guests-dropdown__field {
+                    border-bottom: 1px solid $primary-bg;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 8px;
+                    padding-bottom: 8px;
+                    
+                    &:last-child {
+                        border-bottom: none;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+                }
+                
+                input {
+                    text-align: center;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+                
+                .guests-dropdown__title {
+                    font-weight: bold;
+                    display: block;
+                }
+                
+                .guests-dropdown__control {
+                    display: flex;
+                    align-items: center;
+                }
+                
+                .btn-minus,
+                .btn-plus {
+                    width: 24px;
+                    height: 24px;
+                    border: none;
+                    background-color: #12171D;
+                    color: #fff;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    &[disabled] {
+                        opacity: .5;
+                    }
+                }
+            }
+            
+            .guest_items_wrap {
+                display: flex !important;
+                justify-content: flex-start;
+                align-items: center;
+                color: $extra-bg-second;
+                
+                @include breakpoint(ll) {
+                    width: 100%;
+                }
+                
+                &:after {
+                    content: '';
+                    display: block;
+                    opacity: 1;
+                    visibility: visible;
+                    width: 24px;
+                    height: 24px;
+                    position: relative;
+                    background: url('../../assets/images/icon-dropdown.svg') no-repeat center center;
+                    background-size: 8px 4px;
+                    transition: all 0.27s ease-in-out;
+                    transform: rotate(0deg);
+                    
+                    @include breakpoint(ll) {
+                        right: 0;
+                        position: absolute;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                
+                .form-item-adults {
+                    padding-right: 15px;
+                    position: relative;
+                    
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        right: 4px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 5px;
+                        height: 5px;
+                        background-color: $extra-bg-second;
+                        border-radius: 50%;
+                    }
+                    
+                    label {
+                        overflow: hidden;
+                        max-width: 35px;
+                        height: 19px;
+                    }
+                }
+                
+                .form-item-adults,
+                .form-item-children {
+                    align-items: baseline;
+                }
+                
+                .form-item-children {
+                    max-width: 44px;
+                    overflow: hidden;
+                }
+            }
+        }
+        
+    }
+}
+
+.block-field-blocknoderoomfield-photos {
+    .slick--optionset--room-slider-main {
+        margin-bottom: 16px;
+        
+        .slick-list {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+        
+        img {
+            @include breakpoint(s) {
+                height: 220px;
+                object-fit: fill;
+            }
+        }
+    }
+    
+    .slick--optionset--room-slider-thumbnail {
+        @include breakpoint(sl) {
+            display: none;
+        }
+        
+        .slick-list {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+    }
+    
+    .slick-track {
+        display: flex;
+        
+        .slick__slide {
+            cursor: pointer;
+            margin-left: 8px;
+            margin-right: 8px;
+            
+            &:focus {
+                border: none;
+                outline: 0;
+            }
+        }
+    }
+}
+
+.slick--optionset--slick-other-rooms {
+    &.unslick {
+        margin-left: -8px;
+        margin-right: -8px;
+        
+        @include breakpoint(sl) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .slick__slide {
+            width: calc(100% / 4 - 16px);
+            
+            @include breakpoint(ll) {
+                width: calc(100% / 3 - 16px);
+            }
+            
+            @include breakpoint(sl) {
+                width: calc(100% / 2 - 16px);
+            }
+            
+            @include breakpoint(s) {
+                width: calc(100% - 16px);
+            }
+            
+            img {
+                @include breakpoint(ll) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    .slick-list {
+        margin-left: -8px;
+        margin-right: -8px;
+        
+        .slick-track {
+            margin: 0;
+        }
+    }
+    
+    .slick__slide {
+        margin-left: 8px;
+        margin-right: 8px;
+        
+        &:focus {
+            border: none;
+        }
+        
+        img {
+            @include breakpoint(l) {
+                width: 100%;
+            }
+        }
+    }
+    .slick__arrow {
+        top: 42%;
+        left: 16px;
+        right: 16px;
+        transform: translateY(-42%);
+        width: auto;
+        
+        @include breakpoint(sl) {
+            left: 0;
+            right: 0;
+            top: auto;
+            transform: translateY(0);
+            bottom: -32px;
+        }
+        
+        .slick-arrow {
+            width: 32px;
+            height: 32px;
+            border: $border-btn-dark;
+            border-radius: $border-radius-all;
+            transition: all $default-transition-time;
+            
+            &:hover,
+            &:focus {
+                border: $border-btn-link;
+                
+                &::before {
+                    color: $link-color;
+                }
+            }
+            
+            &::before {
+                color: $primary-color-text;
+                font-size: 12px;
+            }
+            
+        }
+        
+        .slick-prev {
+            &::before {
+                content: "\f0d9";
+                font-family: FontAwesome;
+            }
+        }
+        
+        .slick-next {
+            &::before {
+                content: "\f0da";
+                font-family: FontAwesome;
+            }
+        }
+    }
+}

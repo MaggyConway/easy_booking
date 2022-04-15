@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2395d37c-6f67-4dd4-8835-14e8a8901490
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: dinner.png
+  uri:
+    -
+      value: 'public://2020-10/dinner_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1872
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310739
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

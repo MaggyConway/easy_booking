@@ -1,0 +1,47 @@
+uuid: 093935e5-8bdd-46ac-977d-be9dc2fcabd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_unit.type_bundle.daily
+    - field.field.bat_unit_type.daily.field_availability_daily
+    - field.field.bat_unit_type.daily.field_price
+  module:
+    - commerce_price
+id: bat_unit_type.daily.default
+targetEntityType: bat_unit_type
+bundle: daily
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_price:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: commerce_price_default
+    region: content
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_availability_daily: true

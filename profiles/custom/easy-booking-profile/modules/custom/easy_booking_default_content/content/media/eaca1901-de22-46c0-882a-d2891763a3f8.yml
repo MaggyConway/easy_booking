@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: eaca1901-de22-46c0-882a-d2891763a3f8
+  bundle: image
+  default_langcode: en
+  depends:
+    ac4de90d-73e7-4bfa-87e9-6d7eba55807d: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: perfect_bath
+  created:
+    -
+      value: 1614914578
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: ac4de90d-73e7-4bfa-87e9-6d7eba55807d
+      alt: perfect_bath
+      title: ''
+      width: 1686
+      height: 762

@@ -1,0 +1,36 @@
+easy_booking_map.settings:
+  type: config_entity
+  label: Mapbox settings
+  mapping:
+    access_token:
+      type: string
+      label: Access token
+    style:
+      type: string
+      label: Style settings
+    coordinates:
+      type: mapping
+      label: Coordinates
+      mapping:
+        lat:
+          type: string
+          label: Latitude
+        lon:
+          type: string
+          label: Longitude
+    zoom:
+      type: integer
+      label: Zoom
+    marker:
+      type: mapping
+      label: Marker
+      mapping:
+        id:
+          type: integer
+          label: Marker ID
+        url:
+          type: string
+          label: Marker URL
+    anchor:
+      type: string
+      label: Anchor

@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5bdfea06-03c5-4550-98d7-72a6db31777d
+  bundle: attraction
+  default_langcode: en
+  depends:
+    7cfdc28e-6c9a-4bb2-a6c8-2e39cbea29bc: media
+    9f8cd9ee-b27b-4542-a895-50d58303d9dd: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Restaurant & Club'
+  created:
+    -
+      value: 1603446112
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/restaurant-club
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1617093688
+  field_address:
+    -
+      value: 'Unnamed Rd, Thailand, ตำบล เกาะยาวใหญ่ อำเภอ เกาะยาว พังงา'
+  field_attraction_name:
+    -
+      value: 'Cozy Thai uncle`s restaurant'
+  field_coordinates:
+    -
+      value: 'POINT (-122.4102929 37.7862415)'
+      geo_type: Point
+      lat: 37.7862415
+      lon: -122.4102929
+      left: -122.4102929
+      top: 37.7862415
+      right: -122.4102929
+      bottom: 37.7862415
+      geohash: 9q8yyqz8c3yn2
+      latlon: '37.7862415,-122.4102929'
+  field_country:
+    -
+      value: TH
+  field_destination:
+    -
+      value: '0.03'
+  field_image:
+    -
+      entity: 7cfdc28e-6c9a-4bb2-a6c8-2e39cbea29bc
+  field_type:
+    -
+      entity: 9f8cd9ee-b27b-4542-a895-50d58303d9dd

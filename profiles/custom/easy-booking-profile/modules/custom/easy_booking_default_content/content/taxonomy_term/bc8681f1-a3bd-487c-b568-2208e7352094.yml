@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: bc8681f1-a3bd-487c-b568-2208e7352094
+  bundle: amenities
+  default_langcode: en
+  depends:
+    8ac1356c-5172-4fa1-835d-b5aae26538e1: media
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: CCTV
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /amenities/cctv
+      langcode: en
+      pathauto: 1
+  field_icon:
+    -
+      entity: 8ac1356c-5172-4fa1-835d-b5aae26538e1

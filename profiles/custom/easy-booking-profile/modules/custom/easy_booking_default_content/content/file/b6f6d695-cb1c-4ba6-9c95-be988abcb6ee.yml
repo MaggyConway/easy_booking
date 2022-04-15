@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b6f6d695-cb1c-4ba6-9c95-be988abcb6ee
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: hair-dryer.png
+  uri:
+    -
+      value: 'public://2020-10/hair-dryer_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1150
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310739
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

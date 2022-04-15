@@ -1,0 +1,87 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 86cd1c34-92df-40b2-a828-9ed763df70d9
+  bundle: news
+  default_langcode: en
+  depends:
+    dba7c752-645c-4401-b743-7d780fbb8b18: media
+    fba54f09-5298-460b-b122-dbb75dee45bd: media
+    28273341-0116-4ee0-ab92-f4950bcaa4fb: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Easy Booking is the perfect place for exploring'
+  created:
+    -
+      value: 1614915380
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /news/easy-booking-perfect-place-exploring
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1615952113
+  field_image:
+    -
+      entity: dba7c752-645c-4401-b743-7d780fbb8b18
+  field_news_articles:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a89611ef-47bb-4451-aa43-1671328fa28e
+          bundle: article
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1614915382
+          behavior_settings:
+            -
+              value: {  }
+          field_article_images:
+            -
+              entity: dba7c752-645c-4401-b743-7d780fbb8b18
+            -
+              entity: fba54f09-5298-460b-b122-dbb75dee45bd
+          field_article_text:
+            -
+              value: "With the opening of several sophisticated new dining spots in Westport, such as Easy Booking, it seems only fitting that the area have an upscale new hotel to accommodate out-of-town visitors.\r\n\r\nSlated to open in January, the 123-room Easy Booking \r\nis only the second of its kind to open in the United States. (A New Orleans location opened in the fall.) The sleek, modern look of the Easy Booking brand reflects the aesthetics of the European countries where it was first introduced and pairs high style with high tech, offering mobile check-in and USB charging stations. "
+              format: plain_text
+          field_article_title:
+            -
+              value: 'Easy Booking is the perfect place for exploring'
+  field_text:
+    -
+      value: 'With the opening of several sophisticated new dining spots in Westport, such as Easy Booking, it seems only fitting that the area have an upscale new hotel to accommodate out-of-town visitors.'
+      format: plain_text
+  field_title:
+    -
+      value: 'Easy Booking is the perfect place for exploring'
+  field_type:
+    -
+      entity: 28273341-0116-4ee0-ab92-f4950bcaa4fb

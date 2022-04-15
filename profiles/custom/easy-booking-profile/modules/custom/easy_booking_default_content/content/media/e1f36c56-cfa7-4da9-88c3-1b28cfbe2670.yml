@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e1f36c56-cfa7-4da9-88c3-1b28cfbe2670
+  bundle: image
+  default_langcode: en
+  depends:
+    00361578-7b4a-4bde-a300-c7a7431c2cc9: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: swimming-pool.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 00361578-7b4a-4bde-a300-c7a7431c2cc9
+      alt: 'Swimming Pool'
+      title: ''
+      width: 40
+      height: 40

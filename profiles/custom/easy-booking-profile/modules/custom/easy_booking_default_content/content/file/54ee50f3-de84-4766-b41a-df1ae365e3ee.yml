@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 54ee50f3-de84-4766-b41a-df1ae365e3ee
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: gazeta_kofe_chashka_lozhka_ochki_novosti_podstakannik_84893_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/gazeta_kofe_chashka_lozhka_ochki_novosti_podstakannik_84893_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 260660
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603427770
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

@@ -1,0 +1,23 @@
+uuid: f91a8610-265e-4c43-953a-e9d56c6cca51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_use_open_hours
+    - node.type.room
+_core:
+  default_config_hash: 8Se0BjBGcox7PgL0iWxc359dyFwLh7R2MntaaR9r2Gg
+id: node.room.field_use_open_hours
+field_name: field_use_open_hours
+entity_type: node
+bundle: room
+label: 'Set Open Hours'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

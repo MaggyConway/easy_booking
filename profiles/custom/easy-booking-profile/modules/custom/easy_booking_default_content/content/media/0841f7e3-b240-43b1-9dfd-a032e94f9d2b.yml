@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 0841f7e3-b240-43b1-9dfd-a032e94f9d2b
+  bundle: image
+  default_langcode: en
+  depends:
+    6de435b3-cfab-42e0-a475-6061267202c1: file
+    46dde997-c304-4644-b7a2-3be7044bc38b: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: kartofel_fri_burger_gamburger_ovoshchi_bulochka_110510_1280x720.jpg
+  created:
+    -
+      value: 1603445260
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 6de435b3-cfab-42e0-a475-6061267202c1
+      alt: Attraction
+      title: ''
+      width: 1280
+      height: 720
+  field_type:
+    -
+      entity: 46dde997-c304-4644-b7a2-3be7044bc38b

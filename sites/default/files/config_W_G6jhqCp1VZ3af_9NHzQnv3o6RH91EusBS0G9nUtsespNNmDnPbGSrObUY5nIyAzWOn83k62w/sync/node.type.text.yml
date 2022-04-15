@@ -1,0 +1,20 @@
+uuid: 884eeb74-a848-44df-8762-37258e02307e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: hpbe5aOS43XIyAkUbeHMN5CvwKVTwx9ve3YtDxekWYQ
+name: Text
+type: text
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

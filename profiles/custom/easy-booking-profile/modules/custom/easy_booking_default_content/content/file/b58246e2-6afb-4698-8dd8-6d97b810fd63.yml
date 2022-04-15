@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b58246e2-6afb-4698-8dd8-6d97b810fd63
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pirog_malina_shokolad_desert_pribory_101045_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-11/pirog_malina_shokolad_desert_pribory_101045_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 192999
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1604652066
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

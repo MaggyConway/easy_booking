@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 11d3af9f-a077-49e2-9060-ee500ff7cecb
+  bundle: image
+  default_langcode: en
+  depends:
+    ca6648da-e0d8-4b0e-adc7-3594a0cd248d: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: file.png
+  created:
+    -
+      value: 1605861356
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: ca6648da-e0d8-4b0e-adc7-3594a0cd248d
+      alt: file
+      title: ''
+      width: 40
+      height: 40

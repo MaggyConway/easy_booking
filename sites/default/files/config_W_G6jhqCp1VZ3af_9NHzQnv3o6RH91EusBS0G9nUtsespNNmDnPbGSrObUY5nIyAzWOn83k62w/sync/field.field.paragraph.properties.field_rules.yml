@@ -1,0 +1,60 @@
+uuid: f06988a2-dae0-4a9e-8d9d-9c1622e50df9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_rules
+    - paragraphs.paragraphs_type.properties
+    - paragraphs.paragraphs_type.rules
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: oepEDnZ_KTbdfLxBmBVR3eq71wNbz-L_HfunvQZqu6w
+id: paragraph.properties.field_rules
+field_name: field_rules
+entity_type: paragraph
+bundle: properties
+label: Rules
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      rules: rules
+    target_bundles_drag_drop:
+      album:
+        weight: 11
+        enabled: false
+      article:
+        weight: 12
+        enabled: false
+      info_block:
+        weight: 13
+        enabled: false
+      info_blocks:
+        weight: 14
+        enabled: false
+      properties:
+        weight: 15
+        enabled: false
+      rule:
+        weight: 16
+        enabled: false
+      rules:
+        enabled: true
+        weight: 17
+      safety:
+        weight: 18
+        enabled: false
+      safety_item:
+        weight: 19
+        enabled: false
+      service:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

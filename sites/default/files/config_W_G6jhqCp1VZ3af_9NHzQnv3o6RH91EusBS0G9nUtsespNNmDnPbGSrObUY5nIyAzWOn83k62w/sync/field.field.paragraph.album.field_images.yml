@@ -1,0 +1,30 @@
+uuid: dc311985-9565-453d-82da-20d2a36498c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_images
+    - media.type.image
+    - paragraphs.paragraphs_type.album
+_core:
+  default_config_hash: Gxr9K20MhMI1hChI8ZMlJldZ_0szMqV7jvmGXroGWFk
+id: paragraph.album.field_images
+field_name: field_images
+entity_type: paragraph
+bundle: album
+label: Images
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

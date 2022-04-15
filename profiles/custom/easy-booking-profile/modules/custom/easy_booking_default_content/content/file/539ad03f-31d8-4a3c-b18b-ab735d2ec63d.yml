@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 539ad03f-31d8-4a3c-b18b-ab735d2ec63d
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: krovat_spalnya_detskaya_komnata_80381_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/krovat_spalnya_detskaya_komnata_80381_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 119086
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603423225
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

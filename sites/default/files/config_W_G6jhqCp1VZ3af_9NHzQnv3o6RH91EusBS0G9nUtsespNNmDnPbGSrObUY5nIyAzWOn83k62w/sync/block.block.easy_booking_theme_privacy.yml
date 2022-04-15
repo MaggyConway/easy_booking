@@ -1,0 +1,27 @@
+uuid: b95c7e7f-5e4c-429e-8c32-c0d58463c5d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.privacy
+  module:
+    - system
+  theme:
+    - easy_booking_theme
+_core:
+  default_config_hash: XkdARvyZqBgzsbY1jveRHs9_oyPHWJ_kKCP8DblYr40
+id: easy_booking_theme_privacy
+theme: easy_booking_theme
+region: footer
+weight: -8
+provider: null
+plugin: 'system_menu_block:privacy'
+settings:
+  id: 'system_menu_block:privacy'
+  label: Privacy
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

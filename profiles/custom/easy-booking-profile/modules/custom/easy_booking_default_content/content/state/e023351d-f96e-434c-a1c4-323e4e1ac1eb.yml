@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: state
+  uuid: e023351d-f96e-434c-a1c4-323e4e1ac1eb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 0
+  name:
+    -
+      value: 'Not available'
+  created:
+    -
+      value: 1614652901
+  color:
+    -
+      value: '#f04b4b'
+  calendar_label:
+    -
+      value: N/A
+  blocking:
+    -
+      value: 0
+  locked:
+    -
+      value: 0
+  machine_name:
+    -
+      value: bee_hourly_not_available
+  event_type:
+    -
+      target_id: availability_hourly

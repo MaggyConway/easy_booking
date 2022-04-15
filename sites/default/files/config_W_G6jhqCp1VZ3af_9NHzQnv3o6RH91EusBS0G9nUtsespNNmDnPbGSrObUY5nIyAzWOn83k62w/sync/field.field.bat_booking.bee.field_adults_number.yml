@@ -1,0 +1,25 @@
+uuid: 5ac40b64-4b2e-4b8d-8d28-e2fd4253cb93
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_booking.booking_bundle.bee
+    - field.storage.bat_booking.field_adults_number
+_core:
+  default_config_hash: nRqbXQC0biscqpWPYjdHDAY-5dFsyiJVUmI8vyv5hvk
+id: bat_booking.bee.field_adults_number
+field_name: field_adults_number
+entity_type: bat_booking
+bundle: bee
+label: 'Adults number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,25 @@
+uuid: 14954071-7eea-4670-b025-ed052bab92ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+_core:
+  default_config_hash: PwU_h41rxTJHKwKhJ8h_Vl6V9_nF701fjRZ61Aa8l6w
+id: room_types
+label: 'Room Types'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/rooms/types/[term:name]'
+selection_criteria:
+  d4ac8b4f-20b0-4c38-8052-1a482585c506:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      rooms: rooms
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: d4ac8b4f-20b0-4c38-8052-1a482585c506
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,20 @@
+uuid: 1619c690-c5d6-4f8e-81d6-37263911c28a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_order
+third_party_settings:
+  commerce_order:
+    customer_profile_type: true
+_core:
+  default_config_hash: ZovFkwFOJx4NWknwN5EQC_dFKeBjjc3aR6KRFU5jIWI
+id: customer
+label: Customer
+display_label: 'Customer information'
+multiple: true
+registration: false
+roles: {  }
+allow_revisions: false
+new_revision: false

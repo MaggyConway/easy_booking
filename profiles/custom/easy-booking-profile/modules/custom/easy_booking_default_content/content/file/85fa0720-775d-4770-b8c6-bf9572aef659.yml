@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 85fa0720-775d-4770-b8c6-bf9572aef659
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: informatsionnyj_stend_poligrafiya_gazety_111632_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/informatsionnyj_stend_poligrafiya_gazety_111632_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 203435
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603427770
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

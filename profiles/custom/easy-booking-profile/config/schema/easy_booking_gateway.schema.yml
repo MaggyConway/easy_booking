@@ -1,0 +1,3 @@
+# config/schema/easy_booking_gateway.schema.yml
+commerce_payment.commerce_payment_gateway.plugin.easy_booking_gateway:
+  type: commerce_payment_gateway_configuration

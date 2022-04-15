@@ -1,0 +1,12 @@
+uuid: 2ceb7999-323f-4970-b241-2bcd3fefc2c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_event
+_core:
+  default_config_hash: wzOrgW90YmcqXzV4e6OlU0-pf_W9p918rIe0DXsAp3Y
+id: bat_event.token
+label: Token
+targetEntityType: bat_event
+cache: true

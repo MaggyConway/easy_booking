@@ -1,0 +1,12 @@
+uuid: dc36b2e9-cda0-479a-8f34-5066c2a9f422
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: V8z2QqzHn9pdvf0HHQbwEWckUripaLZM6OFUbhWzC24
+id: info_blocks
+label: 'Info Blocks'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

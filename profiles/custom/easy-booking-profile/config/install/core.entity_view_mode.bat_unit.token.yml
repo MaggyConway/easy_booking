@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_unit
+id: bat_unit.token
+label: Token
+targetEntityType: bat_unit
+cache: true

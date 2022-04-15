@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5b1222a6-005f-4419-8dcd-895330e0c511
+  bundle: attraction
+  default_langcode: en
+  depends:
+    55535864-b0e5-4259-ab49-2efc9ef6f74a: media
+    9f8cd9ee-b27b-4542-a895-50d58303d9dd: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Fastfood
+  created:
+    -
+      value: 1603445345
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /attractions/fastfood
+      langcode: en
+      pathauto: 1
+  published_at:
+    -
+      value: 1617093683
+  field_address:
+    -
+      value: 'Unnamed Rd, Thailand, ตำบล เกาะยาวใหญ่ อำเภอ เกาะยาว พังงา'
+  field_attraction_name:
+    -
+      value: 'Thai aunt`s burgers'
+  field_coordinates:
+    -
+      value: 'POINT (-122.4212149 37.783136)'
+      geo_type: Point
+      lat: 37.783136
+      lon: -122.4212149
+      left: -122.4212149
+      top: 37.783136
+      right: -122.4212149
+      bottom: 37.783136
+      geohash: 9q8yynpwdzjcr
+      latlon: '37.783136,-122.4212149'
+  field_country:
+    -
+      value: TH
+  field_destination:
+    -
+      value: '0.94'
+  field_image:
+    -
+      entity: 55535864-b0e5-4259-ab49-2efc9ef6f74a
+  field_type:
+    -
+      entity: 9f8cd9ee-b27b-4542-a895-50d58303d9dd

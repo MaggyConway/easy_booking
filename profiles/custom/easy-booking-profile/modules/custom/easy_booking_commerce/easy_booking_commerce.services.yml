@@ -1,0 +1,20 @@
+services:
+  easy_booking_commerce.cart_subscriber:
+    class: Drupal\easy_booking_commerce\EventSubscriber\CartEventSubscriber
+    arguments: ['@messenger', '@string_translation', '@commerce_store.current_store', '@commerce_cart.cart_provider']
+    tags:
+      - { name: event_subscriber }
+  easy_booking_commerce.saleprice_resolver:
+    class: Drupal\easy_booking_commerce\Resolvers\SalepriceResolver
+    arguments: ['@request_stack']
+    tags:
+      - { name: commerce_price.price_resolver, priority: 800 }
+  easy_booking_commerce.order_item_subscriber:
+    class: Drupal\easy_booking_commerce\EventSubscriber\OrderItemEventSubscriber
+    arguments: ['@commerce_store.current_store', '@commerce_cart.cart_provider', '@messenger']
+    tags:
+      - { name: event_subscriber }
+  easy_booking_commerce.order_subscriber:
+    class: Drupal\easy_booking_commerce\EventSubscriber\OrderEventSubscriber
+    tags:
+      - { name: event_subscriber }

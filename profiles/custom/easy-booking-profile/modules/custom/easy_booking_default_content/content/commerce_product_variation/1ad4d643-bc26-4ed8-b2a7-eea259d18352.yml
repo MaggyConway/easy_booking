@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product_variation
+  uuid: 1ad4d643-bc26-4ed8-b2a7-eea259d18352
+  bundle: bee
+  default_langcode: en
+  depends:
+    a5f7f83b-bf10-42e9-b599-a0848f425b55: commerce_product
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  product_id:
+    -
+      entity: a5f7f83b-bf10-42e9-b599-a0848f425b55
+  sku:
+    -
+      value: bee_room_14
+  title:
+    -
+      value: 'Basic Single Room'
+  price:
+    -
+      number: '0.000000'
+      currency_code: USD
+      formatted: $0.00
+  created:
+    -
+      value: 1603427040

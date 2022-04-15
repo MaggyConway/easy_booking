@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 1f8708d7-c861-46af-97a7-b8ad2b6aa53b
+  bundle: bee_room
+  default_langcode: en
+  depends:
+    9b090114-4549-4310-a125-fa159e0e144c: commerce_store
+    82fd104d-0499-423a-82d6-8c3de8bc9ea5: commerce_product_variation
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: 9b090114-4549-4310-a125-fa159e0e144c
+  title:
+    -
+      value: 'Junior Suite'
+  variations:
+    -
+      entity: 82fd104d-0499-423a-82d6-8c3de8bc9ea5
+  default_variation:
+    -
+      entity: 82fd104d-0499-423a-82d6-8c3de8bc9ea5
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1603423496

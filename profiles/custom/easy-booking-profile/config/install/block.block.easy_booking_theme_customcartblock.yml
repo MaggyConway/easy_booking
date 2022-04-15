@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - easy_booking_commerce
+    - system
+    - user
+  theme:
+    - easy_booking_theme
+id: easy_booking_theme_customcartblock
+theme: easy_booking_theme
+region: content
+weight: -2
+provider: null
+plugin: custom_cart_block
+settings:
+  id: custom_cart_block
+  label: 'Custom Cart Block'
+  provider: easy_booking_commerce
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /rooms
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

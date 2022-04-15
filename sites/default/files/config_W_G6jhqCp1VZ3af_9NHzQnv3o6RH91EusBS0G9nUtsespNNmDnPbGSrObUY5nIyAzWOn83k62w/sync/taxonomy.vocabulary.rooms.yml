@@ -1,0 +1,10 @@
+uuid: 18c200ef-d955-4f79-80af-13184b599d6f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vWn24QcPHEOclXe8MvHCoxf_GGuEBbjInoLSVSpx8A8
+name: Rooms
+vid: rooms
+description: 'Room types.'
+weight: 0

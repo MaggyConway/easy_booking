@@ -1,0 +1,23 @@
+uuid: 50ba7292-c288-4ddb-bfdf-c8ad0a2465d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_booking.booking_bundle.bee
+    - field.storage.bat_booking.booking_event_reference
+_core:
+  default_config_hash: IeVnMU7AO7qoROQR0ZKqVMVD_mocKC6Eipxb6KpceGE
+id: bat_booking.bee.booking_event_reference
+field_name: booking_event_reference
+entity_type: bat_booking
+bundle: bee
+label: Event
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:bat_event'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,18 @@
+langcode: en
+status: false
+dependencies:
+  module:
+    - commerce_payment_example
+id: rooms_payment_gateway
+label: 'Rooms Payment Gateway'
+weight: null
+plugin: example_onsite
+configuration:
+  api_key: EDgKApkqW0H-PdoaOwOXzcHh13LxqjeqJDzvGoJsClm0xokqzOFVW0P6vJ3Bvbo-8OjpKZGoN9FAVKqQ
+  display_label: Example
+  mode: test
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 52d515ca-9735-405c-8107-0aa678e5fff0
+  bundle: amenities
+  default_langcode: en
+  depends:
+    3236c0bf-096a-4cf3-a06c-df506d771abf: media
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Luggage
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /amenities/luggage
+      langcode: en
+      pathauto: 1
+  field_icon:
+    -
+      entity: 3236c0bf-096a-4cf3-a06c-df506d771abf

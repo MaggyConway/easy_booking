@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: d13562b2-61f8-42e2-aa5f-fbc17bfa282f
+  bundle: image
+  default_langcode: en
+  depends:
+    6c5703a9-1ab8-485e-bf35-8f5aa96b6945: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: sunbed.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 6c5703a9-1ab8-485e-bf35-8f5aa96b6945
+      alt: Sunbed
+      title: ''
+      width: 40
+      height: 40

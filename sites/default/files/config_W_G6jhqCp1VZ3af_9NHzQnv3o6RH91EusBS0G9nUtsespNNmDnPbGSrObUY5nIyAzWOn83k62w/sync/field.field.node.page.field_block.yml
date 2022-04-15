@@ -1,0 +1,30 @@
+uuid: bfc5380b-cfed-442e-ab9d-8da09abc3881
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about
+    - field.storage.node.field_block
+    - node.type.page
+_core:
+  default_config_hash: vbObm8USOj_2j6WNkgaslrHWtIeSYCH5iDxE0huAIXM
+id: node.page.field_block
+field_name: field_block
+entity_type: node
+bundle: page
+label: Block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      about: about
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

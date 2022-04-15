@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hamburger_block:56ebd092-6021-4647-a969-1d017025227d'
+  module:
+    - block_content
+  theme:
+    - easy_booking_theme
+id: hamburgerblock
+theme: easy_booking_theme
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:56ebd092-6021-4647-a969-1d017025227d'
+settings:
+  id: 'block_content:56ebd092-6021-4647-a969-1d017025227d'
+  label: 'Hamburger block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

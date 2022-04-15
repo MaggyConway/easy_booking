@@ -1,0 +1,32 @@
+uuid: 257cb398-15a9-409e-96bc-d42adddaaeb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.about_us
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+_core:
+  default_config_hash: 4lHIB10ybIrS1z5hd8000S8EtH_09jZ4syO6ohJA8Gg
+id: views_about_us_block
+theme: bartik
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:about_us-about_us_block'
+settings:
+  id: 'views_block:about_us-about_us_block'
+  label: 'About us'
+  provider: views
+  label_display: visible
+  views_label: 'About us'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

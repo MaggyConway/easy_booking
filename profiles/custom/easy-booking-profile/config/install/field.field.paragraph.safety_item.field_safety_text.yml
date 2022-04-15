@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_safety_text
+    - paragraphs.paragraphs_type.safety_item
+  module:
+    - text
+id: paragraph.safety_item.field_safety_text
+field_name: field_safety_text
+entity_type: paragraph
+bundle: safety_item
+label: 'Safety Text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

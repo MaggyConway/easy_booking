@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6efdc838-203a-44a6-a32f-bf054701f9f2
+  bundle: image
+  default_langcode: en
+  depends:
+    127747a9-daa8-432d-87ee-88530f923ce6: file
+    ba12914e-2d52-4bc2-83e4-9ce3e73bc937: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: tropiki_plyazh_lodki_90646_1280x720.jpg
+  created:
+    -
+      value: 1604652431
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 127747a9-daa8-432d-87ee-88530f923ce6
+      alt: tropiki_plyazh_lodki_90646_1280x720
+      title: ''
+      width: 1280
+      height: 720
+  field_type:
+    -
+      entity: ba12914e-2d52-4bc2-83e4-9ce3e73bc937

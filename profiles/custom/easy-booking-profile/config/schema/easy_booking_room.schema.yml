@@ -1,0 +1,107 @@
+field.formatter.settings.office_hours_table:
+  type: mapping
+  label: 'Office hours display format settings'
+  mapping:
+    day_format:
+      type: string
+      label: 'Day notation'
+    time_format:
+      type: string
+      label: 'Time type'
+    compress:
+      type: boolean
+      label: 'Compress all hours of a day into one set'
+    grouped:
+      type: boolean
+      label: 'Group consecutive days with same hours into one set'
+    show_closed:
+      type: string
+      label: 'Number of days to show'
+    closed_format:
+      type: string
+      label: 'Empty days notation'
+    separator:
+      type: mapping
+      label: 'Separators'
+      mapping:
+        days:
+          type: label
+          label: 'Separator between days'
+        grouped_days:
+          type: label
+          label: 'Separator between grouped days'
+        day_hours:
+          type: label
+          label: 'Separator between day and the hours'
+        hours_hours:
+          type: label
+          label: 'Separator between the hours of a time slot'
+        more_hours:
+          type: label
+          label: 'Separator between time slots'
+    current_status:
+      type: mapping
+      label: 'Current status'
+      mapping:
+        position:
+          type: string
+          label: 'Current status position'
+        open_text:
+          type: label
+          label: 'Currently open message'
+        closed_text:
+          type: label
+          label: 'Currently closed message'
+    schema:
+      type: mapping
+      label: 'Schema'
+      mapping:
+        enabled:
+          type: boolean
+          label: 'Current schema'
+    timezone_field:
+      type: string
+      label: 'Timezone field'
+    office_hours_first_day:
+      type: string
+      label: 'First day of week'
+
+field.value.time:
+  type: mapping
+  label: 'Time field'
+  mapping:
+    value:
+      type: integer
+      label: 'Time value'
+
+field.widget.settings.time_widget:
+  type: mapping
+  label: 'Time widget'
+  mapping:
+    enabled:
+      type: boolean
+      label: 'Status'
+    step:
+      type: integer
+      label: 'Step'
+
+field.formatter.settings.time_formatter:
+  type: mapping
+  label: 'Time formatter'
+  mapping:
+    time_format:
+      type: string
+      label: 'Time format'
+
+field_formatter.entity_view_display:
+  type: field_formatter
+  mapping:
+    weight:
+      type: integer
+      label: 'Weight'
+    region:
+      type: string
+      label: 'Region'
+    time_format:
+      type: string
+      label: 'Time format'

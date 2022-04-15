@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c8ba3a0d-16df-4573-ac84-e03e22fb1602
+  bundle: image
+  default_langcode: en
+  depends:
+    b6f6d695-cb1c-4ba6-9c95-be988abcb6ee: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: hair-dryer.png
+  created:
+    -
+      value: 1603310739
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: b6f6d695-cb1c-4ba6-9c95-be988abcb6ee
+      alt: 'Hair Dryer'
+      title: ''
+      width: 40
+      height: 40

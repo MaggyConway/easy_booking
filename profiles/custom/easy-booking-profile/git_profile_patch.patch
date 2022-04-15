@@ -1,0 +1,50 @@
+Index: easy_booking.info.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/easy_booking.info.yml b/easy_booking.info.yml
+--- a/easy_booking.info.yml	(revision 19b50386254b0f2f672941d5c968c458aaa065c4)
++++ b/easy_booking.info.yml	(date 1616734814989)
+@@ -49,8 +49,12 @@
+   - crop
+   - datetime
+   - datetime_range
++  - devel
++  - ds
++  - ds_extras
+   - entity
+   - entity_reference_revisions
++  - field_group
+   - fullcalendar_library
+   - layout_builder
+   - layout_discovery
+@@ -58,6 +62,7 @@
+   - link
+   - hal
+   - flippy
++  - masonry_views
+   - media
+   - media_library
+   - media_library_form_element
+@@ -65,6 +70,7 @@
+   - options
+   - paragraphs
+   - pathauto
++  - publication_date
+   - profile
+   - redirect
+   - slick
+@@ -81,6 +87,7 @@
+   - telephone
+   - time_field
+   - token
++  - views_block_area
+   - webform
+   - webform_ui
+   - automated_cron
+@@ -127,3 +134,4 @@
+   - bartik
+   - seven
+   - claro
++  - easy_booking_theme

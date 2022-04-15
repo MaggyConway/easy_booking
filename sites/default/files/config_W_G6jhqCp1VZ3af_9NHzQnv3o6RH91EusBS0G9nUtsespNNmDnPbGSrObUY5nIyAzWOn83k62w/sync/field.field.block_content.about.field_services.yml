@@ -1,0 +1,45 @@
+uuid: 04e087eb-d203-4236-ab1d-17d18e20ed7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about
+    - field.storage.block_content.field_services
+    - paragraphs.paragraphs_type.service
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: JeXRBl2imI3oiB8YLfNuOgR0w0Ze6VhObRBziLX-du0
+id: block_content.about.field_services
+field_name: field_services
+entity_type: block_content
+bundle: about
+label: Services
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      service: service
+    target_bundles_drag_drop:
+      album:
+        weight: 6
+        enabled: false
+      article:
+        weight: 7
+        enabled: false
+      info_block:
+        weight: 8
+        enabled: false
+      info_blocks:
+        weight: 9
+        enabled: false
+      service:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

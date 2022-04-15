@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: de071477-6d55-4cf8-a06d-ee5794c0ad0c
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: malina_chernika_smorodina_krasnaya_yagody_limon_lajm_tsitrusy_frukty_varene_dzhem_banochka_lozhka_94014_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-10/malina_chernika_smorodina_krasnaya_yagody_limon_lajm_tsitrusy_frukty_varene_dzhem_banochka_lozhka_94014_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 177403
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603445260
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

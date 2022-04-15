@@ -1,0 +1,25 @@
+uuid: b5cb0085-bcee-41ba-8d44-763edb20a146
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - easy_booking_theme
+_core:
+  default_config_hash: ZzJhL0oPGRRjune4ic_pKoj-XFA1wE-EVpzUf0btvPM
+id: easy_booking_theme_site_branding
+theme: easy_booking_theme
+region: header
+weight: -12
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

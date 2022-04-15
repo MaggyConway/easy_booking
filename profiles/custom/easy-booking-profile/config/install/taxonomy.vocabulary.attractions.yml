@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Attractions
+vid: attractions
+description: 'Attraction types.'
+weight: 0

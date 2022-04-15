@@ -1,0 +1,12 @@
+uuid: 4b82e334-2928-4867-ac2a-51feb62173aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api
+_core:
+  default_config_hash: Fv7YmYF43xbtTjRTQn2D1-4nxL3wHRwQdYAqFkzWqD0
+id: search_api_task.token
+label: Token
+targetEntityType: search_api_task
+cache: true

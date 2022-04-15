@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: commerce_product
+  uuid: 331133cf-1271-41d5-9c2d-299f1d419808
+  bundle: bee_room
+  default_langcode: en
+  depends:
+    9b090114-4549-4310-a125-fa159e0e144c: commerce_store
+    8a9e6ad6-63c9-48ba-a76b-a44eae727d4e: commerce_product_variation
+default:
+  uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  stores:
+    -
+      entity: 9b090114-4549-4310-a125-fa159e0e144c
+  title:
+    -
+      value: 'Basic Presidential Room'
+  variations:
+    -
+      entity: 8a9e6ad6-63c9-48ba-a76b-a44eae727d4e
+  default_variation:
+    -
+      entity: 8a9e6ad6-63c9-48ba-a76b-a44eae727d4e
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1603426238

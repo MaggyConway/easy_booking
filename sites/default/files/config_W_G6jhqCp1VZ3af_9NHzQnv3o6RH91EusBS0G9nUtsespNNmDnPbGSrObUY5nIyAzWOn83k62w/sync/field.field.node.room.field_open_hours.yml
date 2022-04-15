@@ -1,0 +1,23 @@
+uuid: 1b4e5031-aa58-4db3-a6d2-91b6a13977b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_hours
+    - node.type.room
+  module:
+    - office_hours
+_core:
+  default_config_hash: jV3hV9b-VQ26V02wyPlj_jjgKs-2MWCZ9MeMyo74es8
+id: node.room.field_open_hours
+field_name: field_open_hours
+entity_type: node
+bundle: room
+label: 'Open Hours'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: office_hours

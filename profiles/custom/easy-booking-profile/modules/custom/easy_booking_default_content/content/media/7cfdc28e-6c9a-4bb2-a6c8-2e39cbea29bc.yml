@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7cfdc28e-6c9a-4bb2-a6c8-2e39cbea29bc
+  bundle: image
+  default_langcode: en
+  depends:
+    bbcb5b7d-2a8e-48a5-accc-7adb22be8bc6: file
+    46dde997-c304-4644-b7a2-3be7044bc38b: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: stol_restoran_bokaly_tarelki_cvety_rozy_80713_1280x720.jpg
+  created:
+    -
+      value: 1603445260
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: bbcb5b7d-2a8e-48a5-accc-7adb22be8bc6
+      alt: Attraction
+      title: ''
+      width: 1280
+      height: 720
+  field_type:
+    -
+      entity: 46dde997-c304-4644-b7a2-3be7044bc38b

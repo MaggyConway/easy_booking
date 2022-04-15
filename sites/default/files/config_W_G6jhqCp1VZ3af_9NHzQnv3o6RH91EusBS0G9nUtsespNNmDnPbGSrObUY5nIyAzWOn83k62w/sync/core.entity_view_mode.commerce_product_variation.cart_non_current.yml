@@ -1,0 +1,12 @@
+uuid: e324ce5f-af11-4273-be6b-68d8186948ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: mESxQZcgUvPoI70X5hiVQUoS1NwMyV-pyyuDD5E9R8w
+id: commerce_product_variation.cart_non_current
+label: 'Non-current cart'
+targetEntityType: commerce_product_variation
+cache: true

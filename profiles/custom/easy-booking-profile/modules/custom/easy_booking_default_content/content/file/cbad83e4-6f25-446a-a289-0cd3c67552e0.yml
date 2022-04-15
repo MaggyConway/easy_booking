@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: cbad83e4-6f25-446a-a289-0cd3c67552e0
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: door.png
+  uri:
+    -
+      value: 'public://2020-10/door_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 848
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1603310739
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

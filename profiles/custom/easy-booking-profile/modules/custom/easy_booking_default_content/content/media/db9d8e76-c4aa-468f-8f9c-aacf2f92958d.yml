@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: db9d8e76-c4aa-468f-8f9c-aacf2f92958d
+  bundle: image
+  default_langcode: en
+  depends:
+    ccda39a9-3cb1-4728-b23c-74e0fdc1967c: file
+    4926f139-c791-498e-b0ef-4dd667c48480: taxonomy_term
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: place_for_relax
+  created:
+    -
+      value: 1614914613
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: ccda39a9-3cb1-4728-b23c-74e0fdc1967c
+      alt: place_for_relax
+      title: ''
+      width: 562
+      height: 254
+  field_type:
+    -
+      entity: 4926f139-c791-498e-b0ef-4dd667c48480

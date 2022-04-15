@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: payment_cards_3rd_step_62_5_x_40
+label: 'Payment cards 3rd step(63 x 40)'
+effects:
+  b4ab6e31-8d5b-4afd-b436-ceb95086afcb:
+    uuid: b4ab6e31-8d5b-4afd-b436-ceb95086afcb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 63
+      height: 40
+      anchor: center-center

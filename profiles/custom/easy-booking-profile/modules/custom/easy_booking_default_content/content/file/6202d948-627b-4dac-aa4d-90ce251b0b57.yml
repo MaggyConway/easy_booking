@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6202d948-627b-4dac-aa4d-90ce251b0b57
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pricetag.png
+  uri:
+    -
+      value: 'public://2020-11/pricetag_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 641
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1605861289
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

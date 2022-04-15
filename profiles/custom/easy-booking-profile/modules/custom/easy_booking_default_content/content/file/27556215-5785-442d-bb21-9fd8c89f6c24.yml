@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 27556215-5785-442d-bb21-9fd8c89f6c24
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: plyazh_more_yahta_90849_1280x720.jpg
+  uri:
+    -
+      value: 'public://2020-11/plyazh_more_yahta_90849_1280x720_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 136490
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1604652414
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

@@ -1,0 +1,31 @@
+uuid: ed12a4cd-12dd-4474-b486-e4c665774688
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hamburger_block
+    - field.field.block_content.hamburger_block.field_hamburger
+  module:
+    - text
+id: block_content.hamburger_block.default
+targetEntityType: block_content
+bundle: hamburger_block
+mode: default
+content:
+  field_hamburger:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

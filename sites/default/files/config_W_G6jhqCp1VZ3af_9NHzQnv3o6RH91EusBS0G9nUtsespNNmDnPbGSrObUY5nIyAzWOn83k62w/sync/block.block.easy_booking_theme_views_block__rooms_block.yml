@@ -1,0 +1,32 @@
+uuid: a66e8a9a-3ff2-44c9-a4e8-efafa33cec91
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.rooms
+  module:
+    - system
+    - views
+  theme:
+    - easy_booking_theme
+_core:
+  default_config_hash: 0lMwFmU02N6D-5uadp_HUvASdxkhtr1ZvlgTThS3mdU
+id: easy_booking_theme_views_block__rooms_block
+theme: easy_booking_theme
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:rooms-rooms_block'
+settings:
+  id: 'views_block:rooms-rooms_block'
+  label: 'Welcome To Hotel'
+  provider: views
+  label_display: visible
+  views_label: 'Welcome To Hotel'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

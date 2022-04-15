@@ -1,0 +1,152 @@
+<?php
+
+/**
+ * @file
+ * Implements facets search for easy booking profile.
+ */
+
+use Drupal\search_api\Query\QueryInterface;
+
+/**
+ * Implements hook_search_api_query_alter().
+ */
+function easy_booking_facets_search_api_query_alter(QueryInterface &$query) {
+
+  $facet_manager = \Drupal::service('facets.manager');
+  $facets = $facet_manager->getEnabledFacets();
+
+  if (isset($facets['rooms_facet'])) {
+    $params = \Drupal::request()->query->all();
+    
+    // 'Room' content type.
+
+    if ($params) {
+      if ($params['from'] && $params['to'] && $params['room']) {
+        $date_from = new DateTime($params['from']);
+        $date_to = new DateTime($params['to']);
+
+        /** @var \Drupal\Core\Entity\EntityStorageInterface $node_storage */
+        $node_storage = \Drupal::entityTypeManager()
+          ->getStorage('node');
+
+        $booking_storage = \Drupal::entityTypeManager()
+          ->getStorage('bat_booking');
+
+        $rooms = $node_storage->loadByProperties([
+          'field_type' => $params['room'],
+        ]);
+
+        $filtered_rooms = [];
+
+        foreach ($rooms as $room) {
+
+          $bookings = $booking_storage->loadByProperties([
+            'field_room' => $room->id(),
+          ]);
+
+          if ($bookings) {
+            $booked = FALSE;
+
+            foreach ($bookings as $booking) {
+              $booking_start_date = new DateTime($booking->booking_start_date->value);
+              $booking_end_date = new DateTime($booking->booking_end_date->value);
+
+              if ($booking_start_date >= $date_from) {
+                if ($booking_start_date < $date_to) {
+                  $booked = TRUE;
+                }
+              }
+
+              if ($booking_end_date > $date_from) {
+                if ($booking_end_date <= $date_to) {
+                  $booked = TRUE;
+                }
+              }
+            }
+
+            if (!$booked) {
+              $filtered_rooms[] = $room->id();
+            }
+
+          }
+          else {
+            $filtered_rooms[] = $room->id();
+          }
+
+        }
+
+        $query->addCondition('nid', $filtered_rooms, 'IN');
+      }
+
+    }
+
+  }
+
+  // 'Daily room' content type.
+
+  if (isset($facets['daily_rooms_facet'])) {
+    $params = \Drupal::request()->query->all();
+
+    if ($params) {
+      if ($params['from'] && $params['to'] && $params['daily_room']) {
+        $date_from = new DateTime($params['from']);
+        $date_to = new DateTime($params['to']);
+
+        /** @var \Drupal\Core\Entity\EntityStorageInterface $node_storage */
+        $node_storage = \Drupal::entityTypeManager()
+          ->getStorage('node');
+
+        $booking_storage = \Drupal::entityTypeManager()
+          ->getStorage('bat_booking');
+
+        $rooms = $node_storage->loadByProperties([
+          'field_type' => $params['daily_room'],
+        ]);
+
+        $filtered_rooms = [];
+
+        foreach ($rooms as $room) {
+
+          $bookings = $booking_storage->loadByProperties([
+            'field_room' => $room->id(),
+          ]);
+
+          if ($bookings) {
+            $booked = FALSE;
+
+            foreach ($bookings as $booking) {
+              $booking_start_date = new DateTime($booking->booking_start_date->value);
+              $booking_end_date = new DateTime($booking->booking_end_date->value);
+
+              if ($booking_start_date >= $date_from) {
+                if ($booking_start_date < $date_to) {
+                  $booked = TRUE;
+                }
+              }
+
+              if ($booking_end_date > $date_from) {
+                if ($booking_end_date <= $date_to) {
+                  $booked = TRUE;
+                }
+              }
+            }
+
+            if (!$booked) {
+              $filtered_rooms[] = $room->id();
+            }
+
+          }
+          else {
+            $filtered_rooms[] = $room->id();
+          }
+
+        }
+
+        $query->addCondition('nid', $filtered_rooms, 'IN');
+      }
+
+    }
+
+  }
+
+}

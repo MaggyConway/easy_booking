@@ -1,0 +1,12 @@
+uuid: 4a345d67-2270-4dc3-8536-75230a80469e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: mgbvmYgTe_5qhS4dcz_jl4HWO6hsPylAoFY_Im6a2FA
+id: article
+label: Article
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

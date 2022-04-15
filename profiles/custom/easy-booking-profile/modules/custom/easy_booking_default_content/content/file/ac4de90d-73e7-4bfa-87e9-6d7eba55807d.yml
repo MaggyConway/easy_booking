@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ac4de90d-73e7-4bfa-87e9-6d7eba55807d
+  bundle: image
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: perfect_bath.jpg
+  uri:
+    -
+      value: 'public://2021-03/perfect_bath.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1117059
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1614914583
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1

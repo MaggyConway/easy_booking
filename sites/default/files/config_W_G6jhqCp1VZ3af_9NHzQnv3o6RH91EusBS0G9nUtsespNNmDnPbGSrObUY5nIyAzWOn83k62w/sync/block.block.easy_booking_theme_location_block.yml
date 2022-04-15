@@ -1,0 +1,31 @@
+uuid: 4b52c637-08f7-4cb1-8227-ff1968a46a0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - easy_booking_custom
+    - system
+  theme:
+    - easy_booking_theme
+_core:
+  default_config_hash: tHzSgRKlkplOL6XGBEwATtZYC3_veeZ66ZEjm_TQwGE
+id: easy_booking_theme_location_block
+theme: easy_booking_theme
+region: content
+weight: -3
+provider: null
+plugin: location_block
+settings:
+  id: location_block
+  label: Location
+  provider: easy_booking_custom
+  label_display: visible
+  phone: "8‒800‒000‒000\L0"
+  address: "80/8-12 Moo 7, Ban Lopareh, Pru Naai 82160, Thailand\L"
+  title_text: 'We’re here to help and answer any question you might have. we look forward to hearing from you'
+visibility:
+  request_path:
+    id: request_path
+    pages: /rooms
+    negate: false
+    context_mapping: {  }

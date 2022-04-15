@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c3fb0ba6-63aa-4b6b-bd05-826472273e58
+  bundle: image
+  default_langcode: en
+  depends:
+    f012383e-0277-4544-9ab0-dd46f834738e: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: iron.png
+  created:
+    -
+      value: 1603310139
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: f012383e-0277-4544-9ab0-dd46f834738e
+      alt: Iron
+      title: ''
+      width: 40
+      height: 40

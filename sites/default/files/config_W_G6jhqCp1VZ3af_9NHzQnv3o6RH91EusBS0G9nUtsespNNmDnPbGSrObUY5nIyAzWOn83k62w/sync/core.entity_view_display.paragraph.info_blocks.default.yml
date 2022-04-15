@@ -1,0 +1,89 @@
+uuid: f1b6f134-c7ea-49ac-ba9b-9cb5c69769a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.info_blocks.field_first_section
+    - field.field.paragraph.info_blocks.field_info_blocks
+    - field.field.paragraph.info_blocks.field_second_section
+    - field.field.paragraph.info_blocks.field_text
+    - field.field.paragraph.info_blocks.field_title
+    - paragraphs.paragraphs_type.info_blocks
+  module:
+    - ds
+    - entity_reference_revisions
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked_fluid
+      library: ds/ds_2col_stacked_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      header:
+        - field_title
+        - field_text
+      right:
+        - field_first_section
+      footer:
+        - field_second_section
+_core:
+  default_config_hash: 6j_-w0hzgvr19dm4yGI_ju-ssoBuiwh5wiVkq9J9fGA
+id: paragraph.info_blocks.default
+targetEntityType: paragraph
+bundle: info_blocks
+mode: default
+content:
+  field_first_section:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: pt_info_block_square_image
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    region: right
+  field_second_section:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    region: footer
+    label: hidden
+    settings:
+      view_mode: pt_info_block_wide_image
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: header
+  field_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: header
+hidden:
+  field_info_blocks: true
+  search_api_excerpt: true
